@@ -177,7 +177,7 @@ Identifikacijo in analizo tveganj prikažite z uporabo naslednje tabele:
 | T4 - Pomanjkanje kompetenc v ekipi | Izdelek | Nihče izmed članov ekipe ne zna razviti funkcionalnosti, ki smo jo nameravali imeti v končnem projektu. | Tehnologija | Visoka | Znosen |
 | T5 - Slabo izdelan model funkcionalnosti | Izdelek | Koda, kot smo jo predvideli z modelom, ne bo delovala brez dodatne funkcionalnosti. | Orodja | Visoka | Nepomemben |
 | T6 - Napaka strojne opreme člana skupine | Projekt | Računalnik enega izmed članov se pokvari med delom na projektu. | Orodja | Zelo majhna | Nepomemben |
-| T7 - Napaka pri planiranju funkcionalnosti | Projekt in izdelek | Slabo predvidimo nalogo funkcionalnosti in zato večkrat zavržemo kodo in ponovno planiramo delovanje funkcionalnosti. | Zmerna | Znosen |
+| T7 - Napaka pri planiranju funkcionalnosti | Projekt in izdelek | Slabo predvidimo nalogo funkcionalnosti in zato večkrat zavržemo kodo in ponovno planiramo delovanje funkcionalnosti. | Zahteve | Zmerna | Znosen |
 | T8 - Nepričakovana nova funkcionalnost | Projekt in izdelek | Zaradi nove ideje o funkcionalnosti moramo nepričakovano dodajati k načrtu. | Zahteve | Zelo visoka | Znosen |
 | T9 - Neskladnost ločenih komponent | Projekt | Dve ločeno razviti komponenti sta neskladni. | Organizacija | Zmerna | Znosen |
 | T10 - Nesporazum pri dodeljevanju nalog | Izdelek | Del projekta je bil dodeljen članu ekipe, ki nima kompetenc za izpeljavo naloge. | Organizacija | Majhna | Resen |
@@ -197,8 +197,18 @@ Načrt za obvladovanje tveganj prikažite z uporabo naslednje tabele:
 
 | Tveganje         | Strategija       |
 | :--------------- | :--------------- |
-| :dart: **TO-DO** | :dart: **TO-DO** |
-| ...              | ...              |
+| T2 - Slaba razporeditev dela | Minimize: projektni vodja ponovno razdeli delo z novim znanjem o težavnosti nalog. |
+| T8 - Nepričakovana nova funkcionalnost | Avoid: pri sestavljanju načrta zelo dobro premislimo o vseh možnih funkcionalnostih. |
+| T11 - Podcenjena velikost projekta | Avoid: ko ocenjujemo poskusimo upoštevati časovno nepredvidljivost. |
+| T1 - Izguba člana | Accept: nekoliko zmanjšamo obseg končne aplikacije in si preostalo delo razdelimo med sabo. |
+| T3 - Izguba podatkov iz PB | Accept: varnost tehnologije ponudnika podatkovne baze je izven naših rok. |
+| T4 - Pomanjkanje kompetenc v ekipi | Avoid: vnaprej se skupaj dogovorimo o funkcionalnostih in se prepričamo, da jo vsaj eden izmed nas zna razviti. |
+| T7 - Napaka pri planiranju funkcionalnosti | Accept: v primeru da se napaka pojavi, nov plan sestavimo skupaj, da se tveganje ne ponovi. |
+| T9 - Neskladnost ločenih komponent | Minimize: vnaprej določimo vhode in izhode komponent, tako da lahko problem v primeru neskladnosti hitro rešimo. |
+| T10 - Nesporazum pri dodeljevanju nalog | Avoid: večkrat se prepričamo o kompetencah naših članov. |
+| T12 - Podcenjen čas izdelave | Minimize: če opazimo, da se izteka čas dodelimo še enega člana, ki je prost, da pomaga. | Minimize: če opazimo, da se izteka čas dodelimo še enega člana, ki je prost, da pomaga. |
+| T5 - Slabo izdelan model funkcionalnosti | Avoid: dobro premislimo o modelu preden se lotimo z delom. |
+| T6 - Napaka strojne opreme člana skupine | Accept: Smo v kontaktu, da lahko delo po potrebi prevzame drug član ekipe. Napredek sproti shranjujemo na google docs-ih in github-u. |
 
 Tveganja v tabeli naj bodo rangirana od najpomembnejšega proti manj pomembnim.
 
