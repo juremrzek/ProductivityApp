@@ -25,6 +25,8 @@ Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omr
 - Kaj do sedaj že obstaja, oziroma kaj se na področju dogaja.
 - Gre za področje za katerega se bo izdelala rešitev predstavljena v Predlogu projekta.
 
+Neučinkovita organizacija je pri ljudeh pogost problem. Od napotnic in rojstnih dni do novoletnih zaobljub, ki jih moramo usklajevati. Na področju produktivnosti obstaja več aplikacij (Forest, Focus To-Do, Google tasks…) , ki uporabniku pomagajo spremljati svojo aktivnost in napredek, vendar se ne osredotočajo na pogled socialnega omrežja, temveč delujejo bolj individualno.
+
 ### 1.2 Področje in motivacija
 
 :dart: **TO-DO**
@@ -36,6 +38,11 @@ Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omr
 - Kakšno ciljno publiko naslavljate s svojim projektom?
 - S čim boste tipičnega predstavnika ciljne publike prepričali, da bo vaš izdelek uporabljal ali celo kupil?
 
+Kot študenti se tudi sami pogosto srečamo s problemom motivacija in pomanjkanje organizacije, zato smo se odločili razviti projektno idejo v tej smeri. Problemsko domeno smo se odličili podpreti s programsko opremo, ker imajo ljudje dandanes pri sebi vedno mobilne telefone preko katerih bi organizacija potekala najbolj učinkovito in hitro.
+Podobne ideje socialnih omrežji in aplikacij za produktivnost obstajajo, vendar ne ponujajo združenega produkta. Z našo idejo želimo doseči, da bi socialni aspekt ljudi prepričal v bolj aktivno sledenje svojim dolgoročnim ciljem.
+Naša ciljna publika so ljudje, ki želijo enostaven način za organizacijo in si lahko z našim sistemom organizirajo delo in sledijo svojem napredku.
+
+
 ### 1.3 Namen
 
 :dart: **TO-DO**
@@ -45,6 +52,8 @@ Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omr
 - Kakšne probleme bomo rešili?
 - Kaj bodo uporabniki sposobni narediti bolje?
 
+Namen projekta je ustvariti aplikacijo, ki bo ljudi spodbujala k bolj produktivnemu življenju in da bi jo uporabljalo čim več ljudi iz naše ciljne publike. S tem projektom rešujemo problem slabe organizacije in neproduktivnosti pri delu. Z uporabo naše aplikacije bodo uporabniki lahko planirali svoj dnevni urnik učinkovito in enostavno, tako da bodo dosegli maksimalno učinkovitost.
+
 ### 1.4 Cilji
 
 :dart: **TO-DO**
@@ -52,12 +61,21 @@ Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omr
 - Navedite, kaj bodo konkretni izdelki/storitve vašega projekta.
 - Cilji morajo biti merljivi in preverljivi.
 
+Sistem ponuja vnos osebnih ciljev, dogodkov in načrtov, na katere bo nato opozarjal uporabnika in mu pomagal pri izpolnjevanju le teh. Omogoča dodajanje prijateljev in izbiro privatnosti, da lahko uporabniki med seboj primerjajo svoje statistike. Podobne ideje socialnih omrežji in aplikacij za produktivnost obstajajo, vendar ne ponujajo združenega produkta. Uporablja google calendar.....itd
+
 ### 1.5 Smernice za rešitev
 
 :dart: **TO-DO**
 
 - Opredelite smernice, ki naj bi se jih v okviru izvajanja projekta držali.
 - Smernice se lahko nanašajo na izvedbo projekta ali na sam izdelek projekta.
+
+V okviru priprave in razvoja aplikacije, se nameravamo držati sledečih smernic:
+- Aplikacija zbira osebne podatke, zato moramo zagotoviti visoko raven varovanja.
+- Google koledar vključimo v kodo z mislijo, da bo tudi naslednja verzija delovala brez dodatnega programiranja
+- Aplikacija deluje za Android sistem, Windows, Mac, linux in web interface
+- Vse funkcionalnosti razvijamo v istem programskem jeziku
+
 
 ### 1.6 Končni uporabniki
 
@@ -67,6 +85,8 @@ Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omr
 - Koliko bo končnih uporabnikov?
 - Kakšna znanja imajo?
 - Kdo bo imel koristi od projekta, ne da bi bil neposredno vključen?
+
+Ciljni uporabniki naše rešitve so predvsem dijaki, študenti in zaposleni, ki še vedno razvijajo svojo kariero, saj si lahko z našim sistemom organizirajo delo in sledijo svojem napredku. Imajo osnovno (uporabniško) predznanje. To je dovolj za uporabo naše aplikacije, saj bo realizirana z razumljivimi uporabniškimi umesniki. Pričakujemo konstantno rast uporabnikov po 40 na mesec.
 
 ## 2. Projektni načrt
 
