@@ -171,8 +171,18 @@ Identifikacijo in analizo tveganj prikažite z uporabo naslednje tabele:
 
 | Naziv tveganja   | Vpliva na        | Opis tveganja    | Tip tveganja     | Verjetnost nastopa tveganja | Posledice nastopa tveganja |
 | :--------------- | ---------------- | :--------------- | :--------------- | :-------------------------- | :------------------------- |
-| :dart: **TO-DO** | :dart: **TO-DO** | :dart: **TO-DO** | :dart: **TO-DO** | :dart: **TO-DO**            | :dart: **TO-DO**           |
-| ...              | ...              | ...              | ...              | ...                         | ...                        |
+| T1 - Izguba člana | Projekt | Član ekipe izgubi interes za delo na projektu. | Ljudje | Majhna | Resen |
+| T2 - Slaba razporeditev dela |  Izdelek | Zaradi slabe razporeditve dela član skupine neha opravljati svoj del naloge. | Ljudje | Zmerna | Resen |
+| T3 - Izguba podatkov iz PB | Izdelek | Izgubimo podatke v podatkovni bazi zaradi nepričakovane napake ali vdora v sistem. | Tehnologija | Zelo majhna | Katastrofalen |
+| T4 - Pomanjkanje kompetenc v ekipi | Izdelek | Nihče izmed članov ekipe ne zna razviti funkcionalnosti, ki smo jo nameravali imeti v končnem projektu. | Tehnologija | Visoka | Znosen |
+| T5 - Slabo izdelan model funkcionalnosti | Izdelek | Koda, kot smo jo predvideli z modelom, ne bo delovala brez dodatne funkcionalnosti. | Orodja | Visoka | Nepomemben |
+| T6 - Napaka strojne opreme člana skupine | Projekt | Računalnik enega izmed članov se pokvari med delom na projektu. | Orodja | Zelo majhna | Nepomemben |
+| T7 - Napaka pri planiranju funkcionalnosti | Projekt in izdelek | Slabo predvidimo nalogo funkcionalnosti in zato večkrat zavržemo kodo in ponovno planiramo delovanje funkcionalnosti. | Zmerna | Znosen |
+| T8 - Nepričakovana nova funkcionalnost | Projekt in izdelek | Zaradi nove ideje o funkcionalnosti moramo nepričakovano dodajati k načrtu. | Zahteve | Zelo visoka | Znosen |
+| T9 - Neskladnost ločenih komponent | Projekt | Dve ločeno razviti komponenti sta neskladni. | Organizacija | Zmerna | Znosen |
+| T10 - Nesporazum pri dodeljevanju nalog | Izdelek | Del projekta je bil dodeljen članu ekipe, ki nima kompetenc za izpeljavo naloge. | Organizacija | Majhna | Resen |
+| T11 - Podcenjena velikost projekta | Projekt in izdelek | Napačno ocenimo velikost projekta. | Ocene | Visoka | Resen |
+| T12 - Podcenjen čas izdelave | Projekt in izdelek | Podcenimo, koliko časa bo potrebno za dokončati del projekta. | Ocene | Zmerna | Znosen |
 
 ### 3.2 Načrtovanje tveganj
 
