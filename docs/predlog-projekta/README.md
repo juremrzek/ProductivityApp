@@ -98,6 +98,20 @@ Ciljni uporabniki naše rešitve so predvsem dijaki, študenti in zaposleni, ki 
 - Aktivnost je smiselno zaokrožena enota dela z jasno opredeljenimi cilji.
 - Aktivnosti so med sabo lahko odvisne: preden pričnemo izvajati neko aktivnost, morajo biti zaključene nekatere druge aktivnosti.
 
+Dolocitev uporabniskih vlog
+Pripravimo diagram primerov uporabe
+Definicija funkcionalnosti
+Definicija nefunkcionalnih zahtev
+Izdelava zaslonskih mask
+Priprava vmesnikov do zunanjih sistemov
+Izbira ustrezne arhitekture
+Nacrt arhitekture sistema
+Izdelava razrednega diagrama
+Izdelava diagramov zaporedja
+Izdelava koncnega avtomata
+Izdelava diagramov aktivnosti
+# ostalo za implementacijo 4 del
+
 ### 2.2 Načrt posameznih aktivnosti
 
 :dart: **TO-DO**
