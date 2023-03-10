@@ -190,6 +190,18 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A2 (ko končamo graf PERT še za vsako aktivnost tu povemo če je na kritični poti)|
 | **Pričakovani rezultati aktivnosti**                | Zaslonske maske    
 
+| **Oznaka aktivnosti**                               | A7                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 18.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 19.3.2023                                                                                                                             |
+| **Trajanje**                                        |           2 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Izdelava transakcijske baze                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča in stabilna transakcijska podatkovna baza.                                                                                                    |
+| **Opis aktivnosti**                                 | Programiramo transakcijsko podatkovno bazo v ustrezni arhitekturi in po načrtu, ki smo ga sestavili vnaprej.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A4 |
+| **Pričakovani rezultati aktivnosti**                |     Transakcijska podatkovna baza
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
