@@ -120,15 +120,15 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 
 | **Oznaka aktivnosti**                               | A1                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | :dart: **TO-DO** datum                                                                                                                               |
-| **Predvideni datum zaključka izvajanja aktivnosti** | :dart: **TO-DO** datum                                                                                                                               |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 13.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 13.3.2023                                                                                                                             |
 | **Trajanje**                                        |           1 dan                                                                                                          |
 | **Naziv aktivnosti**                                | Izbira ustrezne arhitekture                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
-| **Seznam ciljev aktivnosti (kaj želite doseči)**    | :dart: **TO-DO** navedite cilje aktivnosti                                                                                                           |
-| **Opis aktivnosti**                                 | :dart: **TO-DO** opišite, kaj boste v okviru aktivnosti izvajali                                                                                     |
-| **Morebitne odvisnosti in omejitve**                | :dart: **TO-DO** Katere aktivnosti morajo biti zaključene, preden se lahko lotite obravnavane aktivnosti? Je obravnavana aktivnost na kritični poti? |
-| **Pričakovani rezultati aktivnosti**                | :dart: **TO-DO** navedite konretne izdelke aktivnosti                                                                                                |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | S člani dosežen dogovor o arhitekturi, določena tehnologija in orodja                                                                                                       |
+| **Opis aktivnosti**                                 | Debata o prednostih in slabostih določenih tehnologij in orodij za izdelavo projekta, na koncu se izbere najustreznejša.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | |
+| **Pričakovani rezultati aktivnosti**                |                                                                                             |
 
 ### 2.3 Seznam izdelkov
 
