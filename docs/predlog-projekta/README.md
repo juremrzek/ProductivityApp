@@ -166,6 +166,18 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | |
 | **Pričakovani rezultati aktivnosti**                |     
 
+| **Oznaka aktivnosti**                               | A5                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 16.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
+| **Trajanje**                                        |           1 dan                                                                                                          |
+| **Naziv aktivnosti**                                | Načrtovanje podatkovnega skladišča                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno zasnovan načrt podatkovnega skladišča s katerim si bomo pomagali pri implementaciji.                                                                                                    |
+| **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo podatkovnega skladišča in izberemo najustreznejšo.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | |
+| **Pričakovani rezultati aktivnosti**                |     
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
