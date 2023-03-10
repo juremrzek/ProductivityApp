@@ -130,6 +130,18 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | |
 | **Pričakovani rezultati aktivnosti**                |                                                                                             |
 
+| **Oznaka aktivnosti**                               | A2                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 13.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
+| **Trajanje**                                        |           3 dan                                                                                                          |
+| **Naziv aktivnosti**                                | Izbira izgleda aplikacije                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno postavljen izgled aplikacije s katerim se strinjajo vsi člani.                                                                                                       |
+| **Opis aktivnosti**                                 | Debatiramo o zunanjem izgledu aplikacije, na list ali s kakšnim orodjem si poskusamo predstaviti izgled in se na koncu odločiti za najbolj ustreznega.                                                                          |
+| **Morebitne odvisnosti in omejitve**                | |
+| **Pričakovani rezultati aktivnosti**                |     
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
