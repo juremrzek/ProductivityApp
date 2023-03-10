@@ -133,8 +133,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Oznaka aktivnosti**                               | A2                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 13.3.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
-| **Trajanje**                                        |           3 dan                                                                                                          |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 15.3.2023                                                                                                                             |
+| **Trajanje**                                        |           3 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Izbira izgleda aplikacije                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno postavljen izgled aplikacije s katerim se strinjajo vsi člani.                                                                                                       |
@@ -177,6 +177,18 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo podatkovnega skladišča in izberemo najustreznejšo.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
 | **Pričakovani rezultati aktivnosti**                |     
+
+| **Oznaka aktivnosti**                               | A6                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 17.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 19.3.2023                                                                                                                             |
+| **Trajanje**                                        |           3 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Izdelava zaslonskih mask                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | V celoti implementirane zaslonske maske.                                                                                                    |
+| **Opis aktivnosti**                                 | V že določeni tehnologiji in z že določenimi orodji programiramo zaslonske maske.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A2 (ko končamo graf PERT še za vsako aktivnost tu povemo če je na kritični poti)|
+| **Pričakovani rezultati aktivnosti**                | Zaslonske maske    
 
 ### 2.3 Seznam izdelkov
 
