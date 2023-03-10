@@ -226,6 +226,18 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
 | **Pričakovani rezultati aktivnosti**                | Delujoče okno za prijavo in registracijo
 
+| **Oznaka aktivnosti**                               | A10                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 27.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 28.3.2023                                                                                                                             |
+| **Trajanje**                                        |     2 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Implementacija obnovitve pozabljenega gesla                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Gumb na oknu prijave in registracije, ki tudi pravilno komunicira s transakcijsko bazo podatkov.                                                                                                    |
+| **Opis aktivnosti**                                 | Implementiramo obnovitev pozabljenega gesla na podlagi že implementirane prijave in registracije.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A9|
+| **Pričakovani rezultati aktivnosti**                |   Delujoč gumb za obnovitev gesla
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
