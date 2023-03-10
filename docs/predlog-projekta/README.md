@@ -162,8 +162,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Naziv aktivnosti**                                | Načrtovanje transakcijske baze                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno zasnovan načrt transakcijske baze s katerim si bomo pomagali pri implementaciji.                                                                                                     |
-| **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo transakcijske baze in izberemo najustreznejšo.                                                                              |
-| **Morebitne odvisnosti in omejitve**                | |
+| **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo transakcijske baze s pomočjo uporabniških vlog, ki smo jih že določili in izberemo najustreznejšo.                                                                              |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A3 |
 | **Pričakovani rezultati aktivnosti**                |     
 
 | **Oznaka aktivnosti**                               | A5                                                                                                              |
@@ -192,8 +192,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 
 | **Oznaka aktivnosti**                               | A7                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 18.3.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 19.3.2023                                                                                                                             |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 20.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 21.3.2023                                                                                                                             |
 | **Trajanje**                                        |           2 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Izdelava transakcijske baze                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
@@ -201,6 +201,30 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Opis aktivnosti**                                 | Programiramo transakcijsko podatkovno bazo v ustrezni arhitekturi in po načrtu, ki smo ga sestavili vnaprej.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A4 |
 | **Pričakovani rezultati aktivnosti**                |     Transakcijska podatkovna baza
+
+| **Oznaka aktivnosti**                               | A8                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 21.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 22.3.2023                                                                                                                             |
+| **Trajanje**                                        |     2 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Izdelava podatkovnega skladišča                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče in stabilno podatkovno skladišče, ki ga bomo lahko povezali z aplikacijo.                                                                                                    |
+| **Opis aktivnosti**                                 | Programiramo podatkovno skladišče v ustrezni arhitekturi in po načrtu, ki smo ga sestavili vnaprej.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A5|
+| **Pričakovani rezultati aktivnosti**                | Podatkovno skladišče    
+
+| **Oznaka aktivnosti**                               | A9                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 22.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 24.3.2023                                                                                                                             |
+| **Trajanje**                                        |     3 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Implementacija prijave in registracije                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče okno za prijavo in registracijo, ki uspešno komunicira z transakcijsko bazo podatkov.                                                                                                    |
+| **Opis aktivnosti**                                 | Programiramo registracijo in prijavo uporabnikov na podlagi zasnovanih zaslonskih mask in podatkovne baze, ki smo jo že implementirali.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
+| **Pričakovani rezultati aktivnosti**                | Delujoče okno za prijavo in registracijo
 
 ### 2.3 Seznam izdelkov
 
