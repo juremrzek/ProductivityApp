@@ -142,6 +142,18 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | |
 | **Pričakovani rezultati aktivnosti**                |     
 
+| **Oznaka aktivnosti**                               | A3                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 14.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 14.3.2023                                                                                                                             |
+| **Trajanje**                                        |           1 dan                                                                                                          |
+| **Naziv aktivnosti**                                | Določitev uporabniških vlog                                                                                                            |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno določene uporabniške vloge in njihove funkcionalnosti.                                                                                                      |
+| **Opis aktivnosti**                                 | Razmišlja se o uporabniških vlogah, ki bi bile ustrezne za izvedbo naše aplikacije.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | |
+| **Pričakovani rezultati aktivnosti**                |     
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
