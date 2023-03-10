@@ -118,12 +118,12 @@ Izdelava diagramov aktivnosti
 
 Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične aktivnosti lahko uporabite naslednjo tabelo:
 
-| **Oznaka aktivnosti**                               | :dart: **TO-DO** kratka oznaka, npr. A1                                                                                                              |
+| **Oznaka aktivnosti**                               | A1                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | :dart: **TO-DO** datum                                                                                                                               |
 | **Predvideni datum zaključka izvajanja aktivnosti** | :dart: **TO-DO** datum                                                                                                                               |
-| **Trajanje**                                        | :dart: **TO-DO** število dni                                                                                                                         |
-| **Naziv aktivnosti**                                | :dart: **TO-DO** naziv (ime) aktivnosti                                                                                                              |
+| **Trajanje**                                        |           1 dan                                                                                                          |
+| **Naziv aktivnosti**                                | Izbira ustrezne arhitekture                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | :dart: **TO-DO** navedite cilje aktivnosti                                                                                                           |
 | **Opis aktivnosti**                                 | :dart: **TO-DO** opišite, kaj boste v okviru aktivnosti izvajali                                                                                     |
