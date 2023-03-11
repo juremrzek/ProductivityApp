@@ -4,7 +4,7 @@
 | :-------------------------- | :------------------------------------------------------------- |
 | **Naziv projekta**          | Aplikacija produktivnosti in organizacije                               |
 | **Člani projektne skupine** | Arne Gašperšič, Jan Merhar, Jure Mržek, Anže Rifelj Tričkovič, Klemen Kolar |
-| **Kraj in datum**           | Ljubljana,                      10.3            |
+| **Kraj in datum**           | Ljubljana,                      10.3.2023           |
 
 ## Povzetek projekta
 
