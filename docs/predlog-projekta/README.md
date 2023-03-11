@@ -421,7 +421,24 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 |Določitev uporabniških vlog(A3)||2||
 |Načrtovanje transakcijske baze(A4)||4||
 |Načrtovanje podatkovnega skladišča(A5)||2||
-|Izdelava zaslonskih mask||6|A1, A2|
+|Izdelava zaslonskih mask(A6)||6|A1, A2|
+|Izdelava transakcijske baze(A7)||3|A1, A4|
+|Izdelava podatkovnega skladišča(A8)||5|A1, A5|
+|Implementacija prijave in registracije(A9)||3|A6(Prototip zaslonskih mask), A7|
+|Implementacija obnovitve pozabljenega gesla(A10)||2|A9|
+|Implementacija iskanja prijateljev(A11)||3|A6(Prototip zaslonskih mask), A7|
+|Implementacija shranjevanja dogodkov uporabnika(A12)||1|A7|
+|Implementacija vmesnika določanja navad(A13)||7|A6(Prototip zaslonskih mask), A7|
+|Implementacija časovnika in njegovega urejanja(A14)||3|A6(Prototip zaslonskih mask)|
+|Implementacija Google koledarja preko API-ja(A15)||4|A6(Prototip zaslonskih mask)|
+|Implementacija urejanja dogodkov na Google koledarju(A16)||2|A15|
+|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče(A17)||3|A7, A8|
+|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev(A18)||11|A6(Prototip zaslonskih mask), A17|
+|Implementacija ogleda aktivnosti prijateljev(A19)||1|A6(Prototip zaslonskih mask), A17|
+|Implementacija urejanja uporabniškega računa(A20)||3|A6(Prototip zaslonskih mask), A7|
+|Implementacija vmesnika za poročanje o napakah(A21)||4|A6(Prototip zaslonskih mask), A7|
+|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju(A22)||4|A6(Prototip zaslonskih mask), A7|
+|Upravljanje projekta(A23)||70||
 
 ![Ganttov diagram](https://teaching.lavbic.net/plantuml/png/dLVTZk8s5BxFKnnfBzeYeI6638oqgZIxswrMwbHxqwlLN1XYWecnaMtI3jK-mZn4NwHNi-_Luv24uCHXka92nERuVD_dynUJSxcdckvWILTvfjL1fk-LK1gifjBW5fCssl2KmLefkrH_HT5ROvy4-pdAgBJs0wUPC_yx0h1ynmINh7m0-0r_divwioRkKwv-LDAULj7k2PU-EajgyihgdOVZ3LkiatNgdvXyVBVuvNrbJhLMVtQzNlndnmKpLZNeliVFIYZ3qj01lIG5ppQsOVerUdjJgHVjjTgobGLZgRO6x8P1FBKRK6jue7gr0J8XqyXGUz0fVJ98abK08eDElINtvvlP3Pa3DzvQFF7NafkukqHQIr7qPJJwT5noJU5Wh6P7r8tg3RSiHpniD88VOqYf_EaHg84lz_4Z26gG1W67h6NEZvbWAGMw5podAxujZQUGIbuRazfu2YTQCgrLeHRYMKSKFFq3glloZ7WAEEoLfal9l_sJymqKGcNE0sbxc5x2ypqaVHv-fo_Fsgg2oYqxPGFD4Rx96URAiMGnSpvW34SA1SyP7eeofKpGdQezpmOzEsG_643BZiUzIgdDLI5PHi7aWgP8yEMPThWbWnx8fCDjF8OSys05ykoFtXpnWU7r0j_j1TjXsfUN1UFnwJ8ThO8YLIEKD4xf7IQjGtDxNONR6kEi5oF1Hqz_PzBMAMvqydT8i_DPAwiit_iW7s53zticAuFRbkGDh_uBlWZJ-M2OaWKAVS5W7cJWxSpw00tTVt9TySKWs6atAagJ05vl9sdZRKSBejRuNJ3W4ZJBE9QE_fI_6uQdotYunzD4ZUxk4iFv4lsTUHYTMafLS5kux3hIfTYoKjsC6T7DgtXo9NNl6aSFR2jv7YBlXH-U6mJ8JUwIyNIIPGYmw4WNnyFbihhQ2_6SJK0zVslki-h1v3EAmupCHhjoLjOOI5McKepffcJdjDj9ccxWbf_Qx9GCi2ElZe1YnunpYr1S_oXHIKotrE6ONq-hkEaaIKVy8BnfMFpf5V5zcBxoqp1LD3DOFXnP34YyWqmLBjgnVM_TWTt0ceK3ot6Rzt6RXRXL12vHrBv1O4j5C3wTMPZEhqhX886ToqqJken7bYku__nfVEBoYcOS9-4-56IOX1Xs83RicZYN7To7qQW6StkbliI9B-RbMIWeQgXno9A-ZWCWbqomR_yo1vFcbXTI6SlTtQ2U-DiDR3tD48fpGrAjTeILtGkY-M0GaLcVnFDG5dIs5c5YE6Il-SjpMT7nz9nY8A2fnJgCqfqhpZaRS3pm2cqSTuAeL8OUqPBr1DHYi1oGte1QXCk1tu8xzQ0coIkAPuP-20mefQg9_7pzlWmN1Vbkg22NOyy5HOXEDY6ETq6EuOHgZVZkUZNEgWVPhM1aCXXyrLZnW2Igkt060Pp-rckQoj6DRVfKi1aeJFyzpUccgKuDpdYm3YtguUoCCzo_IVnTE0yOr8NOLgyQ3ZDU7o9cRfqBoNOkrCjtWtF98cIuVf8kS186JgxqlWfkIDModxHObCjU5X3IKkEFDcNtyftRCeJca_-NzEJSj1tfpZjxgGgUOg1-iux_0m00)
 
