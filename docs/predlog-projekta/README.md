@@ -426,7 +426,7 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 |Izbira ustrezne arhitekture (A1)|0,25 ČM|1||
 |Izbira izgleda aplikacije (A2)|0,375 ČM|3||
 |Določitev uporabniških vlog (A3)|0,25 ČM|2||
-|Načrtovanje transakcijske baze (A4)|0,25 ČM|4||
+|Načrtovanje transakcijske baze (A4)|0,25 ČM|4|A3|
 |Načrtovanje podatkovnega skladišča (A5)|0,25 ČM|2||
 |Izdelava zaslonskih mask (A6)|0,5 ČM|6|A1, A2|
 |Izdelava transakcijske baze (A7)|0,375 ČM|3|A1, A4|
