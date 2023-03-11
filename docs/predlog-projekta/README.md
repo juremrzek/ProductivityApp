@@ -346,6 +346,54 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč prikaz aktivnosti prijateljev 
 
+| **Oznaka aktivnosti**                               | A20                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 24.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 25.4.2023                                                                                                                             |
+| **Trajanje**                                        |     2 dni                                                                                                        |
+| **Naziv aktivnosti**                                |  Implementacija urejanja uporabniškega računa                                                                                                       |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za urejanje računa, ki komunicira s transakcijsko podatkovno bazo.         |
+| **Opis aktivnosti**                                 | Programiranje vmesnika za urejanje uporabniškega računa(posodobitev gesla in ostalih atributov) na podlagi že izdelanih zaslonskih mask in vzpostavljene transakcijske podatkovne baze.   |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
+| **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za urejanje uporabniškega računa
+
+| **Oznaka aktivnosti**                               | A21                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 20.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 21.4.2023                                                                                                                             |
+| **Trajanje**                                        |     3 dni                                                                                                        |
+| **Naziv aktivnosti**                                |  Implementacija vmesnika za poročanje o napakah                                                                                                        |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik, ki v podatkovni bazi hrani poročila, ki jih bo lahko pregledal administrator.        |
+| **Opis aktivnosti**                                 |Programiranje vmesnika za poročanje o napakah delovanja aplikacije (hroščev v kodi) na podlagi že izdelanih zaslonskih mask in vzpostavljene transakcijske podatkovne baze.   |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
+| **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za poročanje o napakah
+
+| **Oznaka aktivnosti**                               | A22                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 20.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 21.4.2023                                                                                                                             |
+| **Trajanje**                                        |     3 dni                                                                                                        |
+| **Naziv aktivnosti**                                |  Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju                                                                                                        |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za upravljanje poročil, ki iz podatkovne baze prikaže poslana poročila o nepravilnem delovanju, za administratorja aplikacije.        |
+| **Opis aktivnosti**                                 |Programiranje vmesnika za upravljanje poročil o nepravilnem delovanju na podlagi transakcijske podatkovne baze in zaslonskih mask, ki smo jih že sprogramirali.   |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
+| **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za upravljanje poročil o nepravilnem delovanju
+
+| **Oznaka aktivnosti**                               | A23                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 13.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 21.5.2023                                                                                                                             |
+| **Trajanje**                                        |     71 dni                                                                                                        |
+| **Naziv aktivnosti**                                |  Upravljanje projekta                                                                                                        |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Uspešno voden projekt z uspešno dokončano končno aplikacijo |
+| **Opis aktivnosti**                                 | Projektni vodja vodi projekt in nadzoruje, da se vsi člani držijo pripravljenega načrta |
+| **Morebitne odvisnosti in omejitve**                |  |
+| **Pričakovani rezultati aktivnosti**                | 
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
