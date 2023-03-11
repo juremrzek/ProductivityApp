@@ -250,6 +250,30 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
 | **Pričakovani rezultati aktivnosti**                |   Delujoč iskalnik za dodajanje prijateljev
 
+| **Oznaka aktivnosti**                               | A12                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 27.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 27.3.2023                                                                                                                             |
+| **Trajanje**                                        |     1 dan                                                                                                          |
+| **Naziv aktivnosti**                                | Implementacija shranjevanja dogodkov uporabnika                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče shranjevanje dogodkov, ki jih uporabnik vnese.                                                                                                    |
+| **Opis aktivnosti**                                 | Z že delujočo transakcijsko bazo podatkov povežemo shranjevanje dogodkov.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
+| **Pričakovani rezultati aktivnosti**                | 
+
+| **Oznaka aktivnosti**                               | A13                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 29.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 31.3.2023                                                                                                                             |
+| **Trajanje**                                        |     3 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Implementacija vmesnika določanja navad                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča vnosna polja za določanje navad.                                                                                                    |
+| **Opis aktivnosti**                                 | Programiramo vmesnik za dodajanje dodajanje navad in dolgoročnih ciljev na katere nas aplikacija opominja, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
+| **Pričakovani rezultati aktivnosti**                |   Delujoča vnosna polja za določanje navad
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
