@@ -252,9 +252,9 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 
 | **Oznaka aktivnosti**                               | A13                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 12.4.2023                                                                                                                            |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 10.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 14.4.2023                                                                                                                             |
-| **Trajanje**                                        |     3 dni                                                                                                          |
+| **Trajanje**                                        |     5 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija vmesnika določanja navad                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča vnosna polja za določanje navad.                                                                                                    |
