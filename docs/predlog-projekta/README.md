@@ -400,8 +400,12 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 
 | Oznaka izdelka   | Ime izdelka      | Datum izdaje     |
 | :--------------- | :--------------- | :--------------- |
-| I1 | Zaslonske maske | 27.3.2023 |
-| ...              | ...              | ...              |
+| I1 Zaslonske maske | 27.3.2023 |
+| I2|Transakcijska podatkovna baza           | 30.3.2023              |
+| I3|Podatkovno skladišče|3.4.2023|
+| I4|Delujoče okno za prijavo in registracijo|5.4|
+| I5|	Delujoč gumb za obnovitev gesla|7.4.2023|
+| I6|Delujoč iskalnik za dodajanje prijateljev|12.4.2023|
 
 ### 2.4 Časovni potek projekta - Ganttov diagram
 
