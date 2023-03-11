@@ -2,9 +2,9 @@
 
 |                             |                                                                |
 | :-------------------------- | :------------------------------------------------------------- |
-| **Naziv projekta**          | :dart: **TO-DO** naziv projekta                                |
-| **Člani projektne skupine** | :dart: **TO-DO** 1. član, 2. član, 3. član, 4. član in 5. član |
-| **Kraj in datum**           | :dart: **TO-DO** kraj, datum                                   |
+| **Naziv projekta**          | Aplikacija produktivnosti in organizacije                               |
+| **Člani projektne skupine** | Arne Gašperšič, Jan Merhar, Jure Mržek, Anže Rifelj Tričkovič, Klemen Kolar |
+| **Kraj in datum**           | Ljubljana,                      10.3            |
 
 ## Povzetek projekta
 
