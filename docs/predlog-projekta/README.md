@@ -112,7 +112,9 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 14.3.2023                                                                                                                             |
 | **Trajanje**                                        |           1 dan                                                                                                          |
 | **Naziv aktivnosti**                                | Izbira ustrezne arhitekture                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM
+
+                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | S člani dosežen dogovor o arhitekturi, določena tehnologija in orodja                                                                                                       |
 | **Opis aktivnosti**                                 | Debata o prednostih in slabostih določenih tehnologij in orodij za izdelavo projekta, na koncu se izbere najustreznejša.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
@@ -124,7 +126,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
 | **Trajanje**                                        |           3 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Izbira izgleda aplikacije                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM
+|
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno postavljen izgled aplikacije s katerim se strinjajo vsi člani.                                                                                                       |
 | **Opis aktivnosti**                                 | Debatiramo o zunanjem izgledu aplikacije, na list ali s kakšnim orodjem si poskusamo predstaviti izgled in se na koncu odločiti za najbolj ustreznega.                                                                          |
 | **Morebitne odvisnosti in omejitve**                | |
@@ -136,7 +139,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
 | **Trajanje**                                        |           2 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Določitev uporabniških vlog                                                                                                            |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM
+                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno določene uporabniške vloge in njihove funkcionalnosti.                                                                                                      |
 | **Opis aktivnosti**                                 | Razmišlja se o uporabniških vlogah, ki bi bile ustrezne za izvedbo naše aplikacije.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
@@ -148,7 +152,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 20.3.2023                                                                                                                             |
 | **Trajanje**                                        |           4 dni(za vikend ne delamo)                                                                                                          |
 | **Naziv aktivnosti**                                | Načrtovanje transakcijske baze                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM
+                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno zasnovan načrt transakcijske baze s katerim si bomo pomagali pri implementaciji.                                                                                                     |
 | **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo transakcijske baze s pomočjo uporabniških vlog, ki smo jih že določili in izberemo najustreznejšo.                                                                              |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A3 |
@@ -160,7 +165,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 21.3.2023                                                                                                                             |
 | **Trajanje**                                        |           2 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Načrtovanje podatkovnega skladišča                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM
+                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno zasnovan načrt podatkovnega skladišča s katerim si bomo pomagali pri implementaciji.                                                                                                    |
 | **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo podatkovnega skladišča in izberemo najustreznejšo.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
@@ -172,7 +178,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 27.3.2023                                                                                                                             |
 | **Trajanje**                                        |           6 dni(za vikend ne delamo)                                                                                                          |
 | **Naziv aktivnosti**                                | Izdelava zaslonskih mask                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,5 ČM
+                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | V celoti implementirane zaslonske maske.                                                                                                    |
 | **Opis aktivnosti**                                 | V že določeni tehnologiji in z že določenimi orodji programiramo zaslonske maske.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A2 (ko končamo graf PERT še za vsako aktivnost tu povemo če je na kritični poti)|
@@ -184,7 +191,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 30.3.2023                                                                                                                             |
 | **Trajanje**                                        |           3 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Izdelava transakcijske baze                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča in stabilna transakcijska podatkovna baza.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo transakcijsko podatkovno bazo v ustrezni arhitekturi in po načrtu, ki smo ga sestavili vnaprej.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A4 |
@@ -196,7 +203,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 3.4.2023                                                                                                                             |
 | **Trajanje**                                        |     5 dni (za vikend ne delamo)                                                                                                          |
 | **Naziv aktivnosti**                                | Izdelava podatkovnega skladišča                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče in stabilno podatkovno skladišče, ki ga bomo lahko povezali z aplikacijo.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo podatkovno skladišče v ustrezni arhitekturi in po načrtu, ki smo ga sestavili vnaprej.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A5|
@@ -208,7 +215,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 5.4.2023                                                                                                                             |
 | **Trajanje**                                        |     3 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija prijave in registracije                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče okno za prijavo in registracijo, ki uspešno komunicira z transakcijsko bazo podatkov.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo registracijo in prijavo uporabnikov na podlagi zasnovanih zaslonskih mask in podatkovne baze, ki smo jo že implementirali.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
@@ -220,7 +227,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 7.4.2023                                                                                                                             |
 | **Trajanje**                                        |     2 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija obnovitve pozabljenega gesla                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Gumb na oknu prijave in registracije, ki tudi pravilno komunicira s transakcijsko bazo podatkov.                                                                                                    |
 | **Opis aktivnosti**                                 | Implementiramo obnovitev pozabljenega gesla na podlagi že implementirane prijave in registracije.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A9|
@@ -232,7 +239,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 13.4.2023                                                                                                                             |
 | **Trajanje**                                        |     3 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija iskanja prijateljev                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč iskalnik, ki komunicira z bazo.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo iskalnik za dodajanje prijateljev, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
@@ -244,7 +251,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 11.4.2023                                                                                                                             |
 | **Trajanje**                                        |     1 dan                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija shranjevanja dogodkov uporabnika                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče shranjevanje dogodkov, ki jih uporabnik vnese.                                                                                                    |
 | **Opis aktivnosti**                                 | Z že delujočo transakcijsko bazo podatkov povežemo shranjevanje dogodkov.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
@@ -256,7 +263,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 17.4.2023                                                                                                                             |
 | **Trajanje**                                        |     7 dni (za vikend ne delamo)                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija vmesnika določanja navad                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,125 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča vnosna polja za določanje navad.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo vmesnik za dodajanje dodajanje navad in dolgoročnih ciljev na katere nas aplikacija opominja, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
@@ -268,7 +275,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 19.4.2023                                                                                                                             |
 | **Trajanje**                                        |     3 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija časovnika in njegovega urejanja                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč časovnik za določanje časa za delo in pavze in njegovo urejanje.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo časovnik kot smo si ga zamislili pri načrtovanju.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6|
@@ -280,7 +287,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 20.4.2023                                                                                                                             |
 | **Trajanje**                                        |     4 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija Google koledarja preko API-ja                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za uporabo Google koledarja v aplikaciji                                                                                                   |
 | **Opis aktivnosti**                                 | Delo na implementaciji Google koledarja preko API-ja                                                                                |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 |
@@ -292,7 +299,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 24.4.2023                                                                                                                             |
 | **Trajanje**                                        |     4 dni (čez vikend ne delamo)                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija urejanja dogodkov na Google koledarju                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za urejanje dogodkov na Google koledarju, ki smo ga že integrirali.                                                                                                   |
 | **Opis aktivnosti**                                 | Delo na implementaciji urejanja dogodkov na Google koledarju, ki smo ga že predhodno integrirali v našo aplikacijo.                                                                                |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A15 |
@@ -304,7 +311,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 26.4.2023                                                                                                                             |
 | **Trajanje**                                        |     3 dni                                                                                                          |
 | **Naziv aktivnosti**                                |  Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče                                                                                                        |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Beleženje aktivnosti v podatkovni bazi in prenos teh podatkov v skladišče.         |
 | **Opis aktivnosti**                                 | Delo na izdelavi beleženja aktivnosti in prenosa na podlagi že implementirane transakcijske podatkovne baze in podatkovnega skladišča.   |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8 |
@@ -316,7 +323,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 8.5.2023                                                                                                                             |
 | **Trajanje**                                        |     11 dni (za vikend in praznike ne delamo)                                                                                                         |
 | **Naziv aktivnosti**                                |  Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev                                                                                                        |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                       |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč grafični prikaz statistik, ki komunicira s transakcijsko podatkovno bazo in podatkovnim skladiščem.         |
 | **Opis aktivnosti**                                 | Delo na izdelavi grafičnega prikaza statistik uporabnika in njegovih prijateljev na podlagi že implementirane transakcijske podatkovne baze, podatkovnega skladišča in zaslonskih mask.   |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
@@ -328,7 +335,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 28.4.2023                                                                                                                             |
 | **Trajanje**                                        |     1 dan                                                                                                        |
 | **Naziv aktivnosti**                                |  Implementacija ogleda aktivnosti prijateljev                                                                                                        |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,625 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč prikaz trenutnih aktivnosti, ki jih beležimo v bazi, prijateljev, ki jih lahko dodamo z iskalnikom prijateljev.         |
 | **Opis aktivnosti**                                 | Programiranje ogleda trenutnih aktivnosti prijateljev z že implementiranjem beleženjem aktivnosti.   |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
@@ -340,7 +347,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 5.5.2023                                                                                                                             |
 | **Trajanje**                                        |     3 dni                                                                                                        |
 | **Naziv aktivnosti**                                |  Implementacija urejanja uporabniškega računa                                                                                                       |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za urejanje računa, ki komunicira s transakcijsko podatkovno bazo.         |
 | **Opis aktivnosti**                                 | Programiranje vmesnika za urejanje uporabniškega računa(posodobitev gesla in ostalih atributov) na podlagi že izdelanih zaslonskih mask in vzpostavljene transakcijske podatkovne baze.   |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
@@ -352,7 +359,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 11.5.2023                                                                                                                             |
 | **Trajanje**                                        |     4 dni                                                                                                        |
 | **Naziv aktivnosti**                                |  Implementacija vmesnika za poročanje o napakah                                                                                                        |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik, ki v podatkovni bazi hrani poročila, ki jih bo lahko pregledal administrator.        |
 | **Opis aktivnosti**                                 |Programiranje vmesnika za poročanje o napakah delovanja aplikacije (hroščev v kodi) na podlagi že izdelanih zaslonskih mask in vzpostavljene transakcijske podatkovne baze.   |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
@@ -364,7 +371,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 17.5.2023                                                                                                                             |
 | **Trajanje**                                        |     6 dni (za vikend ne delamo)                                                                                                       |
 | **Naziv aktivnosti**                                |  Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju                                                                                                        |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za upravljanje poročil, ki iz podatkovne baze prikaže poslana poročila o nepravilnem delovanju, za administratorja aplikacije.        |
 | **Opis aktivnosti**                                 |Programiranje vmesnika za upravljanje poročil o nepravilnem delovanju na podlagi transakcijske podatkovne baze in zaslonskih mask, ki smo jih že sprogramirali.   |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
@@ -376,7 +383,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 21.5.2023                                                                                                                             |
 | **Trajanje**                                        |     70 dni (brez vikendov)                                                                                                        |
 | **Naziv aktivnosti**                                |  Upravljanje projekta                                                                                                        |
-| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 1,25 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Uspešno voden projekt z uspešno dokončano končno aplikacijo |
 | **Opis aktivnosti**                                 | Projektni vodja vodi projekt in nadzoruje, da se vsi člani držijo pripravljenega načrta |
 | **Morebitne odvisnosti in omejitve**                |  |
@@ -416,29 +423,29 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 
 |**Aktivnost**|**Napor(človek-mesec)**|**Trajanje(dnevi)**|**Odvisnosti**|
 |:------------|:----------------------|:------------------|:-------------|
-|Izbira ustrezne arhitekture (A1)|**TODO**|1||
-|Izbira izgleda aplikacije (A2)||3||
-|Določitev uporabniških vlog (A3)||2||
-|Načrtovanje transakcijske baze (A4)||4||
-|Načrtovanje podatkovnega skladišča (A5)||2||
-|Izdelava zaslonskih mask (A6)||6|A1, A2|
-|Izdelava transakcijske baze (A7)||3|A1, A4|
-|Izdelava podatkovnega skladišča (A8)||5|A1, A5|
-|Implementacija prijave in registracije (A9)||3|A6(Prototip zaslonskih mask), A7|
-|Implementacija obnovitve pozabljenega gesla (A10)||2|A9|
-|Implementacija iskanja prijateljev (A11)||3|A6(Prototip zaslonskih mask), A7|
-|Implementacija shranjevanja dogodkov uporabnika (A12)||1|A7|
-|Implementacija vmesnika določanja navad (A13)||7|A6(Prototip zaslonskih mask), A7|
-|Implementacija časovnika in njegovega urejanja (A14)||3|A6(Prototip zaslonskih mask)|
-|Implementacija Google koledarja preko API-ja (A15)||4|A6(Prototip zaslonskih mask)|
-|Implementacija urejanja dogodkov na Google koledarju (A16)||2|A15|
-|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A17)||3|A7, A8|
-|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A18)||11|A6(Prototip zaslonskih mask), A17|
-|Implementacija ogleda aktivnosti prijateljev (A19)||1|A6(Prototip zaslonskih mask), A17|
-|Implementacija urejanja uporabniškega računa (A20)||3|A6(Prototip zaslonskih mask), A7|
-|Implementacija vmesnika za poročanje o napakah (A21)||4|A6(Prototip zaslonskih mask), A7|
-|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju (A22)||4|A6(Prototip zaslonskih mask), A7|
-|Upravljanje projekta (A23)||70||
+|Izbira ustrezne arhitekture (A1)|0,25 ČM|1||
+|Izbira izgleda aplikacije (A2)|0,375 ČM|3||
+|Določitev uporabniških vlog (A3)|0,25 ČM|2||
+|Načrtovanje transakcijske baze (A4)|0,25 ČM|4||
+|Načrtovanje podatkovnega skladišča (A5)|0,25 ČM|2||
+|Izdelava zaslonskih mask (A6)|0,5 ČM|6|A1, A2|
+|Izdelava transakcijske baze (A7)|0,375 ČM|3|A1, A4|
+|Izdelava podatkovnega skladišča (A8)|0,375 ČM|5|A1, A5|
+|Implementacija prijave in registracije (A9)|0,375 ČM|3|A6(Prototip zaslonskih mask), A7|
+|Implementacija obnovitve pozabljenega gesla (A10)|0,375 ČM|2|A9|
+|Implementacija iskanja prijateljev (A11)|0,5 ČM|3|A6(Prototip zaslonskih mask), A7|
+|Implementacija shranjevanja dogodkov uporabnika (A12)|0,375 ČM|1|A7|
+|Implementacija vmesnika določanja navad (A13)|0,125 ČM|7|A6(Prototip zaslonskih mask), A7|
+|Implementacija časovnika in njegovega urejanja (A14)|0,375 ČM|3|A6(Prototip zaslonskih mask)|
+|Implementacija Google koledarja preko API-ja (A15)|0,375 ČM|4|A6(Prototip zaslonskih mask)|
+|Implementacija urejanja dogodkov na Google koledarju (A16)|0,5 ČM|2|A15|
+|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A17)|0,25 ČM|3|A7, A8|
+|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A18)|0,375 ČM|11|A6(Prototip zaslonskih mask), A17|
+|Implementacija ogleda aktivnosti prijateljev (A19)|0,625 ČM|1|A6(Prototip zaslonskih mask), A17|
+|Implementacija urejanja uporabniškega računa (A20)|0,25 ČM|3|A6(Prototip zaslonskih mask), A7|
+|Implementacija vmesnika za poročanje o napakah (A21)|0,5 ČM|4|A6(Prototip zaslonskih mask), A7|
+|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju (A22)|0,5 ČM|4|A6(Prototip zaslonskih mask), A7|
+|Upravljanje projekta (A23)|1,25 ČM|70||
 
 ![Ganttov diagram](https://teaching.lavbic.net/plantuml/png/dLVTZk8s5BxFKnnfBzeYeI6638oqgZIxswrMwbHxqwlLN1XYWacmaMtI3jK-mZn4NwHNi-_Luv24OCTXka92nERuVD_dynUTSx6dYkvWILTvfkH1fEzb8HKOHON6BIPCjE4fWxMKPYd_YgAtsZmLxESeeyAO3vncrlpl2C3m7IkuODK3m6_uytJMcpMndshrenJcj8fsJxZqrLfIdTTMxnmSRzXYdQnJzyJauxl5B-zhSwgK_DFtUl6V7I-ODh95zpr-LeNKB0qTq4kouDd6j4o_HczlQlMYlP9RjZAW3LL6WzamYATc0t8D3rIjDa0cP1ffQWugfKyQIR8QGAJHgRDa_tmpko5puDfPYoVkMd8J-qkainH5NqQZJySbLnGEsYXsHDsesd33SiJ3HYFuCOQKYfyUWMhuSXy_Ga4rqY1WaNNC-J4hM4g1xWkUqnNVLiPJI0LlZ4bZF8KJBP4sgb03ySmJ1K__WEg-F2EU4WvxgUXIy6__v7m3PI4pwu5qFKmluRaUaZuFlzENPsLaISMMdRA1vWXVvmnpvLYnc5aVC8OZXPBd30z5cL9Mq9riFCy6FLjaFsX0Iy_ZNgRKvB8KBAEWyuAcIF3bcNhSaa4FPE9n6uyXnpnOWJZxepT7V61ulS1t-uBjCEshouBn-7IPbbP9aQekfD1MwHqchKLpUrs5smRZh1SZmKT7VslIrIbkTN9tIBlpMKaZ3T-x81zXG_Tx9cg3suxaBQ_-2xu8q_bWc9852dt1O1vauEpC-W0DtNzoNV758DYf7nMLIG2livDqyNQZ1L4h_2uPS06APHnBHt_Atmt3KrKytEDfHOFkxXB3-HBTdNaOdLmAMN9JskmwqcMnPPMw6TE5drVnv4hgthME7jXMy3n4tWa_F3S8aElS9kFf9CCGOEb95yV3vRA-sWlnh4r0FNThxhBgmUGoYiECz4RPSbRL64Xb9bECwRPavzJl96qtiCjFNNPI1DYHLqT0kMFQkaKejdzKg0IcMsfnpA-dLTnsaiGJFmXl6XP_UaLy5wQh_3HC5SqqbWzB5WCIxo2JfOrsRDzRUw0VMBDmO5bkypvkin2tci0bYiOt5DXI4OnBPnQcywkKE4XWvxBJXAhYaUKIxZz_6f-ulA8Pnqcu3mKP9Y667iIMNHldmiDz68qQCBTNwakSk69UdeM2eeOAXopXwZW0SiaAzkrVPc7ItF1II6sulHlK4t_RWQsd6K9vRaYoquwmiZj1D1yC8ZBhatWUoW9lQn4cXaFschyyLnKTJyyf1WAQ6gp3ADsvufop0SS3fz36iHT4bJBqY9Qi9w0MW-M0z0RK8bmEt1RirOE69AyfdXcw8J2WbAmdylFrkp9S5EIxeO9SZJqN524wsOGutWKvXXEgC-BRwrKugnw4Ny78P33uwh7Y0KdKTs4D0ZZThTSqbQCTszIfO3EGcFvxcjDDMvrQdF5W7LeqmzaPPxX_a_YxS1umgCjYMxzgMCnuVOYOsNLU2BQpeLwz6nny_6IuZXAV00aJ85TwO0qxf6xLLpfigcKd6mZfgF97bxfz2SzD5KhpoVzBVd9ktfQqz-vUgOAdQ6ZUiEF_0000)
 
