@@ -400,7 +400,7 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 
 | Oznaka izdelka   | Ime izdelka      | Datum izdaje     |
 | :--------------- | :--------------- | :--------------- |
-| :dart: **TO-DO** | :dart: **TO-DO** | :dart: **TO-DO** |
+| I1 | Zaslonske maske | 27.3.2023 |
 | ...              | ...              | ...              |
 
 ### 2.4 Časovni potek projekta - Ganttov diagram
