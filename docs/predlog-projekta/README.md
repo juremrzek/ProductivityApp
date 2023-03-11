@@ -235,7 +235,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč iskalnik, ki komunicira z bazo.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo iskalnik za dodajanje prijateljev, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
 | **Pričakovani rezultati aktivnosti**                |   Delujoč iskalnik za dodajanje prijateljev
 
 | **Oznaka aktivnosti**                               | A12                                                                                                              |
@@ -259,7 +259,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča vnosna polja za določanje navad.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo vmesnik za dodajanje dodajanje navad in dolgoročnih ciljev na katere nas aplikacija opominja, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
 | **Pričakovani rezultati aktivnosti**                |   Delujoča vnosna polja za določanje navad
 
 | **Oznaka aktivnosti**                               | A14                                                                                                              |
