@@ -324,9 +324,9 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 
 | **Oznaka aktivnosti**                               | A19                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 27.4.2023                                                                                                                            |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 28.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 28.4.2023                                                                                                                             |
-| **Trajanje**                                        |     2 dni                                                                                                        |
+| **Trajanje**                                        |     1 dan                                                                                                        |
 | **Naziv aktivnosti**                                |  Implementacija ogleda aktivnosti prijateljev                                                                                                        |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč prikaz trenutnih aktivnosti, ki jih beležimo v bazi, prijateljev, ki jih lahko dodamo z iskalnikom prijateljev.         |
