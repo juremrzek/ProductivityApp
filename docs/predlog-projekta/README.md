@@ -228,8 +228,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 
 | **Oznaka aktivnosti**                               | A11                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 10.4.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 12.4.2023                                                                                                                             |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 11.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 13.4.2023                                                                                                                             |
 | **Trajanje**                                        |     3 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija iskanja prijateljev                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
@@ -240,8 +240,8 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 
 | **Oznaka aktivnosti**                               | A12                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 10.4.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 10.4.2023                                                                                                                             |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 11.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 11.4.2023                                                                                                                             |
 | **Trajanje**                                        |     1 dan                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija shranjevanja dogodkov uporabnika                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
@@ -252,9 +252,9 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 
 | **Oznaka aktivnosti**                               | A13                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 10.4.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 14.4.2023                                                                                                                             |
-| **Trajanje**                                        |     5 dni                                                                                                          |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 11.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 17.4.2023                                                                                                                             |
+| **Trajanje**                                        |     7 dni (za vikend ne delamo)                                                                                                          |
 | **Naziv aktivnosti**                                | Implementacija vmesnika določanja navad                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča vnosna polja za določanje navad.                                                                                                    |
