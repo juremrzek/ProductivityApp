@@ -274,6 +274,66 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
 | **Pričakovani rezultati aktivnosti**                |   Delujoča vnosna polja za določanje navad
 
+| **Oznaka aktivnosti**                               | A14                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 3.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 4.4.2023                                                                                                                             |
+| **Trajanje**                                        |     2 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Implementacija časovniika in njegovega urejanja                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč časovnik za določanje časa za delo in pavze in njegovo urejanje.                                                                                                    |
+| **Opis aktivnosti**                                 | Programiramo časovnik kot smo si ga zamislili pri načrtovanju.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6|
+| **Pričakovani rezultati aktivnosti**                | Delujoč časovnik
+
+| **Oznaka aktivnosti**                               | A15                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 4.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 7.4.2023                                                                                                                             |
+| **Trajanje**                                        |     4 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Implementacija Google koledarja preko API-ja                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za uporabo Google koledarja v aplikaciji                                                                                                   |
+| **Opis aktivnosti**                                 | Delo na implementaciji Google koledarja preko API-ja                                                                                |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 |
+| **Pričakovani rezultati aktivnosti**                | Delujoča uporaba Google koledarja preko aplikacije
+
+| **Oznaka aktivnosti**                               | A16                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 10.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 11.4.2023                                                                                                                             |
+| **Trajanje**                                        |     2 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Implementacija urejanja dogodkov na Google koledarju                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za urejanje dogodkov na Google koledarju, ki smo ga že integrirali.                                                                                                   |
+| **Opis aktivnosti**                                 | Delo na implementaciji urejanja dogodkov na Google koledarju, ki smo ga že predhodno integrirali v našo aplikacijo.                                                                                |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A15 |
+| **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za urejanje dogodkov na Google koledarju.
+
+| **Oznaka aktivnosti**                               | A17                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 10.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 12.4.2023                                                                                                                             |
+| **Trajanje**                                        |     3 dni                                                                                                          |
+| **Naziv aktivnosti**                                |  Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče                                                                                                        |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Beleženje aktivnosti v podatkovni bazi in prenos teh podatkov v skladišče.         |
+| **Opis aktivnosti**                                 | Delo na izdelavi beleženja aktivnosti in prenosa na podlagi že implementirane transakcijske podatkovne baze in podatkovnega skladišča.   |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7, A8 |
+| **Pričakovani rezultati aktivnosti**                | Delujoče beleženje aktivnosti in prenos iz transakcijske baze v podatkovno skladišče
+
+| **Oznaka aktivnosti**                               | A18                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 13.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 19.4.2023                                                                                                                             |
+| **Trajanje**                                        |     7 dni (soboto in nedeljo ne delamo)                                                                                                         |
+| **Naziv aktivnosti**                                |  Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev                                                                                                        |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč grafični prikaz statistik, ki komunicira s transakcijsko podatkovno bazo in podatkovnim skladiščem.         |
+| **Opis aktivnosti**                                 | Delo na izdelavi grafičnega prikaza statistik uporabnika in njegovih prijateljev na podlagi že implementirane transakcijske podatkovne baze, podatkovnega skladišča in zaslonskih mask.   |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
+| **Pričakovani rezultati aktivnosti**                | Delujoč grafični prikaz statistik uporabnika in  njegovih prijateljev
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
