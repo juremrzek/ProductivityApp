@@ -374,7 +374,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 13.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 21.5.2023                                                                                                                             |
-| **Trajanje**                                        |     71 dni (brez vikendov)                                                                                                        |
+| **Trajanje**                                        |     70 dni (brez vikendov)                                                                                                        |
 | **Naziv aktivnosti**                                |  Upravljanje projekta                                                                                                        |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Uspešno voden projekt z uspešno dokončano končno aplikacijo |
