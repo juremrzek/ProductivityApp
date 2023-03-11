@@ -36,7 +36,6 @@ sundays are closed
 2023/5/2 is closed
 
 
-
 [**Izbira ustrezne arhitekture** (1 dan)] as [A1] lasts 2 days
 [**Izbira izgleda aplikacije** (3 dni)] as [A2] lasts 3 days and starts at 14th of March 2023
 [**Določitev uporabniških vlog** (2 dni)] as [A3] lasts 2 days and starts at 15th of March 2023
@@ -46,6 +45,7 @@ sundays are closed
 [**Izdelava zaslonskih mask** (6 dni - za vikend ne delamo)] as [A6] lasts 4 days and starts at 22nd of March 2023
 [A6] starts at [A1]'s end
 [A6] starts at [A2]'s end
+[Prototip zaslonskih mask] happens at [A6]'s end
 [**Izdelava transakcijske baze** (3 dni)] as [A7] lasts 3 days and starts at 28th March 2023
 [A7] starts at [A1]'s end
 [A7] starts at [A4]'s end
@@ -56,25 +56,31 @@ sundays are closed
 [A9] starts at [A6]'s end
 [A9] starts at [A7]'s end
 [**Implementacija obnovitve pozabljenega gesla** (2 dni)] as [A10] lasts 2 days and starts at [A9]'s end
+[Mejnik prijave in registracije] happens at [A10]'s end
 [**Implementacija iskanja prijateljev** (3 dni)] as [A11] lasts 3 days and starts at 10th of April 2023
 [A11] starts at [A6]'s end
 [A11] starts at [A7]'s end
+[Mejnik iskanja prijateljev] happens at [A11]'s end
 [**Implementacija shranjevanja dogodkov uporabnika** (1 dan)] as [A12] lasts 1 day and starts on 10th of April 2023
 [A12] starts at [A7]'s end
 [**Implementacija vmesnika določanja navad** (7 dni - za vikend ne delamo)] as [A13] lasts 5 days and starts on 10th of April 2023
 [A13] starts at [A6]'s end
 [A13] starts at [A7]'s end
+[Mejnik določanja navad] happens at [A13]'s end
 [**Implementacija časovnika in njegovega urejanja** (3 dni)] as [A14] lasts 3 days and starts on 17th of April 2023
 [A14] starts at [A6]'s end
+[Mejnik časovnika in urejanja le tega] happens at [A14]'s end
 [**Implementacija Google koledarja preko API-ja** (4 dni - za vikend ne delamo)] as [A15] lasts 4 days and starts on 17th of April 2023
 [A15] starts at [A6]'s end
 [**Implementacija urejanja dogodkov na Google koledarju**] as [A16] lasts 2 days and starts at [A15]'s end
+[Mejnik Google koledar integriran] happens at [A16]'s end
 [**Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče**(3 dni)] as [A17] lasts 3 days and starts on 24th of April 2023
 [A17] starts at [A7]'s end
 [A17] starts at [A8]'s end
 [**Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev** (11 dni - za vikend in praznike ne delamo)] as [A18] lasts 5 days and starts on 27th of April 2023
 [A18] starts at [A6]'s end
 [A18] starts at [A17]'s end
+[Mejnik grafični prikaz statistik] happens at [A18]'s end
 [**Implementacija ogleda aktivnosti prijateljev** (1 dan)] as [A19] lasts 1 day and starts on 28th of April 2023 
 [A19] starts at [A6]'s end
 [A19] starts at [A17]'s end
@@ -87,6 +93,7 @@ sundays are closed
 [**Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju**] as [A22] lasts 4 days and starts on 12th of May 2023
 [A22] starts at [A6]'s end
 [A22] starts at [A7]'s end
+[Mejnik vmesnik za poročanje o napakah in upravljanje napak] happens at [A22]'s end
 [**Upravljanje projekta** (70 dni - za vikend in praznike ne delamo)] as [A23] starts on 13th of March 2023 and ends 2023/5/21
 
 @enduml
