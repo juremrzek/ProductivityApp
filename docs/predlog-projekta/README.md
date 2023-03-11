@@ -134,7 +134,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 15.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
-| **Trajanje**                                        |           1 dan                                                                                                          |
+| **Trajanje**                                        |           2 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Določitev uporabniških vlog                                                                                                            |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno določene uporabniške vloge in njihove funkcionalnosti.                                                                                                      |
