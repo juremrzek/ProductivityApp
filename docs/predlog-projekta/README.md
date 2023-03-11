@@ -334,6 +334,18 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč grafični prikaz statistik uporabnika in  njegovih prijateljev
 
+| **Oznaka aktivnosti**                               | A19                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 20.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 21.4.2023                                                                                                                             |
+| **Trajanje**                                        |     2 dni                                                                                                        |
+| **Naziv aktivnosti**                                |  Implementacija ogleda aktivnosti prijateljev                                                                                                        |
+| **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč prikaz trenutnih aktivnosti, ki jih beležimo v bazi, prijateljev, ki jih lahko dodamo z iskalnikom prijateljev.         |
+| **Opis aktivnosti**                                 | Programiranje ogleda trenutnih aktivnosti prijateljev z že implementiranjem beleženjem aktivnosti.   |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
+| **Pričakovani rezultati aktivnosti**                | Delujoč prikaz aktivnosti prijateljev 
+
 ### 2.3 Seznam izdelkov
 
 V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite naslednjo tabelo:
