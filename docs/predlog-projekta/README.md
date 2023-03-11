@@ -312,9 +312,9 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 
 | **Oznaka aktivnosti**                               | A18                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 27.4.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 3.5.2023                                                                                                                             |
-| **Trajanje**                                        |     7 dni (soboto in nedeljo ne delamo)                                                                                                         |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 28.4.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 8.5.2023                                                                                                                             |
+| **Trajanje**                                        |     11 dni (za vikend in praznike ne delamo)                                                                                                         |
 | **Naziv aktivnosti**                                |  Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev                                                                                                        |
 | **Obseg aktivnosti v ČM**                           | :dart: **TO-DO** število človek-mesecev (ČM)                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč grafični prikaz statistik, ki komunicira s transakcijsko podatkovno bazo in podatkovnim skladiščem.         |
