@@ -400,12 +400,22 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 
 | Oznaka izdelka   | Ime izdelka      | Datum izdaje     |
 | :--------------- | :--------------- | :--------------- |
-| I1 Zaslonske maske | 27.3.2023 |
-| I2|Transakcijska podatkovna baza           | 30.3.2023              |
+| I1| Zaslonske maske | 27.3.2023 |
+| I2|Transakcijska podatkovna baza|30.3.2023|
 | I3|Podatkovno skladišče|3.4.2023|
 | I4|Delujoče okno za prijavo in registracijo|5.4|
 | I5|	Delujoč gumb za obnovitev gesla|7.4.2023|
 | I6|Delujoč iskalnik za dodajanje prijateljev|12.4.2023|
+| I7|Delujoča vnosna polja za določanje navad|14.4.2023|
+| I8|Delujoč časovnik|19.4.2023|
+| I9|Delujoča uporaba Google koledarja preko aplikacije|20.4.2023|
+| I10|Delujoč vmesnik za urejanje dogodkov na Google koledarju|24.4.2023|
+| I11|Delujoče beleženje aktivnosti in prenos iz transakcijske baze v podatkovno skladišče|26.4.2023|
+| I12|Delujoč grafični prikaz statistik uporabnika in njegovih prijateljev|3.5.2023|
+| I13|Delujoč prikaz aktivnosti prijateljev|28.4.2023|
+| I14|Delujoč vmesnik za urejanje uporabniškega računa|5.5.2023|
+| I15|Delujoč vmesnik za poročanje o napakah|11.5.2023|
+| I16|Delujoč vmesnik za upravljanje poročil o nepravilnem delovanju|17.5.2023|
 
 ### 2.4 Časovni potek projekta - Ganttov diagram
 
