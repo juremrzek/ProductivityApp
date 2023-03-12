@@ -111,7 +111,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                       |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | S člani dosežen dogovor o pricakovanih funkcionalnih in nefunkcionalnih zahtevah aplikacije.                                                                                                      |
 | **Opis aktivnosti**                                 | Debata o tem, kako naj bi se aplikacija uporabljala in kaj je njen namen, ter katere funkcionalnosti bo za to potrebovala.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | |
+| **Morebitne odvisnosti in omejitve**                |Nahaja se na kritični poti |
 | **Pričakovani rezultati aktivnosti**                |                                                                                             |
 
 | **Oznaka aktivnosti**                               | A2                                                                                                              |
@@ -147,7 +147,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,125 ČM                                                                                                     |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno določene uporabniške vloge in njihove funkcionalnosti.                                                                                                      |
 | **Opis aktivnosti**                                 | Razmišlja se o uporabniških vlogah, ki bi bile ustrezne za izvedbo naše aplikacije.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1, nahaja se na kritični poti|
 | **Pričakovani rezultati aktivnosti**                |     
 
 | **Oznaka aktivnosti**                               | A5                                                                                                              |
@@ -159,7 +159,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                   |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno zasnovan načrt transakcijske baze s katerim si bomo pomagali pri implementaciji.                                                                                                     |
 | **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo transakcijske baze s pomočjo uporabniških vlog, ki smo jih že določili in izberemo najustreznejšo.                                                                              |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A4 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A4, nahaja se na kritični poti |
 | **Pričakovani rezultati aktivnosti**                |     
 
 | **Oznaka aktivnosti**                               | A6                                                                                                             |
@@ -183,7 +183,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | V celoti implementirane zaslonske maske.                                                                                                    |
 | **Opis aktivnosti**                                 | V že določeni tehnologiji in z že določenimi orodji programiramo zaslonske maske.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A2 in A3 (ko končamo graf PERT še za vsako aktivnost tu povemo če je na kritični poti)|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A2 in A3 |
 | **Pričakovani rezultati aktivnosti**                | Zaslonske maske    
 
 | **Oznaka aktivnosti**                               | A8                                                                                                              |
@@ -195,7 +195,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča in stabilna transakcijska podatkovna baza.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo transakcijsko podatkovno bazo v ustrezni arhitekturi in po načrtu, ki smo ga sestavili vnaprej.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A2 in A5 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A2 in A5, nahaja se na kritični poti |
 | **Pričakovani rezultati aktivnosti**                |     Transakcijska podatkovna baza
 
 | **Oznaka aktivnosti**                               | A9                                                                                                              |
@@ -315,7 +315,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Beleženje aktivnosti v podatkovni bazi in prenos teh podatkov v skladišče.         |
 | **Opis aktivnosti**                                 | Delo na izdelavi beleženja aktivnosti in prenosa na podlagi že implementirane transakcijske podatkovne baze in podatkovnega skladišča.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A8 in A9 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A8 in A9, nahaja se na kritični poti |
 | **Pričakovani rezultati aktivnosti**                | Delujoče beleženje aktivnosti in prenos iz transakcijske baze v podatkovno skladišče
 
 | **Oznaka aktivnosti**                               | A19                                                                                                              |
@@ -327,7 +327,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,625 ČM                                                                                                       |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč grafični prikaz statistik, ki komunicira s transakcijsko podatkovno bazo in podatkovnim skladiščem.         |
 | **Opis aktivnosti**                                 | Delo na izdelavi grafičnega prikaza statistik uporabnika in njegovih prijateljev na podlagi že implementirane transakcijske podatkovne baze, podatkovnega skladišča in zaslonskih mask.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A18 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A18, nahaja se na kritični poti |
 | **Pričakovani rezultati aktivnosti**                | Delujoč grafični prikaz statistik uporabnika in  njegovih prijateljev
 
 | **Oznaka aktivnosti**                               | A20                                                                                                              |
