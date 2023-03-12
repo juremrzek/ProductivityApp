@@ -427,7 +427,7 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 |Dolocitev funkcionalnih in nefunkcionalnih zahtev (A1)|0,25 |2||
 |Izbira ustrezne arhitekture (A2)|0,125 |1|A1|
 |Izbira izgleda aplikacije (A3)|0,375 |3|A1|
-|Določitev uporabniških vlog (A4)|0,25 |2|A1|
+|Določitev uporabniških vlog (A4)|0,125 |2|A1|
 |Načrtovanje transakcijske baze (A5)|0,25 |4|A4|
 |Načrtovanje podatkovnega skladišča (A6)|0,25 |2||
 |Izdelava zaslonskih mask (A7)|0,5 |6|A2, A3|
