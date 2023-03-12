@@ -106,15 +106,27 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 13.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 14.3.2023                                                                                                                             |
+| **Trajanje**                                        |           2 dni                                                                                                          |
+| **Naziv aktivnosti**                                | Dolocitev funkcionalnih in nefunkcionalnih zahtev                                                                                                               |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                       |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | S člani dosežen dogovor o pricakovanih funkcionalnih in nefunkcionalnih zahtevah aplikacije.                                                                                                      |
+| **Opis aktivnosti**                                 | Debata o tem, kako naj bi se aplikacija uporabljala in kaj je njen namen, ter katere funkcionalnosti bo za to potrebovala.                                                                               |
+| **Morebitne odvisnosti in omejitve**                | |
+| **Pričakovani rezultati aktivnosti**                |                                                                                             |
+
+| **Oznaka aktivnosti**                               | A2                                                                                                              |
+| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Predvideni datum pričetka izvajanja aktivnosti**  | 15.3.2023                                                                                                                            |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 15.3.2023                                                                                                                             |
 | **Trajanje**                                        |           1 dan                                                                                                          |
 | **Naziv aktivnosti**                                | Izbira ustrezne arhitekture                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                       |
+| **Obseg aktivnosti v ČM**                           | 0,125 ČM                                                                                                       |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | S člani dosežen dogovor o arhitekturi, določena tehnologija in orodja                                                                                                       |
 | **Opis aktivnosti**                                 | Debata o prednostih in slabostih določenih tehnologij in orodij za izdelavo projekta, na koncu se izbere najustreznejša.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
 | **Pričakovani rezultati aktivnosti**                |                                                                                             |
 
-| **Oznaka aktivnosti**                               | A2                                                                                                              |
+| **Oznaka aktivnosti**                               | A3                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 14.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
@@ -126,19 +138,19 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | |
 | **Pričakovani rezultati aktivnosti**                |     
 
-| **Oznaka aktivnosti**                               | A3                                                                                                              |
+| **Oznaka aktivnosti**                               | A4                                                                                                             |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 15.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
-| **Trajanje**                                        |           2 dni                                                                                                          |
+| **Trajanje**                                        |           1 dan                                                                                                         |
 | **Naziv aktivnosti**                                | Določitev uporabniških vlog                                                                                                            |
-| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                     |
+| **Obseg aktivnosti v ČM**                           | 0,125 ČM                                                                                                     |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno določene uporabniške vloge in njihove funkcionalnosti.                                                                                                      |
 | **Opis aktivnosti**                                 | Razmišlja se o uporabniških vlogah, ki bi bile ustrezne za izvedbo naše aplikacije.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
 | **Pričakovani rezultati aktivnosti**                |     
 
-| **Oznaka aktivnosti**                               | A4                                                                                                              |
+| **Oznaka aktivnosti**                               | A5                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 17.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 20.3.2023                                                                                                                             |
@@ -150,7 +162,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A3 |
 | **Pričakovani rezultati aktivnosti**                |     
 
-| **Oznaka aktivnosti**                               | A5                                                                                                              |
+| **Oznaka aktivnosti**                               | A6                                                                                                             |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 20.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 21.3.2023                                                                                                                             |
@@ -162,7 +174,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | |
 | **Pričakovani rezultati aktivnosti**                |     
 
-| **Oznaka aktivnosti**                               | A6                                                                                                              |
+| **Oznaka aktivnosti**                               | A7                                                                                                             |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 22.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 27.3.2023                                                                                                                             |
@@ -174,7 +186,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A2 (ko končamo graf PERT še za vsako aktivnost tu povemo če je na kritični poti)|
 | **Pričakovani rezultati aktivnosti**                | Zaslonske maske    
 
-| **Oznaka aktivnosti**                               | A7                                                                                                              |
+| **Oznaka aktivnosti**                               | A8                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 28.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 30.3.2023                                                                                                                             |
@@ -186,7 +198,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A4 |
 | **Pričakovani rezultati aktivnosti**                |     Transakcijska podatkovna baza
 
-| **Oznaka aktivnosti**                               | A8                                                                                                              |
+| **Oznaka aktivnosti**                               | A9                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 30.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 3.4.2023                                                                                                                             |
@@ -198,7 +210,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A5|
 | **Pričakovani rezultati aktivnosti**                | Podatkovno skladišče    
 
-| **Oznaka aktivnosti**                               | A9                                                                                                              |
+| **Oznaka aktivnosti**                               | A10                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 3.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 5.4.2023                                                                                                                             |
@@ -210,7 +222,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
 | **Pričakovani rezultati aktivnosti**                | Delujoče okno za prijavo in registracijo
 
-| **Oznaka aktivnosti**                               | A10                                                                                                              |
+| **Oznaka aktivnosti**                               | A11                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 6.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 7.4.2023                                                                                                                             |
@@ -222,7 +234,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A9|
 | **Pričakovani rezultati aktivnosti**                |   Delujoč gumb za obnovitev gesla
 
-| **Oznaka aktivnosti**                               | A11                                                                                                              |
+| **Oznaka aktivnosti**                               | A12                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 11.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 13.4.2023                                                                                                                             |
@@ -234,7 +246,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
 | **Pričakovani rezultati aktivnosti**                |   Delujoč iskalnik za dodajanje prijateljev
 
-| **Oznaka aktivnosti**                               | A12                                                                                                              |
+| **Oznaka aktivnosti**                               | A13                                                                                                             |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 11.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 11.4.2023                                                                                                                             |
@@ -246,7 +258,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
 | **Pričakovani rezultati aktivnosti**                | 
 
-| **Oznaka aktivnosti**                               | A13                                                                                                              |
+| **Oznaka aktivnosti**                               | A14                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 11.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 17.4.2023                                                                                                                             |
@@ -258,7 +270,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
 | **Pričakovani rezultati aktivnosti**                |   Delujoča vnosna polja za določanje navad
 
-| **Oznaka aktivnosti**                               | A14                                                                                                              |
+| **Oznaka aktivnosti**                               | A15                                                                                                             |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 17.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 19.4.2023                                                                                                                             |
@@ -270,7 +282,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6|
 | **Pričakovani rezultati aktivnosti**                | Delujoč časovnik
 
-| **Oznaka aktivnosti**                               | A15                                                                                                              |
+| **Oznaka aktivnosti**                               | A16                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 17.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 20.4.2023                                                                                                                             |
@@ -282,7 +294,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 |
 | **Pričakovani rezultati aktivnosti**                | Delujoča uporaba Google koledarja preko aplikacije
 
-| **Oznaka aktivnosti**                               | A16                                                                                                              |
+| **Oznaka aktivnosti**                               | A17                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 21.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 24.4.2023                                                                                                                             |
@@ -294,7 +306,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A15 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za urejanje dogodkov na Google koledarju.
 
-| **Oznaka aktivnosti**                               | A17                                                                                                              |
+| **Oznaka aktivnosti**                               | A18                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 24.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 26.4.2023                                                                                                                             |
@@ -306,7 +318,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8 |
 | **Pričakovani rezultati aktivnosti**                | Delujoče beleženje aktivnosti in prenos iz transakcijske baze v podatkovno skladišče
 
-| **Oznaka aktivnosti**                               | A18                                                                                                              |
+| **Oznaka aktivnosti**                               | A19                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 28.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 8.5.2023                                                                                                                             |
@@ -318,7 +330,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč grafični prikaz statistik uporabnika in  njegovih prijateljev
 
-| **Oznaka aktivnosti**                               | A19                                                                                                              |
+| **Oznaka aktivnosti**                               | A20                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 28.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 28.4.2023                                                                                                                             |
@@ -330,7 +342,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč prikaz aktivnosti prijateljev 
 
-| **Oznaka aktivnosti**                               | A20                                                                                                              |
+| **Oznaka aktivnosti**                               | A21                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 3.5.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 5.5.2023                                                                                                                             |
@@ -342,7 +354,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za urejanje uporabniškega računa
 
-| **Oznaka aktivnosti**                               | A21                                                                                                              |
+| **Oznaka aktivnosti**                               | A22                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 8.5.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 11.5.2023                                                                                                                             |
@@ -354,7 +366,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za poročanje o napakah
 
-| **Oznaka aktivnosti**                               | A22                                                                                                              |
+| **Oznaka aktivnosti**                               | A23                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 12.5.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 17.5.2023                                                                                                                             |
@@ -366,7 +378,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za upravljanje poročil o nepravilnem delovanju
 
-| **Oznaka aktivnosti**                               | A23                                                                                                              |
+| **Oznaka aktivnosti**                               | A24                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 13.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 21.5.2023                                                                                                                             |
