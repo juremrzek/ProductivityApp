@@ -123,7 +123,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,125 ČM                                                                                                       |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | S člani dosežen dogovor o arhitekturi, določena tehnologija in orodja                                                                                                       |
 | **Opis aktivnosti**                                 | Debata o prednostih in slabostih določenih tehnologij in orodij za izdelavo projekta, na koncu se izbere najustreznejša.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1|
 | **Pričakovani rezultati aktivnosti**                |                                                                                             |
 
 | **Oznaka aktivnosti**                               | A3                                                                                                              |
@@ -135,7 +135,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                   |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno postavljen izgled aplikacije s katerim se strinjajo vsi člani.                                                                                                       |
 | **Opis aktivnosti**                                 | Debatiramo o zunanjem izgledu aplikacije, na list ali s kakšnim orodjem si poskusamo predstaviti izgled in se na koncu odločiti za najbolj ustreznega.                                                                          |
-| **Morebitne odvisnosti in omejitve**                | |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1|
 | **Pričakovani rezultati aktivnosti**                |     
 
 | **Oznaka aktivnosti**                               | A4                                                                                                             |
@@ -147,7 +147,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,125 ČM                                                                                                     |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno določene uporabniške vloge in njihove funkcionalnosti.                                                                                                      |
 | **Opis aktivnosti**                                 | Razmišlja se o uporabniških vlogah, ki bi bile ustrezne za izvedbo naše aplikacije.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1|
 | **Pričakovani rezultati aktivnosti**                |     
 
 | **Oznaka aktivnosti**                               | A5                                                                                                              |
@@ -159,7 +159,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                   |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno zasnovan načrt transakcijske baze s katerim si bomo pomagali pri implementaciji.                                                                                                     |
 | **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo transakcijske baze s pomočjo uporabniških vlog, ki smo jih že določili in izberemo najustreznejšo.                                                                              |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A3 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A4 |
 | **Pričakovani rezultati aktivnosti**                |     
 
 | **Oznaka aktivnosti**                               | A6                                                                                                             |
@@ -183,7 +183,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | V celoti implementirane zaslonske maske.                                                                                                    |
 | **Opis aktivnosti**                                 | V že določeni tehnologiji in z že določenimi orodji programiramo zaslonske maske.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A2 (ko končamo graf PERT še za vsako aktivnost tu povemo če je na kritični poti)|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A2 in A3 (ko končamo graf PERT še za vsako aktivnost tu povemo če je na kritični poti)|
 | **Pričakovani rezultati aktivnosti**                | Zaslonske maske    
 
 | **Oznaka aktivnosti**                               | A8                                                                                                              |
@@ -195,7 +195,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča in stabilna transakcijska podatkovna baza.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo transakcijsko podatkovno bazo v ustrezni arhitekturi in po načrtu, ki smo ga sestavili vnaprej.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A4 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A2 in A5 |
 | **Pričakovani rezultati aktivnosti**                |     Transakcijska podatkovna baza
 
 | **Oznaka aktivnosti**                               | A9                                                                                                              |
@@ -207,7 +207,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče in stabilno podatkovno skladišče, ki ga bomo lahko povezali z aplikacijo.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo podatkovno skladišče v ustrezni arhitekturi in po načrtu, ki smo ga sestavili vnaprej.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A5|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A2 in A6|
 | **Pričakovani rezultati aktivnosti**                | Podatkovno skladišče    
 
 | **Oznaka aktivnosti**                               | A10                                                                                                              |
@@ -219,7 +219,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče okno za prijavo in registracijo, ki uspešno komunicira z transakcijsko bazo podatkov.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo registracijo in prijavo uporabnikov na podlagi zasnovanih zaslonskih mask in podatkovne baze, ki smo jo že implementirali.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8|
 | **Pričakovani rezultati aktivnosti**                | Delujoče okno za prijavo in registracijo
 
 | **Oznaka aktivnosti**                               | A11                                                                                                              |
@@ -231,7 +231,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Gumb na oknu prijave in registracije, ki tudi pravilno komunicira s transakcijsko bazo podatkov.                                                                                                    |
 | **Opis aktivnosti**                                 | Implementiramo obnovitev pozabljenega gesla na podlagi že implementirane prijave in registracije.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A9|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A10|
 | **Pričakovani rezultati aktivnosti**                |   Delujoč gumb za obnovitev gesla
 
 | **Oznaka aktivnosti**                               | A12                                                                                                              |
@@ -243,7 +243,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč iskalnik, ki komunicira z bazo.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo iskalnik za dodajanje prijateljev, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8|
 | **Pričakovani rezultati aktivnosti**                |   Delujoč iskalnik za dodajanje prijateljev
 
 | **Oznaka aktivnosti**                               | A13                                                                                                             |
@@ -255,7 +255,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,125 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoče shranjevanje dogodkov, ki jih uporabnik vnese.                                                                                                    |
 | **Opis aktivnosti**                                 | Z že delujočo transakcijsko bazo podatkov povežemo shranjevanje dogodkov.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A8|
 | **Pričakovani rezultati aktivnosti**                | 
 
 | **Oznaka aktivnosti**                               | A14                                                                                                              |
@@ -267,7 +267,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoča vnosna polja za določanje navad.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo vmesnik za dodajanje dodajanje navad in dolgoročnih ciljev na katere nas aplikacija opominja, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8|
 | **Pričakovani rezultati aktivnosti**                |   Delujoča vnosna polja za določanje navad
 
 | **Oznaka aktivnosti**                               | A15                                                                                                             |
@@ -279,7 +279,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč časovnik za določanje časa za delo in pavze in njegovo urejanje.                                                                                                    |
 | **Opis aktivnosti**                                 | Programiramo časovnik kot smo si ga zamislili pri načrtovanju.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6|
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7|
 | **Pričakovani rezultati aktivnosti**                | Delujoč časovnik
 
 | **Oznaka aktivnosti**                               | A16                                                                                                              |
@@ -291,7 +291,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za uporabo Google koledarja v aplikaciji                                                                                                   |
 | **Opis aktivnosti**                                 | Delo na implementaciji Google koledarja preko API-ja                                                                                |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 |
 | **Pričakovani rezultati aktivnosti**                | Delujoča uporaba Google koledarja preko aplikacije
 
 | **Oznaka aktivnosti**                               | A17                                                                                                              |
@@ -303,7 +303,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                        |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za urejanje dogodkov na Google koledarju, ki smo ga že integrirali.                                                                                                   |
 | **Opis aktivnosti**                                 | Delo na implementaciji urejanja dogodkov na Google koledarju, ki smo ga že predhodno integrirali v našo aplikacijo.                                                                                |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A15 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A16 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za urejanje dogodkov na Google koledarju.
 
 | **Oznaka aktivnosti**                               | A18                                                                                                              |
@@ -315,7 +315,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Beleženje aktivnosti v podatkovni bazi in prenos teh podatkov v skladišče.         |
 | **Opis aktivnosti**                                 | Delo na izdelavi beleženja aktivnosti in prenosa na podlagi že implementirane transakcijske podatkovne baze in podatkovnega skladišča.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A8 in A9 |
 | **Pričakovani rezultati aktivnosti**                | Delujoče beleženje aktivnosti in prenos iz transakcijske baze v podatkovno skladišče
 
 | **Oznaka aktivnosti**                               | A19                                                                                                              |
@@ -327,7 +327,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,625 ČM                                                                                                       |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč grafični prikaz statistik, ki komunicira s transakcijsko podatkovno bazo in podatkovnim skladiščem.         |
 | **Opis aktivnosti**                                 | Delo na izdelavi grafičnega prikaza statistik uporabnika in njegovih prijateljev na podlagi že implementirane transakcijske podatkovne baze, podatkovnega skladišča in zaslonskih mask.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A18 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč grafični prikaz statistik uporabnika in  njegovih prijateljev
 
 | **Oznaka aktivnosti**                               | A20                                                                                                              |
@@ -339,7 +339,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč prikaz trenutnih aktivnosti, ki jih beležimo v bazi, prijateljev, ki jih lahko dodamo z iskalnikom prijateljev.         |
 | **Opis aktivnosti**                                 | Programiranje ogleda trenutnih aktivnosti prijateljev z že implementiranjem beleženjem aktivnosti.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A17 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A18 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč prikaz aktivnosti prijateljev 
 
 | **Oznaka aktivnosti**                               | A21                                                                                                              |
@@ -351,7 +351,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za urejanje računa, ki komunicira s transakcijsko podatkovno bazo.         |
 | **Opis aktivnosti**                                 | Programiranje vmesnika za urejanje uporabniškega računa(posodobitev gesla in ostalih atributov) na podlagi že izdelanih zaslonskih mask in vzpostavljene transakcijske podatkovne baze.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za urejanje uporabniškega računa
 
 | **Oznaka aktivnosti**                               | A22                                                                                                              |
@@ -363,7 +363,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik, ki v podatkovni bazi hrani poročila, ki jih bo lahko pregledal administrator.        |
 | **Opis aktivnosti**                                 |Programiranje vmesnika za poročanje o napakah delovanja aplikacije (hroščev v kodi) na podlagi že izdelanih zaslonskih mask in vzpostavljene transakcijske podatkovne baze.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za poročanje o napakah
 
 | **Oznaka aktivnosti**                               | A23                                                                                                              |
@@ -375,7 +375,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za upravljanje poročil, ki iz podatkovne baze prikaže poslana poročila o nepravilnem delovanju, za administratorja aplikacije.        |
 | **Opis aktivnosti**                                 |Programiranje vmesnika za upravljanje poročil o nepravilnem delovanju na podlagi transakcijske podatkovne baze in zaslonskih mask, ki smo jih že sprogramirali.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A6 in A7 |
+| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za upravljanje poročil o nepravilnem delovanju
 
 | **Oznaka aktivnosti**                               | A24                                                                                                              |
