@@ -520,6 +520,33 @@ Tveganja v tabeli naj bodo rangirana od najpomembnejšega proti manj pomembnim.
 
 - Opišite organizacijo dela na projektu.
 
+|**Oznaka**|**Naziv aktivnosti**|**Anže Rifelj Tričkovič**|**Jan Merhar**|**Jure Mržek**|**Arne Gašperšič**|**Klemen Kolar**|
+|:------------|:----------------------|:------------------|:-------------|:-------------|:-------------|:-------------|
+|A1|Določitev funkcionalnih in nefunkcionalnih zahtev|25%|25%||25%|25%|
+|A2|Izbira ustrezne arhitekture|20%|20%|20%|20%|20%|
+|A3|Izbira izgleda aplikacije||25%|25%|25%|25%|
+|A4|Določitev uporabniških vlog|20%|20%|20%|20%|20%|
+|A5|Načrtovanje transakcijske baze||34%|33%||33%|
+|A6|Načrtovanje podatkovnega skladišča||25%|25%|25%|25%|
+|A7|Izdelava zaslonskih mask||40%|40%|20%||
+|A8|Izdelava transakcijske baze||40%|40%||20%|
+|A9|Izdelava podatkovnega skladišča||25%|25%|25%|25%|
+|A10|Implementacija prijave in registracije|34%|||33%|33%|
+|A11|Implementacija obnovitve pozabljenega gesla|34%|||33%|33%|
+|A12|Implementacija iskanja prijateljev||25%|25%|25%|25%|
+|A13|Implementacija shranjevanja dogodkov uporabnika||50%|50%|||
+|A14|Implementacija vmesnika določanja navad||25%|25%|25%|25%|
+|A15|Implementacija in urejanje časovnika|40%|20%|40%|||
+|A16|Implementacija google koledarja preko API-ja||20%||40%|40%|
+|A17|Implementacija urejanja dogodkov na Google koledarju||||50%|50%|
+|A18|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno||40%|40%|20%||
+|A19|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev||25%|25%|25%|25%|
+|A20|Implementacija ogleda aktivnosti prijateljev|20%|20%|20%|20%|20%|
+|A21|Implementacija urejanja uporabniškega računa|20%|20%|20%|20%|20%|
+|A22|Implementacija vmesnika za poročanje o napakah||34%|33%|33%||
+|A23|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju||||50%|50%|
+|A24|Upravljanje projekta|100%|||||
+
 ## 5. Predstavitev skupine
 
 **Jure Mržek**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Delal bo na zalednem delu aplikacije, saj pozna NoSQL in JavaScript s knjižnicami za delo na zalednem delu kot so Node in Express. Sodeloval bo z Janom Merharjem pri implementaciji same aplikacije.
