@@ -424,29 +424,30 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 
 |**Aktivnost**|**Napor(človek-mesec)**|**Trajanje(dnevi)**|**Odvisnosti**|
 |:------------|:----------------------|:------------------|:-------------|
-|Izbira ustrezne arhitekture (A1)|0,25 |1||
-|Izbira izgleda aplikacije (A2)|0,375 |3||
-|Določitev uporabniških vlog (A3)|0,25 |2||
-|Načrtovanje transakcijske baze (A4)|0,25 |4|A3|
-|Načrtovanje podatkovnega skladišča (A5)|0,25 |2||
-|Izdelava zaslonskih mask (A6)|0,5 |6|A1, A2|
-|Izdelava transakcijske baze (A7)|0,375 |3|A1, A4|
-|Izdelava podatkovnega skladišča (A8)|0,375 |5|A1, A5|
-|Implementacija prijave in registracije (A9)|0,375 |3|A6(Prototip zaslonskih mask), A7|
-|Implementacija obnovitve pozabljenega gesla (A10)|0,375 |2|A9|
-|Implementacija iskanja prijateljev (A11)|0,5 |3|A6(Prototip zaslonskih mask), A7|
-|Implementacija shranjevanja dogodkov uporabnika (A12)|0,375 |1|A7|
-|Implementacija vmesnika določanja navad (A13)|0,125 |7|A6(Prototip zaslonskih mask), A7|
-|Implementacija časovnika in njegovega urejanja (A14)|0,375 |3|A6(Prototip zaslonskih mask)|
-|Implementacija Google koledarja preko API-ja (A15)|0,375 |4|A6(Prototip zaslonskih mask)|
-|Implementacija urejanja dogodkov na Google koledarju (A16)|0,5 |2|A15|
-|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A17)|0,25 |3|A7, A8|
-|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A18)|0,375 |11|A6(Prototip zaslonskih mask), A17|
-|Implementacija ogleda aktivnosti prijateljev (A19)|0,625 |1|A6(Prototip zaslonskih mask), A17|
-|Implementacija urejanja uporabniškega računa (A20)|0,25 |3|A6(Prototip zaslonskih mask), A7|
-|Implementacija vmesnika za poročanje o napakah (A21)|0,5 |4|A6(Prototip zaslonskih mask), A7|
-|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju (A22)|0,5 |4|A6(Prototip zaslonskih mask), A7|
-|Upravljanje projekta (A23)|1,25 |70||
+|Dolocitev funkcionalnih in nefunkcionalnih zahtev (A1)|0,25 |2||
+|Izbira ustrezne arhitekture (A2)|0,125 |1||
+|Izbira izgleda aplikacije (A3)|0,375 |3||
+|Določitev uporabniških vlog (A4)|0,25 |2||
+|Načrtovanje transakcijske baze (A5)|0,25 |4|A3|
+|Načrtovanje podatkovnega skladišča (A6)|0,25 |2||
+|Izdelava zaslonskih mask (A7)|0,5 |6|A1, A2|
+|Izdelava transakcijske baze (A8)|0,375 |3|A1, A4|
+|Izdelava podatkovnega skladišča (A9)|0,375 |5|A1, A5|
+|Implementacija prijave in registracije (A10)|0,375 |3|A6(Prototip zaslonskih mask), A7|
+|Implementacija obnovitve pozabljenega gesla (A11)|0,375 |2|A9|
+|Implementacija iskanja prijateljev (A12)|0,5 |3|A6(Prototip zaslonskih mask), A7|
+|Implementacija shranjevanja dogodkov uporabnika (A13)|0,375 |1|A7|
+|Implementacija vmesnika določanja navad (A14)|0,125 |7|A6(Prototip zaslonskih mask), A7|
+|Implementacija časovnika in njegovega urejanja (A15)|0,375 |3|A6(Prototip zaslonskih mask)|
+|Implementacija Google koledarja preko API-ja (A16)|0,375 |4|A6(Prototip zaslonskih mask)|
+|Implementacija urejanja dogodkov na Google koledarju (A17)|0,5 |2|A15|
+|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A18)|0,25 |3|A7, A8|
+|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A19)|0,375 |11|A6(Prototip zaslonskih mask), A17|
+|Implementacija ogleda aktivnosti prijateljev (A20)|0,625 |1|A6(Prototip zaslonskih mask), A17|
+|Implementacija urejanja uporabniškega računa (A21)|0,25 |3|A6(Prototip zaslonskih mask), A7|
+|Implementacija vmesnika za poročanje o napakah (A22)|0,5 |4|A6(Prototip zaslonskih mask), A7|
+|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju (A23)|0,5 |4|A6(Prototip zaslonskih mask), A7|
+|Upravljanje projekta (A24)|1,25 |70||
 
 ![Ganttov diagram](https://teaching.lavbic.net/plantuml/png/dLVTZk8s5BxFKnnfBzeYeI6638oqgZIxswrMwbHxqwlLN1XYWacmaMtI3jK-mZn4NwHNi-_Luv24OCTXka92nERuVD_dynUTSx6dYkvWILTvfkH1fEzb8HKOHON6BIPCjE4fWxMKPYd_YgAtsZmLxESeeyAO3vncrlpl2C3m7IkuODK3m6_uytJMcpMndshrenJcj8fsJxZqrLfIdTTMxnmSRzXYdQnJzyJauxl5B-zhSwgK_DFtUl6V7I-ODh95zpr-LeNKB0qTq4kouDd6j4o_HczlQlMYlP9RjZAW3LL6WzamYATc0t8D3rIjDa0cP1ffQWugfKyQIR8QGAJHgRDa_tmpko5puDfPYoVkMd8J-qkainH5NqQZJySbLnGEsYXsHDsesd33SiJ3HYFuCOQKYfyUWMhuSXy_Ga4rqY1WaNNC-J4hM4g1xWkUqnNVLiPJI0LlZ4bZF8KJBP4sgb03ySmJ1K__WEg-F2EU4WvxgUXIy6__v7m3PI4pwu5qFKmluRaUaZuFlzENPsLaISMMdRA1vWXVvmnpvLYnc5aVC8OZXPBd30z5cL9Mq9riFCy6FLjaFsX0Iy_ZNgRKvB8KBAEWyuAcIF3bcNhSaa4FPE9n6uyXnpnOWJZxepT7V61ulS1t-uBjCEshouBn-7IPbbP9aQekfD1MwHqchKLpUrs5smRZh1SZmKT7VslIrIbkTN9tIBlpMKaZ3T-x81zXG_Tx9cg3suxaBQ_-2xu8q_bWc9852dt1O1vauEpC-W0DtNzoNV758DYf7nMLIG2livDqyNQZ1L4h_2uPS06APHnBHt_Atmt3KrKytEDfHOFkxXB3-HBTdNaOdLmAMN9JskmwqcMnPPMw6TE5drVnv4hgthME7jXMy3n4tWa_F3S8aElS9kFf9CCGOEb95yV3vRA-sWlnh4r0FNThxhBgmUGoYiECz4RPSbRL64Xb9bECwRPavzJl96qtiCjFNNPI1DYHLqT0kMFQkaKejdzKg0IcMsfnpA-dLTnsaiGJFmXl6XP_UaLy5wQh_3HC5SqqbWzB5WCIxo2JfOrsRDzRUw0VMBDmO5bkypvkin2tci0bYiOt5DXI4OnBPnQcywkKE4XWvxBJXAhYaUKIxZz_6f-ulA8Pnqcu3mKP9Y667iIMNHldmiDz68qQCBTNwakSk69UdeM2eeOAXopXwZW0SiaAzkrVPc7ItF1II6sulHlK4t_RWQsd6K9vRaYoquwmiZj1D1yC8ZBhatWUoW9lQn4cXaFschyyLnKTJyyf1WAQ6gp3ADsvufop0SS3fz36iHT4bJBqY9Qi9w0MW-M0z0RK8bmEt1RirOE69AyfdXcw8J2WbAmdylFrkp9S5EIxeO9SZJqN524wsOGutWKvXXEgC-BRwrKugnw4Ny78P33uwh7Y0KdKTs4D0ZZThTSqbQCTszIfO3EGcFvxcjDDMvrQdF5W7LeqmzaPPxX_a_YxS1umgCjYMxzgMCnuVOYOsNLU2BQpeLwz6nny_6IuZXAV00aJ85TwO0qxf6xLLpfigcKd6mZfgF97bxfz2SzD5KhpoVzBVd9ktfQqz-vUgOAdQ6ZUiEF_0000)
 
