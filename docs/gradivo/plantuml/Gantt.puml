@@ -36,11 +36,14 @@ sundays are closed
 2023/5/2 is closed
 
 [**Dolocitev funkcionalnih in nefunkcionalnih zahtev** (2 dni)] as [A1] lasts 2 days
+[A1] is colored in Darkred
 [**Izbira ustrezne arhitekture** (1 dan)] as [A2] lasts 1 day and starts at [A1]'s end
 [**Izbira izgleda aplikacije** (3 dni)] as [A3] lasts 3 days and starts at [A1]'s end
-[**Določitev uporabniških vlog** (1 dan)] as [A4] lasts 1 day and starts at [A1]'s end
+[**Določitev uporabniških vlog** (1 dan)] as [A4] lasts 1 day and starts at [A1]'s end with red bold link
+[A4] is colored in Darkred
 [**Načrtovanje transakcijske baze** (4 dni - za vikend ne delamo)] as [A5] lasts 2 days and starts on 17th of March 2023
-[A5] starts at [A4]'s end
+'[A5] starts at [A4]'s end with red bold link
+[A5] is colored in Darkred
 [**Načrtovanje podatkovnega skladišča** (2 dni)] as [A6] lasts 2 days and starts at 20th of March 2023
 -- konec načrtovanja/začetek implementacije --
 [**Izdelava zaslonskih mask** (6 dni - za vikend ne delamo)] as [A7] lasts 4 days and starts at 22nd of March 2023
@@ -49,7 +52,8 @@ sundays are closed
 [Prototip zaslonskih mask] happens at [A7]'s end
 [**Izdelava transakcijske baze** (3 dni)] as [A8] lasts 3 days and starts at 28th March 2023
 [A8] starts at [A2]'s end
-[A8] starts at [A5]'s end
+'[A8] starts at [A5]'s end with red bold link
+[A8] is colored in Darkred
 [**Izdelava podatkovnega skladišča** (5 dni - za vikend ne delamo)] as [A9] lasts 3 days and starts at 30th of March 2023
 [A9] starts at [A2]'s end
 [A9] starts at [A6]'s end
@@ -71,16 +75,18 @@ sundays are closed
 [**Implementacija časovnika in njegovega urejanja** (3 dni)] as [A15] lasts 3 days and starts on 17th of April 2023
 [A15] starts at [A7]'s end
 [Mejnik časovnika in urejanja le tega] happens at [A15]'s end
-[**Implementacija Google koledarja preko API-ja** (4 dni - za vikend ne delamo)] as [A16] lasts 4 days and starts on 17th of April 2023
+[**Implementacija Google koledarja preko API-ja** (4 dni)] as [A16] lasts 4 days and starts on 17th of April 2023
 [A16] starts at [A7]'s end
-[**Implementacija urejanja dogodkov na Google koledarju**] as [A17] lasts 2 days and starts at [A16]'s end
+[**Implementacija urejanja dogodkov na Google koledarju** (4 dni - za vikend ne delamo)] as [A17] lasts 2 days and starts at [A16]'s end
 [Mejnik Google koledar integriran] happens at [A17]'s end
 [**Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče**(3 dni)] as [A18] lasts 3 days and starts on 24th of April 2023
-[A18] starts at [A8]'s end
+'[A18] starts at [A8]'s end with red bold link
 [A18] starts at [A9]'s end
+[A18] is colored in Darkred
 [**Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev** (11 dni - za vikend in praznike ne delamo)] as [A19] lasts 5 days and starts on 27th of April 2023
 [A19] starts at [A7]'s end
-[A19] starts at [A18]'s end
+[A19] starts at [A18]'s end with red bold link
+[A19] is colored in Darkred
 [Mejnik grafični prikaz statistik] happens at [A19]'s end
 [**Implementacija ogleda aktivnosti prijateljev** (1 dan)] as [A20] lasts 1 day and starts on 28th of April 2023 
 [A20] starts at [A7]'s end
@@ -91,10 +97,15 @@ sundays are closed
 [**Implementacija vmesnika za poročanje o napakah** (4 dni)] as [A22] lasts 4 days and starts on 8th of May 2023
 [A22] starts at [A7]'s end
 [A22] starts at [A8]'s end
-[**Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju (4 dni)**] as [A23] lasts 4 days and starts on 12th of May 2023
+[**Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju** (4 dni - za vikend ne delamo)] as [A23] lasts 4 days and starts on 12th of May 2023
 [A23] starts at [A7]'s end
 [A23] starts at [A8]'s end
 [Mejnik vmesnik za poročanje o napakah in upravljanje napak] happens at [A23]'s end
 [**Upravljanje projekta** (70 dni - za vikend in praznike ne delamo)] as [A24] starts on 13th of March 2023 and ends 2023/5/21
+
+[A5] starts at [A4]'s end with red bold link
+[A8] starts at [A5]'s end with red bold link
+[A18] starts at [A8]'s end with red bold link
+
 
 @enduml
