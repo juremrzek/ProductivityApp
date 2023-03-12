@@ -587,13 +587,13 @@ Projekt lahko izvajamo oddaljeno, za boljšo organizacijo pa bi se v živo sesta
 
 ## Reference
 
-[1]: European Commision, accessed 9. 3. 2023, https://ec.europa.eu/newsroom/just/items/643967 
+[1]: European Commision, accessed 9. 3. 2023, https://ec.europa.eu/newsroom/just/items/643967, 2019 
 
-[2]: Quantitive Software Management, accessed 9. 3. 2023, https://www.qsm.com/resources/function-point-languages-table 
+[2]: Quantitive Software Management, accessed 9. 3. 2023, https://www.qsm.com/resources/function-point-languages-table, 2023  
 
 [3]: Ray Madachy at the Naval Postgraduate School, accessed 11. 3. 2023, http://softwarecost.org/tools/COCOMO/ 
 
-[4]: Računovodja.com, accessed 12. 3. 2023, https://www.racunovodja.com/clanki.asp?clanek=232 
+[4]: Računovodja.com, accessed 12. 3. 2023, https://www.racunovodja.com/clanki.asp?clanek=232, 2023 
 
 [5]: PlantUML, accessed 11. 3. 2023, https://plantuml.com/gantt-diagram, 2021 
 
