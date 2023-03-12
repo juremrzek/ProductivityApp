@@ -536,7 +536,64 @@ Tveganja v tabeli naj bodo rangirana od najpomembnejšega proti manj pomembnim.
 
 ## 6. Finančni načrt - COCOMO II ocena
 
-:dart: **TO-DO**
+Najprej moramo dolociti parametre A, B in M ter oceniti obseg projekta.
+
+|**Tip funkcionalnosti**|**Funkcionalnosti**|**DET**|**FTR/RET**|**Obseg**|**Utez**|
+|:------------|:----------------------|:------------------|:-------------|:-------------|:-------------|
+|ILF|Transakcijska podatkovna baza|1 - 19|2 - 5|Low|7|
+|ILF|Podatkovno skladišče|1 - 19|2 - 5|Low|7|
+|EI|Registracija|5 - 15|1|Low|3|
+|EI|Prijava|1 - 4|1|Low|3|
+|EI|Obnovitev pozabljenega gesla|1 - 4|1|Low|3|
+|EI|Urejanje profila|5 - 15|1|Low|3|
+|EI|Vnos in urejanje dogodkov|5 - 15|2|Avg|4|
+|EI|Casovnik|1 - 4|0|Low|3|
+|EI|Dolocanje navad in ciljev|5 - 15|2|Avg|4|
+|EIF|Google calendar API|1 - 19|1|Low|5|
+|EQ|Iskalnik uporabnikov|1 - 5|1|Low|3|
+|EQ|Ogled aktivnosti prijateljev|6 - 19|1|Low|3|
+|EQ|Statisticna lestvica|20+|2|High|6|
+|EQ|Opomnik za navade in dogodke|1 - 5|1|Low|3|
+|EI|Vmesnik za poročanje o napakah|1 - 4|1|Low|3|
+|EQ|Prenos podatkov iz transakcijske baze v podatkovno skladišče|6 - 19|2|Avg|4|
+|EQ|Vmesnik za upravljanje s poročili o napakah|1 - 5|1|Low|3|
+||||||67|
+
+https://www.qsm.com/resources/function-point-languages-table
+Razvoj bo potekal v jezikih javascript, SQL in HTML, v razmerju 0.6, 0.2 in 0.2.
+Size = (67 * (0,6 * 47 + 0.2 * 21 + 0.2 * 34))/1000 = 2,626 KSLOC
+
+|**Dejavnik**|**Opis**|**Vrednost**|**Utež**|
+|:------------|:----------------------|:------------------|:-------------|
+|PREC|Stopnja precedenčnosti|Nominalna|3|
+|FLEX|Stopnja fleksibilnosti zahtev|Nizka|4|
+|RESL|Stopnja pripravljenosti na tveganja|Nominalna|3|
+|TEAM|Stopnja uigranosti skupine|Nominalna|3|
+|PMAT|Zrelostni nivo razvojnega procesa po modelu CMM|Zelo nizka|5|
+||||18|
+
+Parameter B = 1,01 + 0,01*18 = 1,19
+
+|**Dejavnik**|**Opis**|**Ocena**|**Razpon uteži**|**Utež**|
+|:------------|:----------------------|:------------------|:-------------|:-------------|
+|PERS|Stopnja usposobljenosti članov razvojne skupine|Nominalna|1,5 - 0,5|1,0|
+|PREX|Izkušnje članov z uporabljeno tehnologijo|Nominalna|1,5 - 0,5|1,0|
+|RCPX|Ocena kompleksnosti projekta|Visoka|0,5 - 1,5|1,2|
+|RUSE|potreba po izdelavi komponent, namenjenih za ponovno uporab|Nizka|0,5 - 1,5|0,8|
+|PDIF|Spremenljivost platforme ter omejitev glede časovne in prostorske učinkovitosti aplikacije|Visoka|0,5 - 1,5|1,2|
+|SCED|Za potrebe predmeta 1,0|||1,0|
+|FCIL|Razpoložljivosti razvojnih orodij in komunikacijskih sredstev v primeru medsebojne oddaljenosti razvijalcev|Visoka|1,5 - 0,5|0,8|
+|||||0,922|
+
+Koncni izracun casovne zahtevnosti
+Ocena casovne zahtevnosti za nas projekt, kjer za parameter A privzamemo vrednost 2,94.
+
+𝑒𝑓𝑓𝑜𝑟𝑡𝑃𝑀 = A ∗ size^B ∗ M = 2,94 * 2,626^(1,19) * 0,922 = 8,55 clovek/mesecev
+
+Finance
+
+Za urno postavko dela vzamemo 8€ za programiranje in 10€ za upravljanje. En ČM predstavlja 60 ur dela. Delavni dan studenta predstavlja 3 ure, torej 0,05 ČM.
+https://ec.europa.eu/newsroom/just/items/643967
 
 - Izdelajte finančni načrt projekta po metodi COCOMO II.
 - Za vsako aktivnost navedite sledeče:
