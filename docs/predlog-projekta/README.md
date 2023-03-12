@@ -141,7 +141,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Oznaka aktivnosti**                               | A4                                                                                                             |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 15.3.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
+| **Predvideni datum zaključka izvajanja aktivnosti** | 15.3.2023                                                                                                                             |
 | **Trajanje**                                        |           1 dan                                                                                                         |
 | **Naziv aktivnosti**                                | Določitev uporabniških vlog                                                                                                            |
 | **Obseg aktivnosti v ČM**                           | 0,125 ČM                                                                                                     |
