@@ -415,13 +415,6 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 
 ### 2.4 Časovni potek projekta - Ganttov diagram
 
-:dart: **TO-DO**
-
-- Obdobja izvajanja posameznih aktivnosti prikažite v obliki **Ganttovega diagrama**.
-- Za izdelavo uporabite ogrodje PlantUML, in sicer [Gantt Diagram](https://plantuml.com/gantt-diagram).
-- V poročilo vključite **izvorno kodo diagrama v jeziku PlantUML**, ki naj bo prisotna v repozitoriju, sliko diagrama pa vključite s povezavo (in ne preko neposredne vključitve binarne datoteke) preko storitve [`https://teaching.lavbic.net/plantuml`](https://teaching.lavbic.net/plantuml), kot prikazuje spodnji primer.
-- Diagram naj bo **jasno berljiv**.
-
 |**Aktivnost**|**Napor(človek-mesec)**|**Trajanje(dnevi)**|**Odvisnosti**|
 |:------------|:----------------------|:------------------|:-------------|
 |Dolocitev funkcionalnih in nefunkcionalnih zahtev (A1)|0,25 |2||
