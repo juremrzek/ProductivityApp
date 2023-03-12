@@ -562,6 +562,7 @@ Najprej moramo dolociti parametre A, B in M ter oceniti obseg projekta.
 ||||||67|
 
 https://www.qsm.com/resources/function-point-languages-table
+
 Razvoj bo potekal v jezikih javascript, SQL in HTML, v razmerju 0.6, 0.2 in 0.2.
 Size = (67 * (0,6 * 47 + 0.2 * 21 + 0.2 * 34))/1000 = 2,626 KSLOC
 
@@ -588,6 +589,7 @@ Parameter B = 1,01 + 0,01*18 = 1,19
 |||||0,922|
 
 Koncni izracun časovne zahtevnosti
+
 Ocena časovne zahtevnosti za nas projekt, kjer za parameter A privzamemo vrednost 2,94.
 
 𝑒𝑓𝑓𝑜𝑟𝑡𝑃𝑀 = A ∗ size^B ∗ M = 2,94 * 2,626^(1,19) * 0,922 = 8,55 človek/mesecev
@@ -596,6 +598,34 @@ Finance
 
 Za urno postavko dela vzamemo 8€ za programiranje in 10€ za upravljanje. En ČM predstavlja 60 ur dela. Delavni dan studenta predstavlja 3 ure, torej 0,05 ČM.
 https://ec.europa.eu/newsroom/just/items/643967
+
+|**Oznaka**|**Naziv aktivnosti**|**Obseg v ČM**|**Obseg v urah**|**Stroski dela**|
+|:------------|:----------------------|:------------------|:-------------|:-------------|
+|A1|Dolocitev funkcionalnih in nefunkcionalnih zahtev|0,25 ČM|15 ur|150€|
+|A2|Izbira ustrezne arhitekture|0,125 ČM|7,5 ur|75€|
+|A3|Izbira izgleda aplikacije|0,375 ČM|22,5 ur|225€|
+|A4|Določitev uporabniških vlog|0,125 ČM|7,5 ur|75€|
+|A5|Načrtovanje transakcijske baze|0,25 ČM|15 ur|150€|
+|A6|Načrtovanje podatkovnega skladišča|0,25 ČM|15 ur|150€|
+|A7|Izdelava zaslonskih mask|0,5 ČM|30 ur|240€|
+|A8|Izdelava transakcijske baze|0,375 ČM|22,5 ur|180€|
+|A9|Izdelava podatkovnega skladišča|0,375 ČM|22,5 ur|180€|
+|A10|Implementacija prijave in registracije|0,375 ČM|22,5 ur|180€|
+|A11|Implementacija obnovitve pozabljenega gesla|0,25 ČM|15 ur|120€|
+|A12|Implementacija iskanja prijateljev|0,375 ČM|22,5 ur|180€|
+|A13|Implementacija shranjevanja dogodkov uporabnika|0,125 ČM|7,5 ur|60€|
+|A14|Implementacija vmesnika določanja navad|0,375 ČM|22,5 ur|180€|
+|A15|Implementacija in urejanje časovnika|0,375 ČM|22,5 ur|180€|
+|A16|Implementacija google koledarja preko API-ja|0,5 ČM|30 ur|240€|
+|A17|Implementacija urejanja dogodkov na Google koledarju|0,25 ČM|15 ur|120€|
+|A18|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno|0,375 ČM|22,5 ur|180€|
+|A19|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev|0,625 ČM|37,5 ur|300€|
+|A20|Implementacija ogleda aktivnosti prijateljev|0,25 ČM|15 ur|120€|
+|A21|Implementacija urejanja uporabniškega računa|0,375 ČM|22,5 ur|180€|
+|A22|Implementacija vmesnika za poročanje o napakah|0,5 ČM|30 ur|240€|
+|A23|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju|0,5 ČM|22,5 ur|180€|
+|A24|Upravljanje projekta|1,25 ČM|75 ur|750€|
+|||9 ČM|540 ur|4635€|
 
 - Izdelajte finančni načrt projekta po metodi COCOMO II.
 - Za vsako aktivnost navedite sledeče:
@@ -607,6 +637,8 @@ https://ec.europa.eu/newsroom/just/items/643967
 - Seštejte predvidene stroške po posameznih aktivnostih in nato izračunajte še skupno vsoto vseh stroškov.
 - Tudi za ocenjevanje stroškov po metodi COCOMO II je na voljo več spletnih orodij.
 - Uporabite lahko poljubnega, v poročilo vključite končno **sliko izračuna, ki naj bo jasno berljiva**.
+
+http://softwarecost.org/tools/COCOMO/
 
 ![COCOMO II ocena](../gradivo/img/cocomo-ii-ocena.png)
 
