@@ -8,35 +8,15 @@
 
 ## Povzetek projekta
 
-:dart: **TO-DO**
-
-- V približno 150 - 250 besedah povzemite cilje projekta in pričakovane rezultate.
-- V povzetku naj bo jasno razvidna problemska domena, s katero se boste v okviru projekta ukvarjali.
-
 Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omrežje in pomaga ljudem z organizacijo dela. Pričakujemo, da bodo ljudje našo aplikacijo uporabljali vsakodnevno za organizacijo svojega dela bodisi za šolo, službo, faks ali pa tudi pri domačih opravilih in podobno. V aplikaciji bodo tudi vključene funkcionalnosti socialnega omrežja, kjer bodo lahko prijatelji med seboj spremljali učinkovitost, kar jih bo tudi dodatno spodbudilo k delu in organizaciji le tega. Aplikacijo bomo tudi povezali z Google koledarjem z namenom, da ljudem olajšamo uporabo in jih s tem tudi dodatno motiviramo za uporabo naše aplikacije. Pričakujemo, da bodo naši uporabniki ostali aktivni dalj časa, saj je naša rešitev namenjena dolgotrajni uporabi. Sproti bomo seveda tudi skrbeli za odpravljanje hroščev, kateri bi lahko uporabnike odvrnili od nadaljne uporabe. S tem namenom bomo tudi implementirali možnosti za sporočanje napak s strani uporabnikov do nas razvijalcev, za možnost čimprejšnjega odpravljanja le teh.
 
 ## 1. Projektna ideja
 
 ### 1.1 Ozadje
 
-:dart: **TO-DO**
-
-- Opis problemske domene oziroma konteksta projekta (neposredno se ne tiče projekta).
-- Kaj do sedaj že obstaja, oziroma kaj se na področju dogaja.
-- Gre za področje za katerega se bo izdelala rešitev predstavljena v Predlogu projekta.
-
 Neučinkovita organizacija je pri ljudeh pogost problem. Od napotnic in rojstnih dni do novoletnih zaobljub, ki jih moramo usklajevati. Na področju produktivnosti obstaja več aplikacij (Forest, Focus To-Do, Google tasks…) , ki uporabniku pomagajo spremljati svojo aktivnost in napredek, vendar se ne osredotočajo na pogled socialnega omrežja, temveč delujejo bolj individualno.
 
 ### 1.2 Področje in motivacija
-
-:dart: **TO-DO**
-
-- Kaj vas motivira, da ste se odločili za projekt?
-- Zakaj se vam zdi smiselno, da izbrano problemsko domeno podprete s programsko rešitvijo?
-- V čem se vaša rešitev razlikuje od sorodnih rešitev, ki morebiti že obstajajo?
-- Ste v kakšnem pogledu posebni, morda edinstveni?
-- Kakšno ciljno publiko naslavljate s svojim projektom?
-- S čim boste tipičnega predstavnika ciljne publike prepričali, da bo vaš izdelek uporabljal ali celo kupil?
 
 Kot študenti se tudi sami pogosto srečamo s problemom motivacija in pomanjkanje organizacije, zato smo se odločili razviti projektno idejo v tej smeri. Problemsko domeno smo se odličili podpreti s programsko opremo, ker imajo ljudje dandanes pri sebi vedno mobilne telefone preko katerih bi organizacija potekala najbolj učinkovito in hitro.
 Podobne ideje socialnih omrežji in aplikacij za produktivnost obstajajo, vendar ne ponujajo združenega produkta. Z našo idejo želimo doseči, da bi socialni aspekt ljudi prepričal v bolj aktivno sledenje svojim dolgoročnim ciljem.
@@ -45,30 +25,13 @@ Naša ciljna publika so ljudje, ki želijo enostaven način za organizacijo in s
 
 ### 1.3 Namen
 
-:dart: **TO-DO**
-
-- Kakšne koristi ima lahko projekt za organizacijo, stroko, znanost?
-- Kaj nameravamo s projektom doseči?
-- Kakšne probleme bomo rešili?
-- Kaj bodo uporabniki sposobni narediti bolje?
-
 Namen projekta je ustvariti aplikacijo, ki bo ljudi spodbujala k bolj produktivnemu življenju in da bi jo uporabljalo čim več ljudi iz naše ciljne publike. S tem projektom rešujemo problem slabe organizacije in neproduktivnosti pri delu. Z uporabo naše aplikacije bodo uporabniki lahko planirali svoj dnevni urnik učinkovito in enostavno, tako da bodo dosegli maksimalno učinkovitost.
 
 ### 1.4 Cilji
 
-:dart: **TO-DO**
-
-- Navedite, kaj bodo konkretni izdelki/storitve vašega projekta.
-- Cilji morajo biti merljivi in preverljivi.
-
-Sistem ponuja vnos osebnih ciljev, dogodkov in načrtov, na katere bo nato opozarjal uporabnika in mu pomagal pri izpolnjevanju le teh. Omogoča dodajanje prijateljev in izbiro privatnosti, da lahko uporabniki med seboj primerjajo svoje statistike. Podobne ideje socialnih omrežji in aplikacij za produktivnost obstajajo, vendar ne ponujajo združenega produkta. Uporablja google calendar.....itd
+Uporabnik začne interakcijo s sistemom prek glavne strani, kjer se odpre možnost vnosa osebnih ciljev, dogodkov in načrtov, na katere bo nato opozarjal uporabnika in mu pomagal pri izpolnjevanju le teh. Omogoča dodajanje prijateljev in izbiro privatnosti, da lahko uporabniki med seboj primerjajo svoje statistike. Z našo aplikacijo lahko uporabnik komunicira tudi preko Google calendarja.
 
 ### 1.5 Smernice za rešitev
-
-:dart: **TO-DO**
-
-- Opredelite smernice, ki naj bi se jih v okviru izvajanja projekta držali.
-- Smernice se lahko nanašajo na izvedbo projekta ali na sam izdelek projekta.
 
 V okviru priprave in razvoja aplikacije, se nameravamo držati sledečih smernic:
 - Aplikacija zbira osebne podatke, zato moramo zagotoviti visoko raven varovanja.
@@ -79,24 +42,11 @@ V okviru priprave in razvoja aplikacije, se nameravamo držati sledečih smernic
 
 ### 1.6 Končni uporabniki
 
-:dart: **TO-DO**
-
-- Kdo so končni uporabniki sistema?
-- Koliko bo končnih uporabnikov?
-- Kakšna znanja imajo?
-- Kdo bo imel koristi od projekta, ne da bi bil neposredno vključen?
-
-Ciljni uporabniki naše rešitve so predvsem dijaki, študenti in zaposleni, ki še vedno razvijajo svojo kariero, saj si lahko z našim sistemom organizirajo delo in sledijo svojem napredku. Imajo osnovno (uporabniško) predznanje. To je dovolj za uporabo naše aplikacije, saj bo realizirana z razumljivimi uporabniškimi umesniki. Pričakujemo konstantno rast uporabnikov po 40 na mesec.
+Ciljni uporabniki naše rešitve so predvsem dijaki, študenti in zaposleni, ki še vedno razvijajo svojo kariero, saj si lahko z našim sistemom organizirajo delo in sledijo svojem napredku. Imajo osnovno (uporabniško) predznanje. To je dovolj za uporabo naše aplikacije, saj bo realizirana z razumljivimi uporabniškimi umesniki. Pričakujemo začetno rast uporabnikov do 40 na teden, nato pa eksponentno.
 
 ## 2. Projektni načrt
 
 ### 2.1 Povzetek razdelitve projekta na aktivnosti
-
-:dart: **TO-DO**
-
-- Na kratko povzemite razdelitev projekta na aktivnosti.
-- Aktivnost je smiselno zaokrožena enota dela z jasno opredeljenimi cilji.
-- Aktivnosti so med sabo lahko odvisne: preden pričnemo izvajati neko aktivnost, morajo biti zaključene nekatere druge aktivnosti.
 
 Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razvoju projekta. Preden začnemo z razvojem potrebujemo zaključiti z aktivnostmi, ki se navezujejo na načrtovanje, saj so med seboj odvisne. V spodnjih tabelah smo zbrali vse aktivnosti, ki bodo opredeljevale naš projekt in vse njihove podatke (datum pričetka, datum zaključka, naziv aktivnosti, obseg v ČM, trajanje, seznam ciljev, opis aktivnosti, morebitne medsebojne odvisnosti in izdelki, ki nastanejo ob zaključku aktivnosti).
 
@@ -458,17 +408,6 @@ Rdeče pobarvana stanja na grafu označujejo kritično pot.
 
 ### 3.1 Identifikacija in analiza tveganj
 
-:dart: **TO-DO**
-
-Opredelite možna tveganja in za vsakega navedite sledeče:
-
-- naziv tveganja (npr. izpad spletnega strežnika),
-- na kaj tveganje vpliva (npr. projekt in izdelek),
-- kratek opis tveganja,
-- tip tveganja (tehnološko tveganje, organizacijsko tveganje, tveganje povezano z ljudmi, tveganje povezana z zahtevami, tveganje povezano z ocenjevanjem, tveganje povezana z orodji),
-- verjetnost nastopa tveganja (zelo visoko, visoko, zmerno, nizko, zelo nizko),
-- posledice nastopa tveganja (usodne, resne, dopustne, neznatne).
-
 Identifikacijo in analizo tveganj prikažite z uporabo naslednje tabele:
 
 | Naziv tveganja   | Vpliva na        | Opis tveganja    | Tip tveganja     | Verjetnost nastopa tveganja | Posledice nastopa tveganja |
@@ -487,13 +426,6 @@ Identifikacijo in analizo tveganj prikažite z uporabo naslednje tabele:
 | T12 - Podcenjen čas izdelave | Projekt in izdelek | Podcenimo, koliko časa bo potrebno za dokončati del projekta. | Ocene | Zmerna | Znosen |
 
 ### 3.2 Načrtovanje tveganj
-
-:dart: **TO-DO**
-
-Pri načrtovanju tveganj si postavljamo **kaj-če vprašanja**, ki upoštevajo posamezna tveganja, kombinacijo tveganj in zunanje faktorje, ki lahko vplivajo na tveganja. Za vsako tveganje navedite:
-
-- naziv tveganja in
-- načrt za obvladovanje tega tveganja, kjer opišemo strategijo za obvladovanje tega tveganja (strategija izogibanja, strategija zmanjševanja, krizni načrt).
 
 Načrt za obvladovanje tveganj prikažite z uporabo naslednje tabele:
 
@@ -516,9 +448,7 @@ Tveganja v tabeli naj bodo rangirana od najpomembnejšega proti manj pomembnim.
 
 ## 4. Upravljanje projekta
 
-:dart: **TO-DO**
-
-- Opišite organizacijo dela na projektu.
+Delo si bomo razdelili po aktivnostih. Za vsako aktivnost se bomo organizirali glede na spodnjo tabelo, časovno se bomo pa usklajevali glede na Gantt-ov diagram, ki smo ga pripravili pri točki 2.4 (Časovni potek projekta).
 
 |**Oznaka**|**Naziv aktivnosti**|**Anže Rifelj Tričkovič**|**Jan Merhar**|**Jure Mržek**|**Arne Gašperšič**|**Klemen Kolar**|
 |:------------|:----------------------|:------------------|:-------------|:-------------|:-------------|:-------------|
@@ -547,18 +477,20 @@ Tveganja v tabeli naj bodo rangirana od najpomembnejšega proti manj pomembnim.
 |A23|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju||||50%|50%|
 |A24|Upravljanje projekta|100%|||||
 
+Projektni vodja bo Anže Rifelj Tričkovič. Skrbel bo, da člani, ki na neki aktivnosti delajo, najprej končajo tisto, ki mora biti prej zaključena in skrbel bo tudi za razreševanje nesporazumov in težav med razvojem. Za usklajevanje dela bomo uporabljali Github, Google docs za načrtovanje arhitekture in Discord za sprotno komunikacijo. Pri razvoju aplikacije uporabljamo slapovni pristop.
+
 ## 5. Predstavitev skupine
 
-**Jure Mržek**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Delal bo na zalednem delu aplikacije, saj pozna NoSQL in JavaScript s knjižnicami za delo na zalednem delu kot so Node in Express. Sodeloval bo z Janom Merharjem pri implementaciji same aplikacije.
-
 **Anže Rifelj Tričkovič**, starost 22, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Ima več znanj in zanimanja s področja upravljanja s podatki in izkušnje pri sodelovanju z naročniki pri razvoju informacijskih rešitev, podrobneje zbiranja zahtev in testiranja z uporabnikom. Zato bo predvsem prisoten pri zbiranju zahtev in načrtovanju. Sodeloval bo z Janom Merharjem pri zajemu zahtev. Veliko dela z jezikom SQL, znanje in izkušnje ima tudi pri programskih jezikih in tehnologijah kot so JavaScript in HTML.
+
+**Jure Mržek**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Delal bo na zalednem delu aplikacije, saj pozna NoSQL in JavaScript s knjižnicami za delo na zalednem delu kot so Node in Express. Sodeloval bo z Janom Merharjem pri implementaciji same aplikacije.
 
 **Jan Merhar**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Sodeluje pri implementaciji z Juretom Mržkom, saj ima najbolj poglobljeno znanje programiranja uporabniških vmesnikov ter sodeluje pri zajemu zahtev z Anžetom Rifljem Tričkovičem, saj tako lahko načrtuje samo delovanje in izgled spletne aplika
 cije, ki jo bo tudi implementiral pri fazi implementacije. Pozna naslednje programske jezike in tehnologije: PHP, JavaScript, JQuery, MongoDB, vue.js, pl/SQL, node.js in express.js, ki bodo pri implementaciji uporabne.
 
 **Klemen Kolar**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Pozna delo s HTML, JavaScript in SQL, sodeloval je z Arnejem Gašperšičem pri izdelavi predloga projekta. Sodeloval bo tudi pri sestavi načrta rešitve, zaradi zanimanja o tem področju in ker se želi dobro seznaniti s procesom le-tega.
 
-**Arne Gašperšič**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Delal bo na predlogu projekta s Klemnom Kolarjem in pri sestavi načrta rešitve. Želi se bolje spoznati z implementacijo API-jev.
+**Arne Gašperšič**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Delal bo na predlogu projekta s Klemnom Kolarjem in pri sestavi načrta rešitve z ostalimi. Izkušnje ima predvsem s programiranjem v JavaScriptu. Želi se bolje spoznati z implementacijo API-jev.
 
 ## 6. Finančni načrt - COCOMO II ocena
 
@@ -585,8 +517,6 @@ Najprej moramo dolociti parametre A, B in M ter oceniti obseg projekta.
 |EQ|Vmesnik za upravljanje s poročili o napakah|1 - 5|1|Low|3|
 ||||||67|
 
-https://www.qsm.com/resources/function-point-languages-table
-
 Razvoj bo potekal v jezikih javascript, SQL in HTML, v razmerju 0.6, 0.2 in 0.2.
 Size = (67 * (0,6 * 47 + 0.2 * 21 + 0.2 * 34))/1000 = 2,626 KSLOC
 
@@ -612,7 +542,7 @@ Parameter B = 1,01 + 0,01*18 = 1,19
 |FCIL|Razpoložljivosti razvojnih orodij in komunikacijskih sredstev v primeru medsebojne oddaljenosti razvijalcev|Visoka|1,5 - 0,5|0,8|
 |||||0,922|
 
-Koncni izracun časovne zahtevnosti
+Koncni izračun časovne zahtevnosti
 
 Ocena časovne zahtevnosti za nas projekt, kjer za parameter A privzamemo vrednost 2,94.
 
@@ -620,8 +550,8 @@ Ocena časovne zahtevnosti za nas projekt, kjer za parameter A privzamemo vredno
 
 Finance
 
-Za urno postavko dela vzamemo 8€ za programiranje in 10€ za upravljanje. En ČM predstavlja 60 ur dela. Delavni dan studenta predstavlja 3 ure, torej 0,05 ČM.
-https://ec.europa.eu/newsroom/just/items/643967
+Za urno postavko dela vzamemo 8€ za programiranje in 10€ za upravljanje. En ČM predstavlja 60 ur dela. Povprečen delavni dan študenta predstavlja 3 ure, torej 0,05 ČM.
+
 
 |**Oznaka**|**Naziv aktivnosti**|**Obseg v ČM**|**Obseg v urah**|**Stroski dela**|
 |:------------|:----------------------|:------------------|:-------------|:-------------|
@@ -651,26 +581,15 @@ https://ec.europa.eu/newsroom/just/items/643967
 |A24|Upravljanje projekta|1,25 ČM|75 ur|750€|
 |||9 ČM|540 ur|4635€|
 
-- Izdelajte finančni načrt projekta po metodi COCOMO II.
-- Za vsako aktivnost navedite sledeče:
-  - obseg v človek-mesecih,
-  - predvidene stroške dela,
-  - predvidene stroške investicij,
-  - predvidene potne stroške in
-  - druge predvidene posredne stroške.
-- Seštejte predvidene stroške po posameznih aktivnostih in nato izračunajte še skupno vsoto vseh stroškov.
-- Tudi za ocenjevanje stroškov po metodi COCOMO II je na voljo več spletnih orodij.
-- Uporabite lahko poljubnega, v poročilo vključite končno **sliko izračuna, ki naj bo jasno berljiva**.
-
-http://softwarecost.org/tools/COCOMO/
+Projekt lahko izvajamo oddaljeno, za boljšo organizacijo pa bi se v živo sestali trikrat v sklopu dveh dni. Samo en član ekipe bi se moral v Ljubljano pripeljati, in sicer 35km. V sklopu izvajanje projekta se tudi krije šest kosil za pet članov. Skupno 88€ + 450€ = 538€
 
 ![COCOMO II ocena](../gradivo/img/cocomo-ii-ocena.png)
 
 ## Reference
 
-:dart: **TO-DO**
-
-- Navedite vire, ki ste jih uporabljali pri sestavi projektnega plana.
-- Primer navedbe vira [1].
-
-[1]: R. H. Thayer, E. Yourdon, **Software Engineering Project**, IEEE Computer Society, Los Alamitos, 2001.
+[1]: European Commision, accessed 9. 3. 2023, https://ec.europa.eu/newsroom/just/items/643967
+[2]: Quantitive Software Management, accessed 9. 3. 2023, https://www.qsm.com/resources/function-point-languages-table
+[3]: Ray Madachy at the Naval Postgraduate School, accessed 11. 3. 2023, http://softwarecost.org/tools/COCOMO/
+[4]: Računovodja.com, accessed 12. 3. 2023, https://www.racunovodja.com/clanki.asp?clanek=232
+[5]: PlantUML, accessed 11. 3. 2023, https://plantuml.com/gantt-diagram, 2021
+[6]: PlantUML, accessed 12. 3. 2023, https://plantuml.com/state-diagram, 2021
