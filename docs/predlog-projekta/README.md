@@ -529,12 +529,16 @@ Tveganja v tabeli naj bodo rangirana od najpomembnejšega proti manj pomembnim.
 
 ## 5. Predstavitev skupine
 
-:dart: **TO-DO**
+**Jure Mržek**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Delal bo na zalednem delu aplikacije, saj pozna NoSQL in JavaScript s knjižnicami za delo na zalednem delu kot so Node in Express. Sodeloval bo z Janom Merharjem pri implementaciji same aplikacije.
 
-- Na kratko predstavite vsakega člana skupine (en odstavek za vsakega),
-  - kaj bo delal na projektu,
-  - s kom bo pri tem sodeloval in
-  - zakaj je bil izbran za delo na dodeljenih aktivnostih.
+**Anže Rifelj Tričkovič**, starost 22, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Ima več znanj in zanimanja s področja upravljanja s podatki in izkušnje pri sodelovanju z naročniki pri razvoju informacijskih rešitev, podrobneje zbiranja zahtev in testiranja z uporabnikom. Zato bo predvsem prisoten pri zbiranju zahtev in načrtovanju. Sodeloval bo z Janom Merharjem pri zajemu zahtev. Veliko dela z jezikom SQL, znanje in izkušnje ima tudi pri programskih jezikih in tehnologijah kot so JavaScript in HTML.
+
+**Jan Merhar**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Sodeluje pri implementaciji z Juretom Mržkom, saj ima najbolj poglobljeno znanje programiranja uporabniških vmesnikov ter sodeluje pri zajemu zahtev z Anžetom Rifljem Tričkovičem, saj tako lahko načrtuje samo delovanje in izgled spletne aplika
+cije, ki jo bo tudi implementiral pri fazi implementacije. Pozna naslednje programske jezike in tehnologije: PHP, JavaScript, JQuery, MongoDB, vue.js, pl/SQL, node.js in express.js, ki bodo pri implementaciji uporabne.
+
+**Klemen Kolar**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Pozna delo s HTML, JavaScript in SQL, sodeloval je z Arnejem Gašperšičem pri izdelavi predloga projekta. Sodeloval bo tudi pri sestavi načrta projekta s  zaradi zanimanja o tem področju in ker se želi dobro seznaniti s procesom le-tega.
+
+**Arne Gašperšič**, starost 21, univerzitetni študent na Fakulteti za računalništvo in informatiko, Univerze v Ljubljani. Delal bo na predlogu projekta s Klemnom Kolarjem in pri sestavi načrta rešitve. Želi se bolje spoznati z implementacijo API-jev.
 
 ## 6. Finančni načrt - COCOMO II ocena
 
