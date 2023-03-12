@@ -440,7 +440,7 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 |Implementacija vmesnika določanja navad (A14)|0,125 |7|A7(Prototip zaslonskih mask), A8|
 |Implementacija časovnika in njegovega urejanja (A15)|0,375 |3|A7(Prototip zaslonskih mask)|
 |Implementacija Google koledarja preko API-ja (A16)|0,375 |4|A7(Prototip zaslonskih mask)|
-|Implementacija urejanja dogodkov na Google koledarju (A17)|0,5 |2|A16|
+|Implementacija urejanja dogodkov na Google koledarju (A17)|0,5 |4|A16|
 |Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A18)|0,25 |3|A8, A9|
 |Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A19)|0,375 |11|A7(Prototip zaslonskih mask), A18|
 |Implementacija ogleda aktivnosti prijateljev (A20)|0,625 |1|A7(Prototip zaslonskih mask), A18|
