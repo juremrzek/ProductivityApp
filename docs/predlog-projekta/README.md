@@ -434,17 +434,17 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 |Izdelava transakcijske baze (A8)|0,375 |3|A2, A5|
 |Izdelava podatkovnega skladišča (A9)|0,375 |5|A2, A6|
 |Implementacija prijave in registracije (A10)|0,375 |3|A7(Prototip zaslonskih mask), A8|
-|Implementacija obnovitve pozabljenega gesla (A11)|0,375 |2|A10|
-|Implementacija iskanja prijateljev (A12)|0,5 |3|A7(Prototip zaslonskih mask), A8|
-|Implementacija shranjevanja dogodkov uporabnika (A13)|0,375 |1|A8|
-|Implementacija vmesnika določanja navad (A14)|0,125 |7|A7(Prototip zaslonskih mask), A8|
+|Implementacija obnovitve pozabljenega gesla (A11)|0,25 |2|A10|
+|Implementacija iskanja prijateljev (A12)|0,375 |3|A7(Prototip zaslonskih mask), A8|
+|Implementacija shranjevanja dogodkov uporabnika (A13)|0,125 |1|A8|
+|Implementacija vmesnika določanja navad (A14)|0,375 |7|A7(Prototip zaslonskih mask), A8|
 |Implementacija časovnika in njegovega urejanja (A15)|0,375 |3|A7(Prototip zaslonskih mask)|
-|Implementacija Google koledarja preko API-ja (A16)|0,375 |4|A7(Prototip zaslonskih mask)|
-|Implementacija urejanja dogodkov na Google koledarju (A17)|0,5 |4|A16|
-|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A18)|0,25 |3|A8, A9|
-|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A19)|0,375 |11|A7(Prototip zaslonskih mask), A18|
-|Implementacija ogleda aktivnosti prijateljev (A20)|0,625 |1|A7(Prototip zaslonskih mask), A18|
-|Implementacija urejanja uporabniškega računa (A21)|0,25 |3|A7(Prototip zaslonskih mask), A8|
+|Implementacija Google koledarja preko API-ja (A16)|0,5 |4|A7(Prototip zaslonskih mask)|
+|Implementacija urejanja dogodkov na Google koledarju (A17)|0,25 |4|A16|
+|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A18)|0,375 |3|A8, A9|
+|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A19)|0,625 |11|A7(Prototip zaslonskih mask), A18|
+|Implementacija ogleda aktivnosti prijateljev (A20)|0,25 |1|A7(Prototip zaslonskih mask), A18|
+|Implementacija urejanja uporabniškega računa (A21)|0,375 |3|A7(Prototip zaslonskih mask), A8|
 |Implementacija vmesnika za poročanje o napakah (A22)|0,5 |4|A7(Prototip zaslonskih mask), A8|
 |Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju (A23)|0,5 |6|A7(Prototip zaslonskih mask), A8|
 |Upravljanje projekta (A24)|1,25 |70||
