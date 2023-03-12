@@ -102,19 +102,13 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 
 ### 2.2 Načrt posameznih aktivnosti
 
-:dart: **TO-DO**
-
-Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične aktivnosti lahko uporabite naslednjo tabelo:
-
 | **Oznaka aktivnosti**                               | A1                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 13.3.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 14.3.2023                                                                                                                             |
 | **Trajanje**                                        |           1 dan                                                                                                          |
 | **Naziv aktivnosti**                                | Izbira ustrezne arhitekture                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | 0,25 ČM
-
-                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                       |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | S člani dosežen dogovor o arhitekturi, določena tehnologija in orodja                                                                                                       |
 | **Opis aktivnosti**                                 | Debata o prednostih in slabostih določenih tehnologij in orodij za izdelavo projekta, na koncu se izbere najustreznejša.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
@@ -126,8 +120,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
 | **Trajanje**                                        |           3 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Izbira izgleda aplikacije                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | 0,375 ČM
-|
+| **Obseg aktivnosti v ČM**                           | 0,375 ČM                                                                                                   |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno postavljen izgled aplikacije s katerim se strinjajo vsi člani.                                                                                                       |
 | **Opis aktivnosti**                                 | Debatiramo o zunanjem izgledu aplikacije, na list ali s kakšnim orodjem si poskusamo predstaviti izgled in se na koncu odločiti za najbolj ustreznega.                                                                          |
 | **Morebitne odvisnosti in omejitve**                | |
@@ -139,8 +132,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 16.3.2023                                                                                                                             |
 | **Trajanje**                                        |           2 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Določitev uporabniških vlog                                                                                                            |
-| **Obseg aktivnosti v ČM**                           | 0,25 ČM
-                                                                                                        |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                     |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno določene uporabniške vloge in njihove funkcionalnosti.                                                                                                      |
 | **Opis aktivnosti**                                 | Razmišlja se o uporabniških vlogah, ki bi bile ustrezne za izvedbo naše aplikacije.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
@@ -152,8 +144,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 20.3.2023                                                                                                                             |
 | **Trajanje**                                        |           4 dni(za vikend ne delamo)                                                                                                          |
 | **Naziv aktivnosti**                                | Načrtovanje transakcijske baze                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | 0,25 ČM
-                                                                                                        |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                   |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno zasnovan načrt transakcijske baze s katerim si bomo pomagali pri implementaciji.                                                                                                     |
 | **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo transakcijske baze s pomočjo uporabniških vlog, ki smo jih že določili in izberemo najustreznejšo.                                                                              |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A3 |
@@ -165,8 +156,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 21.3.2023                                                                                                                             |
 | **Trajanje**                                        |           2 dni                                                                                                          |
 | **Naziv aktivnosti**                                | Načrtovanje podatkovnega skladišča                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | 0,25 ČM
-                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,25 ČM                                                                                                     |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Jasno zasnovan načrt podatkovnega skladišča s katerim si bomo pomagali pri implementaciji.                                                                                                    |
 | **Opis aktivnosti**                                 | S člani iščemo najboljše rešitve za izdelavo podatkovnega skladišča in izberemo najustreznejšo.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | |
@@ -178,8 +168,7 @@ Razdelite delo na projektu na aktivnosti, ki jih opišete. Za opis posamične ak
 | **Predvideni datum zaključka izvajanja aktivnosti** | 27.3.2023                                                                                                                             |
 | **Trajanje**                                        |           6 dni(za vikend ne delamo)                                                                                                          |
 | **Naziv aktivnosti**                                | Izdelava zaslonskih mask                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | 0,5 ČM
-                                                                                                         |
+| **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | V celoti implementirane zaslonske maske.                                                                                                    |
 | **Opis aktivnosti**                                 | V že določeni tehnologiji in z že določenimi orodji programiramo zaslonske maske.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A1 in A2 (ko končamo graf PERT še za vsako aktivnost tu povemo če je na kritični poti)|
@@ -480,8 +469,8 @@ Identifikacijo in analizo tveganj prikažite z uporabo naslednje tabele:
 | :--------------- | ---------------- | :--------------- | :--------------- | :-------------------------- | :------------------------- |
 | T1 - Izguba člana | Projekt | Član ekipe izgubi interes za delo na projektu. | Ljudje | Majhna | Resen |
 | T2 - Slaba razporeditev dela |  Izdelek | Zaradi slabe razporeditve dela član skupine neha opravljati svoj del naloge. | Ljudje | Zmerna | Resen |
-| T3 - Izguba podatkov iz PB | Izdelek | Izgubimo podatke v podatkovni bazi zaradi nepričakovane napake ali vdora v sistem. | Tehnologija | Zelo majhna | Katastrofalen |
 | T4 - Pomanjkanje kompetenc v ekipi | Izdelek | Nihče izmed članov ekipe ne zna razviti funkcionalnosti, ki smo jo nameravali imeti v končnem projektu. | Tehnologija | Visoka | Znosen |
+| T3 - Izguba podatkov iz PB | Izdelek | Izgubimo podatke v podatkovni bazi zaradi nepričakovane napake ali vdora v sistem. | Tehnologija | Zelo majhna | Resen |
 | T5 - Slabo izdelan model funkcionalnosti | Izdelek | Koda, kot smo jo predvideli z modelom, ne bo delovala brez dodatne funkcionalnosti. | Orodja | Visoka | Nepomemben |
 | T6 - Napaka strojne opreme člana skupine | Projekt | Računalnik enega izmed članov se pokvari med delom na projektu. | Orodja | Zelo majhna | Nepomemben |
 | T7 - Napaka pri planiranju funkcionalnosti | Projekt in izdelek | Slabo predvidimo nalogo funkcionalnosti in zato večkrat zavržemo kodo in ponovno planiramo delovanje funkcionalnosti. | Zahteve | Zmerna | Znosen |
@@ -585,10 +574,10 @@ Parameter B = 1,01 + 0,01*18 = 1,19
 |FCIL|Razpoložljivosti razvojnih orodij in komunikacijskih sredstev v primeru medsebojne oddaljenosti razvijalcev|Visoka|1,5 - 0,5|0,8|
 |||||0,922|
 
-Koncni izracun casovne zahtevnosti
-Ocena casovne zahtevnosti za nas projekt, kjer za parameter A privzamemo vrednost 2,94.
+Koncni izracun časovne zahtevnosti
+Ocena časovne zahtevnosti za nas projekt, kjer za parameter A privzamemo vrednost 2,94.
 
-𝑒𝑓𝑓𝑜𝑟𝑡𝑃𝑀 = A ∗ size^B ∗ M = 2,94 * 2,626^(1,19) * 0,922 = 8,55 clovek/mesecev
+𝑒𝑓𝑓𝑜𝑟𝑡𝑃𝑀 = A ∗ size^B ∗ M = 2,94 * 2,626^(1,19) * 0,922 = 8,55 človek/mesecev
 
 Finance
 
