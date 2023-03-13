@@ -1,12 +1,15 @@
 # :orange_square: Dokument zahtev
 
+
 |                             |                                                                |
 | :-------------------------- | :------------------------------------------------------------- |
-| **Naziv projekta**          | :dart: **TO-DO** naziv projekta                                |
-| **Člani projektne skupine** | :dart: **TO-DO** 1. član, 2. član, 3. član, 4. član in 5. član |
+| **Naziv projekta**          | Aplikacija produktivnosti in organizacije                               |
+| **Člani projektne skupine** | Arne Gašperšič, Jan Merhar, Jure Mržek, Anže Rifelj Tričkovič, Klemen Kolar |
 | **Kraj in datum**           | :dart: **TO-DO** kraj, datum                                   |
 
 ## Povzetek projekta
+
+<!-- Anže -->
 
 :dart: **TO-DO**
 
@@ -14,11 +17,15 @@
 
 ## 1. Uvod
 
+<!-- Anže -->
+
 :dart: **TO-DO**
 
 - V uvodu opišite problemsko domeno (kateri problem bo naša aplikacija reševala) in kratek pregled glavnih funkcionalnosti (kaj vse bo aplikacija počela).
 
 ## 2. Uporabniške vloge
+
+<!-- Anže -->
 
 :dart: **TO-DO**
 
@@ -27,11 +34,15 @@
 
 ## 3. Slovar pojmov
 
+<!-- Anže -->
+
 :dart: **TO-DO**
 
 - Natančno opredelite vse têrmine, ki jih boste uporabljali v nadaljevanju dokumenta.
 
 ## 4. Diagram primerov uporabe
+
+<!-- Anže -->
 
 :dart: **TO-DO**
 
@@ -47,6 +58,8 @@
 **Diagram primerov uporabe** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/DPU.puml))
 
 ## 5. Funkcionalne zahteve
+
+<!-- Jan -->
 
 V tem razdelku podrobno opišite posamezne funkcionalnosti, ki jih vaša aplikacija ponuja svojim uporabnikom. Za vsako funkcionalnost navedite naslednje podatke:
 
@@ -106,11 +119,15 @@ V tem razdelku podrobno opišite posamezne funkcionalnosti, ki jih vaša aplikac
 
 ## 6. Nefunkcionalne zahteve
 
+<!-- Anže -->
+
 :dart: **TO-DO**
 
 - Navedite splošne omejitve, ki jih moramo upoštevati v več funkcionalnostih ali celo skozi celoten razvoj aplikacije.
 
 ## 7. Prototipi vmesnikov
+
+<!-- Jan -->
 
 :dart: **TO-DO**
 
