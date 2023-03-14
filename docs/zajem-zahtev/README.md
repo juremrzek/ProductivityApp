@@ -125,40 +125,40 @@ V tem razdelku podrobno opišite posamezne funkcionalnosti, ki jih vaša aplikac
 
 - Navedite splošne omejitve, ki jih moramo upoštevati v več funkcionalnostih ali celo skozi celoten razvoj aplikacije.
 
-- Aplikacija naj je na voljo 24 ur na dan.\
+### - Aplikacija naj je na voljo 24 ur na dan.
 Ker gre za spletno storitev, ki jo bodo uporabljali po celem svetu, naj je na voljo za uporabo čez celoten dan.
 
-- Aplikacija mora biti zmožna streči najmanj 50.000 hkratnim uporabnikom.\
+### - Aplikacija mora biti zmožna streči najmanj 50.000 hkratnim uporabnikom.
 Ker pričakujemo, da se bo uporaba aplikacije ražširila na veliko število uporabnikov, mora biti aplikacija pripravljena tudi na veliko števio hkratnih uporabnikov. Počasnejše delovanje ob bolj obremenjenih delih dneva bi lahko odvrnilo uporabnike. Pri te zahtevi naj se upošteva tudi to, da povprečna uporaba aplikacije večino časa preprosta in ne zahteva veliko računalniških virov s strani strežnikov sistema.
 
-- Apikacija naj potrebuje za prenos podatkov preko vmesnika Google Calendarja največ 30 sekund. \
+### - Apikacija naj potrebuje za prenos podatkov preko vmesnika Google Calendarja največ 30 sekund. 
 Čas dostopa do vseh željenih podatkov preko vmesnika Google Calendarja in prenos le-teh ne sme trajati predolgo časa in s tem povzročiti to, da postane uporaba funkcionalnosti dostopa do Google Calendarja nezaželena.
 
-- Čas nedelovanja v enem tednu ne sme presežti 30 minut.\
+### - Čas nedelovanja v enem tednu ne sme presežti 30 minut.
 Zaradi ugleda in uporabnosti aplikacije se ne sme pripetiti, da bi aplikacija pogosto prenehala delovati in bi bila za daljše časovno obdobje neuporabna. Težave in krajši padci delovanja so pričakovani, na njih se je treba pripraviti in preprečiti daljša in pogosta nedelovanja.
 
-- Aplikacijski vmesnik aplikacije naj je zmožen prenesti podatke izven sistema s hitrostjo 10 objektov na sekundo. ??TODO\
+### - Aplikacijski vmesnik aplikacije naj je zmožen prenesti podatke izven sistema s hitrostjo 10 objektov na sekundo. ??TODO
 Želimo, da je naš aplikacijskih vmesnik do aplikacije uporaben in dovolj hitro prenese željene podatke. En objekt predstavlja določeno opravilo, kreirano v aplikaciji: njen naziv, opis, status opravljenosti in ciljni čas opravljenosti.
 
-- Čas nalaganja zaslonske maske ne sme presežti 15 sekund.?? TODO\
+### - Čas nalaganja zaslonske maske ne sme presežti 15 sekund.?? TODO
 Zaradi stremenja k dobrem ugledu in visoki uporabnosti si ne želimo opazno predolgotrajnega časa, potrebnega za popolno naložitev katere koli zaslonske maske.
 
-- Za podatkovno skladišče naj se uporabi rešitev Azure Synapse Analytics.\
+### - Za podatkovno skladišče naj se uporabi rešitev Azure Synapse Analytics.
 Zaradi že zakupljene licence naj se za podatkovno skladišče uporabi Microsoftovo Azure Synapse Analytics.
 
-- Aplikacija mora biti dosegljiva na javno dostopnem spletnem naslovu.\
+### - Aplikacija mora biti dosegljiva na javno dostopnem spletnem naslovu.
 Preko javno dostopnega spletnega naslova bodo lahko uporabniki dostopali do aplikacije.
 
-- Uporabnik ne sme dostopati do podatkov, za ketere nima pooblastila.\
+### - Uporabnik ne sme dostopati do podatkov, za ketere nima pooblastila.
 Vsaka uporabniška lahko dostopa zgolj do jasno definirane skupine podatkov, za katere imajo pooblastilo. Do vseh ostalih podatkov pa naj uporabnik nima dostopa.
 
-- Osebni podatki naj so varovani skladno z GDPR.\
+### - Osebni podatki naj so varovani skladno z GDPR.
 Da ostajamo skladni z zakonodajo, bodo podatki varovani skladno z uredbo GDPR.
 
-- V podatkovnem skladišču naj se ne hrani občutljivih osebnih podatkov uporabnikov.\
+### - V podatkovnem skladišču naj se ne hrani občutljivih osebnih podatkov uporabnikov.
 Za dolgotrajno shrambo podatkov naj se ne potrebuje tistih, ki bi lahko bili etično sporni za takšno shranjevanje.
 
-- TODO
+### - TODO
 
 ## 7. Prototipi vmesnikov
 
