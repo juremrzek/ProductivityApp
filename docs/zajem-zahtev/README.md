@@ -9,7 +9,7 @@
 
 ## Povzetek projekta
 
-<!-- Anže -->
+<!-- yan -->
 
 :dart: **TO-DO**
 
@@ -17,7 +17,7 @@
 
 ## 1. Uvod
 
-<!-- Anže -->
+<!-- yan -->
 
 :dart: **TO-DO**
 
@@ -25,7 +25,7 @@
 
 ## 2. Uporabniške vloge
 
-<!-- Anže -->
+<!-- yan -->
 
 :dart: **TO-DO**
 
@@ -34,7 +34,7 @@
 
 ## 3. Slovar pojmov
 
-<!-- Anže -->
+<!-- yan -->
 
 :dart: **TO-DO**
 
