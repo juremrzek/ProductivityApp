@@ -730,6 +730,63 @@ Won't have
 - Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, poveži Google račun s spletno aplikacijo, vnesi podatke o dogodku in ga vnesi
 - Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, vnesi podatke o dogodku in ga vnesi
 
+### 5.14 Prijava in odjava
+
+Prijava in odjava uoprabnikom omogoča, da dostopajo do svojih shranjenih opravil ter dogodkov iz koledarja. V kolikor je uopranbik neprijavljen uporabnik, bo imel opravila shranjena le znotraj okna svojega brskalnika in ne bodo sinhronizirana v oblaku. Prijavjleni uporabnik pa se pri odjavi spremeni v neprijavljenega uporabniko, ki mu niso vidna opravila in dogodke prijavljenega uporabnika.
+
+#### Osnovni tok
+
+a) Prijava
+
+1. Neprijavljeni uporabnik izbere funkcionalnost Prijava in odjava
+2. Sistem prikaže neprijavljenemu uporabniku obrazec za prijavo z gumbom za prijavo
+3. Neprijavljeni uporabnik vnese svoje prijavne podatke
+4. Neprijavljeni uporabnik pritisne gumb za prijavo
+5. Sistem overi uporabnikove podatke
+6. Sistem neprijavljenega uprabnika prijavi,
+7. Sistem spremeni uporabnika v prijavljenega uporabnika
+
+b) Odjava
+
+1. Prijavljeni uporabnik izbere funkcionalnost Prijava in odjava
+2. Sistem prikaže gumb za odjavo
+3. Prijavljeni uporabnik pritisne na gumb za odjavo
+4. Sistem odjavi uporabnika
+5. Sistem spremeni uporabnika v neprijavljenega uporabnika
+
+#### Izjemni tok
+
+a)
+
+- Uporabnik je že prijavljen, zato se ne more ponovno prijaviti
+- Uporabnik je vnesel nepravilno uporabniško ime, za se ne more prijaviti
+- Uporabnik je vnesel nepravilno uporabniško geslo, za se ne more prijaviti
+
+b)
+
+- Uporabnik je že odjavljen, zato se ne more ponovno odjaviti
+
+#### Pogoji
+
+- Pri funkcionalnosti Prijava in odjava mora imeti uporabnik veljaven uporabniški račun, če se želi prijaviti v sistem
+- Pri funkcionalnosti Prijava in odjava mora biti uporabnik prijavljen v sistem z veljavnim uporabniškim računom, da se lahko iz njega odjavi
+
+#### Posledice
+
+- Prijavljeni uoprabnik se spremeni v neprijavljeni uporabnik, ko pride do odjave
+- Neprijavljeni uporabnik se spremeni v prijavljenega uporabnik pri uspešni prijavi
+
+#### Posebnosti
+
+#### Prioriteta
+
+Must have
+
+#### Sprejemni testi
+
+- Prijavi se kot neprijavljeni uporabnik, izberi obrazec za prijavo, vnese prijavne podatke in potrdi prijavo
+- Prijavi se kot prijavljeni uporabnik, pritisni na gumb za odjavo
+
 #### Povzetek funkcionalnosti
 
 :dart: **TO-DO**
