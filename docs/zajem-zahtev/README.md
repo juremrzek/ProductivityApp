@@ -83,7 +83,7 @@ V sklopu spletne aplikacije bomo ponujali tudi naš svoj zunanji CRUD REST API. 
 
 V tem razdelku podrobno opišite posamezne funkcionalnosti, ki jih vaša aplikacija ponuja svojim uporabnikom. Za vsako funkcionalnost navedite naslednje podatke:
 
-### 5.1 Vnos in upravljanje opravila
+### 5.1 Vnos in urejanje seznama opravil
 
 Prijavljeni uporabnik in neprijavljeni uporabnik lahko dodaja in upravlja opravila. To izvaja preko grafičnega vmesnika spletne palikacije. Za vsako opravilo lahko določi in spreminja ime opravila, opis ter čas in datum opravila. Opravila lahko tudi izbriše ali jih pa opravi.
 
@@ -91,14 +91,14 @@ Prijavljeni uporabnik in neprijavljeni uporabnik lahko dodaja in upravlja opravi
 
 a) Vnos novega opravila po imenu
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in upravljanje opravila
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
 2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
 3. Prijavljeni uporabnik in neprijavljeni uporabnik vnese ime opravila in ga potrdi
 4. Sistem prikaže vnešeno opravilo poleg vseh ostalih
 
 b) Spreminjanje lastnosti opravila
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in upravljanje opravila
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
 2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
 3. Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi spremeniti
 4. Sistem pokaže vmesnik, kjer lahko spremeni lastnosti opravila
@@ -107,7 +107,7 @@ b) Spreminjanje lastnosti opravila
 
 c) Brisanje opravila
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in upravljanje opravila
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
 2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
 3. Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi izbrisati ter pritisne na gumb za izbris
 4. Sistem izbriše opravilo iz seznama
@@ -120,7 +120,7 @@ c) Brisanje opravila
 
 #### Pogoji
 
-- Pri funkcionalnosti Vnos in upravljanje opravila mora biti uporabnik bodisi neprijavljeni uporabnik ali prijavljeni uporabnik
+- Pri funkcionalnosti Vnos in urejanje seznama opravil mora biti uporabnik bodisi neprijavljeni uporabnik ali prijavljeni uporabnik
 
 #### Posledice
 
@@ -151,7 +151,7 @@ c)
 - Prijavi se kot prijavljeni uporabnik, izberi opravila in izbriši obstoječe opravilo
 - Prijavi se kot neprijavljen uporabnik, izberi opravila in izbriši obstoječe opravilo
 
-### 5.2 Nastavitev časovnika
+### 5.2 Konfiguriranje časovnika
 
 Prijavljeni uporabnik in neprijavljeni uporabnik lahko uporablja časovnika. Za časovnik lahko določi poljubno časovno trajanje. Prav tako lahko nastavi čas za odmor po končanem odmoru.
 
@@ -159,14 +159,14 @@ Prijavljeni uporabnik in neprijavljeni uporabnik lahko uporablja časovnika. Za 
 
 a)
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Nastavitev časovnika
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
 2. Sistem prikaže polje za spremembo časa časovnika in pavze
 3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
 4. Sistem uveljavi spremembe in spremeni čas časovnika
 
 b)
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Nastavitev časovnika
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
 2. Sistem prikaže polje za spremembo časa časovnika in pavze
 3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas pavze in ga z pritiskom na gumb potrdi
 4. Sistem uveljavi spremembe in spremeni čas časovnika
@@ -177,7 +177,7 @@ b)
 
 #### Pogoji
 
-- Pri funkcionalnosti Nastavitev časovnika mora biti uporabnik prijavljen kot prijavljeni uporabnik
+- Pri funkcionalnosti Konfiguriranje časovnika mora biti uporabnik prijavljen kot prijavljeni uporabnik
 
 #### Posledice
 
@@ -206,14 +206,14 @@ b)
 
 #### Alternativni tok
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Nastavitev časovnika
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
 2. Sistem prikaže polje za spremembo časa časovnika in pavze
 3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
 4. Sistem uveljavi spremembe in spremeni čas časovnika
 5. Sistem prikaže gumb za aktivacijo novo nastavljenega časovnika
 6. Uporabnik aktivira časovnik
 
-### 5.3 Prižig časovnika
+### 5.3 Uporaba časovnika
 
 <!--
   - https://levelup.gitconnected.com/creating-browser-notification-in-javascript-79e91bfb76c8
@@ -225,7 +225,7 @@ Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovn
 
 a) Uporabnik požene časovnik
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Prižig časovnika
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
 2. Sistem prikaže časovnik in gumb za začetek le-tega
 3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
 4. Sistem prične s časovnikom in začne z odštevanjem časa
@@ -234,7 +234,7 @@ a) Uporabnik požene časovnik
 
 b) Uporabnik po končanem časovniku zaključi časovnik
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Prižig časovnika
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
 2. Sistem prikaže časovnik in gumb za začetek le-tega
 3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
 4. Sistem prične s časovnikom in začne z odštevanjem časa
@@ -245,7 +245,7 @@ b) Uporabnik po končanem časovniku zaključi časovnik
 
 c) Uporabnik po končanem časovniku začne pavzo
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Prižig časovnika
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
 2. Sistem prikaže časovnik in gumb za začetek le-tega
 3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
 4. Sistem prične s časovnikom in začne z odštevanjem časa
@@ -258,7 +258,7 @@ c) Uporabnik po končanem časovniku začne pavzo
 
 d) Uporabnik po končanem časovniku preskoči pavzo
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Prižig časovnika
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
 2. Sistem prikaže časovnik in gumb za začetek le-tega
 3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
 4. Sistem prične s časovnikom in začne z odštevanjem časa
@@ -277,7 +277,7 @@ d) Uporabnik po končanem časovniku preskoči pavzo
 
 #### Pogoji
 
-- Pri funkcionalnosti Prižig časovnika mora biti uporabnik prijavljen kot neprijavljen uporabnik ali prijavljen uporabnik
+- Pri funkcionalnosti Uporaba časovnika mora biti uporabnik prijavljen kot neprijavljen uporabnik ali prijavljen uporabnik
 
 #### Posledice
 
@@ -316,13 +316,13 @@ d)
 - Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo
 - Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo
 
-### 5.4 Prikaz dogodkov iz Google Calendar
+### 5.4 Ogled dogodkov na koledarju
 
 Prijavljeni uporabnik se lahko poveže z Google Calendarjem preko naše spletne aplikacije. Tukaj mu je omogočen ogled današnjih dogodkov iz njegovega Google računa.
 
 #### Osnovni tok
 
-1. Prijavljeni uporabnik izbere funkcionalnost Prikaz dogodkov iz Google Calendar
+1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
 2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
 3. Sistem prikaže pridobljene dogodke
 
@@ -332,13 +332,13 @@ Prijavljeni uporabnik se lahko poveže z Google Calendarjem preko naše spletne 
 
 #### Pogoji
 
-- Pri funkcionalnosti Prikaz dogodkov iz Google Calendar mora biti uporabnik prijavljen kot prijavljeni uporabnik
-- Pri funkcionalnosti Prikaz dogodkov iz Google Calendar mora biti uporabnik prijavljen v storitvi Google Calendar
-- Pri funkcionalnosti Prikaz dogodkov iz Google Calendar mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
+- Pri funkcionalnosti Ogled dogodkov na koledarju mora biti uporabnik prijavljen kot prijavljeni uporabnik
+- Pri funkcionalnosti Ogled dogodkov na koledarju mora biti uporabnik prijavljen v storitvi Google Calendar
+- Pri funkcionalnosti Ogled dogodkov na koledarju mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
 
 #### Posledice
 
-- Prikaz dogodkov iz Google Calendar.
+- Ogled dogodkov na koledarju.
 
 #### Posebnosti
 
@@ -353,7 +353,7 @@ Must have - dogodki iz koledarja pripomorejo k uporabniški izkušnji in bojši 
 - Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke
 - Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke
 
-### 5.5 Upravljanje dogodkov iz Google Calendar
+### 5.5 Uporavljanje dogodkov na koledarju
 
 Prijavljeni uporabnik iz izpisa Googlovih dogodkov lahko uporabnik upravlja le-te. S klikom na dogodek lahko spremeni ime, opis, datum in čas ter trajanje samega dogodka. Lahko ga tudi izbriše. To se uveljavi preko zunanjega Google API-ja.
 
@@ -361,7 +361,7 @@ Prijavljeni uporabnik iz izpisa Googlovih dogodkov lahko uporabnik upravlja le-t
 
 a) Urejanje dogodkov
 
-1. Prijavljeni uporabnik izbere funkcionalnost Prikaz dogodkov iz Google Calendar
+1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
 2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
 3. Sistem prikaže pridobljene dogodke
 4. Uporabnik pritisne na dogodek
@@ -373,7 +373,7 @@ a) Urejanje dogodkov
 
 b) Brisanje dogodkov
 
-1. Prijavljeni uporabnik izbere funkcionalnost Prikaz dogodkov iz Google Calendar
+1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
 2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
 3. Sistem prikaže pridobljene dogodke
 4. Uporabnik pritisne na gumb za izbris ob dogodku
@@ -388,9 +388,9 @@ b) Brisanje dogodkov
 
 #### Pogoji
 
-- Pri funkcionalnosti Upravljanje dogodkov iz Google Calendar mora biti uporabnik prijavljen kot prijavljeni uporabnik
-- Pri funkcionalnosti Upravljanje dogodkov iz Google Calendar mora biti uporabnik prijavljen v storitvi Google Calendar
-- Pri funkcionalnosti Upravljanje dogodkov iz Google Calendar mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
+- Pri funkcionalnosti Uporavljanje dogodkov na koledarju mora biti uporabnik prijavljen kot prijavljeni uporabnik
+- Pri funkcionalnosti Uporavljanje dogodkov na koledarju mora biti uporabnik prijavljen v storitvi Google Calendar
+- Pri funkcionalnosti Uporavljanje dogodkov na koledarju mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
 
 #### Posledice
 
@@ -419,7 +419,7 @@ b)
 
 #### Alternativni tok 1
 
-1. Prijavljeni uporabnik izbere funkcionalnost Prikaz dogodkov iz Google Calendar
+1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
 2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
 3. Sistem prikaže pridobljene dogodke
 4. Uporabnik pritisne na dogodek
@@ -431,7 +431,7 @@ b)
 
 #### Alternativni tok 2
 
-1. Prijavljeni uporabnik izbere funkcionalnost Prikaz dogodkov iz Google Calendar
+1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
 2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
 3. Sistem prikaže pridobljene dogodke
 4. Uporabnik pritisne na dogodek
@@ -473,13 +473,13 @@ Should have - iskanje uporabnikov predstavlja najpommebnejši del socialnih funk
 - Prijavi se kot prijavljeni uporabnik, vnesi ime iskanega uporabnika v iskalnik in pritisni gumb za iskanje
 - Prijavi se kot razvijalec, odpri upravljanje poročil o napakah in pritisni na uporanbikovo uporabniško ime
 
-### 5.7 Sledenje drugim uporabnikom
+### 5.7 Sledenje uporabnikom
 
 Prijavljeni uporabnik lahko potem, ko začne slediti drugim, pogleda vse uporabnike, katerim sledi. Iz tega pogleda lahko tudi odpira podrobnosti uporabniške račune oz. jim tudi preneha slediti.
 
 #### Osnovni tok
 
-1. Prijavljeni uporabnik izbere funkcionalnost Sledenje drugim uporabnikom
+1. Prijavljeni uporabnik izbere funkcionalnost Sledenje uporabnikom
 2. Sistem prikaže seznam uporabnikom, ki jim uporabnik še ne sledi
 3. Prijavljeni uporabnik klikne na gumb za sledenje ob nekem uporabniku
 4. Sistem potrdi uspešno sleditev
@@ -488,7 +488,7 @@ Prijavljeni uporabnik lahko potem, ko začne slediti drugim, pogleda vse uporabn
 
 #### Pogoji
 
-- Pri funkcionalnosti Sledenje drugim uporabnikom mora biti uporabnik prijavljen kot prijavljeni uporabnik
+- Pri funkcionalnosti Sledenje uporabnikom mora biti uporabnik prijavljen kot prijavljeni uporabnik
 
 #### Posledice
 
@@ -512,13 +512,13 @@ Could have - sledenje uporabnikom ni najpomembnejši del naše spletne aplikacij
 3. Uporabnik pritisne na gumb za sledenje
 4. Sistem potrdi sledenje izbranega uporabnika
 
-### 5.8 Poročanje o napakah in hroščih
+### 5.8 Poročanje o nepravilnem delovanju
 
 Prijavljen in neprijavljen uporabnik lahko poroča o nepravilnostih ali napak, na katere naleti med uporabo spletne aplikacije. To stori tako, da izpolni obrazec za prijavo napak, kjer napako poimenujejo ter jo tudi opišejo. Te podrobnosti o napakah so vidne tudi razvijalcem.
 
 #### Osnovni tok
 
-1. Prijavljen in neprijavljen uporabnik izbere funkcionalnost Poročanje o napakah in hroščih
+1. Prijavljen in neprijavljen uporabnik izbere funkcionalnost Poročanje o nepravilnem delovanju
 2. Sistem prikaže okno z vnosnimi polji za ime napake ter njen opis
 3. Prijavljen in neprijavljen uporabnik vnese ime napake in opis
 4. Prijavljen in neprijavljen uporabnik pritisne gumb za poročanje napake
@@ -528,7 +528,7 @@ Prijavljen in neprijavljen uporabnik lahko poroča o nepravilnostih ali napak, n
 
 #### Pogoji
 
-- Pri funkcionalnosti Poročanje o napakah in hroščih mora biti uporabnik prijavljen kot neprijavljeni uporabnik ali prijavljeni uporabnik
+- Pri funkcionalnosti Poročanje o nepravilnem delovanju mora biti uporabnik prijavljen kot neprijavljeni uporabnik ali prijavljeni uporabnik
 
 #### Posledice
 
@@ -545,7 +545,7 @@ Should have - obstaja visoka verjetnost, da bomo pri implementaciji zgrešili š
 - Prijavi se kot prijavljen uporabnik, zaznaj neko nepravilnost, napiši in oddaj poročilo o nepravilnosti
 - Prijavi se kot neprijavljen uporabnik, zaznaj neko nepravilnost, napiši in oddaj poročilo o nepravilnosti
 
-### 5.9 Ogled aktivnostih uporabnikov
+### 5.9 Ogled zaslona produktivnosti
 
 Prijavljen, neprijavljen uporabnik in razvijalec lahko vidi aktivnosti drugih uporabnikov. Pri tem imajo na vpogled koliko opravil in navad je opravil skozi različna časovna obdobja enega meseca in enega leta.
 
@@ -558,7 +558,7 @@ Prijavljen, neprijavljen uporabnik in razvijalec lahko vidi aktivnosti drugih up
 
 #### Pogoji
 
-- Pri funkcionalnosti Ogled aktivnostih uporabnikov mora biti kot neprijavljeni uporabnik ali prijavljeni uporabnik
+- Pri funkcionalnosti Ogled zaslona produktivnosti mora biti kot neprijavljeni uporabnik ali prijavljeni uporabnik
 
 #### Posledice
 
@@ -577,18 +577,18 @@ Should have - ogled aktivnosti uprabnikom prikazuje kako sami napredujejo in kak
 
 #### Alternativni tok
 
-1. Razvijalec izbere Upravljanje poročil o nepravilnosti pri delovanju aplikacije
+1. Razvijalec izbere Upravljanje poročanih nepravilnih delovanje
 2. Sistem prikaže vsa aktivna poročila o napakah skupaj z gumboma za pozitiven in negativen odziv in imenom uporabnika
 3. Razvijalec pritisne na ime uporabnika
 4. Sistem mu na ogled da aktivnosti uporabnika
 
-### 5.10 Prenos podatkov za analizo v podatkovno skladišče
+### 5.10 Shranjevanje podatkov o aktivnosti uporabnikov za analitiko
 
 Analitik lahko preneša specifične podatke, ki se uporabljajo za analizo iz produkcijske podatkovne baze v podatkovno skladišče, kjer tudi lahko dostopa do podatkov iz podatkovnega skladišča.
 
 #### Osnovni tok
 
-1. Analitik izbere funkcionalnost Prenos podatkov za analizo v podatkovno skladišče
+1. Analitik izbere funkcionalnost Shranjevanje podatkov o aktivnosti uporabnikov za analitiko
 2. Sistem prikaže polji za izbiro časovnega obdobja in gumb za prenos
 3. Analitik vnese začetni in končni datum za prenos podatkov
 4. Analitik pritisne na gumb za prenos podatkov
@@ -601,7 +601,7 @@ Analitik lahko preneša specifične podatke, ki se uporabljajo za analizo iz pro
 
 #### Pogoji
 
-- Pri funkcionalnosti Prenos podatkov za analizo v podatkovno skladišče mora biti uporabnik prijavljen kot analitik
+- Pri funkcionalnosti Shranjevanje podatkov o aktivnosti uporabnikov za analitiko mora biti uporabnik prijavljen kot analitik
 
 #### Posledice
 
@@ -620,13 +620,13 @@ Must have - podatki predstavljajo pomemben del samega delovanja spletne aplikaci
 - Prijavi se kot analitik, izberi izvoz analitike in jo izvozi
 - Prijavi se kot analitik, izberi izvoz analitike ter določi časovno obdobje za katero bodo podatki izvoženi in jih izvozi
 
-### 5.11 Upravljanje poročil o nepravilnosti pri delovanju aplikacije
+### 5.11 Upravljanje poročanih nepravilnih delovanje
 
 Razvijalec lahko vpogleda nad vsemi poročilo na napakah v spletni aplikaciji, ki jih uporabniki prijavijo. Na voljo ima uporabniški vmesnik, kjer lahko za vsako poročilo podajo pozitiven odziv, kar pomeni, da je bila napaka diagnosticirana in odpravljena oz. zavrne, ko ne more napake zaznati.
 
 #### Osnovni tok
 
-1. Razvijalec izbere Upravljanje poročil o nepravilnosti pri delovanju aplikacije
+1. Razvijalec izbere Upravljanje poročanih nepravilnih delovanje
 2. Sistem prikaže vsa aktivna poročila o napakah skupaj z gumboma za pozitiven in negativen odziv in imenom uporabnika
 3. Razvijalec pritisne na gumb za bodisi pozitiven odziv bodisi negativen odziv
 4. Sistem zabeleži opravljeno poročilo in ga izbriše
@@ -635,7 +635,7 @@ Razvijalec lahko vpogleda nad vsemi poročilo na napakah v spletni aplikaciji, k
 
 #### Pogoji
 
-- Pri funkcionalnosti Upravljanje poročil o nepravilnosti pri delovanju aplikacije mora biti uporabnik prijavljen kot razvijalec
+- Pri funkcionalnosti Upravljanje poročanih nepravilnih delovanje mora biti uporabnik prijavljen kot razvijalec
 
 #### Posledice
 
@@ -653,13 +653,13 @@ Should have - edini način, kako lahko dostopamo do pročil, ki so jih uporanbik
 - Uporabnik se prijavi kot razvijalec, odpre poročila o napakah, preveri napako in se pozitivno odzove
 - Uporabnik se prijavi kot razvijalec, odpre poročila o napakah, preveri napako toda je ne najde in se negativno odzove
 
-### 5.12 Ustvarjanje računov zaposlenih
+### 5.12 Upravljanje računov zaposlenih
 
 Administrator lahko ustvarja račune za zaposlene, v tem primeru za razvijalce in analitike. To stori preko obrazca v spletni aplikaciji.
 
 #### Osnovni tok
 
-1. Administrator izbere Ustvarjanje računov zaposlenih
+1. Administrator izbere Upravljanje računov zaposlenih
 2. Sistem prikaže vnosni obrazec za ustvarjanje računa zaposlenega
 3. Sistem zapolni obrazec z vnosnimi polji in gumbom za potrditev
 4. Administrator izpolni obrazec in ga potrdi s pritiskom na gumb potrdi
@@ -672,7 +672,7 @@ Administrator lahko ustvarja račune za zaposlene, v tem primeru za razvijalce i
 
 #### Pogoji
 
-- Pri funkcionalnosti Ustvarjanje računov zaposlenih mora biti uporabnik prijavljen kot razvijalec
+- Pri funkcionalnosti Upravljanje računov zaposlenih mora biti uporabnik prijavljen kot razvijalec
 
 #### Posledice
 
@@ -682,20 +682,20 @@ Administrator lahko ustvarja račune za zaposlene, v tem primeru za razvijalce i
 
 #### Prioriteta
 
-Must have - ustvarjanje računov zaposlenih je pommebno, saj nam omogoča dodeljevanje računov našim zaposlenim, s čimer jim omogočimo boljši in lažji razvoj spletne aplikacije.
+Must have - Upravljanje računov zaposlenih je pommebno, saj nam omogoča dodeljevanje računov našim zaposlenim, s čimer jim omogočimo boljši in lažji razvoj spletne aplikacije.
 
 #### Sprejemni test
 
 - Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku in vnese zaposlenega
 - Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku, toda uorabnik že obstaja zato spremeni podatke in vnese zaposlenega
 
-### 5.13 Vnos dogodkov v Google Calendar
+### 5.13 Vnos dogodkov na koledar
 
 Prijavljeni uporabnik lahko vnaša dogodke v Google Calendar. Pri tem lahko dodeli novemu dogodku ime, opis, datum in čas ter trajanje samega dogodka. To se uveljavi v Google Calendar preko zunanjega Google API-ja.
 
 #### Osnovni tok
 
-1. Prijavljeni uporabnik izbere funkcionalnost Vnos dogodkov v Google Calendar
+1. Prijavljeni uporabnik izbere funkcionalnost Vnos dogodkov na koledar
 2. Sistem prikaže vnosno polje za dogodek s polji za ime, opis, datum in čas ter tranjanje dogodka
 3. Sistem prikaže gumb za potrditev vnosa dogodka
 4. Uporabnik vnese ime, opis, datum in čas ter trajanje dogodka
@@ -709,9 +709,9 @@ Prijavljeni uporabnik lahko vnaša dogodke v Google Calendar. Pri tem lahko dode
 
 #### Pogoji
 
-- Pri funkcionalnosti Vnos dogodkov v Google Calendar mora biti uporabnik prijavljen kot prijavljeni uporabnik
-- Pri funkcionalnosti Vnos dogodkov v Google Calendar mora biti uporabnik prijavljen v storitvi Google Calendar
-- Pri funkcionalnosti Vnos dogodkov v Google Calendar mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
+- Pri funkcionalnosti Vnos dogodkov na koledar mora biti uporabnik prijavljen kot prijavljeni uporabnik
+- Pri funkcionalnosti Vnos dogodkov na koledar mora biti uporabnik prijavljen v storitvi Google Calendar
+- Pri funkcionalnosti Vnos dogodkov na koledar mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
 
 #### Posledice
 
