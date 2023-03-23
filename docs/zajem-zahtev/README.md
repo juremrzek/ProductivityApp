@@ -138,18 +138,18 @@ Must have - opravila predstavljajo glavno funkcionalnost naše spletne aplikacij
 
 a)
 
-- Prijavi se kot prijavljeni uporabnik, izberi opravila in vnesi novo opravilo
-- Prijavi se kot neprijavljen uporabnik, izberi opravila in vnesi novo opravilo
+- Prijavi se kot prijavljeni uporabnik, izberi opravila in vnesi novo opravilo, rezultat je novo dodano opravilo
+- Prijavi se kot neprijavljen uporabnik, izberi opravila in vnesi novo opravilo, rezultat je novo dodano opravilo
 
 b)
 
-- Prijavi se kot prijavljeni uporabnik, izberi opravila in spremeni obstoječe opravilo
-- Prijavi se kot neprijavljen uporabnik, izberi opravila in spremeni obstoječe opravilo
+- Prijavi se kot prijavljeni uporabnik, izberi opravila in spremeni obstoječe opravilo, rezultat je spremenjeno obstoječe opravilo
+- Prijavi se kot neprijavljen uporabnik, izberi opravila in spremeni obstoječe opravilo, rezultat je spremenjeno obstoječe opravilo
 
 c)
 
-- Prijavi se kot prijavljeni uporabnik, izberi opravila in izbriši obstoječe opravilo
-- Prijavi se kot neprijavljen uporabnik, izberi opravila in izbriši obstoječe opravilo
+- Prijavi se kot prijavljeni uporabnik, izberi opravila in izbriši obstoječe opravilo, rezultat je izbrisano obstoječe opravilo
+- Prijavi se kot neprijavljen uporabnik, izberi opravila in izbriši obstoječe opravilo, rezultat je izbrisano obstoječe opravilo
 
 ### 5.2 Konfiguriranje časovnika
 
@@ -196,13 +196,13 @@ Won't have - nastavljanje časovnika ne daje velike teže pri sami uoprabnosti n
 
 a)
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in mu spremeni trajanje
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in mu spremeni trajanje
+- Prijavi se kot prijavljeni uporabnik, izberi časovnik in mu spremeni trajanje, rezultat je spremenjeno trajanje časovnika
+- Prijavi se kot neprijavljen uporabnik, izberi časovnik in mu spremeni trajanje, rezultat je spremenjeno trajanje časovnika
 
 b)
 
-- Prijavi se kot prijavljeni uporabnik, izberi pavzo in ji spremeni trajanje
-- Prijavi se kot neprijavljen uporabnik, izberi pavzo in ji spremeni trajanje
+- Prijavi se kot prijavljeni uporabnik, izberi pavzo in ji spremeni trajanje, rezultat je spremenjeno trajanje pavze
+- Prijavi se kot neprijavljen uporabnik, izberi pavzo in ji spremeni trajanje, rezultat je spremenjeno trajanje pavze
 
 #### Alternativni tok
 
@@ -298,23 +298,23 @@ Won't have - časovnik in njegova uporaba ne predstavlja glavnega dela aplikacij
 
 a)
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik
+- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik, rezultat je pognan nov časovnik
+- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik, rezultat je pognan nov časovnik
 
 b)
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po konca časovnika ga zaključi
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po konca časovnika ga zaključi
+- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po konca časovnika ga zaključi, rezultat je zaključitev aktivnega časovnika
+- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po konca časovnika ga zaključi, rezultat je zaključitev aktivnega časovnika
 
 c)
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika poženi pavzo
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika poženi pavzo
+- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika poženi pavzo, rezultat je pognana pavza
+- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika poženi pavzo, rezultat je pognana pavza
 
 d)
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo
+- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo, rezultat je ponovno pognan časovnik
+- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo, rezultat je ponovno pognan časovnik
 
 ### 5.4 Ogled dogodkov na koledarju
 
@@ -350,8 +350,8 @@ Must have - dogodki iz koledarja pripomorejo k uporabniški izkušnji in bojši 
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, rezultat je prikaz dogodki
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, rezultat je prikaz dogodki
 
 ### 5.5 Uporavljanje dogodkov na koledarju
 
@@ -409,13 +409,13 @@ Could have - upravljanje dogodkov ne predstavlja močne vloge pri funkcionalnost
 
 a)
 
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, izberi dogodek in ga uredi
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, izberi dogodek in ga uredi
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, izberi dogodek in ga uredi, rezultat je spremenjen obstoječi dogodek
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, izberi dogodek in ga uredi, rezultat je spremenjen obstoječi dogodek
 
 b)
 
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, izberi dogodek in ga izbriši
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, izberi dogodek in ga izbriši
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, izberi dogodek in ga izbriši, rezultat je izbrisan obstoječi dogodek
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, izberi dogodek in ga izbriši, rezultat je izbrisan obstoječi dogodek
 
 #### Alternativni tok 1
 
@@ -470,8 +470,8 @@ Should have - iskanje uporabnikov predstavlja najpommebnejši del socialnih funk
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljeni uporabnik, vnesi ime iskanega uporabnika v iskalnik in pritisni gumb za iskanje
-- Prijavi se kot razvijalec, odpri upravljanje poročil o napakah in pritisni na uporanbikovo uporabniško ime
+- Prijavi se kot prijavljeni uporabnik, vnesi ime iskanega uporabnika v iskalnik in pritisni gumb za iskanje, rezultat je prikaz uporabnikove aktivnosti
+- Prijavi se kot razvijalec, odpri upravljanje poročil o napakah in pritisni na uporanbikovo uporabniško ime, rezultat je prikaz uporabnikove aktivnosti
 
 ### 5.7 Sledenje uporabnikom
 
@@ -502,8 +502,8 @@ Could have - sledenje uporabnikom ni najpomembnejši del naše spletne aplikacij
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljeni uporabnik, vnesi ime uporabnika, ki mu že slesi, v iskalnik in pritisni gumb za iskanje
-- Prijavi se kot prijavljeni uporabnik, vnesi ime uporabnika, ki mu že sledi, v iskalnik in pritisni gumb za iskanje in odpri uporabnikov račun
+- Prijavi se kot prijavljeni uporabnik, vnesi ime uporabnika, ki mu že slesi, v iskalnik in pritisni gumb za iskanje, rezultat je seznam iskanih uporabnikov
+- Prijavi se kot prijavljeni uporabnik, vnesi ime uporabnika, ki mu že sledi, v iskalnik in pritisni gumb za iskanje in odpri uporabnikov račun, rezultat je seznam iskanih uporabnikov
 
 #### Alternativni tok
 
@@ -542,8 +542,8 @@ Should have - obstaja visoka verjetnost, da bomo pri implementaciji zgrešili š
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljen uporabnik, zaznaj neko nepravilnost, napiši in oddaj poročilo o nepravilnosti
-- Prijavi se kot neprijavljen uporabnik, zaznaj neko nepravilnost, napiši in oddaj poročilo o nepravilnosti
+- Prijavi se kot prijavljen uporabnik, zaznaj neko nepravilnost, napiši in oddaj poročilo o nepravilnosti, rezultat je oddano poročilo o napakah
+- Prijavi se kot neprijavljen uporabnik, zaznaj neko nepravilnost, napiši in oddaj poročilo o nepravilnosti, rezultat je oddano poročilo o napakah
 
 ### 5.9 Ogled zaslona produktivnosti
 
@@ -572,8 +572,8 @@ Should have - ogled aktivnosti uprabnikom prikazuje kako sami napredujejo in kak
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljen uporabnik, odpri iskalnik uporabikov, vnesi uporabniško ime in odpri profil nekega uporabnika
-- Prijavi se kot prijavljen uporabnik, poglej seznam uporabnikov, ki nam sledijo, izberi uporabik in odpri profil izbranega uporabnika
+- Prijavi se kot prijavljen uporabnik, odpri iskalnik uporabikov, vnesi uporabniško ime in odpri profil nekega uporabnika, rezultat je prikaz produktivnosti izbranega uporabnika
+- Prijavi se kot prijavljen uporabnik, poglej seznam uporabnikov, ki nam sledijo, izberi uporabik in odpri profil izbranega uporabnika, rezultat je prikaz produktivnosti izbranega uporabnika
 
 #### Alternativni tok
 
@@ -617,8 +617,8 @@ Must have - podatki predstavljajo pomemben del samega delovanja spletne aplikaci
 
 #### Sprejemni test
 
-- Prijavi se kot analitik, izberi izvoz analitike in jo izvozi
-- Prijavi se kot analitik, izberi izvoz analitike ter določi časovno obdobje za katero bodo podatki izvoženi in jih izvozi
+- Prijavi se kot analitik, izberi izvoz analitike in jo izvozi, rezultat je izvožena analitika v podatkovno skladišče
+- Prijavi se kot analitik, izberi izvoz analitike ter določi časovno obdobje za katero bodo podatki izvoženi in jih izvozi, rezultat je izvožena analitika v podatkovno skladišče
 
 ### 5.11 Upravljanje poročanih nepravilnih delovanje
 
@@ -650,8 +650,8 @@ Should have - edini način, kako lahko dostopamo do pročil, ki so jih uporanbik
 
 #### Sprejemni test
 
-- Uporabnik se prijavi kot razvijalec, odpre poročila o napakah, preveri napako in se pozitivno odzove
-- Uporabnik se prijavi kot razvijalec, odpre poročila o napakah, preveri napako toda je ne najde in se negativno odzove
+- Uporabnik se prijavi kot razvijalec, odpre poročila o napakah, preveri napako in se pozitivno odzove, rezultat je izbris odprtega poročila o napakah
+- Uporabnik se prijavi kot razvijalec, odpre poročila o napakah, preveri napako toda je ne najde in se negativno odzove, rezultat je izbris odprtega poročila o napakah
 
 ### 5.12 Upravljanje računov zaposlenih
 
@@ -686,8 +686,8 @@ Must have - Upravljanje računov zaposlenih je pommebno, saj nam omogoča dodelj
 
 #### Sprejemni test
 
-- Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku in vnese zaposlenega
-- Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku, toda uorabnik že obstaja zato spremeni podatke in vnese zaposlenega
+- Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku in vnese zaposlenega, rezultat je nov uporabniški račun zaposlenega
+- Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku, toda uorabnik že obstaja zato spremeni podatke in vnese zaposlenega, rezultat je nov uporabniški račun zaposlenega
 
 ### 5.13 Vnos dogodkov na koledar
 
@@ -727,8 +727,8 @@ Won't have - pri vnosu dogodkov ima zunanji odjemalec dodobra izdelan uporabniš
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, poveži Google račun s spletno aplikacijo, vnesi podatke o dogodku in ga vnesi
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, vnesi podatke o dogodku in ga vnesi
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, poveži Google račun s spletno aplikacijo, vnesi podatke o dogodku in ga vnesi, rezultat je nov dogodek na koledarju
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, vnesi podatke o dogodku in ga vnesi, rezultat je nov dogodek na koledarju
 
 ### 5.14 Prijava in odjava
 
@@ -784,8 +784,8 @@ Must have - prijava in odjava predstavljata ključni del spletne aplikacije, saj
 
 #### Sprejemni testi
 
-- Prijavi se kot neprijavljeni uporabnik, izberi obrazec za prijavo, vnese prijavne podatke in potrdi prijavo
-- Prijavi se kot prijavljeni uporabnik, pritisni na gumb za odjavo
+- Prijavi se kot neprijavljeni uporabnik, izberi obrazec za prijavo, vnese prijavne podatke in potrdi prijavo, rezultat je prijava v sistem
+- Prijavi se kot prijavljeni uporabnik, pritisni na gumb za odjavo, rezultat je odjava iz sistema
 
 #### Povzetek funkcionalnosti
 
@@ -1000,7 +1000,7 @@ Za dolgotrajno shrambo podatkov naj se ne potrebuje tistih, ki bi lahko bili eti
 
 ### Vmesniki do zunanjih sistemov
 
-#### Prikaz dogodkov iz Google Calendar
+#### Ogled dogodkov na koledarju
 
 <!--
  https://developers.google.com/calendar/api/v3/reference/events/list
