@@ -669,6 +669,47 @@ Must have
 - Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku in vnese zaposlenega
 - Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku, toda uorabnik že obstaja zato spremeni podatke in vnese zaposlenega
 
+### 5.13 Vnos dogodkov v Google Calendar
+
+Prijavljeni uporabnik lahko vnaša dogodke v Google Calendar. Pri tem lahko dodeli novemu dogodku ime, opis, datum in čas ter trajanje samega dogodka. To se uveljavi v Google Calendar preko zunanjega Google API-ja.
+
+#### Osnovni tok
+
+1. Prijavljeni uporabnik izbere funkcionalnost Vnos dogodkov v Google Calendar
+2. Sistem prikaže vnosno polje za dogodek s polji za ime, opis, datum in čas ter tranjanje dogodka
+3. Sistem prikaže gumb za potrditev vnosa dogodka
+4. Uporabnik vnese ime, opis, datum in čas ter trajanje dogodka
+5. Uporabnik pritisne na gub za potrditev vnosa dogodka
+6. Sistem doda dogodek preko Google API-ja
+7. Sistem prikaže dodani dogodek poleg ostalih dogodkov
+
+#### Izjemni tok
+
+1. Uporabnik ne more dodajati dogodkov, če ni povezan v Google Calendar
+
+#### Pogoji
+
+- Pri funkcionalnosti Vnos dogodkov v Google Calendar mora biti uporabnik prijavljen kot prijavljeni uporabnik
+- Pri funkcionalnosti Vnos dogodkov v Google Calendar mora biti uporabnik prijavljen v storitvi Google Calendar
+- Pri funkcionalnosti Vnos dogodkov v Google Calendar mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
+
+#### Posledice
+
+- Dodajanje dogodka v Google Calendar
+
+#### Posebnosti
+
+- Moramo imeti odprt razvijalski račun pri Googlu.
+
+#### Prioriteta
+
+Won't have
+
+#### Sprejemni test
+
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, poveži Google račun s spletno aplikacijo, vnesi podatke o dogodku in ga vnesi
+- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, vnesi podatke o dogodku in ga vnesi
+
 #### Povzetek funkcionalnosti
 
 :dart: **TO-DO**
