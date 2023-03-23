@@ -132,7 +132,7 @@ c) Brisanje opravila
 
 #### Prioriteta
 
-Must have
+Must have - opravila predstavljajo glavno funkcionalnost naše spletne aplikacije, zato je pomambno, da je implementirana.
 
 #### Sprejemni test
 
@@ -190,7 +190,7 @@ b)
 
 #### Prioriteta
 
-Won't have
+Won't have - nastavljanje časovnika ne daje velike teže pri sami uoprabnosti naše aplikacije, saj so že pred definirani časovniki prilagojeni večini uporabnikovim potrebam.
 
 #### Sprejemni test
 
@@ -292,7 +292,7 @@ d) Uporabnik po končanem časovniku preskoči pavzo
 
 #### Prioriteta
 
-Won't have
+Won't have - časovnik in njegova uporaba ne predstavlja glavnega dela aplikacije, prav tako ni glavna prodajna vrednost naše spletne aplikacije, četudi bi ga imeli, imajo uporabniki verjetno će svoje sisteme beleženje časa.
 
 #### Sprejemni test
 
@@ -346,7 +346,7 @@ Prijavljeni uporabnik se lahko poveže z Google Calendarjem preko naše spletne 
 
 #### Prioriteta
 
-Must have
+Must have - dogodki iz koledarja pripomorejo k uporabniški izkušnji in bojši zadržitvi uoprabnika na naši platformi, zaradi česa bo še bolj uporabljal našo spletno aplikacijo.
 
 #### Sprejemni test
 
@@ -403,7 +403,7 @@ b) Brisanje dogodkov
 
 #### Prioriteta
 
-Could have
+Could have - upravljanje dogodkov ne predstavlja močne vloge pri funkcionalnosti naše spletne aplikacije, težko je replicirati vse funkcionalnosti, ki jih ponuja Google Calendar, zaradi česar uporabniki sploh uporabljajo to storitev.
 
 #### Sprejemni test
 
@@ -466,7 +466,7 @@ Prijavljeni uporabnik lahko išče po uporabnikih s pomočjo uporabniških imen.
 
 #### Prioriteta
 
-Should have
+Should have - iskanje uporabnikov predstavlja najpommebnejši del socialnih funkcionalnosti naše spletne aplikacije, saj tako najdemo in tudi začnemo slediti drugim uporabnikom.
 
 #### Sprejemni test
 
@@ -498,7 +498,7 @@ Prijavljeni uporabnik lahko potem, ko začne slediti drugim, pogleda vse uporabn
 
 #### Prioriteta
 
-Could have
+Could have - sledenje uporabnikom ni najpomembnejši del naše spletne aplikacije, toda poomaga uporanbikom vstati v stiku z njhovimi najljubšimo so-uporabniki na naši platformi.
 
 #### Sprejemni test
 
@@ -538,7 +538,7 @@ Prijavljen in neprijavljen uporabnik lahko poroča o nepravilnostih ali napak, n
 
 #### Prioriteta
 
-Should have
+Should have - obstaja visoka verjetnost, da bomo pri implementaciji zgrešili številne napake, zato je poročanje o napakah zaželjeno, saj tako odkrijemo napake, ki sos se nam skrile med testiranjem.
 
 #### Sprejemni test
 
@@ -568,7 +568,7 @@ Prijavljen, neprijavljen uporabnik in razvijalec lahko vidi aktivnosti drugih up
 
 #### Prioriteta
 
-Should have
+Should have - ogled aktivnosti uprabnikom prikazuje kako sami napredujejo in kako napredujejo tudi ostali uporabniki naše spletne aplikacije in pomaga pri izboljšanju motivacije za naše uporabnike.
 
 #### Sprejemni test
 
@@ -613,7 +613,7 @@ Analitik lahko preneša specifične podatke, ki se uporabljajo za analizo iz pro
 
 #### Prioriteta
 
-Must have
+Must have - podatki predstavljajo pomemben del samega delovanja spletne aplikacije, medtem ko nam analiza poda boljši vpogled v to, kako uporabniki uporabljajo našo spletno aplikacijo.
 
 #### Sprejemni test
 
@@ -646,7 +646,7 @@ Razvijalec lahko vpogleda nad vsemi poročilo na napakah v spletni aplikaciji, k
 
 #### Prioriteta
 
-Should have
+Should have - edini način, kako lahko dostopamo do pročil, ki so jih uporanbiki je tukaj in tako lahko odkrijemo, diagnosticiramo in odpravimo napake.
 
 #### Sprejemni test
 
@@ -682,7 +682,7 @@ Administrator lahko ustvarja račune za zaposlene, v tem primeru za razvijalce i
 
 #### Prioriteta
 
-Must have
+Must have - ustvarjanje računov zaposlenih je pommebno, saj nam omogoča dodeljevanje računov našim zaposlenim, s čimer jim omogočimo boljši in lažji razvoj spletne aplikacije.
 
 #### Sprejemni test
 
@@ -723,7 +723,7 @@ Prijavljeni uporabnik lahko vnaša dogodke v Google Calendar. Pri tem lahko dode
 
 #### Prioriteta
 
-Won't have
+Won't have - pri vnosu dogodkov ima zunanji odjemalec dodobra izdelan uporabniški vmesnik, s katerim težko konkuriramo, če si ne vzamemo ogromne količine časa za implementacijo le-tega, zato vomo zaenkrat to implementacijo preskočili.
 
 #### Sprejemni test
 
@@ -780,7 +780,7 @@ b)
 
 #### Prioriteta
 
-Must have
+Must have - prijava in odjava predstavljata ključni del spletne aplikacije, saj tako uporabniki dostopajo do vseh njihovih funkcionalnosti, z izjemo tistih, ki se ne sinhronizirajo z uporabnikovim računom.
 
 #### Sprejemni testi
 
