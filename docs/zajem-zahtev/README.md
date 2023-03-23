@@ -812,3 +812,101 @@ Za dolgotrajno shrambo podatkov naj se ne potrebuje tistih, ki bi lahko bili eti
 :dart: **TO-DO**
 
 - Navesti je potrebno: zaslonske maske, sistemske vmesnike in vmesnike do naprav, vključno z referencami do primerov uporabe.
+
+### Osnutki zaslonskih mask
+
+### Vmesniki do zunanjih sistemov
+
+#### Prikaz dogodkov iz Google Calendar
+
+<!--
+ https://developers.google.com/calendar/api/v3/reference/events/list
+ -->
+
+Googlov API omogoča pregled dogodkov tako, da ponuja funkcijo
+
+`Events.list(calendarId: string): Event[]`,
+
+ki prejme identifikator koledarja in vrne tabelo Event objektov.
+
+#### Vnos dogodka v Google Calendar
+
+<!-- https://developers.google.com/calendar/api/v3/reference/events/insert -->
+
+Googlov API omogoča dodajanje dogodkov tako, da ponuja funkcijo
+
+`Events.insert(calendarId: string, body: Event): Event`,
+
+ki prejme identifikator koledarja in Event objekt ter vrne Event objekt.
+
+#### Urejanje dogodka iz Google Calendar
+
+<!-- https://developers.google.com/calendar/api/v3/reference/events/patch -->
+
+Googlov API omogoča brisanje dogodkov tako, da ponuja funkcijo
+
+`Events.patch(calendarId: string, eventId: string, body: Event): Event`,
+
+ki prejme identifikator koledarja, identifikator dogodka in Event objekt ter vrne Event objekt.
+
+#### Brisanje dogodka iz Google Calendar
+
+<!-- https://developers.google.com/calendar/api/v3/reference/events/delete -->
+
+Googlov API omogoča brisanje dogodkov tako, da ponuja funkcijo
+
+`Events.delete(calendarId: string, eventId: String): void`,
+
+ki prejme identifikator koledarja in identifikator dogodka in vrne prazno telo.
+
+#### Ogled opravil
+
+Naš sistem omogoča dostop do vseh uporabnikovih opravil, ki bo ponujal funkcijo
+
+`opravila(uporabnik: string): string`,
+
+ki prejme šifro uporabnika in vrne JSON objekt, ki vsebuje tabelo elementov z naslednjimi lastnostmi:
+
+- identifikator opravila,
+- ime opravila,
+- opis opravila,
+- čas in datum opravila v obliki timestamp.
+
+#### Dodajanje opravila
+
+Naš sistem omogoča dodajanje opravila, ki bo ponujal funkcijo
+
+`dodaj_opravilo(uporabik: string, opravilo: string): string`,
+
+ki prejme identifikator uporabnika in JSON podatke o opravilu in vrne objekt dodanega opravila z naslednjimi lastnostmi:
+
+- identifikator opravila,
+- ime opravila,
+- opis opravila,
+- čas in datum opravila v obliki timestamp.
+
+#### Urejanje opravila
+
+Naš sistem omogoča spreminjanje opravila, ki bo ponujal funkcijo
+
+`posodobi_opravilo(opravilo: string): string`,
+
+ki prejme identifikator opravila in vrne JSON objekt posodobljenega opravila z naslednjimi lastnostmi:
+
+- identifikator opravila,
+- ime opravila,
+- opis opravila,
+- čas in datum opravila v obliki timestamp.
+
+#### Izbris opravila
+
+Naš sistem omogoča spreminjanje opravila, ki bo ponujal funkcijo
+
+`izbrisi_opravilo(opravilo: string): string`,
+
+ki prejme identifikator opravila in vrne JSON objekt izbrisanega opravila z naslednjimi lastnostmi:
+
+- identifikator opravila,
+- ime opravila,
+- opis opravila,
+- čas in datum opravila v obliki timestamp.
