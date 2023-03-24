@@ -39,9 +39,9 @@ V tem projektu smo se odločili izdelati spletno aplikacijo za produktivnost z i
   -->
 
 Za projekt naše ekipe pri tem predmetu smo izbrali načrtovanje in izdelavo aplikacijo, ki deluje oz. ima lastnosti socialnega omrežja z implementacijo sledenja, ogleda uporabniških profilov in ogled statistik produktivnosti ter uporabnikom ponuja orodja, s katerimi bo poskrbel in izboljšal svojo produktivnost z dodajanjem, spreminjanjem in brisanjem opravil ter dobro integracijo Googlovih koledarskih storitev preko CRUD operacij. Aplikacija bo tudi ponujala svoj zunanji REST API vmesnik, do katerega bodo lahko dostopali tudi zunanji uporabniki, ki imajo uporabniški račun v naši spletni aplikaciji. S to aplikacijo želimo zbližati in spodbuditi težnjo k boljši produktivnosti tako doma kot v delovnem okolju ter istočasno povečati produktivnost z uporabo zunanjih storitev, ki že same po sebi slonijo na tem, da svojim uporabnikom olajšajo vsakdanja enostavne in malce težja opravila.
-Naša spletna aplikacija za produktivnost bo ponujala vnos in upravljanje opravil po principu CRUD operacij, to je možnost vnosa opravila, pri čemer za vsako opravilo uporabnik navade naslednje podatke: ime novo dodanega opravila, opis tega opravila, ki pove o čem se gre pri opravilu oz. ponudi dodaten kontekst in na vse zadnje tudi čas ter datum opravila, ki je podan kot timestamp. Seveda ni mu na volje le vnos novih opravil, temveč tudi samo spreminjanje le-teh, pri čemer mora navesti nove vrednosti za polja: ime opravila, opis opravila ter seveda čas in datum opravila, ki ga vnese s pomočjo grafičnih elementov spletne aplikacije. Ni mu potrebno spremeniti vseh vnosnih polj v obrazcu za spremembo opravila, saj lahko spremeni le določene lastnosti ter te tudi shrani. Prav tako lahko tudi dodana in morebitno spremenjena uporabniška opravila zbriše. Uporabniku tudi nudimo orodje za boljšo časovno organizacijo, saj je to eden izmed težav s katerimi se tudi mi, naša ekipa, osebno srečuje na vsakdanji ravni. To je seveda časovnik. Časovnik uporabniku omogoča, da si določi neko časovno obdobje, v katerem se bo popolnoma osredotočil na opravljanje nekega opravila oz. dogodka iz zunanjega Googlovega koledarja. Ko pa uporabnik zaključi z aktivnim časovnikom pa mu so ponujene naslednje tri opcije: začni pavzo, preskoči pavzo ali pa končaj časovnik. Sprva bo uporabnik imel pred definirane časovne intervale v časovniku, zato jih lahko tudi prilagodi sam svojim potrebam po pavzi in sami duraciji časovnika. Za še boljšo časovno organizacijo mu v okviru spletne aplikacije ponujamo tudi integracijo z Googlovim Calendarjem, za kar mora uporabnik imeti aktiven uporabniški račun pri Googlu, ki ima tudi vsebino v slovej Google koledarju. Preden pa lahko začne uporabljati storitve pa more še povezati svoj Google račun z našo spletno aplikacijo ter ji omogočiti dostop do njegovih dogodkov. Naša aplikacija omogoča uporabniku tudi CRUD operacije nad zunanjimi dogodki iz Googlovega koledarja. Te operacije so: vnos novega dogodka, sprememba obstoječega dogodka, izbris zunanjega dogodka ter na vse zadnje tudi samo prikaz uporabnikovih dogodkov v naši spletni aplikaciji. Poleg že omenjenih produktivnih orodij ponujamo tudi socialne funkcionalnosti. Tukaj ima uporabnik možnost iskanja drugih uporabnikov po uporabniškem imenu. Vsakega iskanega uporabnika lahko tudi začne slediti in ti sledeči uporabniku se mu prikažejo na njegovem pogledu vseh uporabnikov, ki mu sledijo. Prav tako lahko drugi uporabiku slediju našemu uporabniku, kar je prav tako vidno v nekem drugem pogledu. Za vsakega uporabnika, ki mu sledimo, lahko izbrišemo sleditev in obratno, lahko druge uporabnike nehamo slediti. Pri tem pa imamo možnost ogled raznih statistik za vsakega uporabnika, ki ga najdemo bodisi preko iskalnika uporabnika bodisi če se drug drugega sledimo. Ker seveda programerji delamo napake, ki jih sprva ne opazimo, obstaja možnost, da jih bo opazil kakšen uporabnik. Zato imamo tudi na voljo možnost podajanja poročil o raznih napakah, na katere lahko naivni uporabnik naleti. V vse te napake pa ima moč vpogledati naš razvijalec, ki te napake investigira ter jih odpravi oz. pobriše opročilo, v primeru, da napaka ni bila najdena oz. ponovljena s strani razvijalca. Za naše analitične poizvedbe imamo na voljo izvoz podatkov iz produkcijske podatkovne baze v podatkovno skladišče. To ima moč opravljati le analitik, ki najprej prenese podatke v podatkovno skladišče ter jih pozneje tam analizira, manipulira ter išče informacije iz njih. Na vse zadnje pa še omogočamo kreiranje računov zaposlenih, tako da administrator dostopa do spletnega vmesnika, ker lahko ustvari nov račun zaposlenega.
-Za našo aplikacijo morajo veljati tudi nefunkcionalne značilnosti. Zagotavljati moramo, da je strotive dostopna 24 ur na dan, 7 dni na teden in 365 dni na leto. Hkrati mora biti dovolj zmogljivo oz. moramo imeti zadosti močno infrastrukturo, da bo stregla 50 tisoč uporabnikom istočasno. Želimo tudi enostavno in hitro integracijo z zunanjimi vmesniki, zato smo se zavzeli za največ 30 sekundno okno, v katerem se za prenos podatkov iz Google Calendarja prenesejo vsi podatki za izboljšano uporabnikovo uporabniško izkušnjo. Ne želimo preseči časa delovanja tedensko za več kot 30 minut. Pri čemer pa mora biti tudi uporabniški vmesnik lep, pregled in enostaven za uporabo ter moramo zagotavljati dobro uporabniško izkušnjo. Seveda pa mora biti aplikacija dosegljiva tudi uoprabnikom izven matične države, torej celotnemu svetu, saj bomo tako lažje povečali število vseh uporabikov. Pri čemer moramo biti pazljivi, da omejimo uporabnikom dostop do izključno njihovih podatkov oz. do podatkov, da katerim imajo avtorizacijo. Za vse to skrbi tudi GDPR, zaradi katerega je varnost še pomembnjejša. Seveda se bomo zaradi GDPR-ja izognili hrambo občutjlivih osebnih podatkov v našem podatkovnem skladišču.
-V sklopu spletne aplikacije bomo ponujali tudi naš svoj zunanji CRUD REST API. Preko našega REST API vmesnika bomo zunanjim uporabnikom, ki imajo registriran uporabniški račun, omogočili branje opravil, spreminjanje opravil, brisanje oopravil ter na vse zadnje tudi dodajanje novih opravil. Imenli bomo REST API endpointe, do katerih bodo zunanji uporabniki dostopali tako, da bodo v glavo zahtevkov po podatkih podali svoje podatke za prijavo, ki bodo tudi primerno kodirani za varno komunikacija poreko spleta.
+Naša spletna aplikacija za produktivnost bo ponujala vnos in upravljanje opravil po principu CRUD operacij, to je možnost vnosa opravila, pri čemer za vsako opravilo uporabnik navade naslednje podatke: ime novo dodanega opravila, opis tega opravila, ki pove o čem se gre pri opravilu oz. ponudi dodaten kontekst in na vse zadnje tudi čas ter datum opravila, ki je podan kot timestamp. Uporabniku ni na voljo le vnos novih opravil, temveč tudi samo spreminjanje le-teh, pri čemer mora navesti nove vrednosti za polja: ime opravila, opis opravila ter seveda čas in datum opravila, ki ga vnese s pomočjo grafičnih elementov spletne aplikacije. Ni mu potrebno spremeniti vseh vnosnih polj v obrazcu za spremembo opravila, saj lahko spremeni le določene lastnosti ter te tudi shrani. Prav tako lahko tudi dodana in morebitno spremenjena uporabniška opravila zbriše. Uporabniku tudi nudimo orodje za boljšo časovno organizacijo, saj je to eden izmed težav s katerimi se tudi mi, naša ekipa, osebno srečuje na vsakdanji ravni. To je seveda časovnik. Časovnik uporabniku omogoča, da si določi neko časovno obdobje, v katerem se bo popolnoma osredotočil na opravljanje nekega opravila oz. dogodka iz zunanjega Googlovega koledarja. Ko pa uporabnik zaključi z aktivnim časovnikom pa mu so ponujene naslednje tri opcije: začni pavzo, preskoči pavzo ali pa končaj časovnik. Sprva bo uporabnik imel pred definirane časovne intervale v časovniku, zato jih lahko tudi prilagodi sam svojim potrebam po pavzi in sami duraciji časovnika. Za še boljšo časovno organizacijo mu v okviru spletne aplikacije ponujamo tudi integracijo z Googlovim Calendarjem, za kar mora uporabnik imeti aktiven uporabniški račun pri Googlu, ki ima tudi vsebino v slovej Google koledarju. Preden pa lahko začne uporabljati storitve pa more še povezati svoj Google račun z našo spletno aplikacijo ter ji omogočiti dostop do njegovih dogodkov. Naša aplikacija omogoča uporabniku tudi CRUD operacije nad zunanjimi dogodki iz Googlovega koledarja. Te operacije so: vnos novega dogodka, sprememba obstoječega dogodka, izbris zunanjega dogodka ter na vse zadnje tudi samo prikaz uporabnikovih dogodkov v naši spletni aplikaciji. Poleg že omenjenih produktivnih orodij ponujamo tudi socialne funkcionalnosti. Tukaj ima uporabnik možnost iskanja drugih uporabnikov po uporabniškem imenu. Vsakega iskanega uporabnika lahko tudi začne slediti in ti sledeči uporabniku se mu prikažejo na njegovem pogledu vseh uporabnikov, ki mu sledijo. Prav tako lahko drugi uporabiku slediju našemu uporabniku, kar je prav tako vidno v nekem drugem pogledu. Za vsakega uporabnika, ki mu sledimo, lahko izbrišemo sleditev in obratno, lahko druge uporabnike nehamo slediti. Pri tem pa imamo možnost ogled raznih statistik za vsakega uporabnika, ki ga najdemo bodisi preko iskalnika uporabnika bodisi če se drug drugega sledimo. Ker seveda programerji delamo napake, ki jih sprva ne opazimo, obstaja možnost, da jih bo opazil kakšen uporabnik. Zato imamo tudi na voljo možnost podajanja poročil o raznih nepravilnih delovanjih, na katere lahko naivni uporabnik naleti. V vsa poročila o nepravilnem delovanju pa ima moč vpogledati naš razvijalec, ki ta nepravilna delovanja razišče ter jih odpravi oz. izbriše sporočilo, v primeru, da nepravilno delovanje ni bilo najdeno oz. ponovljena s strani razvijalca. Za naše analitične poizvedbe imamo na voljo izvoz podatkov iz produkcijske podatkovne baze v podatkovno skladišče. To ima moč opravljati le analitik, ki najprej prenese podatke v podatkovno skladišče ter jih pozneje tam analizira, manipulira ter išče informacije iz njih. Na vse zadnje pa še omogočamo kreiranje računov zaposlenih, tako da administrator dostopa do spletnega vmesnika, ker lahko ustvari nov račun zaposlenega.
+Za našo aplikacijo morajo veljati tudi nefunkcionalne značilnosti. Zagotavljati moramo, da je strotitev dostopna 24 ur na dan, 7 dni na teden in 365 dni na leto z izjemo ustavitve delovanja zaradi popravkov in posodabljanja aplikacije, ali pa nepredvidenih napak v sistemu. Hkrati mora biti dovolj zmogljivo oz. moramo imeti zadosti močno infrastrukturo, da bo stregla 50 tisoč uporabnikom istočasno. Želimo tudi enostavno in hitro integracijo z zunanjimi vmesniki, zato smo se zavzeli za največ 30 sekundno okno, v katerem se za prenos podatkov iz Google Calendarja prenesejo vsi podatki za izboljšano uporabniško izkušnjo. Ne želimo preseči časa nedelovanja tedensko za več kot 30 minut. Pri čemer pa mora biti tudi uporabniški vmesnik estetsko dovršen, pregleden in enostaven za uporabo ter moramo zagotavljati dobro uporabniško izkušnjo. Seveda pa mora biti aplikacija dosegljiva celotnemu svetu, saj bomo tako lažje povečali število vseh uporabikov. Pri čemer moramo biti pazljivi, da omejimo uporabnikom dostop do izključno njihovih podatkov oz. do podatkov, nad katerim imajo avtorizacijo. Za vse to skrbi tudi GDPR, zaradi katerega je varnost še pomembnjejša. Seveda se bomo zaradi GDPR-ja izognili hrambo občutjlivih osebnih podatkov v našem podatkovnem skladišču.
+V sklopu spletne aplikacije bomo ponujali tudi naš svoj zunanji CRUD REST API. Preko našega REST API vmesnika bomo zunanjim uporabnikom, ki imajo registriran uporabniški račun, omogočili branje opravil, spreminjanje opravil, brisanje oopravil ter na vse zadnje tudi dodajanje novih opravil. Imeli bomo REST API endpointe, do katerih bodo zunanji uporabniki dostopali tako, da bodo v glavo zahtevkov po podatkih podali svoje podatke za prijavo, ki bodo tudi primerno kodirani za varno komunikacijo preko spleta.
 
 ## 2. Uporabniške vloge
 
@@ -54,11 +54,11 @@ V sklopu spletne aplikacije bomo ponujali tudi naš svoj zunanji CRUD REST API. 
 
 ## 3. Slovar pojmov
 
-<!-- yan -->
-
 :dart: **TO-DO**
 
 - Natančno opredelite vse têrmine, ki jih boste uporabljali v nadaljevanju dokumenta.
+
+- 
 
 ## 4. Diagram primerov uporabe
 
@@ -83,7 +83,7 @@ V sklopu spletne aplikacije bomo ponujali tudi naš svoj zunanji CRUD REST API. 
 
 V tem razdelku podrobno opišite posamezne funkcionalnosti, ki jih vaša aplikacija ponuja svojim uporabnikom. Za vsako funkcionalnost navedite naslednje podatke:
 
-### 5.1 Vnos in urejanje seznama opravil
+### 5.1 Urejanje seznama opravil
 
 Prijavljeni uporabnik in neprijavljeni uporabnik lahko dodaja in upravlja opravila. To izvaja preko grafičnega vmesnika spletne palikacije. Za vsako opravilo lahko določi in spreminja ime opravila, opis ter čas in datum opravila. Opravila lahko tudi izbriše ali jih pa opravi.
 
@@ -114,9 +114,9 @@ c) Brisanje opravila
 
 #### Izjemni tok
 
-1. Uporabnik ne more dostopati do opravila, ker ga je že na drugem sistem opravil
-2. Uporabnik ne more spreminjati opravila, ker ga je že na drugem sistem opravil
-3. Uporabnik ne more brisati opravila, ker ga je že na drugem sistem opravil
+1. Uporabnik ne more dostopati do opravila, ker ga je že na drugem sistemu opravil
+2. Uporabnik ne more spreminjati opravila, ker ga je že na drugem sistemu opravil
+3. Uporabnik ne more brisati opravila, ker ga je že na drugem sistemu opravil
 
 #### Pogoji
 
@@ -471,7 +471,7 @@ Should have - iskanje uporabnikov predstavlja najpommebnejši del socialnih funk
 #### Sprejemni test
 
 - Prijavi se kot prijavljeni uporabnik, vnesi ime iskanega uporabnika v iskalnik in pritisni gumb za iskanje, rezultat je prikaz uporabnikove aktivnosti
-- Prijavi se kot razvijalec, odpri upravljanje poročil o napakah in pritisni na uporanbikovo uporabniško ime, rezultat je prikaz uporabnikove aktivnosti
+- Prijavi se kot razvijalec, odpri upravljanje poročil o nepravilnem delovanju in pritisni na uporanbikovo uporabniško ime, rezultat je prikaz uporabnikove aktivnosti
 
 ### 5.7 Sledenje uporabnikom
 
@@ -514,7 +514,7 @@ Could have - sledenje uporabnikom ni najpomembnejši del naše spletne aplikacij
 
 ### 5.8 Poročanje o nepravilnem delovanju
 
-Prijavljen in neprijavljen uporabnik lahko poroča o nepravilnostih ali napak, na katere naleti med uporabo spletne aplikacije. To stori tako, da izpolni obrazec za prijavo napak, kjer napako poimenujejo ter jo tudi opišejo. Te podrobnosti o napakah so vidne tudi razvijalcem.
+Prijavljen in neprijavljen uporabnik lahko poroča o nepravilnostih ali napakah, na katere naleti med uporabo spletne aplikacije. To stori tako, da izpolni obrazec za prijavo napak, kjer napako poimenujejo ter jo tudi opišejo. Te podrobnosti o napakah so vidne tudi razvijalcem.
 
 #### Osnovni tok
 
@@ -577,7 +577,7 @@ Should have - ogled aktivnosti uprabnikom prikazuje kako sami napredujejo in kak
 
 #### Alternativni tok
 
-1. Razvijalec izbere Upravljanje poročanih nepravilnih delovanje
+1. Razvijalec izbere Upravljanje poročanih nepravilnih delovanj
 2. Sistem prikaže vsa aktivna poročila o napakah skupaj z gumboma za pozitiven in negativen odziv in imenom uporabnika
 3. Razvijalec pritisne na ime uporabnika
 4. Sistem mu na ogled da aktivnosti uporabnika
@@ -620,13 +620,13 @@ Must have - podatki predstavljajo pomemben del samega delovanja spletne aplikaci
 - Prijavi se kot analitik, izberi izvoz analitike in jo izvozi, rezultat je izvožena analitika v podatkovno skladišče
 - Prijavi se kot analitik, izberi izvoz analitike ter določi časovno obdobje za katero bodo podatki izvoženi in jih izvozi, rezultat je izvožena analitika v podatkovno skladišče
 
-### 5.11 Upravljanje poročanih nepravilnih delovanje
+### 5.11 Upravljanje poročanih nepravilnih delovanj
 
 Razvijalec lahko vpogleda nad vsemi poročilo na napakah v spletni aplikaciji, ki jih uporabniki prijavijo. Na voljo ima uporabniški vmesnik, kjer lahko za vsako poročilo podajo pozitiven odziv, kar pomeni, da je bila napaka diagnosticirana in odpravljena oz. zavrne, ko ne more napake zaznati.
 
 #### Osnovni tok
 
-1. Razvijalec izbere Upravljanje poročanih nepravilnih delovanje
+1. Razvijalec izbere Upravljanje poročanih nepravilnih delovanj
 2. Sistem prikaže vsa aktivna poročila o napakah skupaj z gumboma za pozitiven in negativen odziv in imenom uporabnika
 3. Razvijalec pritisne na gumb za bodisi pozitiven odziv bodisi negativen odziv
 4. Sistem zabeleži opravljeno poročilo in ga izbriše
@@ -635,7 +635,7 @@ Razvijalec lahko vpogleda nad vsemi poročilo na napakah v spletni aplikaciji, k
 
 #### Pogoji
 
-- Pri funkcionalnosti Upravljanje poročanih nepravilnih delovanje mora biti uporabnik prijavljen kot razvijalec
+- Pri funkcionalnosti Upravljanje poročanih nepravilnih delovanj mora biti uporabnik prijavljen kot razvijalec
 
 #### Posledice
 
