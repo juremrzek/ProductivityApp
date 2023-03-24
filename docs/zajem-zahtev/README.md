@@ -87,6 +87,10 @@ V tem razdelku podrobno opišite posamezne funkcionalnosti, ki jih vaša aplikac
 
 Prijavljeni uporabnik in neprijavljeni uporabnik lahko dodaja in upravlja opravila. To izvaja preko grafičnega vmesnika spletne palikacije. Za vsako opravilo lahko določi in spreminja ime opravila, opis ter čas in datum opravila. Opravila lahko tudi izbriše ali jih pa opravi.
 
+#### Pogostost uporabe
+
+Zelo pogosto, saj je to glavna funkcionalnost naše spletne aplikacije, s katero bomo privedli nove uporabnike.
+
 #### Osnovni tok
 
 a) Vnos novega opravila po imenu
@@ -155,6 +159,10 @@ c)
 
 Prijavljeni uporabnik in neprijavljeni uporabnik lahko uporablja časovnika. Za časovnik lahko določi poljubno časovno trajanje. Prav tako lahko nastavi čas za odmor po končanem odmoru.
 
+#### Pogostost uporabe
+
+Redko - mnogo uporabinkov bo uporabljajo to funkcionalnost s priveztimi nastavitvami, ki so prilagojene veliki večini uporabnikov ter uporablja že uporabnikom znane nastavitve.
+
 #### Osnovni tok
 
 a)
@@ -220,6 +228,10 @@ b)
  -->
 
 Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovnik, tudi aktivira. Po končanem časovniku se uporabnika opozori z obvestilom in ga vpraša ali že nadaljevati s časovnikom za pavzo ali ponovi z istim časovnikom.
+
+#### Pogostost uporabe
+
+Zmerno pogosto - ta funkcionalnost je dodatni del aplikacije, ni pa glavna atrkcija za uporabnika.
 
 #### Osnovni tok
 
@@ -320,6 +332,10 @@ d)
 
 Prijavljeni uporabnik se lahko poveže z Google Calendarjem preko naše spletne aplikacije. Tukaj mu je omogočen ogled današnjih dogodkov iz njegovega Google računa.
 
+#### Pogostost uporabe
+
+Dokaj pogosto - ogled dogodkov uporabniku razširi uporabniško izkušnjo, tako da poleg opravil prikaže še dogodke in kdaj ima uporabnik prosti čas.
+
 #### Osnovni tok
 
 1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
@@ -356,6 +372,10 @@ Must have - dogodki iz koledarja pripomorejo k uporabniški izkušnji in bojši 
 ### 5.5 Uporavljanje dogodkov na koledarju
 
 Prijavljeni uporabnik iz izpisa Googlovih dogodkov lahko uporabnik upravlja le-te. S klikom na dogodek lahko spremeni ime, opis, datum in čas ter trajanje samega dogodka. Lahko ga tudi izbriše. To se uveljavi preko zunanjega Google API-ja.
+
+#### Pogostost uporabe
+
+Redko - uporabnik sam po sebi vnaša in spreminja dogodke že v zunanji aplikaciji za koledar.
 
 #### Osnovni tok
 
@@ -444,6 +464,10 @@ b)
 
 Prijavljeni uporabnik lahko išče po uporabnikih s pomočjo uporabniških imen. Pri tem lahko na prikazu najdenih uporabnikov tudi obiščemo uporabniški račun oz. mu začnemo slediti brez obiska le-tega.
 
+#### Pogostost uporabe
+
+Redko - do iskanja uporabnika pride, kadar želi neki uporabnik pogledati statistiko za nekega uporabnika, ki mu še ne sledi oz. išče uporabnika, k imu želi začeti sleditil
+
 #### Osnovni tok
 
 1. Prijavljeni uporabnik izbere funkcionalnost Iskanje uporabnikov po uporabniškem računu
@@ -476,6 +500,10 @@ Should have - iskanje uporabnikov predstavlja najpommebnejši del socialnih funk
 ### 5.7 Sledenje uporabnikom
 
 Prijavljeni uporabnik lahko potem, ko začne slediti drugim, pogleda vse uporabnike, katerim sledi. Iz tega pogleda lahko tudi odpira podrobnosti uporabniške račune oz. jim tudi preneha slediti.
+
+#### Pogostost uporabe
+
+Dokaj pogosto - funkcionalnost omogoča pregled vseh uporanbikov, ki jim nekdo sledi in nato ogled njihovih statistik. 
 
 #### Osnovni tok
 
@@ -516,6 +544,10 @@ Could have - sledenje uporabnikom ni najpomembnejši del naše spletne aplikacij
 
 Prijavljen in neprijavljen uporabnik lahko poroča o nepravilnostih ali napakah, na katere naleti med uporabo spletne aplikacije. To stori tako, da izpolni obrazec za prijavo napak, kjer napako poimenujejo ter jo tudi opišejo. Te podrobnosti o napakah so vidne tudi razvijalcem.
 
+#### Pogostost uporabe
+
+Redko - večina uoprabnikov verjetno ne bo nikoli uporabilo te funkcionalnosti, ker bo poskrbljeno z unit testi, da bo napak kar se da malo.
+
 #### Osnovni tok
 
 1. Prijavljen in neprijavljen uporabnik izbere funkcionalnost Poročanje o nepravilnem delovanju
@@ -548,6 +580,10 @@ Should have - obstaja visoka verjetnost, da bomo pri implementaciji zgrešili š
 ### 5.9 Ogled zaslona produktivnosti
 
 Prijavljen, neprijavljen uporabnik in razvijalec lahko vidi aktivnosti drugih uporabnikov. Pri tem imajo na vpogled koliko opravil in navad je opravil skozi različna časovna obdobja enega meseca in enega leta.
+
+#### Pogostost uporabe
+
+Zmerno pogosto - ogled statistk uporabnikov in primerjanje med seboj, kar pomeni tudi večkratno obiskovanje enega in istega profila.
 
 #### Osnovni tok
 
@@ -585,6 +621,10 @@ Should have - ogled aktivnosti uprabnikom prikazuje kako sami napredujejo in kak
 ### 5.10 Shranjevanje podatkov o aktivnosti uporabnikov za analitiko
 
 Analitik lahko preneša specifične podatke, ki se uporabljajo za analizo iz produkcijske podatkovne baze v podatkovno skladišče, kjer tudi lahko dostopa do podatkov iz podatkovnega skladišča.
+
+#### Pogostost uporabe
+
+Občasno - prenos statistik se ne bo dogajal na dnevi ali tedenski ravni, temveč na daljše časovno obdobje.
 
 #### Osnovni tok
 
@@ -624,6 +664,10 @@ Must have - podatki predstavljajo pomemben del samega delovanja spletne aplikaci
 
 Razvijalec lahko vpogleda nad vsemi poročilo na napakah v spletni aplikaciji, ki jih uporabniki prijavijo. Na voljo ima uporabniški vmesnik, kjer lahko za vsako poročilo podajo pozitiven odziv, kar pomeni, da je bila napaka diagnosticirana in odpravljena oz. zavrne, ko ne more napake zaznati.
 
+#### Pogostost uporabe
+
+Pogosto - razvijalci bodo pogosto gledali za nova poročila o napakah za kar se da hitro odpravo le-teh.
+
 #### Osnovni tok
 
 1. Razvijalec izbere Upravljanje poročanih nepravilnih delovanj
@@ -656,6 +700,10 @@ Should have - edini način, kako lahko dostopamo do pročil, ki so jih uporanbik
 ### 5.12 Upravljanje računov zaposlenih
 
 Administrator lahko ustvarja račune za zaposlene, v tem primeru za razvijalce in analitike. To stori preko obrazca v spletni aplikaciji.
+
+#### Pogostost uporabe
+
+Občasno - dodajanje novih računov je predvsem odvisno od količine novo zaposlenih programerjev, kar običajno ni pogosto.
 
 #### Osnovni tok
 
@@ -692,6 +740,10 @@ Must have - Upravljanje računov zaposlenih je pommebno, saj nam omogoča dodelj
 ### 5.13 Vnos dogodkov na koledar
 
 Prijavljeni uporabnik lahko vnaša dogodke v Google Calendar. Pri tem lahko dodeli novemu dogodku ime, opis, datum in čas ter trajanje samega dogodka. To se uveljavi v Google Calendar preko zunanjega Google API-ja.
+
+#### Pogostost uporabe
+
+Občasno - dodajanje novih dogodkov pri tej funkcionalnosti je omejeno glede na zunanji vir in ne omogoča vseh fukncionalnosti spletne aplikacije ponudnika koledarja.
 
 #### Osnovni tok
 
@@ -733,6 +785,10 @@ Won't have - pri vnosu dogodkov ima zunanji odjemalec dodobra izdelan uporabniš
 ### 5.14 Prijava in odjava
 
 Prijava in odjava uoprabnikom omogoča, da dostopajo do svojih shranjenih opravil ter dogodkov iz koledarja. V kolikor je uopranbik neprijavljen uporabnik, bo imel opravila shranjena le znotraj okna svojega brskalnika in ne bodo sinhronizirana v oblaku. Prijavjleni uporabnik pa se pri odjavi spremeni v neprijavljenega uporabniko, ki mu niso vidna opravila in dogodke prijavljenega uporabnika.
+
+#### Pogostost uporabe
+
+Pogosto - večina uporabnikov se bo pred uporabo sistema najprej
 
 #### Osnovni tok
 
