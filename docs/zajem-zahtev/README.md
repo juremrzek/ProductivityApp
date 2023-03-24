@@ -815,6 +815,112 @@ Za dolgotrajno shrambo podatkov naj se ne potrebuje tistih, ki bi lahko bili eti
 
 ### Osnutki zaslonskih mask
 
+#### Izboljšanje produktivnosti
+
+<!-- Opravila -->
+
+##### Opravila
+
+1. Prijavljen uporabnik
+<!-- https://wireframe.cc/GscRlh -->
+
+![](https://i.imgur.com/ns9Fb5v.png)
+
+2. Neprijavljen uporabnik
+<!-- https://wireframe.cc/hPRvmx -->
+
+![](https://i.imgur.com/PMA2b3w.png)
+
+<!-- Časovnik -->
+
+##### Časovnik
+
+1. Prijavljen uporabnik
+<!-- https://wireframe.cc/AoxM2Q -->
+
+![](https://i.imgur.com/sEPaRBl.png)
+
+2. Neprijavljen uporabnik
+<!-- https://wireframe.cc/icDAyR -->
+
+![](https://i.imgur.com/TAqfGwk.png)
+
+#### Poročanje o nedolovanju
+
+<!-- Prijavi napako -->
+
+1. Prijavljen uporabnik
+<!-- https://wireframe.cc/kMSk7s -->
+
+![](https://i.imgur.com/I8utBys.png)
+
+2. Neprijavljen uporabnik
+<!-- https://wireframe.cc/4hmo12 -->
+
+![](https://i.imgur.com/7KYgZ8y.png)
+
+#### Ogled aktivnosti sledilcev
+
+<!-- Sledilci, samo prikaz sledilcev -->
+
+<!-- https://wireframe.cc/g39o2v -->
+
+![](https://i.imgur.com/4qO3BZd.png)
+
+#### Sledenje uporabnikom
+
+<!-- Prikaz uporabnikov, katerim sledimo -->
+<!-- https://wireframe.cc/IeplU4 -->
+
+![](https://i.imgur.com/SdGOBz9.png)
+
+#### Upravljanje računov zaposlenih
+
+<!-- Vnesi zaposlenega -->
+<!-- Administrator -->
+<!-- https://wireframe.cc/Swa9jQ -->
+
+![](https://i.imgur.com/JyZ9vPc.png)
+
+#### Shranjevanje podatkov o aktivnostih uporabnikov za analitiko
+
+<!-- Prenos podatkov za analitiko -->
+<!-- Analitik -->
+<!-- https://wireframe.cc/s1fsu1 -->
+
+![](https://i.imgur.com/TVI9s4W.png)
+
+#### Upravljanje poročanih nepravilnih delovanj
+
+<!-- Upravljanje poročil o napakah -->
+<!-- Razvijalec -->
+
+<!-- https://wireframe.cc/urO5IK -->
+
+![](https://i.imgur.com/kDkfqrL.png)
+
+#### Ogled zaslona produktivnosti
+
+<!-- Moj profil oz. profil uporabnika -->
+
+1. Prijavljen uporabnik
+<!-- https://wireframe.cc/LQ6br0 -->
+
+![](https://i.imgur.com/FqSdJQ8.png)
+
+2. Razvijalec
+<!-- https://wireframe.cc/yC9VPc -->
+
+![](https://i.imgur.com/rdaU8bP.png)
+
+#### Izboljšanje organizacije
+
+<!-- Koledar -->
+<!-- Uporabnik -->
+<!-- https://wireframe.cc/OBrhep  -->
+
+![](https://i.imgur.com/ud6D9Yp.png)
+
 ### Vmesniki do zunanjih sistemov
 
 #### Prikaz dogodkov iz Google Calendar
