@@ -15,6 +15,8 @@
 
 - Povzetek je, kot že vemo, celoten dokument, strnjen v največ 150 besed.
 
+V tem projektu smo se odločili izdelati spletno aplikacijo za produktivnost z integriranimi funkcionalnostmi socialnega omrežja. Aplikacija uporabnikom ponuja orodja za izboljšanje produktivnosti z dodajanjem, urejanjem in brisanjem opravil, pregledovanjem uporabniških profilov in spremljanjem statističnih podatkov o produktivnosti. Aplikacija ima tudi dobro integriran vmesnik REST API, do katerega lahko dostopajo zunanji uporabniki. Uporabniki lahko opravila vnašajo in upravljajo z operacijami CRUD, aplikacija pa ponuja tudi časovnik, s katerim lahko uporabniki bolje organizirajo svoj čas. Poleg tega je aplikacija integrirana z Googlovim koledarjem, kar uporabnikom omogoča upravljanje zunanjih dogodkov v aplikaciji z uporabo operacij CRUD. Aplikacija ponuja tudi funkcionalnost družbenega omrežja, kot je iskanje drugih uporabnikov po uporabniškem imenu.
+
 ## 1. Uvod
 
 <!-- yan -->
