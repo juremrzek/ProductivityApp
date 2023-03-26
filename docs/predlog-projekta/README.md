@@ -434,7 +434,6 @@ Delo si bomo razdelili po aktivnostih. Za vsako aktivnost se bomo organizirali g
 |A8|Izdelava transakcijske baze||40%|40%||20%|
 |A9|Izdelava podatkovnega skladišča||25%|25%|25%|25%|
 |A10|Implementacija prijave in registracije|34%|||33%|33%|
-|A11|Implementacija obnovitve pozabljenega gesla|34%|||33%|33%|
 |A12|Implementacija iskanja prijateljev||25%|25%|25%|25%|
 |A13|Implementacija shranjevanja dogodkov uporabnika||50%|50%|||
 |A14|Implementacija vmesnika določanja navad||25%|25%|25%|25%|
@@ -444,7 +443,6 @@ Delo si bomo razdelili po aktivnostih. Za vsako aktivnost se bomo organizirali g
 |A18|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno||40%|40%|20%||
 |A19|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev||25%|25%|25%|25%|
 |A20|Implementacija ogleda aktivnosti prijateljev|20%|20%|20%|20%|20%|
-|A21|Implementacija urejanja uporabniškega računa|20%|20%|20%|20%|20%|
 |A22|Implementacija vmesnika za poročanje o napakah||34%|33%|33%||
 |A23|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju||||50%|50%|
 |A24|Upravljanje projekta|100%|||||
