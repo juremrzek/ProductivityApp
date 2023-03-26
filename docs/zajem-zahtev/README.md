@@ -69,26 +69,11 @@ Navadno pomembnejša stvar za uporabnika, ki se zgodi ob točno definiranemu dat
 
 ## 4. Diagram primerov uporabe
 
-<!-- Anže -->
-
-:dart: **TO-DO**
-
-- Narišite diagram primerov uporabe v jeziku UML.
-- Diagram predstavlja interakcijo med akterji in funkcionalnostmi (kdo lahko kaj počne).
-- Akterji so tipično uporabniške vloge, lahko pa gre tudi za zunanje komponente (sistemi), ki komunicirajo z našo aplikacijo.
-- Za izdelavo uporabite ogrodje PlantUML, in sicer [Use Case Diagram](https://plantuml.com/use-case-diagram).
-- V poročilo vključite **izvorno kodo diagrama v jeziku PlantUML**, ki naj bo prisotna v repozitoriju, sliko diagrama pa vključite s povezavo (in ne preko neposredne vključitve binarne datoteke) preko storitve [`https://teaching.lavbic.net/plantuml`](https://teaching.lavbic.net/plantuml), kot prikazuje spodnji primer.
-- Diagram naj bo **jasno berljiv**.
-
 ![DPU](https://teaching.lavbic.net/plantuml/png/VLNDSjem4BxxAJJqKWumWGQIz90PyjCCqvOmeVIGoMMnX14OhKUsIOUcZv27oBiaxzMLB1ax8RaGjFjzttvQBPjq9LK26jPi1k4gqfWh7cACccKQL4efeR8WBL5Sp26Fir_YJpQ8PQJMb6OXVGXTGUMf224Lx6_0AhhdLlT-8JDXugYvq4NiK-_RsV7bEKL1QxmlWhEOcC6_YYo46Ugp2g-0l0RiBHZ4Ofwn39cMqI9ZN6eHPX9L45WIQzpc2jHIiZkL9wXXfkIgmGOJTZlrYB6MIzZ4Iw7UeiOtqyJZHYBv03aQbu83lfPAfjHfEjhauEBdS5Ic5SGoSxJ1QF339svWkw42iGXjwkBozwjBtAcKPCNQfYUTG64ctCLnJW7sbKqiWAsCGOvfXWamZdHGyF8a8c23yN09RIzyXHZ5WjBdL5PnAEnUNLzV1O7f92YJRWoIMAuW97CiqSZpLIOtYjGbaugXZa39hKcBXfqDFoUDgMqHaFxp8wIueMP1qTTffuhxZcekernB6iwbs0VlLk75Yu4fVgUGc-yEzgKAkoRldC7EBFMF8Z8EnSRX3-jkjNbTQq73ysEkS4ESBIH8F2KNZjIhaRGe6AdOAbYRkwBHaR53zwle2TKNnHNByK5lvgYA7AOhU0zu_FQMMqXZLAPw_O4SuwJMFjH83JRgo9Get2gQ6XeP4UE6Chb_fOEtfJZo23cvCKF5LaWnq3j6vxsMSYneR3-l-nulSNRbmZ2zNJfvirwXzlYJXPsbZPFWa1MbiJ8G2rRfhNrf1kx7YLwqDY73xGpZvSkJUvczhUxqFc2utugPyogbJ_imCBk6jLgjXrEpd6YVi9PPRkuSq3gWx2dxR6xQ3CpYAC-7T3OhnWTwJIzdZvHsuWMytwncZsgdazg92WMtPCGk6SScSHFoOWS4eR_z9cjnl5SKfSraDeYpNw0wJGFgT9i5iTWmjZXhjotak4dhIwemphdms7QUj3s_dksMF9kX_rkqlb8hsV5E7ag_pjyk43ZD6h2_yrX6_WC0)
 
 **Diagram primerov uporabe** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/DPU.puml))
 
 ## 5. Funkcionalne zahteve
-
-<!-- Jan -->
-
-V tem razdelku podrobno opišite posamezne funkcionalnosti, ki jih vaša aplikacija ponuja svojim uporabnikom. Za vsako funkcionalnost navedite naslednje podatke:
 
 ### 5.1 Urejanje seznama opravil
 
@@ -850,57 +835,6 @@ Must have - prijava in odjava predstavljata ključni del spletne aplikacije, saj
 - Prijavi se kot neprijavljeni uporabnik, izberi obrazec za prijavo, vnese prijavne podatke in potrdi prijavo, rezultat je prijava v sistem
 - Prijavi se kot prijavljeni uporabnik, pritisni na gumb za odjavo, rezultat je odjava iz sistema
 
-#### Povzetek funkcionalnosti
-
-:dart: **TO-DO**
-
-- **Povzetek funkcionalnosti** v enem ali največ nekaj stavkih.
-- Prvi stavek naj se prične z nazivom uporabniške vloge (ali uporabniških vlog, če se funkcionalnost nanaša na več kot eno vlogo), nato pa naj sledita beseda **lahko** in navedba funkcionalnosti.
-
-#### Osnovni tok
-
-:dart: **TO-DO**
-
-#### Alternativni tok(ovi)
-
-:dart: **TO-DO**
-
-- Navesti je potrebno vse alternativne tokove, ki jih označite kot **Alternativni tok 1**, **Alternativni tok 2**, itd.
-
-#### Pogoji
-
-:dart: **TO-DO**
-
-- Navesti je potrebno pogoje, ki morajo biti izpolnjeni, da se funkcionalnost lahko prične izvajati?
-
-#### Posledice
-
-:dart: **TO-DO**
-
-- Navedite, kakšen je rezultat izvedbe osnovnega toka funkcionalnosti?
-
-#### Posebnosti
-
-:dart: **TO-DO**
-
-- Ali realizacija funkcionalnosti zahteva kakšne posebnosti, kot je npr. dodatna strojna oprema?
-- Se je potrebno držati kakšnih posebnih standardov?
-
-#### Prioritete identificiranih funkcionalnosti
-
-:dart: **TO-DO**
-
-- Za identificirane funkcionalnosti se z metodo **MoSCoW** (MUST have, SHOULD have, COULD have in WOULD have) določi prioritete.
-
-#### Sprejemni testi
-
-:dart: **TO-DO**
-
-- Navedite sprejmne teste, kjer opišete:
-  - funkcijo, ki se testira,
-  - začetno stanje sistema,
-  - vhod in
-  - pričakovan rezultat.
 
 ## 6. Nefunkcionalne zahteve
 
@@ -944,12 +878,6 @@ Za dolgotrajno shrambo podatkov naj se ne potrebuje tistih, ki bi lahko bili eti
 Od razvijalcev se zahteva, da po najboljših močeh razvijejo zanesljivo rešitev brez varnostnih lukenj, ki so razvijalcu poznane, vendar nima motivacije za njihovo odpravo.
 
 ## 7. Prototipi vmesnikov
-
-<!-- Jan -->
-
-:dart: **TO-DO**
-
-- Navesti je potrebno: zaslonske maske, sistemske vmesnike in vmesnike do naprav, vključno z referencami do primerov uporabe.
 
 ### Osnutki zaslonskih mask
 
