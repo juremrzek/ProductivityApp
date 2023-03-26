@@ -8,7 +8,7 @@
 
 ## Povzetek projekta
 
-Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omrežje in pomaga ljudem z organizacijo dela. Pričakujemo, da bodo ljudje našo aplikacijo uporabljali vsakodnevno za organizacijo svojega dela bodisi za šolo, službo, faks ali pa tudi pri domačih opravilih in podobno. V aplikaciji bodo tudi vključene funkcionalnosti socialnega omrežja, kjer bodo lahko prijatelji med seboj spremljali učinkovitost, kar jih bo tudi dodatno spodbudilo k delu in organizaciji le tega. Aplikacijo bomo tudi povezali z Google koledarjem z namenom, da ljudem olajšamo uporabo in jih s tem tudi dodatno motiviramo za uporabo naše aplikacije. Pričakujemo, da bodo naši uporabniki ostali aktivni dalj časa, saj je naša rešitev namenjena dolgotrajni uporabi. Sproti bomo seveda tudi skrbeli za odpravljanje hroščev, kateri bi lahko uporabnike odvrnili od nadaljne uporabe. S tem namenom bomo tudi implementirali možnosti za sporočanje napak s strani uporabnikov do nas razvijalcev, za možnost čimprejšnjega odpravljanja le teh.
+Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omrežje in pomaga ljudem z organizacijo dela. Pričakujemo, da bodo ljudje našo aplikacijo uporabljali vsakodnevno za organizacijo svojega dela bodisi za šolo, službo, faks ali pa tudi pri domačih opravilih in podobno. V aplikaciji bodo tudi vključene funkcionalnosti socialnega omrežja, kjer si uporabniki lahko sledijo in med seboj spremljajo produktivnost, kar jih bo tudi dodatno spodbudilo k delu in organizaciji le tega. Aplikacijo bomo tudi povezali z Google koledarjem z namenom, da ljudem olajšamo uporabo in jih s tem tudi dodatno motiviramo za uporabo naše aplikacije. Pričakujemo, da bodo naši uporabniki ostali aktivni dalj časa, saj je naša rešitev namenjena dolgotrajni uporabi. Sproti bomo seveda tudi skrbeli za odpravljanje hroščev, kateri bi lahko uporabnike odvrnili od nadaljne uporabe. S tem namenom bomo tudi implementirali možnosti za sporočanje napak s strani uporabnikov do nas razvijalcev, za možnost čimprejšnjega odpravljanja le teh.
 
 ## 1. Projektna ideja
 
@@ -29,7 +29,7 @@ Namen projekta je ustvariti aplikacijo, ki bo ljudi spodbujala k bolj produktivn
 
 ### 1.4 Cilji
 
-Uporabnik začne interakcijo s sistemom prek glavne strani, kjer se odpre možnost vnosa osebnih ciljev, dogodkov in načrtov, na katere bo nato opozarjal uporabnika in mu pomagal pri izpolnjevanju le teh. Omogoča dodajanje prijateljev in izbiro privatnosti, da lahko uporabniki med seboj primerjajo svoje statistike. Z našo aplikacijo lahko uporabnik komunicira tudi preko Google calendarja.
+Uporabnik začne interakcijo s sistemom prek glavne strani, kjer se odpre možnost vnosa osebnih ciljev, dogodkov in načrtov, na katere bo nato opozarjal uporabnika in mu pomagal pri izpolnjevanju le teh. Omogoča sledenje uporabnikom in izbiro privatnosti, da lahko uporabniki med seboj primerjajo svoje statistike. Z našo aplikacijo lahko uporabnik komunicira tudi preko Google calendarja.
 
 ### 1.5 Smernice za rešitev
 
@@ -177,12 +177,12 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 11.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 13.4.2023                                                                                                                             |
 | **Trajanje**                                        |     3 dni                                                                                                          |
-| **Naziv aktivnosti**                                | Implementacija iskanja prijateljev                                                                                                               |
+| **Naziv aktivnosti**                                | Implementacija iskanja sledilcev                                                                                                               |
 | **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                         |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč iskalnik, ki komunicira z bazo.                                                                                                    |
-| **Opis aktivnosti**                                 | Programiramo iskalnik za dodajanje prijateljev, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
+| **Opis aktivnosti**                                 | Programiramo iskalnik za sledenje uporabnikom, ki uporablja že implementirano transakcijsko podatkovno bazo.                                                                               |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8|
-| **Pričakovani rezultati aktivnosti**                |   Delujoč iskalnik za dodajanje prijateljev
+| **Pričakovani rezultati aktivnosti**                |   Delujoč iskalnik za sledenje uporabnikom
 
 | **Oznaka aktivnosti**                               | A13                                                                                                             |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -261,24 +261,24 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 28.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 8.5.2023                                                                                                                             |
 | **Trajanje**                                        |     11 dni (za vikend in praznike ne delamo)                                                                                                         |
-| **Naziv aktivnosti**                                |  Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev                                                                                                        |
+| **Naziv aktivnosti**                                |  Implementacija grafičnega prikaza statistik uporabnika in njegovih sledilcev                                                                                                        |
 | **Obseg aktivnosti v ČM**                           | 0,833 ČM                                                                                                       |
 | **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč grafični prikaz statistik, ki komunicira s transakcijsko podatkovno bazo in podatkovnim skladiščem.         |
-| **Opis aktivnosti**                                 | Delo na izdelavi grafičnega prikaza statistik uporabnika in njegovih prijateljev na podlagi že implementirane transakcijske podatkovne baze, podatkovnega skladišča in zaslonskih mask.   |
+| **Opis aktivnosti**                                 | Delo na izdelavi grafičnega prikaza statistik uporabnika in njegovih sledilcev na podlagi že implementirane transakcijske podatkovne baze, podatkovnega skladišča in zaslonskih mask.   |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A18, nahaja se na kritični poti |
-| **Pričakovani rezultati aktivnosti**                | Delujoč grafični prikaz statistik uporabnika in  njegovih prijateljev
+| **Pričakovani rezultati aktivnosti**                | Delujoč grafični prikaz statistik uporabnika in njegovih sledilcev
 
 | **Oznaka aktivnosti**                               | A20                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 28.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 28.4.2023                                                                                                                             |
 | **Trajanje**                                        |     1 dan                                                                                                        |
-| **Naziv aktivnosti**                                |  Implementacija ogleda aktivnosti prijateljev                                                                                                        |
+| **Naziv aktivnosti**                                |  Implementacija ogleda aktivnosti sledilcev                                                                                                        |
 | **Obseg aktivnosti v ČM**                           | 0,333 ČM                                                                                                         |
-| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč prikaz trenutnih aktivnosti, ki jih beležimo v bazi, prijateljev, ki jih lahko dodamo z iskalnikom prijateljev.         |
-| **Opis aktivnosti**                                 | Programiranje ogleda trenutnih aktivnosti prijateljev z že implementiranjem beleženjem aktivnosti.   |
+| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč prikaz trenutnih aktivnosti, ki jih beležimo v bazi, sledilcev, ki jih lahko dodamo z iskalnikom uporabnikov.         |
+| **Opis aktivnosti**                                 | Programiranje ogleda trenutnih aktivnosti sledilcev z že implementiranjem beleženjem aktivnosti.   |
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A18 |
-| **Pričakovani rezultati aktivnosti**                | Delujoč prikaz aktivnosti prijateljev 
+| **Pričakovani rezultati aktivnosti**                | Delujoč prikaz aktivnosti sledilcev 
 
 | **Oznaka aktivnosti**                               | A22                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -326,14 +326,14 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 | I2|Transakcijska podatkovna baza|30.3.2023|
 | I3|Podatkovno skladišče|3.4.2023|
 | I4|Delujoče okno za prijavo in registracijo|5.4.2023|
-| I6|Delujoč iskalnik za dodajanje prijateljev|12.4.2023|
+| I6|Delujoč iskalnik za dodajanje sledilcev|12.4.2023|
 | I7|Delujoča vnosna polja za določanje navad|14.4.2023|
 | I8|Delujoč časovnik|19.4.2023|
 | I9|Delujoča uporaba Google koledarja preko aplikacije|20.4.2023|
 | I10|Delujoč vmesnik za urejanje dogodkov na Google koledarju|24.4.2023|
 | I11|Delujoče beleženje aktivnosti in prenos iz transakcijske baze v podatkovno skladišče|26.4.2023|
-| I12|Delujoč grafični prikaz statistik uporabnika in njegovih prijateljev|3.5.2023|
-| I13|Delujoč prikaz aktivnosti prijateljev|28.4.2023|
+| I12|Delujoč grafični prikaz statistik uporabnika in njegovih sledilcev|3.5.2023|
+| I13|Delujoč prikaz aktivnosti sledilcev|28.4.2023|
 | I15|Delujoč vmesnik za poročanje o napakah|11.5.2023|
 | I16|Delujoč vmesnik za upravljanje poročil o nepravilnem delovanju|17.5.2023|
 
@@ -351,15 +351,15 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 |Izdelava transakcijske baze (A8)|0,5 |3|A2, A5|
 |Izdelava podatkovnega skladišča (A9)|0,5 |5|A2, A6|
 |Implementacija prijave in registracije (A10)|0,5 |3|A7(Prototip zaslonskih mask), A8|
-|Implementacija iskanja prijateljev (A12)|0,5 |3|A7(Prototip zaslonskih mask), A8|
+|Implementacija iskanja sledilcev (A12)|0,5 |3|A7(Prototip zaslonskih mask), A8|
 |Implementacija shranjevanja dogodkov uporabnika (A13)|0,167 |1|A8|
 |Implementacija vmesnika določanja navad (A14)|0,5 |7|A7(Prototip zaslonskih mask), A8|
 |Implementacija časovnika in njegovega urejanja (A15)|0,5 |3|A7(Prototip zaslonskih mask)|
 |Implementacija Google koledarja preko API-ja (A16)|0,667 |4|A7(Prototip zaslonskih mask)|
 |Implementacija urejanja dogodkov na Google koledarju (A17)|0,333 |4|A16|
 |Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A18)|0,5|3|A8, A9|
-|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A19)|0,833 |11|A7(Prototip zaslonskih mask), A18|
-|Implementacija ogleda aktivnosti prijateljev (A20)|0,333 |1|A7(Prototip zaslonskih mask), A18|
+|Implementacija grafičnega prikaza statistik uporabnika in njegovih sledilcev (A19)|0,833 |11|A7(Prototip zaslonskih mask), A18|
+|Implementacija ogleda aktivnosti sledilcev (A20)|0,333 |1|A7(Prototip zaslonskih mask), A18|
 |Implementacija vmesnika za poročanje o napakah (A22)|0,667 |4|A7(Prototip zaslonskih mask), A8|
 |Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju (A23)|0,5 |6|A7(Prototip zaslonskih mask), A8|
 |Upravljanje projekta (A24)|1,667 |70||
@@ -434,15 +434,15 @@ Delo si bomo razdelili po aktivnostih. Za vsako aktivnost se bomo organizirali g
 |A8|Izdelava transakcijske baze||40%|40%||20%|
 |A9|Izdelava podatkovnega skladišča||25%|25%|25%|25%|
 |A10|Implementacija prijave in registracije|34%|||33%|33%|
-|A12|Implementacija iskanja prijateljev||25%|25%|25%|25%|
+|A12|Implementacija iskanja sledilcev||25%|25%|25%|25%|
 |A13|Implementacija shranjevanja dogodkov uporabnika||50%|50%|||
 |A14|Implementacija vmesnika določanja navad||25%|25%|25%|25%|
 |A15|Implementacija in urejanje časovnika|40%|20%|40%|||
 |A16|Implementacija google koledarja preko API-ja||20%||40%|40%|
 |A17|Implementacija urejanja dogodkov na Google koledarju||||50%|50%|
 |A18|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno||40%|40%|20%||
-|A19|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev||25%|25%|25%|25%|
-|A20|Implementacija ogleda aktivnosti prijateljev|20%|20%|20%|20%|20%|
+|A19|Implementacija grafičnega prikaza statistik uporabnika in njegovih sledilcev||25%|25%|25%|25%|
+|A20|Implementacija ogleda aktivnosti sledilcev|20%|20%|20%|20%|20%|
 |A22|Implementacija vmesnika za poročanje o napakah||34%|33%|33%||
 |A23|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju||||50%|50%|
 |A24|Upravljanje projekta|100%|||||
@@ -530,25 +530,23 @@ Za urno postavko dela vzamemo 10€ za programiranje in 12€ za upravljanje. En
 |A8|Izdelava transakcijske baze|0,5 ČM|30 ur|300€|
 |A9|Izdelava podatkovnega skladišča|0,5 ČM|30 ur|300€|
 |A10|Implementacija prijave in registracije|0,5 ČM|30 ur|300€|
-|A11|Implementacija obnovitve pozabljenega gesla|0,333 ČM|20 ur|200€|
-|A12|Implementacija iskanja prijateljev|0,5 ČM|30 ur|300€|
+|A12|Implementacija iskanja sledilcev|0,5 ČM|30 ur|300€|
 |A13|Implementacija shranjevanja dogodkov uporabnika|0,167 ČM|10 ur|100€|
 |A14|Implementacija vmesnika določanja navad|0,5 ČM|30 ur|300€|
 |A15|Implementacija in urejanje časovnika|0,5 ČM|30 ur|300€|
 |A16|Implementacija google koledarja preko API-ja|0,667 ČM|40 ur|400€|
 |A17|Implementacija urejanja dogodkov na Google koledarju|0,333 ČM|20 ur|200€|
 |A18|Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno|0,5 ČM|30 ur|300€|
-|A19|Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev|0,833 ČM|50 ur|500€|
-|A20|Implementacija ogleda aktivnosti prijateljev|0,333 ČM|20 ur|200€|
-|A21|Implementacija urejanja uporabniškega računa|0,5 ČM|30 ur|300€|
+|A19|Implementacija grafičnega prikaza statistik uporabnika in njegovih sledilcev|0,833 ČM|50 ur|500€|
+|A20|Implementacija ogleda aktivnosti sledilcev|0,333 ČM|20 ur|200€|
 |A22|Implementacija vmesnika za poročanje o napakah|0,667 ČM|40 ur|400€|
 |A23|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju|0,667 ČM|40 ur|400€|
 |A24|Upravljanje projekta|1,667 ČM|100 ur|1200€|
-|||12 ČM|720 ur|7720€|
+|||11.167 ČM|670 ur|7220€|
 
 Projekt lahko izvajamo oddaljeno, za boljšo organizacijo pa bi se v živo sestali trikrat v sklopu dveh dni. Samo en član ekipe bi se moral v Ljubljano pripeljati, in sicer 35km. V sklopu izvajanje projekta se tudi krije šest kosil za pet članov. Skupno 88€ + 450€ = 538€
 
-Finančna ocena celotnega projekta torej znaša 8258€.
+Finančna ocena celotnega projekta torej znaša 7758€.
 
 ## Reference
 
