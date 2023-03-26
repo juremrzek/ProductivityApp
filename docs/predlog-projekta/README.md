@@ -172,18 +172,6 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8|
 | **Pričakovani rezultati aktivnosti**                | Delujoče okno za prijavo in registracijo
 
-<>| **Oznaka aktivnosti**                               | A11                                                                                                              |
-| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 6.4.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 7.4.2023                                                                                                                             |
-| **Trajanje**                                        |     2 dni                                                                                                          |
-| **Naziv aktivnosti**                                | Implementacija obnovitve pozabljenega gesla                                                                                                               |
-| **Obseg aktivnosti v ČM**                           | 0,333 ČM                                                                                                        |
-| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Gumb na oknu prijave in registracije, ki tudi pravilno komunicira s transakcijsko bazo podatkov.                                                                                                    |
-| **Opis aktivnosti**                                 | Implementiramo obnovitev pozabljenega gesla na podlagi že implementirane prijave in registracije.                                                                               |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A10|
-| **Pričakovani rezultati aktivnosti**                |   Delujoč gumb za obnovitev gesla
-
 | **Oznaka aktivnosti**                               | A12                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 11.4.2023                                                                                                                            |
@@ -292,18 +280,6 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A18 |
 | **Pričakovani rezultati aktivnosti**                | Delujoč prikaz aktivnosti prijateljev 
 
-| **Oznaka aktivnosti**                               | A21                                                                                                              |
-| :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Predvideni datum pričetka izvajanja aktivnosti**  | 3.5.2023                                                                                                                            |
-| **Predvideni datum zaključka izvajanja aktivnosti** | 5.5.2023                                                                                                                             |
-| **Trajanje**                                        |     3 dni                                                                                                        |
-| **Naziv aktivnosti**                                |  Implementacija urejanja uporabniškega računa                                                                                                       |
-| **Obseg aktivnosti v ČM**                           | 0,5 ČM                                                                                                         |
-| **Seznam ciljev aktivnosti (kaj želite doseči)**    | Delujoč vmesnik za urejanje računa, ki komunicira s transakcijsko podatkovno bazo.         |
-| **Opis aktivnosti**                                 | Programiranje vmesnika za urejanje uporabniškega računa(posodobitev gesla in ostalih atributov) na podlagi že izdelanih zaslonskih mask in vzpostavljene transakcijske podatkovne baze.   |
-| **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8 |
-| **Pričakovani rezultati aktivnosti**                | Delujoč vmesnik za urejanje uporabniškega računa
-
 | **Oznaka aktivnosti**                               | A22                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 8.5.2023                                                                                                                            |
@@ -350,7 +326,6 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 | I2|Transakcijska podatkovna baza|30.3.2023|
 | I3|Podatkovno skladišče|3.4.2023|
 | I4|Delujoče okno za prijavo in registracijo|5.4.2023|
-| I5|	Delujoč gumb za obnovitev gesla|7.4.2023|
 | I6|Delujoč iskalnik za dodajanje prijateljev|12.4.2023|
 | I7|Delujoča vnosna polja za določanje navad|14.4.2023|
 | I8|Delujoč časovnik|19.4.2023|
@@ -359,7 +334,6 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 | I11|Delujoče beleženje aktivnosti in prenos iz transakcijske baze v podatkovno skladišče|26.4.2023|
 | I12|Delujoč grafični prikaz statistik uporabnika in njegovih prijateljev|3.5.2023|
 | I13|Delujoč prikaz aktivnosti prijateljev|28.4.2023|
-| I14|Delujoč vmesnik za urejanje uporabniškega računa|5.5.2023|
 | I15|Delujoč vmesnik za poročanje o napakah|11.5.2023|
 | I16|Delujoč vmesnik za upravljanje poročil o nepravilnem delovanju|17.5.2023|
 
@@ -377,7 +351,6 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 |Izdelava transakcijske baze (A8)|0,5 |3|A2, A5|
 |Izdelava podatkovnega skladišča (A9)|0,5 |5|A2, A6|
 |Implementacija prijave in registracije (A10)|0,5 |3|A7(Prototip zaslonskih mask), A8|
-|Implementacija obnovitve pozabljenega gesla (A11)|0,333 |2|A10|
 |Implementacija iskanja prijateljev (A12)|0,5 |3|A7(Prototip zaslonskih mask), A8|
 |Implementacija shranjevanja dogodkov uporabnika (A13)|0,167 |1|A8|
 |Implementacija vmesnika določanja navad (A14)|0,5 |7|A7(Prototip zaslonskih mask), A8|
@@ -387,7 +360,6 @@ V obliki zbirne table prikažite izdelke vseh aktivnosti, kjer lahko uporabite n
 |Implementacija beleženja aktivnosti in prenosa iz transakcijske baze v podatkovno skladišče (A18)|0,5|3|A8, A9|
 |Implementacija grafičnega prikaza statistik uporabnika in njegovih prijateljev (A19)|0,833 |11|A7(Prototip zaslonskih mask), A18|
 |Implementacija ogleda aktivnosti prijateljev (A20)|0,333 |1|A7(Prototip zaslonskih mask), A18|
-|Implementacija urejanja uporabniškega računa (A21)|0,5 |3|A7(Prototip zaslonskih mask), A8|
 |Implementacija vmesnika za poročanje o napakah (A22)|0,667 |4|A7(Prototip zaslonskih mask), A8|
 |Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju (A23)|0,5 |6|A7(Prototip zaslonskih mask), A8|
 |Upravljanje projekta (A24)|1,667 |70||
