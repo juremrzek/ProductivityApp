@@ -172,7 +172,7 @@ Aktivnosti, ki smo jih definirali, spadajo k načrtovanju projekta in samem razv
 | **Morebitne odvisnosti in omejitve**                | Zaključeno delo na A7 in A8|
 | **Pričakovani rezultati aktivnosti**                | Delujoče okno za prijavo in registracijo
 
-| **Oznaka aktivnosti**                               | A11                                                                                                              |
+<>| **Oznaka aktivnosti**                               | A11                                                                                                              |
 | :-------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Predvideni datum pričetka izvajanja aktivnosti**  | 6.4.2023                                                                                                                            |
 | **Predvideni datum zaključka izvajanja aktivnosti** | 7.4.2023                                                                                                                             |
