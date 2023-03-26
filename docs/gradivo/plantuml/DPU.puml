@@ -1,5 +1,4 @@
-@startuml DPU
-
+@startuml
 skinparam backgroundcolor transparent
 skinparam defaultTextAlignment center
 skinparam usecase {
@@ -12,26 +11,62 @@ skinparam actorBackgroundColor white
 
 left to right direction
 
-actor "Uporabnik 1" AS U1
-actor "Uporabnik 2" AS U2
-actor "Zunanji\nsistem 1" AS S1
+actor "Zunanji \nuporabnik" AS ZU
+actor "Prijavljeni \nuporabnik" AS PRUp
+actor "Neprijavljeni \nuporabnik" AS NPU
+actor "Administrator" AS ADMIN
+actor "Analitik" AS ANAL
+actor "Razvijalec" AS DEV
+actor "Zunanji\nsistem" AS S1
+note right of S1 : Sistem ki \ndostopa do \nnašega APIja.
+actor "Google \nCalendar" AS GOOG
 
-rectangle "Vaš sistem" {
-  usecase "Primer\nuporabe 1" AS PU1
-  usecase "Primer\nuporabe 2" AS PU2
-  usecase "Primer\nuporabe 3" AS PU3
-  usecase "Primer\nuporabe 4" AS PU4
-  usecase "Primer\nuporabe 5" AS PU5
+rectangle "Aplikacija produktivnosti in organizacije" {
+  usecase "Uporaba \nčasovnika" AS PU1
+  usecase "Konfiguriranje \nčasovnika" AS PU2
+  usecase "Prijava in \nodjava" AS PU3
+  usecase "Ogled aktivnosti \nsledilcev" AS PU4
+  usecase "Upravljanje računov \nzaposlenih" AS PU5
+  usecase "Urejanje seznama \nopravil" AS PU6
+  usecase "Sledenje \nuporabnikov" AS PU7
+  usecase "Iskanje \nuporabnikov" AS PU8
+  usecase "Ogled zaslona \nproduktivnosti" AS PU9
+  usecase "Poročanje o nepravilnem \ndelovanju" AS PU10
+  usecase "Ogled dodgodkov\nna koledarju" AS PU11
+  usecase "Upravljanje dogodkov \nna koledarju" AS PU12
+  usecase "Upravljanje poročanih \nnepravilnih delovanj" AS PU13
+  usecase "Shranjevanje podatkov \no aktivnostih uporabnikov \nza analitiko" AS PU14
+  usecase "Izboljšanje \nproduktivnosti" AS PU15
+  usecase "Izboljšanje \norganiziranosti" AS PU16
 }
 
-U2 -left-|> U1
+PRUp ---|> ZU
+NPU -left-|> ZU
 
-U1 -> (PU1)
-U2 --> (PU2)
-(PU4) -down-> S1
+DEV --> (PU13)
+ANAL --> (PU14)
+ADMIN --> (PU5)
 
-(PU3) .up.> (PU1) : extend
-(PU5) ..> (PU4) : include
-(PU5) -right-|> (PU2)
+PRUp -> (PU4)
+PRUp --> (PU16)
+PRUp -> (PU7)
+PRUp -> (PU9)
+PRUp -> (PU3)
 
+ZU -right-> (PU15)
+ZU ---> (PU10)
+
+(PU6) -down-> S1
+GOOG -left-> (PU11)
+(PU12) ---> GOOG
+
+(PU7) ..> (PU8) : include
+(PU12) .up.> (PU11) : include
+(PU2) ..> (PU1) : extends
+
+(PU1) -down-|> (PU15)
+(PU6) -|> (PU15)
+
+(PU11) -down-|> (PU16)
+(PU12) -|> (PU16)
 @enduml
