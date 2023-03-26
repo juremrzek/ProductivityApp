@@ -5,36 +5,14 @@
 | :-------------------------- | :------------------------------------------------------------- |
 | **Naziv projekta**          | Aplikacija produktivnosti in organizacije                               |
 | **Člani projektne skupine** | Arne Gašperšič, Jan Merhar, Jure Mržek, Anže Rifelj Tričkovič, Klemen Kolar |
-| **Kraj in datum**           | :dart: **TO-DO** kraj, datum                                   |
+| **Kraj in datum**           | 26.03.2023                                  |
 
 ## Povzetek projekta
-
-<!-- yan -->
-
-:dart: **TO-DO**
-
-- Povzetek je, kot že vemo, celoten dokument, strnjen v največ 150 besed.
 
 V tem projektu smo se odločili izdelati spletno aplikacijo za produktivnost z integriranimi funkcionalnostmi socialnega omrežja. Aplikacija uporabnikom ponuja orodja za izboljšanje produktivnosti z dodajanjem, urejanjem in brisanjem opravil, pregledovanjem uporabniških profilov in spremljanjem statističnih podatkov o produktivnosti. Aplikacija ima tudi dobro integriran vmesnik REST API, do katerega lahko dostopajo zunanji uporabniki. Uporabniki lahko opravila vnašajo in upravljajo z operacijami CRUD, aplikacija pa ponuja tudi časovnik, s katerim lahko uporabniki bolje organizirajo svoj čas. Poleg tega je aplikacija integrirana z Googlovim koledarjem, kar uporabnikom omogoča upravljanje zunanjih dogodkov v aplikaciji z uporabo operacij CRUD. Aplikacija ponuja tudi funkcionalnost družbenega omrežja, kot je iskanje drugih uporabnikov po uporabniškem imenu.
 
 ## 1. Uvod
 
-<!-- yan -->
-
-:dart: **TO-DO**
-
-- V uvodu opišite problemsko domeno (kateri problem bo naša aplikacija reševala) in kratek pregled glavnih funkcionalnosti (kaj vse bo aplikacija počela).
-
-<!--
-  - problemska domena
-  - pregled glavnih funkcionalnosti
-  - okviren zapis nefunkcionalnih zahtev
-  - komunikacija z zunanjim API
-  - kreiranje našega API-ja za zunanjo uporabo
-  - kako bo potekal dostop do našega API-ja
- -->
-
- <!-- 
  Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omrežje in pomaga ljudem z organizacijo dela. Pričakujemo, da bodo ljudje našo aplikacijo uporabljali vsakodnevno za organizacijo svojega dela bodisi za šolo, službo, faks ali pa tudi pri domačih opravilih in podobno. V aplikaciji bodo tudi vključene funkcionalnosti socialnega omrežja, kjer bodo lahko prijatelji med seboj spremljali učinkovitost, kar jih bo tudi dodatno spodbudilo k delu in organizaciji le tega. Aplikacijo bomo tudi povezali z Google koledarjem z namenom, da ljudem olajšamo uporabo in jih s tem tudi dodatno motiviramo za uporabo naše aplikacije. Pričakujemo, da bodo naši uporabniki ostali aktivni dalj časa, saj je naša rešitev namenjena dolgotrajni uporabi. Sproti bomo seveda tudi skrbeli za odpravljanje hroščev, kateri bi lahko uporabnike odvrnili od nadaljne uporabe. S tem namenom bomo tudi implementirali možnosti za sporočanje napak s strani uporabnikov do nas razvijalcev, za možnost čimprejšnjega odpravljanja le teh.
   -->
 
@@ -45,20 +23,49 @@ V sklopu spletne aplikacije bomo ponujali tudi naš svoj zunanji CRUD REST API. 
 
 ## 2. Uporabniške vloge
 
-<!-- yan -->
+### - Prijavljeni zunanji uporabnik
+Gre za naše stranke. Uporabljajo storitve za izboljšanje organizacije in produktivnosti, poročajo o nepravilnem delovanju, sledijo drugim uporabnikov in imajo pregled nad lastno in sledivčevo produktivnostjo.
 
-:dart: **TO-DO**
+### - Neprijavljeni uporbanik
+Ima dostop do storitev izboljšanja produktivnosti (upravljanje in uporaba časovnika, urejanje seznama opravil) in do poročanja o nepravilnem delovanju.
 
-- Opredelite glavne tipe uporabnikov vaše aplikacije glede na funkcionalnosti, ki jih imajo na voljo.
-- Zelo pomembno je, da uporabniške vloge konsistentno imenujete. Na primer, če ste definirali vlogo **učitelj**, morate povsod uporabljati samostalnik **učitelj**, ne pa morda **profesor** ali **pedagog**. Tehniška besedila žal ne morejo dosegati leposlovnih standardov, tudi če so še tako dobro napisana.
+### - Razvijalec
+Zaposleni, ki dostopa do prijav nepravilnega delovanja in upravlja z njimi.
+
+### - Analitik
+Zaposeni, ki upravlja podatkovni tok izbranih podatkov o aktivnostih uporabnikov v podatkovno skladišče za namene podatkovne analitike.
+
+### - Administrator
+Zaposleni, ki kreira in upravlja račune zaposlenih.
 
 ## 3. Slovar pojmov
 
-:dart: **TO-DO**
+#### - Socialno omrežje
+Spletna storitev, kjer se uporabniki med sabo povezujejo in kjer uporabniki delijo informacije, ki so relevantne za druge uporabnike, ki si jih lahko oglejujejo.
 
-- Natančno opredelite vse têrmine, ki jih boste uporabljali v nadaljevanju dokumenta.
+#### - Sledilec
+Oseba, ki se poveže z uporabnikom na socialnem omrežju v smislu, da želi videvati informacije od sledenega uporabnika, ki se jih odloči s sledilcem deliti.
 
-- 
+#### - Razvijalec
+Zaposleni, ki je odgovoren za razvoj in vzdrževanje naše aplikacije.
+
+#### - Časovnik
+Orodje, ki je namenjeno odštevanju v naprej določene količine časa. Sestavljen je iz zaslona, kjer je prikazan trenutni čas, gumbov za začetek, ustavitev in resetiranje odštevanja in iz menuje, kjer je moč določiti količino časa, ki se bo odteval.
+
+#### - Nepravilno delovanje
+Napaka, kjer aplikacija ne deluje tako, kot je bil namen pri razvoj, ali pa ne deluje po željah uporabnika.
+
+#### - Organizacija
+Sposobnost imeti dobro načrtovan, pregleden in urejen pogled nad dogodki in njihovo obravnavo.
+
+#### - Uporabniška vloga
+Delitev uporabnikov na definirane skupine. Skupine se definirajo po skupinah uporabnikov, ki bodo aplikacijo uporabljali na enak in točno določen način.
+
+#### - Opravilo
+Aktivnost, ki jo je potrebno opraviti, ki ima neko stanje, ki prikazuje, če je aktivnost že opravljena ali ne, poleg tega pa vsebuje še podatke o času, do katerega uporabnik želi aktivnost opraviti.
+
+#### - Dogodek
+Navadno pomembnejša stvar za uporabnika, ki se zgodi ob točno definiranemu datumu in času in si jo uporabnik želi zabeležiti in imeti pregled nad vsemi dogodki, pri nas ima tak pregled na koledarju.
 
 ## 4. Diagram primerov uporabe
 
@@ -73,7 +80,7 @@ V sklopu spletne aplikacije bomo ponujali tudi naš svoj zunanji CRUD REST API. 
 - V poročilo vključite **izvorno kodo diagrama v jeziku PlantUML**, ki naj bo prisotna v repozitoriju, sliko diagrama pa vključite s povezavo (in ne preko neposredne vključitve binarne datoteke) preko storitve [`https://teaching.lavbic.net/plantuml`](https://teaching.lavbic.net/plantuml), kot prikazuje spodnji primer.
 - Diagram naj bo **jasno berljiv**.
 
-![DPU](https://teaching.lavbic.net/plantuml/svg/VP9DJiCm48NtFiKeRCWYbP8c4c9HzGTOLofXWTYuoJGrTUngOgj8m64u3FV2ZbCf0jIDfRptlPdesVFES3AsbN2tBXdh3a8TEV4MjhmwDAIjgYijDO4XhZfdeJ8ZgiOTjz8yufjPID6erjbGkGDfHDaEAzuXl3COpLtrSqzxOT3hccgae5qL3ykR-vLJEP4-1N4hNP9zZiRoocXQZd81-Gtykv19t1am6aWqUmEr8AoCq8gnFWHHUTJ4jqeS88rWiO4o_UjamSdEphDLNBsA5zM9pc0x93SfOtuwLur4Y9xuznS48EeRERSJhKcqI2_AzWjmYA_TvWjGDa3P9MWwGDDBK3v0-IMe6A32tGGhCqXyZyd7pFV3oXII6LoxFuvxBtnaCNDd7aDIwvDocY_4ATCO9lOu6G9m2-uHeQgzLJWh6BatXAgahN5malxA_CumdCrTohtW7m00)
+![DPU](https://teaching.lavbic.net/plantuml/png/VLNDSjem4BxxAJJqKWumWGQIz90PyjCCqvOmeVIGoMMnX14OhKUsIOUcZv27oBiaxzMLB1ax8RaGjFjzttvQBPjq9LK26jPi1k4gqfWh7cACccKQL4efeR8WBL5Sp26Fir_YJpQ8PQJMb6OXVGXTGUMf224Lx6_0AhhdLlT-8JDXugYvq4NiK-_RsV7bEKL1QxmlWhEOcC6_YYo46Ugp2g-0l0RiBHZ4Ofwn39cMqI9ZN6eHPX9L45WIQzpc2jHIiZkL9wXXfkIgmGOJTZlrYB6MIzZ4Iw7UeiOtqyJZHYBv03aQbu83lfPAfjHfEjhauEBdS5Ic5SGoSxJ1QF339svWkw42iGXjwkBozwjBtAcKPCNQfYUTG64ctCLnJW7sbKqiWAsCGOvfXWamZdHGyF8a8c23yN09RIzyXHZ5WjBdL5PnAEnUNLzV1O7f92YJRWoIMAuW97CiqSZpLIOtYjGbaugXZa39hKcBXfqDFoUDgMqHaFxp8wIueMP1qTTffuhxZcekernB6iwbs0VlLk75Yu4fVgUGc-yEzgKAkoRldC7EBFMF8Z8EnSRX3-jkjNbTQq73ysEkS4ESBIH8F2KNZjIhaRGe6AdOAbYRkwBHaR53zwle2TKNnHNByK5lvgYA7AOhU0zu_FQMMqXZLAPw_O4SuwJMFjH83JRgo9Get2gQ6XeP4UE6Chb_fOEtfJZo23cvCKF5LaWnq3j6vxsMSYneR3-l-nulSNRbmZ2zNJfvirwXzlYJXPsbZPFWa1MbiJ8G2rRfhNrf1kx7YLwqDY73xGpZvSkJUvczhUxqFc2utugPyogbJ_imCBk6jLgjXrEpd6YVi9PPRkuSq3gWx2dxR6xQ3CpYAC-7T3OhnWTwJIzdZvHsuWMytwncZsgdazg92WMtPCGk6SScSHFoOWS4eR_z9cjnl5SKfSraDeYpNw0wJGFgT9i5iTWmjZXhjotak4dhIwemphdms7QUj3s_dksMF9kX_rkqlb8hsV5E7ag_pjyk43ZD6h2_yrX6_WC0)
 
 **Diagram primerov uporabe** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/DPU.puml))
 
@@ -897,14 +904,8 @@ Must have - prijava in odjava predstavljata ključni del spletne aplikacije, saj
 
 ## 6. Nefunkcionalne zahteve
 
-<!-- Anže -->
-
-:dart: **TO-DO**
-
-- Navedite splošne omejitve, ki jih moramo upoštevati v več funkcionalnostih ali celo skozi celoten razvoj aplikacije.
-
-### - Aplikacija naj je na voljo 24 ur na dan.
-Ker gre za spletno storitev, ki jo bodo uporabljali po celem svetu, naj je na voljo za uporabo čez celoten dan.
+### - Aplikacija naj je razpoložljiva 24 ur na dan z izjemo največ 30 minut ob popravilih.
+Ker gre za spletno storitev, ki jo bodo uporabljali po celem svetu, naj je na voljo za uporabo čez celoten dan. Ob nedelovanju zaradi popravil v programu je lahko program nerazpoložljiv največ 30 minut, v tem primeru uporabnik na stran dobi sporočilo o nedelovanju zaradi popravljanja.
 
 ### - Aplikacija mora biti zmožna streči najmanj 50.000 hkratnim uporabnikom.
 Ker pričakujemo, da se bo uporaba aplikacije ražširila na veliko število uporabnikov, mora biti aplikacija pripravljena tudi na veliko števio hkratnih uporabnikov. Počasnejše delovanje ob bolj obremenjenih delih dneva bi lahko odvrnilo uporabnike. Pri te zahtevi naj se upošteva tudi to, da povprečna uporaba aplikacije večino časa preprosta in ne zahteva veliko računalniških virov s strani strežnikov sistema.
@@ -912,14 +913,17 @@ Ker pričakujemo, da se bo uporaba aplikacije ražširila na veliko število upo
 ### - Apikacija naj potrebuje za prenos podatkov preko vmesnika Google Calendarja največ 30 sekund. 
 Čas dostopa do vseh željenih podatkov preko vmesnika Google Calendarja in prenos le-teh ne sme trajati predolgo časa in s tem povzročiti to, da postane uporaba funkcionalnosti dostopa do Google Calendarja nezaželena.
 
-### - Čas nedelovanja v enem tednu ne sme presežti 30 minut.
+### - Povprečni čas med odpovedjo (MTBF) naj ni manjši od dveh mesecev.
 Zaradi ugleda in uporabnosti aplikacije se ne sme pripetiti, da bi aplikacija pogosto prenehala delovati in bi bila za daljše časovno obdobje neuporabna. Težave in krajši padci delovanja so pričakovani, na njih se je treba pripraviti in preprečiti daljša in pogosta nedelovanja.
 
-### - Aplikacijski vmesnik aplikacije naj je zmožen prenesti podatke izven sistema s hitrostjo 10 objektov na sekundo. ??TODO
-Želimo, da je naš aplikacijskih vmesnik do aplikacije uporaben in dovolj hitro prenese željene podatke. En objekt predstavlja določeno opravilo, kreirano v aplikaciji: njen naziv, opis, status opravljenosti in ciljni čas opravljenosti.
+### - Uporabniški vmesnik mora biti dovolj enostaven in vizualno estetski, da ga bo 85% preizkuševalcev ocenilo kot kvalitetnega.
+Želimo, da je naš uporabniški vmesnik do aplikacije uporaben, preprost za uporabnika in hkrati uporabniku tudi privalčen ter vizualno estetski. Če vmesnik dosega te standarde, bomo preverili s najemom zunajnih preizkuševalcev.
 
-### - Čas nalaganja zaslonske maske ne sme presežti 15 sekund.?? TODO
+### - Čas nalaganja zaslonske maske ne sme presežti 15 sekund.
 Zaradi stremenja k dobrem ugledu in visoki uporabnosti si ne želimo opazno predolgotrajnega časa, potrebnega za popolno naložitev katere koli zaslonske maske.
+
+### - Uporabnik ne sme dostopati do podatkov, za ketere nima pooblastila.
+Vsaka uporabniška lahko dostopa zgolj do jasno definirane skupine podatkov, za katere imajo pooblastilo. Do vseh ostalih podatkov pa naj uporabnik nima dostopa.
 
 ### - Za podatkovno skladišče naj se uporabi rešitev Azure Synapse Analytics.
 Zaradi že zakupljene licence naj se za podatkovno skladišče uporabi Microsoftovo Azure Synapse Analytics.
@@ -927,8 +931,8 @@ Zaradi že zakupljene licence naj se za podatkovno skladišče uporabi Microsoft
 ### - Aplikacija mora biti dosegljiva na javno dostopnem spletnem naslovu.
 Preko javno dostopnega spletnega naslova bodo lahko uporabniki dostopali do aplikacije.
 
-### - Uporabnik ne sme dostopati do podatkov, za ketere nima pooblastila.
-Vsaka uporabniška lahko dostopa zgolj do jasno definirane skupine podatkov, za katere imajo pooblastilo. Do vseh ostalih podatkov pa naj uporabnik nima dostopa.
+### - Za transakcijsko podatkovno bazo naj se uporablja SUPB MongoDB.
+Ker imajo naši razvijalci veliko znanja in izkušenj s SUPBjem MongoDB bi bilo smiselno in učinkovito, da ga uporabimo pri implementaciji.
 
 ### - Osebni podatki naj so varovani skladno z GDPR.
 Da ostajamo skladni z zakonodajo, bodo podatki varovani skladno z uredbo GDPR.
@@ -936,7 +940,8 @@ Da ostajamo skladni z zakonodajo, bodo podatki varovani skladno z uredbo GDPR.
 ### - V podatkovnem skladišču naj se ne hrani občutljivih osebnih podatkov uporabnikov.
 Za dolgotrajno shrambo podatkov naj se ne potrebuje tistih, ki bi lahko bili etično sporni za takšno shranjevanje.
 
-### - TODO
+### - Za zagotovitev varnosti podatkov o naših uporabnikih naj se razvijalci držijo svojih moralnih odgovornosti za razvoj varne rešitve
+Od razvijalcev se zahteva, da po najboljših močeh razvijejo zanesljivo rešitev brez varnostnih lukenj, ki so razvijalcu poznane, vendar nima motivacije za njihovo odpravo.
 
 ## 7. Prototipi vmesnikov
 
