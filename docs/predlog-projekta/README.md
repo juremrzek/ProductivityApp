@@ -574,7 +574,7 @@ Za urno postavko dela vzamemo 10€ za programiranje in 12€ za upravljanje. En
 |A22|Implementacija vmesnika za poročanje o napakah|0,667 ČM|40 ur|400€|
 |A23|Implementacija vmesnika za upravljanje poročil o nepravilnem delovanju|0,667 ČM|40 ur|400€|
 |A24|Upravljanje projekta|1,667 ČM|100 ur|1200€|
-||12 ČM|720 ur|7720€|
+|||12 ČM|720 ur|7720€|
 
 Projekt lahko izvajamo oddaljeno, za boljšo organizacijo pa bi se v živo sestali trikrat v sklopu dveh dni. Samo en član ekipe bi se moral v Ljubljano pripeljati, in sicer 35km. V sklopu izvajanje projekta se tudi krije šest kosil za pet članov. Skupno 88€ + 450€ = 538€
 
