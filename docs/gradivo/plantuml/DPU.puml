@@ -37,7 +37,6 @@ rectangle "Aplikacija produktivnosti in organizacije" {
   usecase "Upravljanje poročanih \nnepravilnih delovanj" AS PU13
   usecase "Shranjevanje podatkov \no aktivnostih uporabnikov \nza analitiko" AS PU14
   usecase "Izboljšanje \nproduktivnosti" AS PU15
-  usecase "Izboljšanje \norganiziranosti" AS PU16
 }
 
 PRUp ---|> ZU
@@ -48,7 +47,7 @@ ANAL --> (PU14)
 ADMIN --> (PU5)
 
 PRUp -> (PU4)
-PRUp --> (PU16)
+PRUp --> (PU11)
 PRUp -> (PU7)
 PRUp -> (PU9)
 PRUp -> (PU3)
@@ -56,17 +55,13 @@ PRUp -> (PU3)
 ZU -right-> (PU15)
 ZU ---> (PU10)
 
-(PU6) -down-> S1
-GOOG -left-> (PU11)
-(PU12) ---> GOOG
+S1 -up-> (PU6)
+(PU11) ---> GOOG
 
 (PU7) ..> (PU8) : include
-(PU12) .up.> (PU11) : include
+(PU11) .up.> (PU12) : extends
 (PU2) ..> (PU1) : extends
 
 (PU1) -down-|> (PU15)
 (PU6) -|> (PU15)
-
-(PU11) -down-|> (PU16)
-(PU12) -|> (PU16)
 @enduml
