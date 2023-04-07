@@ -143,20 +143,41 @@ Must have - opravila predstavljajo glavno funkcionalnost naše spletne aplikacij
 
 #### Sprejemni test
 
-a)
+- Primer uporabe
 
-- Prijavi se kot prijavljeni uporabnik, izberi opravila in vnesi novo opravilo, rezultat je novo dodano opravilo
-- Prijavi se kot neprijavljen uporabnik, izberi opravila in vnesi novo opravilo, rezultat je novo dodano opravilo
+Uporabnik želi dodati novo opravilo v seznam opravil, ki ga bo lahko kasneje upravljal.
 
-b)
+- Funkcija, ki se testira
 
-- Prijavi se kot prijavljeni uporabnik, izberi opravila in spremeni obstoječe opravilo, rezultat je spremenjeno obstoječe opravilo
-- Prijavi se kot neprijavljen uporabnik, izberi opravila in spremeni obstoječe opravilo, rezultat je spremenjeno obstoječe opravilo
+Dodajanje novega opravila v seznam opravil.
 
-c)
+- Začetno stanje sistema
 
-- Prijavi se kot prijavljeni uporabnik, izberi opravila in izbriši obstoječe opravilo, rezultat je izbrisano obstoječe opravilo
-- Prijavi se kot neprijavljen uporabnik, izberi opravila in izbriši obstoječe opravilo, rezultat je izbrisano obstoječe opravilo
+Uporabnik je prijavljen v spletno aplikacijo in se nahaja na strani z možnostjo vnosom in urejanjem seznama opravil. V seznamu še ni nobenega opravila.
+
+- Vhod
+
+Ime novega opravila: "Pospravi sobo"
+Opis novega opravila: "Pospravi vse igrače v košare"
+Čas in datum opravila: 10. april 2023 ob 15:00
+
+- Pričakovan rezultat
+
+Po dodajanju novega opravila v seznam opravil se prikaže sporočilo o uspešnosti dodajanja novega opravila in novo opravilo se prikaže v seznamu neopravljenih opravil.
+
+- Testni scenarij
+
+1. Uporabnik klikne na možnost "Vnos in urejanje seznama opravil" v glavnem meniju spletne aplikacije.
+1. Sistem prikaže stran z vnosnimi polji za ime, opis, čas in datum opravila ter seznamom neopravljenih opravil.
+1. Uporabnik vnese ime novega opravila "Pospravi sobo", opis "Pospravi vse igrače v košare" in čas in datum opravila 10. april 2023 ob 15:00.
+1. Uporabnik pritisne na gumb "Dodaj novo opravilo".
+   Sistem uporabniku prikaže sporočilo o uspešnem dodajanju novega opravila.
+1. Uporabnik preveri, če se novo opravilo prikaže v seznamu neopravljenih opravil.
+1. Uporabnik zapre stran z urejanjem seznamu opravil.
+
+- Pričakovani rezultat testiranja
+
+Po izvedbi testa uporabnik uspešno doda novo opravilo v seznam opravil, kar mu potrdi sistem s sporočilom o uspešnosti dodajanja novega opravila. Novo opravilo se prikaže v seznamu neopravljenih opravil, kar uporabnik preveri pred zaprtjem strani z urejanjem seznama opravil.
 
 ### 5.2 Konfiguriranje časovnika
 
@@ -196,15 +217,25 @@ Won't have - nastavljanje časovnika ne daje velike teže pri sami uoprabnosti n
 
 #### Sprejemni test
 
-a)
+- Primer uporabe
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in mu spremeni trajanje, rezultat je spremenjeno trajanje časovnika
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in mu spremeni trajanje, rezultat je spremenjeno trajanje časovnika
+Uporabnik želi spremeniti čas trajanja časovnika v aplikaciji.
 
-b)
+- Funkcija, ki se testira
 
-- Prijavi se kot prijavljeni uporabnik, izberi pavzo in ji spremeni trajanje, rezultat je spremenjeno trajanje pavze
-- Prijavi se kot neprijavljen uporabnik, izberi pavzo in ji spremeni trajanje, rezultat je spremenjeno trajanje pavze
+Konfiguriranje časovnika.
+
+- Začetno stanje sistema
+
+Uporabnik je prijavljen v aplikacijo.
+
+- Vhod
+
+Uporabnik izbere funkcionalnost Konfiguriranje časovnika in določi nov čas trajanja časovnika v formatu mm:ss.
+
+- Pričakovan rezultat
+
+Sistem prikaže polje za spremembo časa časovnika in pavze. Po potrditvi novega časa trajanja časovnika, sistem uveljavi spremembe in spremeni čas časovnika. Če je časovnik že bil aktiviran, uporabnik ne more nastaviti novega časa trajanja časovnika.
 
 #### Alternativni tok 1
 
@@ -223,10 +254,6 @@ b)
 4. Sistem uveljavi spremembe in spremeni čas časovnika
 
 ### 5.3 Uporaba časovnika
-
-<!--
-  - https://levelup.gitconnected.com/creating-browser-notification-in-javascript-79e91bfb76c8
- -->
 
 Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovnik, tudi aktivira. Po končanem časovniku se uporabnika opozori z obvestilom in ga vpraša ali že nadaljevati s časovnikom za pavzo ali ponovi z istim časovnikom.
 
@@ -270,25 +297,25 @@ Won't have - časovnik in njegova uporaba ne predstavlja glavnega dela aplikacij
 
 #### Sprejemni test
 
-a)
+- Primer uporabe
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik, rezultat je pognan nov časovnik
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik, rezultat je pognan nov časovnik
+Uporaba časovnika za spremljanje časa pri delu ali vadbi.
 
-b)
+- Funkcija, ki se testira
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po konca časovnika ga zaključi, rezultat je zaključitev aktivnega časovnika
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po konca časovnika ga zaključi, rezultat je zaključitev aktivnega časovnika
+Uporaba časovnika za odštevanje časa in obveščanje uporabnika o koncu časovnika.
 
-c)
+- Začetno stanje sistema
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika poženi pavzo, rezultat je pognana pavza
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika poženi pavzo, rezultat je pognana pavza
+Uporabnik ima dostop do funkcionalnosti Uporaba časovnika.
 
-d)
+- Vhod
 
-- Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo, rezultat je ponovno pognan časovnik
-- Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo, rezultat je ponovno pognan časovnik
+Uporabnik izbere časovnik in vpiše želeno trajanje časovnika.
+
+- Pričakovan rezultat
+
+Časovnik začne odštevati čas in po končanem času uporabnika opozori o koncu ter ponudi možnost nadaljevanja s pavzo ali ponovitve časovnika.
 
 #### Alternativni tok 1
 
@@ -365,8 +392,26 @@ Must have - dogodki iz koledarja pripomorejo k uporabniški izkušnji in bojši 
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, rezultat je prikaz dogodki
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, rezultat je prikaz dogodki
+- Primer uporabe
+
+Uporabnik si želi ogledati današnje dogodke iz svojega Google koledarja preko naše spletne aplikacije.
+Funkcija, ki se testira
+
+- Funkcija, ki se testira
+
+Ogled dogodkov na koledarju.
+
+- Začetno stanje sistema
+
+Uporabnik se je uspešno prijavil v našo spletno aplikacijo in ima veljaven dostop do Google Calendarja.
+
+- Vhod
+
+Uporabnik klikne na gumb "Ogled dogodkov na koledarju".
+
+- Pričakovan rezultat
+
+Sistem se uspešno poveže na Google Calendar API in prikaže uporabnikove dogodke za današnji dan.
 
 ### 5.5 Uporavljanje dogodkov na koledarju
 
@@ -415,15 +460,27 @@ Could have - upravljanje dogodkov ne predstavlja močne vloge pri funkcionalnost
 
 #### Sprejemni test
 
-a)
+- Primer uporabe
 
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, izberi dogodek in ga uredi, rezultat je spremenjen obstoječi dogodek
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, izberi dogodek in ga uredi, rezultat je spremenjen obstoječi dogodek
+Uporabnik želi spremeniti ime in čas svojega dogodka na koledarju.
 
-b)
+- Funkcija, ki se testira
 
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, izberi dogodek in ga izbriši, rezultat je izbrisan obstoječi dogodek
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, izberi dogodek in ga izbriši, rezultat je izbrisan obstoječi dogodek
+Uporavljanje dogodkov na koledarju - spreminjanje imena in časa dogodka.
+
+- Začetno stanje sistema
+
+Uporabnik je prijavljen v spletno aplikacijo in ima odprt Google Calendar.
+
+- Vhod
+
+Uporabnik klikne na želeni dogodek, da ga odpre v oknu za urejanje.
+
+Uporabnik spremeni ime dogodka iz "Srečanje" v "Srečanje s stranko" in spremeni čas iz 14:00 v 15:00.
+
+- Pričakovan rezultat
+
+Sistem prikaže spremenjeno ime in čas dogodka "Srečanje s stranko" ob 15:00.
 
 #### Alternativni tok 1
 
@@ -448,7 +505,7 @@ b)
 7. Sistem uveljavi spremembe
 8. Sistem ponovno prikaže vse dogodke na voljo
 
-3)
+#### Alternativni tok 3
 
 1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
 2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
@@ -491,8 +548,25 @@ Should have - iskanje uporabnikov predstavlja najpommebnejši del socialnih funk
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljeni uporabnik, vnesi ime iskanega uporabnika v iskalnik in pritisni gumb za iskanje, rezultat je prikaz uporabnikove aktivnosti
-- Prijavi se kot razvijalec, odpri upravljanje poročil o nepravilnem delovanju in pritisni na uporanbikovo uporabniško ime, rezultat je prikaz uporabnikove aktivnosti
+- Primer uporabe
+
+Janez želi poiskati uporabnika z imenom "petra123" in mu začeti slediti na spletni aplikaciji.
+
+- Funkcija, ki se testira
+
+Funkcionalnost Iskanje uporabnikov po uporabniškem računu.
+
+- Začetno stanje sistema
+
+Prijavljeni uporabnik se nahaja na glavni strani spletne aplikacije.
+
+- Vhod
+
+Janez vnese uporabniško ime "petra123" v iskalno polje.
+
+- Pričakovan rezultat
+
+Sistem izpiše uporabnika z uporabniškim imenom "petra123" ter prikaže možnosti za obisk uporabniškega računa ali začetek sledenja.
 
 ### 5.7 Sledenje uporabnikom
 
@@ -527,8 +601,25 @@ Could have - sledenje uporabnikom ni najpomembnejši del naše spletne aplikacij
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljeni uporabnik, vnesi ime uporabnika, ki mu že slesi, v iskalnik in pritisni gumb za iskanje, rezultat je seznam iskanih uporabnikov
-- Prijavi se kot prijavljeni uporabnik, vnesi ime uporabnika, ki mu že sledi, v iskalnik in pritisni gumb za iskanje in odpri uporabnikov račun, rezultat je seznam iskanih uporabnikov
+- Primer uporabe
+
+Peter je uporabnik naše spletne aplikacije in želi začeti slediti svojemu najljubšemu youtuberju. Zato se odloči uporabiti funkcionalnost Sledenje uporabnikom.
+
+- Funkcija, ki se testira
+
+Funkcionalnost sledenja uporabnikom.
+
+- Začetno stanje sistema
+
+Uporabnik Peter je prijavljen na našo spletno aplikacijo.
+
+- Vhod
+
+Peter izbere funkcionalnost Sledenje uporabnikom in v seznamu uporabnikom, ki jim ne sledi, najde uporabnika, ki mu želi slediti. Klikne na gumb za sledenje ob tem uporabniku.
+
+- Pričakovan rezultat
+
+Sistem naj bi uspešno dodal izbranega uporabnika na seznam uporabnikov, ki jim Peter sledi. Peter bi moral imeti sedaj dostop do vseh posodobljenih statistik in informacij, ki jih ima ta uporabnik na svojem profilu.
 
 #### Alternativni tok
 
@@ -571,8 +662,25 @@ Should have - obstaja visoka verjetnost, da bomo pri implementaciji zgrešili š
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljen uporabnik, zaznaj neko nepravilnost, napiši in oddaj poročilo o nepravilnosti, rezultat je oddano poročilo o napakah
-- Prijavi se kot neprijavljen uporabnik, zaznaj neko nepravilnost, napiši in oddaj poročilo o nepravilnosti, rezultat je oddano poročilo o napakah
+- Primer uporabe
+
+Uporabnik naleti na napako pri uporabi spletne aplikacije in želi to sporočiti razvijalcem, da jo lahko odpravijo.
+
+- Funkcija, ki se testira
+
+Funkcija Poročanje o nepravilnem delovanju.
+
+- Začetno stanje sistema
+
+Uporabnik se nahaja na spletni strani aplikacije in ima možnost poročati o napaki.
+
+- Vhod
+
+Uporabnik vnese ime napake ter njen opis.
+
+- Pričakovan rezultat
+
+Sistem zabeleži novo poročilo o napaki, ki je vidno razvijalcem, da jo lahko odpravijo. Uporabnik prejme potrdilo o uspešnem poročanju napake.
 
 ### 5.9 Ogled zaslona produktivnosti
 
@@ -605,8 +713,25 @@ Should have - ogled aktivnosti uprabnikom prikazuje kako sami napredujejo in kak
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljen uporabnik, odpri iskalnik uporabikov, vnesi uporabniško ime in odpri profil nekega uporabnika, rezultat je prikaz produktivnosti izbranega uporabnika
-- Prijavi se kot prijavljen uporabnik, poglej seznam uporabnikov, ki nam sledijo, izberi uporabik in odpri profil izbranega uporabnika, rezultat je prikaz produktivnosti izbranega uporabnika
+- Primer uporabe
+
+Uporabnik si želi ogledati statistiko produktivnosti drugih uporabnikov.
+
+- Funkcija, ki se testira
+
+Ogled zaslona produktivnosti
+
+- Začetno stanje sistema
+
+Uporabnik je prijavljen v aplikacijo in se nahaja na strani, kjer lahko izbere funkcionalnost Ogled aktivnosti.
+
+- Vhod
+
+Uporabnik izbere funkcionalnost Ogled aktivnosti.
+
+- Pričakovan rezultat
+
+Sistem prikaže statistiko produktivnosti izbranega uporabnika, ki vključuje število opravljenih nalog in navad v zadnjem mesecu ter letu.
 
 #### Alternativni tok
 
@@ -654,8 +779,25 @@ Must have - podatki predstavljajo pomemben del samega delovanja spletne aplikaci
 
 #### Sprejemni test
 
-- Prijavi se kot analitik, izberi izvoz analitike in jo izvozi, rezultat je izvožena analitika v podatkovno skladišče
-- Prijavi se kot analitik, izberi izvoz analitike ter določi časovno obdobje za katero bodo podatki izvoženi in jih izvozi, rezultat je izvožena analitika v podatkovno skladišče
+- Primer uporabe
+
+Analitik želi prenesti specifične podatke o aktivnosti uporabnikov iz produkcijske podatkovne baze v podatkovno skladišče, kjer bo lahko opravil analizo podatkov.
+
+- Funkcija, ki se testira
+
+Shranjevanje podatkov o aktivnosti uporabnikov za analitiko.
+
+- Začetno stanje sistema
+
+Analitik je prijavljen v sistem in ima dovoljenje za dostop do funkcionalnosti Shranjevanje podatkov o aktivnosti uporabnikov za analitiko. Vzpostavljena je povezava s podatkovnim skladiščem.
+
+- Vhod
+
+Analitik vnese začetni in končni datum za prenos podatkov ter pritisne na gumb za prenos podatkov.
+
+- Pričakovan rezultat
+
+Sistem prenese izbrane podatke o aktivnosti uporabnikov iz produkcijske podatkovne baze v podatkovno skladišče za izbrano obdobje.
 
 ### 5.11 Upravljanje poročanih nepravilnih delovanj
 
@@ -691,8 +833,31 @@ Should have - edini način, kako lahko dostopamo do pročil, ki so jih uporanbik
 
 #### Sprejemni test
 
-- Uporabnik se prijavi kot razvijalec, odpre poročila o napakah, preveri napako in se pozitivno odzove, rezultat je izbris odprtega poročila o napakah
-- Uporabnik se prijavi kot razvijalec, odpre poročila o napakah, preveri napako toda je ne najde in se negativno odzove, rezultat je izbris odprtega poročila o napakah
+- Primer uporabe
+
+Razvijalec želi pregledati poročila o napakah, ki so jih uporabniki prijavili in jih ustrezno označiti kot diagnosticirane in odpravljene ali pa zavrniti, če ne more najti napake.
+
+- Funkcija, ki se testira
+
+Upravljanje poročanih nepravilnih delovanj.
+
+- Začetno stanje sistema
+
+Sistem je v normalnem stanju in deluje brez napak. V poročilih o napakah ni nobenih pozitivnih ali negativnih odzivov.
+
+- Vhod
+
+  1. Razvijalec pritisne na gumb za Upravljanje poročanih nepravilnih delovanj.
+  1. Sistem prikaže vsa aktivna poročila o napakah skupaj z gumboma za pozitiven in negativen odziv in imenom uporabnika.
+  1. Razvijalec izbere eno izmed poročil o napaki.
+  1. Razvijalec pritisne na gumb za pozitiven ali negativen odziv, glede na to, ali je bila napaka diagnosticirana in odpravljena ali pa ne more najti napake.
+
+- Pričakovan rezultat
+
+  1. Če razvijalec izbere pozitiven odziv, se poročilo o napaki označi kot diagnosticirano in odpravljeno ter se odstrani iz seznama aktivnih poročil o napakah.
+  1. Če razvijalec izbere negativen odziv, se poročilo o napaki zavrne in se odstrani iz seznama aktivnih poročil o napakah.
+  1. Sistem prikaže potrditveno sporočilo o uspešno opravljenem odzivu.
+  1. Sistem se vrne v stanje, kjer so na voljo vsa aktivna poročila o napakah.
 
 ### 5.12 Upravljanje računov zaposlenih
 
@@ -731,8 +896,25 @@ Must have - Upravljanje računov zaposlenih je pommebno, saj nam omogoča dodelj
 
 #### Sprejemni test
 
-- Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku in vnese zaposlenega, rezultat je nov uporabniški račun zaposlenega
-- Uporabnik se prijavi kot administrator, izbere vnos novega uporabnika, vnese podatke o novem uporabniku, toda uorabnik že obstaja zato spremeni podatke in vnese zaposlenega, rezultat je nov uporabniški račun zaposlenega
+- Primer uporabe
+
+Upravljanje računov zaposlenih v spletni aplikaciji za ustvarjanje programske kode.
+
+- Funkcija, ki se testira
+
+Funkcija, ki se testira, je ustvarjanje novega uporabniškega računa za zaposlenega.
+
+- Začetno stanje sistema
+
+Sistem za upravljanje računov zaposlenih je prazen. Administrator je prijavljen v aplikacijo.
+
+- Vhod
+
+Podatki o novem uporabniškem računu: ime, priimek, e-poštni naslov in geslo.
+
+- Pričakovan rezultat
+
+Po uspešnem dodajanju novega uporabniškega računa sistem prikaže sporočilo o uspešnem dodajanju in pošlje e-poštno obvestilo uporabniku o ustvarjenem računu. Na seznamu računov zaposlenih se pojavi nov uporabniški račun z navedenimi podatki. V primeru, da račun zaposlenega že obstaja, sistem prikaže sporočilo o napaki in prepreči dodajanje novega računa.
 
 ### 5.13 Vnos dogodkov na koledar
 
@@ -776,8 +958,30 @@ Won't have - pri vnosu dogodkov ima zunanji odjemalec dodobra izdelan uporabniš
 
 #### Sprejemni test
 
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, poveži Google račun s spletno aplikacijo, vnesi podatke o dogodku in ga vnesi, rezultat je nov dogodek na koledarju
-- Prijavi se kot prijavljeni uporabnik, izberi Google Calendar vnos dogodka, vnesi podatke o dogodku in ga vnesi, rezultat je nov dogodek na koledarju
+- Primer uporabe
+
+Uporabnik želi dodati nov dogodek v svoj Google koledar preko spletne aplikacije.
+
+- Funkcija, ki se testira
+
+Vnos dogodkov na koledar
+
+- Začetno stanje sistema
+
+Uporabnik je prijavljen v spletno aplikacijo in povezan v storitev Google Calendar.
+
+- Vhod
+
+  1. Ime dogodka: "Sestanek s stranko"
+  1. Opis dogodka: "Pogovor o novi marketinški kampanji"
+  1. Datum in čas: 12. april 2023 ob 10:00
+  1. Trajanje dogodka: 1 ura
+
+- Pričakovan rezultat
+
+  1. Dogodek "Sestanek s stranko" bo dodan v Google koledar uporabnika in bo prikazan v seznamu dogodkov na izbrani datum in čas.
+  1. Uporabnik bo prejel potrditveno sporočilo o uspešno dodanem dogodku.
+  1. Če bo uporabnik ponovno naložil koledar, bo novi dogodek "Sestanek s stranko" prikazan tudi tam.
 
 ### 5.14 Prijava in odjava
 
@@ -827,8 +1031,25 @@ Must have - prijava in odjava predstavljata ključni del spletne aplikacije, saj
 
 #### Sprejemni testi
 
-- Prijavi se kot neprijavljeni uporabnik, izberi obrazec za prijavo, vnese prijavne podatke in potrdi prijavo, rezultat je prijava v sistem
-- Prijavi se kot prijavljeni uporabnik, pritisni na gumb za odjavo, rezultat je odjava iz sistema
+- Primer uporabe
+
+Uporabnik se želi prijaviti v sistem, da bi dostopal do svojih shranjenih opravil in dogodkov v koledarju.
+
+- Funkcija, ki se testira
+
+Prijava in odjava uporabnika v sistem.
+
+- Začetno stanje sistema
+
+Neprijavljeni uporabnik.
+
+- Vhod
+
+Uporabnikove prijavne informacije.
+
+- Pričakovan rezultat
+
+Uporabnik se prijavi v sistem in dobi dostop do svojih shranjenih opravil in dogodkov v koledarju. Pri odjavi uporabnik izgubi dostop do svojih opravil in dogodkov v koledarju ter se spremeni v neprijavljenega uporabnika.
 
 #### Alternativni tok
 
