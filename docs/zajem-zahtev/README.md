@@ -125,23 +125,21 @@ Zelo pogosto, saj je to glavna funkcionalnost naše spletne aplikacije, s katero
 
 Must have - opravila predstavljajo glavno funkcionalnost naše spletne aplikacije, zato je pomambno, da je implementirana.
 
-#### Alternativni tok
+#### Alternativni tok 1
 
-1. Spreminjanje lastnosti opravila
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
+2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
+3. Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi spremeniti
+4. Sistem pokaže vmesnik, kjer lahko spremeni lastnosti opravila
+5. Prijavljeni uporabnik in neprijavljeni uporabnik vnese spremembe ter jih potrdi
+6. Sistem zapre vmesnik in uveljavi spremembe
 
-1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
-2) Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
-3) Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi spremeniti
-4) Sistem pokaže vmesnik, kjer lahko spremeni lastnosti opravila
-5) Prijavljeni uporabnik in neprijavljeni uporabnik vnese spremembe ter jih potrdi
-6) Sistem zapre vmesnik in uveljavi spremembe
+#### Alternativni tok 2
 
-2. Brisanje opravila
-
-1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
-2) Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
-3) Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi izbrisati ter pritisne na gumb za izbris
-4) Sistem izbriše opravilo iz seznama
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
+2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
+3. Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi izbrisati ter pritisne na gumb za izbris
+4. Sistem izbriše opravilo iz seznama
 
 #### Sprejemni test
 
@@ -208,23 +206,21 @@ b)
 - Prijavi se kot prijavljeni uporabnik, izberi pavzo in ji spremeni trajanje, rezultat je spremenjeno trajanje pavze
 - Prijavi se kot neprijavljen uporabnik, izberi pavzo in ji spremeni trajanje, rezultat je spremenjeno trajanje pavze
 
-#### Alternativni tok
+#### Alternativni tok 1
 
-1.
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
+2. Sistem prikaže polje za spremembo časa časovnika in pavze
+3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
+4. Sistem uveljavi spremembe in spremeni čas časovnika
+5. Sistem prikaže gumb za aktivacijo novo nastavljenega časovnika
+6. Uporabnik aktivira časovnik
 
-1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
-2) Sistem prikaže polje za spremembo časa časovnika in pavze
-3) Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
-4) Sistem uveljavi spremembe in spremeni čas časovnika
-5) Sistem prikaže gumb za aktivacijo novo nastavljenega časovnika
-6) Uporabnik aktivira časovnik
+#### Alternativni tok 2
 
-2.
-
-1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
-2) Sistem prikaže polje za spremembo časa časovnika in pavze
-3) Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas pavze in ga z pritiskom na gumb potrdi
-4) Sistem uveljavi spremembe in spremeni čas časovnika
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
+2. Sistem prikaže polje za spremembo časa časovnika in pavze
+3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas pavze in ga z pritiskom na gumb potrdi
+4. Sistem uveljavi spremembe in spremeni čas časovnika
 
 ### 5.3 Uporaba časovnika
 
@@ -294,44 +290,42 @@ d)
 - Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo, rezultat je ponovno pognan časovnik
 - Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo, rezultat je ponovno pognan časovnik
 
-#### Alternativni tok
+#### Alternativni tok 1
 
-1.
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
+2. Sistem prikaže časovnik in gumb za začetek le-tega
+3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
+4. Sistem prične s časovnikom in začne z odštevanjem časa
+5. Sistem po končanem časovniku uporabnika obvesti o koncu
+6. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+7. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za zaključitev časovnika
+8. Sistem zaključi časovnik
 
-1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
-2) Sistem prikaže časovnik in gumb za začetek le-tega
-3) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
-4) Sistem prične s časovnikom in začne z odštevanjem časa
-5) Sistem po končanem časovniku uporabnika obvesti o koncu
-6) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
-7) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za zaključitev časovnika
-8) Sistem zaključi časovnik
+#### Alternativni tok 2
 
-2.
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
+2. Sistem prikaže časovnik in gumb za začetek le-tega
+3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
+4. Sistem prične s časovnikom in začne z odštevanjem časa
+5. Sistem po končanem časovniku uporabnika obvesti o koncu
+6. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+7. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za pavzo
+8. Sistem prične s pavzo in začne z odštevanjem časa
+9. Sistem po končani pavzi uporabnika obvesti o koncu
+10. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
 
-1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
-2) Sistem prikaže časovnik in gumb za začetek le-tega
-3) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
-4) Sistem prične s časovnikom in začne z odštevanjem časa
-5) Sistem po končanem časovniku uporabnika obvesti o koncu
-6) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
-7) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za pavzo
-8) Sistem prične s pavzo in začne z odštevanjem časa
-9) Sistem po končani pavzi uporabnika obvesti o koncu
-10) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+3)
 
-3.
-
-1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
-2) Sistem prikaže časovnik in gumb za začetek le-tega
-3) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
-4) Sistem prične s časovnikom in začne z odštevanjem časa
-5) Sistem po končanem časovniku uporabnika obvesti o koncu
-6) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
-7) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za preskok pavze
-8) Sistem prične s časovnikom in začne z odštevanjem časa
-9) Sistem po končanem časovniku uporabnika obvesti o koncu
-10) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
+2. Sistem prikaže časovnik in gumb za začetek le-tega
+3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
+4. Sistem prične s časovnikom in začne z odštevanjem časa
+5. Sistem po končanem časovniku uporabnika obvesti o koncu
+6. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+7. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za preskok pavze
+8. Sistem prične s časovnikom in začne z odštevanjem časa
+9. Sistem po končanem časovniku uporabnika obvesti o koncu
+10. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
 
 ### 5.4 Ogled dogodkov na koledarju
 
@@ -431,39 +425,37 @@ b)
 - Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, izberi dogodek in ga izbriši, rezultat je izbrisan obstoječi dogodek
 - Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, izberi dogodek in ga izbriši, rezultat je izbrisan obstoječi dogodek
 
-#### Alternativni tok
+#### Alternativni tok 1
 
-1.
+1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
+2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
+3. Sistem prikaže pridobljene dogodke
+4. Uporabnik pritisne na dogodek
+5. Sistem odpre okno za urejanje z vnosnimi polji
+6. Uporabnik spremeni podrobnosti dogodka
+7. Uporabnik potrdi spremembe s klikom na gumb
+8. Sistem uveljavi spremembe
+9. Sistem ponovno prikaže vse dogodke na voljo
 
-1) Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
-2) Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
-3) Sistem prikaže pridobljene dogodke
-4) Uporabnik pritisne na dogodek
-5) Sistem odpre okno za urejanje z vnosnimi polji
-6) Uporabnik spremeni podrobnosti dogodka
-7) Uporabnik potrdi spremembe s klikom na gumb
-8) Sistem uveljavi spremembe
-9) Sistem ponovno prikaže vse dogodke na voljo
+#### Alternativni tok 2
 
-2.
+1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
+2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
+3. Sistem prikaže pridobljene dogodke
+4. Uporabnik pritisne na dogodek
+5. Sistem odpre okno za urejanje z vnosnimi polji
+6. Uporabnik izbriše dogodek
+7. Sistem uveljavi spremembe
+8. Sistem ponovno prikaže vse dogodke na voljo
 
-1) Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
-2) Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
-3) Sistem prikaže pridobljene dogodke
-4) Uporabnik pritisne na dogodek
-5) Sistem odpre okno za urejanje z vnosnimi polji
-6) Uporabnik izbriše dogodek
-7) Sistem uveljavi spremembe
-8) Sistem ponovno prikaže vse dogodke na voljo
+3)
 
-3.
-
-1) Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
-2) Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
-3) Sistem prikaže pridobljene dogodke
-4) Uporabnik pritisne na gumb za izbris ob dogodku
-5) Sistem izbriše dogodek
-6) Sistem prikaže dogodke brez izbrisanega
+1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
+2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
+3. Sistem prikaže pridobljene dogodke
+4. Uporabnik pritisne na gumb za izbris ob dogodku
+5. Sistem izbriše dogodek
+6. Sistem prikaže dogodke brez izbrisanega
 
 ### 5.6 Iskanje uporabnikov
 
