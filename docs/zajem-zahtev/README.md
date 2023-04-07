@@ -1,11 +1,10 @@
 # :orange_square: Dokument zahtev
 
-
-|                             |                                                                |
-| :-------------------------- | :------------------------------------------------------------- |
-| **Naziv projekta**          | Aplikacija produktivnosti in organizacije                               |
+|                             |                                                                             |
+| :-------------------------- | :-------------------------------------------------------------------------- |
+| **Naziv projekta**          | Aplikacija produktivnosti in organizacije                                   |
 | **Člani projektne skupine** | Arne Gašperšič, Jan Merhar, Jure Mržek, Anže Rifelj Tričkovič, Klemen Kolar |
-| **Kraj in datum**           | 26.03.2023                                  |
+| **Kraj in datum**           | 26.03.2023                                                                  |
 
 ## Povzetek projekta
 
@@ -13,8 +12,8 @@ V tem projektu smo se odločili izdelati spletno aplikacijo za produktivnost z i
 
 ## 1. Uvod
 
- Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omrežje in pomaga ljudem z organizacijo dela. Pričakujemo, da bodo ljudje našo aplikacijo uporabljali vsakodnevno za organizacijo svojega dela bodisi za šolo, službo, faks ali pa tudi pri domačih opravilih in podobno. V aplikaciji bodo tudi vključene funkcionalnosti socialnega omrežja, kjer bodo lahko prijatelji med seboj spremljali učinkovitost, kar jih bo tudi dodatno spodbudilo k delu in organizaciji le tega. Aplikacijo bomo tudi povezali z Google koledarjem z namenom, da ljudem olajšamo uporabo in jih s tem tudi dodatno motiviramo za uporabo naše aplikacije. Pričakujemo, da bodo naši uporabniki ostali aktivni dalj časa, saj je naša rešitev namenjena dolgotrajni uporabi. Sproti bomo seveda tudi skrbeli za odpravljanje hroščev, kateri bi lahko uporabnike odvrnili od nadaljne uporabe. S tem namenom bomo tudi implementirali možnosti za sporočanje napak s strani uporabnikov do nas razvijalcev, za možnost čimprejšnjega odpravljanja le teh.
-  -->
+Cilji našega projekta so v grobem razviti aplikacijo ki deluje kot socialno omrežje in pomaga ljudem z organizacijo dela. Pričakujemo, da bodo ljudje našo aplikacijo uporabljali vsakodnevno za organizacijo svojega dela bodisi za šolo, službo, faks ali pa tudi pri domačih opravilih in podobno. V aplikaciji bodo tudi vključene funkcionalnosti socialnega omrežja, kjer bodo lahko prijatelji med seboj spremljali učinkovitost, kar jih bo tudi dodatno spodbudilo k delu in organizaciji le tega. Aplikacijo bomo tudi povezali z Google koledarjem z namenom, da ljudem olajšamo uporabo in jih s tem tudi dodatno motiviramo za uporabo naše aplikacije. Pričakujemo, da bodo naši uporabniki ostali aktivni dalj časa, saj je naša rešitev namenjena dolgotrajni uporabi. Sproti bomo seveda tudi skrbeli za odpravljanje hroščev, kateri bi lahko uporabnike odvrnili od nadaljne uporabe. S tem namenom bomo tudi implementirali možnosti za sporočanje napak s strani uporabnikov do nas razvijalcev, za možnost čimprejšnjega odpravljanja le teh.
+-->
 
 Za projekt naše ekipe pri tem predmetu smo izbrali načrtovanje in izdelavo aplikacijo, ki deluje oz. ima lastnosti socialnega omrežja z implementacijo sledenja, ogleda uporabniških profilov in ogled statistik produktivnosti ter uporabnikom ponuja orodja, s katerimi bo poskrbel in izboljšal svojo produktivnost z dodajanjem, spreminjanjem in brisanjem opravil ter dobro integracijo Googlovih koledarskih storitev preko CRUD operacij. Aplikacija bo tudi ponujala svoj zunanji REST API vmesnik, do katerega bodo lahko dostopali tudi zunanji uporabniki, ki imajo uporabniški račun v naši spletni aplikaciji. S to aplikacijo želimo zbližati in spodbuditi težnjo k boljši produktivnosti tako doma kot v delovnem okolju ter istočasno povečati produktivnost z uporabo zunanjih storitev, ki že same po sebi slonijo na tem, da svojim uporabnikom olajšajo vsakdanja enostavne in malce težja opravila.
 Naša spletna aplikacija za produktivnost bo ponujala vnos in upravljanje opravil po principu CRUD operacij, to je možnost vnosa opravila, pri čemer za vsako opravilo uporabnik navade naslednje podatke: ime novo dodanega opravila, opis tega opravila, ki pove o čem se gre pri opravilu oz. ponudi dodaten kontekst in na vse zadnje tudi čas ter datum opravila, ki je podan kot timestamp. Uporabniku ni na voljo le vnos novih opravil, temveč tudi samo spreminjanje le-teh, pri čemer mora navesti nove vrednosti za polja: ime opravila, opis opravila ter seveda čas in datum opravila, ki ga vnese s pomočjo grafičnih elementov spletne aplikacije. Ni mu potrebno spremeniti vseh vnosnih polj v obrazcu za spremembo opravila, saj lahko spremeni le določene lastnosti ter te tudi shrani. Prav tako lahko tudi dodana in morebitno spremenjena uporabniška opravila zbriše. Uporabniku tudi nudimo orodje za boljšo časovno organizacijo, saj je to eden izmed težav s katerimi se tudi mi, naša ekipa, osebno srečuje na vsakdanji ravni. To je seveda časovnik. Časovnik uporabniku omogoča, da si določi neko časovno obdobje, v katerem se bo popolnoma osredotočil na opravljanje nekega opravila oz. dogodka iz zunanjega Googlovega koledarja. Ko pa uporabnik zaključi z aktivnim časovnikom pa mu so ponujene naslednje tri opcije: začni pavzo, preskoči pavzo ali pa končaj časovnik. Sprva bo uporabnik imel pred definirane časovne intervale v časovniku, zato jih lahko tudi prilagodi sam svojim potrebam po pavzi in sami duraciji časovnika. Za še boljšo časovno organizacijo mu v okviru spletne aplikacije ponujamo tudi integracijo z Googlovim Calendarjem, za kar mora uporabnik imeti aktiven uporabniški račun pri Googlu, ki ima tudi vsebino v slovej Google koledarju. Preden pa lahko začne uporabljati storitve pa more še povezati svoj Google račun z našo spletno aplikacijo ter ji omogočiti dostop do njegovih dogodkov. Naša aplikacija omogoča uporabniku tudi CRUD operacije nad zunanjimi dogodki iz Googlovega koledarja. Te operacije so: vnos novega dogodka, sprememba obstoječega dogodka, izbris zunanjega dogodka ter na vse zadnje tudi samo prikaz uporabnikovih dogodkov v naši spletni aplikaciji. Poleg že omenjenih produktivnih orodij ponujamo tudi socialne funkcionalnosti. Tukaj ima uporabnik možnost iskanja drugih uporabnikov po uporabniškem imenu. Vsakega iskanega uporabnika lahko tudi začne slediti in ti sledeči uporabniku se mu prikažejo na njegovem pogledu vseh uporabnikov, ki mu sledijo. Prav tako lahko drugi uporabiku slediju našemu uporabniku, kar je prav tako vidno v nekem drugem pogledu. Za vsakega uporabnika, ki mu sledimo, lahko izbrišemo sleditev in obratno, lahko druge uporabnike nehamo slediti. Pri tem pa imamo možnost ogled raznih statistik za vsakega uporabnika, ki ga najdemo bodisi preko iskalnika uporabnika bodisi če se drug drugega sledimo. Ker seveda programerji delamo napake, ki jih sprva ne opazimo, obstaja možnost, da jih bo opazil kakšen uporabnik. Zato imamo tudi na voljo možnost podajanja poročil o raznih nepravilnih delovanjih, na katere lahko naivni uporabnik naleti. V vsa poročila o nepravilnem delovanju pa ima moč vpogledati naš razvijalec, ki ta nepravilna delovanja razišče ter jih odpravi oz. izbriše sporočilo, v primeru, da nepravilno delovanje ni bilo najdeno oz. ponovljena s strani razvijalca. Za naše analitične poizvedbe imamo na voljo izvoz podatkov iz produkcijske podatkovne baze v podatkovno skladišče. To ima moč opravljati le analitik, ki najprej prenese podatke v podatkovno skladišče ter jih pozneje tam analizira, manipulira ter išče informacije iz njih. Na vse zadnje pa še omogočamo kreiranje računov zaposlenih, tako da administrator dostopa do spletnega vmesnika, ker lahko ustvari nov račun zaposlenega.
@@ -24,47 +23,61 @@ V sklopu spletne aplikacije bomo ponujali tudi naš svoj zunanji CRUD REST API. 
 ## 2. Uporabniške vloge
 
 ### - Prijavljeni zunanji uporabnik
+
 Gre za naše stranke. Uporabljajo storitve za izboljšanje organizacije in produktivnosti, poročajo o nepravilnem delovanju, sledijo drugim uporabnikov in imajo pregled nad lastno in sledivčevo produktivnostjo.
 
 ### - Neprijavljeni uporbanik
+
 Ima dostop do storitev izboljšanja produktivnosti (upravljanje in uporaba časovnika, urejanje seznama opravil) in do poročanja o nepravilnem delovanju.
 
 ### - Razvijalec
+
 Zaposleni, ki dostopa do prijav nepravilnega delovanja in upravlja z njimi.
 
 ### - Analitik
+
 Zaposeni, ki upravlja podatkovni tok izbranih podatkov o aktivnostih uporabnikov v podatkovno skladišče za namene podatkovne analitike.
 
 ### - Administrator
+
 Zaposleni, ki kreira in upravlja račune zaposlenih.
 
 ## 3. Slovar pojmov
 
 #### - Socialno omrežje
+
 Spletna storitev, kjer se uporabniki med sabo povezujejo in kjer uporabniki delijo informacije, ki so relevantne za druge uporabnike, ki si jih lahko oglejujejo.
 
 #### - Sledilec
+
 Oseba, ki se poveže z uporabnikom na socialnem omrežju v smislu, da želi videvati informacije od sledenega uporabnika, ki se jih odloči s sledilcem deliti.
 
 #### - Razvijalec
+
 Zaposleni, ki je odgovoren za razvoj in vzdrževanje naše aplikacije.
 
 #### - Časovnik
+
 Orodje, ki je namenjeno odštevanju v naprej določene količine časa. Sestavljen je iz zaslona, kjer je prikazan trenutni čas, gumbov za začetek, ustavitev in resetiranje odštevanja in iz menuje, kjer je moč določiti količino časa, ki se bo odteval.
 
 #### - Nepravilno delovanje
+
 Napaka, kjer aplikacija ne deluje tako, kot je bil namen pri razvoj, ali pa ne deluje po željah uporabnika.
 
 #### - Organizacija
+
 Sposobnost imeti dobro načrtovan, pregleden in urejen pogled nad dogodki in njihovo obravnavo.
 
 #### - Uporabniška vloga
+
 Delitev uporabnikov na definirane skupine. Skupine se definirajo po skupinah uporabnikov, ki bodo aplikacijo uporabljali na enak in točno določen način.
 
 #### - Opravilo
+
 Aktivnost, ki jo je potrebno opraviti, ki ima neko stanje, ki prikazuje, če je aktivnost že opravljena ali ne, poleg tega pa vsebuje še podatke o času, do katerega uporabnik želi aktivnost opraviti.
 
 #### - Dogodek
+
 Navadno pomembnejša stvar za uporabnika, ki se zgodi ob točno definiranemu datumu in času in si jo uporabnik želi zabeležiti in imeti pregled nad vsemi dogodki, pri nas ima tak pregled na koledarju.
 
 ## 4. Diagram primerov uporabe
@@ -85,28 +98,10 @@ Zelo pogosto, saj je to glavna funkcionalnost naše spletne aplikacije, s katero
 
 #### Osnovni tok
 
-a) Vnos novega opravila po imenu
-
 1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
 2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
 3. Prijavljeni uporabnik in neprijavljeni uporabnik vnese ime opravila in ga potrdi
 4. Sistem prikaže vnešeno opravilo poleg vseh ostalih
-
-b) Spreminjanje lastnosti opravila
-
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
-2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
-3. Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi spremeniti
-4. Sistem pokaže vmesnik, kjer lahko spremeni lastnosti opravila
-5. Prijavljeni uporabnik in neprijavljeni uporabnik vnese spremembe ter jih potrdi
-6. Sistem zapre vmesnik in uveljavi spremembe
-
-c) Brisanje opravila
-
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
-2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
-3. Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi izbrisati ter pritisne na gumb za izbris
-4. Sistem izbriše opravilo iz seznama
 
 #### Izjemni tok
 
@@ -129,6 +124,24 @@ c) Brisanje opravila
 #### Prioriteta
 
 Must have - opravila predstavljajo glavno funkcionalnost naše spletne aplikacije, zato je pomambno, da je implementirana.
+
+#### Alternativni tok
+
+1. Spreminjanje lastnosti opravila
+
+1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
+2) Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
+3) Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi spremeniti
+4) Sistem pokaže vmesnik, kjer lahko spremeni lastnosti opravila
+5) Prijavljeni uporabnik in neprijavljeni uporabnik vnese spremembe ter jih potrdi
+6) Sistem zapre vmesnik in uveljavi spremembe
+
+2. Brisanje opravila
+
+1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
+2) Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
+3) Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi izbrisati ter pritisne na gumb za izbris
+4) Sistem izbriše opravilo iz seznama
 
 #### Sprejemni test
 
@@ -157,18 +170,9 @@ Redko - mnogo uporabinkov bo uporabljajo to funkcionalnost s priveztimi nastavit
 
 #### Osnovni tok
 
-a)
-
 1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
 2. Sistem prikaže polje za spremembo časa časovnika in pavze
 3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
-4. Sistem uveljavi spremembe in spremeni čas časovnika
-
-b)
-
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
-2. Sistem prikaže polje za spremembo časa časovnika in pavze
-3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas pavze in ga z pritiskom na gumb potrdi
 4. Sistem uveljavi spremembe in spremeni čas časovnika
 
 #### Izjemni tok
@@ -206,12 +210,21 @@ b)
 
 #### Alternativni tok
 
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
-2. Sistem prikaže polje za spremembo časa časovnika in pavze
-3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
-4. Sistem uveljavi spremembe in spremeni čas časovnika
-5. Sistem prikaže gumb za aktivacijo novo nastavljenega časovnika
-6. Uporabnik aktivira časovnik
+1.
+
+1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
+2) Sistem prikaže polje za spremembo časa časovnika in pavze
+3) Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
+4) Sistem uveljavi spremembe in spremeni čas časovnika
+5) Sistem prikaže gumb za aktivacijo novo nastavljenega časovnika
+6) Uporabnik aktivira časovnik
+
+2.
+
+1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
+2) Sistem prikaže polje za spremembo časa časovnika in pavze
+3) Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas pavze in ga z pritiskom na gumb potrdi
+4) Sistem uveljavi spremembe in spremeni čas časovnika
 
 ### 5.3 Uporaba časovnika
 
@@ -227,51 +240,12 @@ Zmerno pogosto - ta funkcionalnost je dodatni del aplikacije, ni pa glavna atrkc
 
 #### Osnovni tok
 
-a) Uporabnik požene časovnik
-
 1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
 2. Sistem prikaže časovnik in gumb za začetek le-tega
 3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
 4. Sistem prične s časovnikom in začne z odštevanjem časa
 5. Sistem po končanem časovniku uporabnika obvesti o koncu
 6. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
-
-b) Uporabnik po končanem časovniku zaključi časovnik
-
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
-2. Sistem prikaže časovnik in gumb za začetek le-tega
-3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
-4. Sistem prične s časovnikom in začne z odštevanjem časa
-5. Sistem po končanem časovniku uporabnika obvesti o koncu
-6. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
-7. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za zaključitev časovnika
-8. Sistem zaključi časovnik
-
-c) Uporabnik po končanem časovniku začne pavzo
-
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
-2. Sistem prikaže časovnik in gumb za začetek le-tega
-3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
-4. Sistem prične s časovnikom in začne z odštevanjem časa
-5. Sistem po končanem časovniku uporabnika obvesti o koncu
-6. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
-7. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za pavzo
-8. Sistem prične s pavzo in začne z odštevanjem časa
-9. Sistem po končani pavzi uporabnika obvesti o koncu
-10. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
-
-d) Uporabnik po končanem časovniku preskoči pavzo
-
-1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
-2. Sistem prikaže časovnik in gumb za začetek le-tega
-3. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
-4. Sistem prične s časovnikom in začne z odštevanjem časa
-5. Sistem po končanem časovniku uporabnika obvesti o koncu
-6. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
-7. Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za preskok pavze
-8. Sistem prične s časovnikom in začne z odštevanjem časa
-9. Sistem po končanem časovniku uporabnika obvesti o koncu
-10. Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
 
 #### Izjemni tok
 
@@ -319,6 +293,45 @@ d)
 
 - Prijavi se kot prijavljeni uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo, rezultat je ponovno pognan časovnik
 - Prijavi se kot neprijavljen uporabnik, izberi časovnik in zaženi nov časovnik in po koncu časovnika preskoči pavzo, rezultat je ponovno pognan časovnik
+
+#### Alternativni tok
+
+1.
+
+1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
+2) Sistem prikaže časovnik in gumb za začetek le-tega
+3) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
+4) Sistem prične s časovnikom in začne z odštevanjem časa
+5) Sistem po končanem časovniku uporabnika obvesti o koncu
+6) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+7) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za zaključitev časovnika
+8) Sistem zaključi časovnik
+
+2.
+
+1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
+2) Sistem prikaže časovnik in gumb za začetek le-tega
+3) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
+4) Sistem prične s časovnikom in začne z odštevanjem časa
+5) Sistem po končanem časovniku uporabnika obvesti o koncu
+6) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+7) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za pavzo
+8) Sistem prične s pavzo in začne z odštevanjem časa
+9) Sistem po končani pavzi uporabnika obvesti o koncu
+10) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+
+3.
+
+1) Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Uporaba časovnika
+2) Sistem prikaže časovnik in gumb za začetek le-tega
+3) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne gumb za začetek časovnika
+4) Sistem prične s časovnikom in začne z odštevanjem časa
+5) Sistem po končanem časovniku uporabnika obvesti o koncu
+6) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
+7) Prijavljeni uporabnik in neprijavljeni uporabnik pritisne na gumb za preskok pavze
+8) Sistem prične s časovnikom in začne z odštevanjem časa
+9) Sistem po končanem časovniku uporabnika obvesti o koncu
+10) Sistem uporabniku ponudi, da zaključi časovnik, začne pavzo ali preskoči pavzo
 
 ### 5.4 Ogled dogodkov na koledarju
 
@@ -371,8 +384,6 @@ Redko - uporabnik sam po sebi vnaša in spreminja dogodke že v zunanji aplikaci
 
 #### Osnovni tok
 
-a) Urejanje dogodkov
-
 1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
 2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
 3. Sistem prikaže pridobljene dogodke
@@ -382,15 +393,6 @@ a) Urejanje dogodkov
 7. Uporabnik potrdi spremembe s klikom na gumb
 8. Sistem uveljavi spremembe
 9. Sistem prikaže uveljavljene spremembe
-
-b) Brisanje dogodkov
-
-1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
-2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
-3. Sistem prikaže pridobljene dogodke
-4. Uporabnik pritisne na gumb za izbris ob dogodku
-5. Sistem izbriše dogodek
-6. Sistem prikaže dogodke brez izbrisanega
 
 #### Izjemni tok
 
@@ -429,28 +431,39 @@ b)
 - Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poveži Google račun s spletno aplikacijo, poglej na dogodke, izberi dogodek in ga izbriši, rezultat je izbrisan obstoječi dogodek
 - Prijavi se kot prijavljeni uporabnik, izberi Google Calendar pogled, poglej na dogodke, izberi dogodek in ga izbriši, rezultat je izbrisan obstoječi dogodek
 
-#### Alternativni tok 1
+#### Alternativni tok
 
-1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
-2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
-3. Sistem prikaže pridobljene dogodke
-4. Uporabnik pritisne na dogodek
-5. Sistem odpre okno za urejanje z vnosnimi polji
-6. Uporabnik spremeni podrobnosti dogodka
-7. Uporabnik potrdi spremembe s klikom na gumb
-8. Sistem uveljavi spremembe
-9. Sistem ponovno prikaže vse dogodke na voljo
+1.
 
-#### Alternativni tok 2
+1) Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
+2) Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
+3) Sistem prikaže pridobljene dogodke
+4) Uporabnik pritisne na dogodek
+5) Sistem odpre okno za urejanje z vnosnimi polji
+6) Uporabnik spremeni podrobnosti dogodka
+7) Uporabnik potrdi spremembe s klikom na gumb
+8) Sistem uveljavi spremembe
+9) Sistem ponovno prikaže vse dogodke na voljo
 
-1. Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
-2. Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
-3. Sistem prikaže pridobljene dogodke
-4. Uporabnik pritisne na dogodek
-5. Sistem odpre okno za urejanje z vnosnimi polji
-6. Uporabnik izbriše dogodek
-7. Sistem uveljavi spremembe
-8. Sistem ponovno prikaže vse dogodke na voljo
+2.
+
+1) Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
+2) Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
+3) Sistem prikaže pridobljene dogodke
+4) Uporabnik pritisne na dogodek
+5) Sistem odpre okno za urejanje z vnosnimi polji
+6) Uporabnik izbriše dogodek
+7) Sistem uveljavi spremembe
+8) Sistem ponovno prikaže vse dogodke na voljo
+
+3.
+
+1) Prijavljeni uporabnik izbere funkcionalnost Ogled dogodkov na koledarju
+2) Sistem se poveže na Google Calendar API in prevzame podatke o dogodkih za današnji dan
+3) Sistem prikaže pridobljene dogodke
+4) Uporabnik pritisne na gumb za izbris ob dogodku
+5) Sistem izbriše dogodek
+6) Sistem prikaže dogodke brez izbrisanega
 
 ### 5.6 Iskanje uporabnikov
 
@@ -495,7 +508,7 @@ Prijavljeni uporabnik lahko potem, ko začne slediti drugim, pogleda vse uporabn
 
 #### Pogostost uporabe
 
-Dokaj pogosto - funkcionalnost omogoča pregled vseh uporanbikov, ki jim nekdo sledi in nato ogled njihovih statistik. 
+Dokaj pogosto - funkcionalnost omogoča pregled vseh uporanbikov, ki jim nekdo sledi in nato ogled njihovih statistik.
 
 #### Osnovni tok
 
@@ -784,8 +797,6 @@ Pogosto - večina uporabnikov se bo pred uporabo sistema najprej
 
 #### Osnovni tok
 
-a) Prijava
-
 1. Neprijavljeni uporabnik izbere funkcionalnost Prijava in odjava
 2. Sistem prikaže neprijavljenemu uporabniku obrazec za prijavo z gumbom za prijavo
 3. Neprijavljeni uporabnik vnese svoje prijavne podatke
@@ -793,14 +804,6 @@ a) Prijava
 5. Sistem overi uporabnikove podatke
 6. Sistem neprijavljenega uprabnika prijavi,
 7. Sistem spremeni uporabnika v prijavljenega uporabnika
-
-b) Odjava
-
-1. Prijavljeni uporabnik izbere funkcionalnost Prijava in odjava
-2. Sistem prikaže gumb za odjavo
-3. Prijavljeni uporabnik pritisne na gumb za odjavo
-4. Sistem odjavi uporabnika
-5. Sistem spremeni uporabnika v neprijavljenega uporabnika
 
 #### Izjemni tok
 
@@ -835,46 +838,66 @@ Must have - prijava in odjava predstavljata ključni del spletne aplikacije, saj
 - Prijavi se kot neprijavljeni uporabnik, izberi obrazec za prijavo, vnese prijavne podatke in potrdi prijavo, rezultat je prijava v sistem
 - Prijavi se kot prijavljeni uporabnik, pritisni na gumb za odjavo, rezultat je odjava iz sistema
 
+#### Alternativni tok
+
+1. Prijavljeni uporabnik izbere funkcionalnost Prijava in odjava
+2. Sistem prikaže gumb za odjavo
+3. Prijavljeni uporabnik pritisne na gumb za odjavo
+4. Sistem odjavi uporabnika
+5. Sistem spremeni uporabnika v neprijavljenega uporabnika
 
 ## 6. Nefunkcionalne zahteve
 
 ### - Aplikacija naj je razpoložljiva 24 ur na dan z izjemo največ 30 minut ob popravilih.
+
 Ker gre za spletno storitev, ki jo bodo uporabljali po celem svetu, naj je na voljo za uporabo čez celoten dan. Ob nedelovanju zaradi popravil v programu je lahko program nerazpoložljiv največ 30 minut, v tem primeru uporabnik na stran dobi sporočilo o nedelovanju zaradi popravljanja.
 
 ### - Aplikacija mora biti zmožna streči najmanj 50.000 hkratnim uporabnikom.
+
 Ker pričakujemo, da se bo uporaba aplikacije ražširila na veliko število uporabnikov, mora biti aplikacija pripravljena tudi na veliko števio hkratnih uporabnikov. Počasnejše delovanje ob bolj obremenjenih delih dneva bi lahko odvrnilo uporabnike. Pri te zahtevi naj se upošteva tudi to, da povprečna uporaba aplikacije večino časa preprosta in ne zahteva veliko računalniških virov s strani strežnikov sistema.
 
-### - Apikacija naj potrebuje za prenos podatkov preko vmesnika Google Calendarja največ 30 sekund. 
+### - Apikacija naj potrebuje za prenos podatkov preko vmesnika Google Calendarja največ 30 sekund.
+
 Čas dostopa do vseh željenih podatkov preko vmesnika Google Calendarja in prenos le-teh ne sme trajati predolgo časa in s tem povzročiti to, da postane uporaba funkcionalnosti dostopa do Google Calendarja nezaželena.
 
 ### - Povprečni čas med odpovedjo (MTBF) naj ni manjši od dveh mesecev.
+
 Zaradi ugleda in uporabnosti aplikacije se ne sme pripetiti, da bi aplikacija pogosto prenehala delovati in bi bila za daljše časovno obdobje neuporabna. Težave in krajši padci delovanja so pričakovani, na njih se je treba pripraviti in preprečiti daljša in pogosta nedelovanja.
 
 ### - Uporabniški vmesnik mora biti dovolj enostaven in vizualno estetski, da ga bo 85% preizkuševalcev ocenilo kot kvalitetnega.
+
 Želimo, da je naš uporabniški vmesnik do aplikacije uporaben, preprost za uporabnika in hkrati uporabniku tudi privalčen ter vizualno estetski. Če vmesnik dosega te standarde, bomo preverili s najemom zunajnih preizkuševalcev.
 
 ### - Čas nalaganja zaslonske maske ne sme presežti 15 sekund.
+
 Zaradi stremenja k dobrem ugledu in visoki uporabnosti si ne želimo opazno predolgotrajnega časa, potrebnega za popolno naložitev katere koli zaslonske maske.
 
 ### - Uporabnik ne sme dostopati do podatkov, za ketere nima pooblastila.
+
 Vsaka uporabniška lahko dostopa zgolj do jasno definirane skupine podatkov, za katere imajo pooblastilo. Do vseh ostalih podatkov pa naj uporabnik nima dostopa.
 
 ### - Za podatkovno skladišče naj se uporabi rešitev Azure Synapse Analytics.
+
 Zaradi že zakupljene licence naj se za podatkovno skladišče uporabi Microsoftovo Azure Synapse Analytics.
 
 ### - Aplikacija mora biti dosegljiva na javno dostopnem spletnem naslovu.
+
 Preko javno dostopnega spletnega naslova bodo lahko uporabniki dostopali do aplikacije.
 
 ### - Za transakcijsko podatkovno bazo naj se uporablja SUPB MongoDB.
+
 Ker imajo naši razvijalci veliko znanja in izkušenj s SUPBjem MongoDB bi bilo smiselno in učinkovito, da ga uporabimo pri implementaciji.
 
 ### - Osebni podatki naj so varovani skladno z GDPR.
+
 Da ostajamo skladni z zakonodajo, bodo podatki varovani skladno z uredbo GDPR.
 
 ### - V podatkovnem skladišču naj se ne hrani občutljivih osebnih podatkov uporabnikov.
+
 Za dolgotrajno shrambo podatkov naj se ne potrebuje tistih, ki bi lahko bili etično sporni za takšno shranjevanje.
 
 ### - Za zagotovitev varnosti podatkov o naših uporabnikih naj se razvijalci držijo svojih moralnih odgovornosti za razvoj varne rešitve
+
 Od razvijalcev se zahteva, da po najboljših močeh razvijejo zanesljivo rešitev brez varnostnih lukenj, ki so razvijalcu poznane, vendar nima motivacije za njihovo odpravo.
 
 ## 7. Prototipi vmesnikov
