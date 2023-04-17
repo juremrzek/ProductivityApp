@@ -213,7 +213,7 @@ Redko - mnogo uporabinkov bo uporabljajo to funkcionalnost s priveztimi nastavit
 
 #### Prioriteta
 
-Won't have - nastavljanje časovnika ne daje velike teže pri sami uoprabnosti naše aplikacije, saj so že pred definirani časovniki prilagojeni večini uporabnikovim potrebam.
+Won't have - nastavljanje časovnika ne daje velike teže pri sami uporabnosti naše aplikacije, saj so že pred definirani časovniki prilagojeni večini uporabnikovim potrebam.
 
 #### Sprejemni test
 
@@ -293,7 +293,7 @@ Zmerno pogosto - ta funkcionalnost je dodatni del aplikacije, ni pa glavna atrkc
 
 #### Prioriteta
 
-Won't have - časovnik in njegova uporaba ne predstavlja glavnega dela aplikacije, prav tako ni glavna prodajna vrednost naše spletne aplikacije, četudi bi ga imeli, imajo uporabniki verjetno će svoje sisteme beleženje časa.
+Should have - časovnik in njegova uporaba ne predstavlja glavnega dela aplikacije, prav tako ni glavna prodajna vrednost naše spletne aplikacije, ampak je lahko koristno za nekatere uporabnike.
 
 #### Sprejemni test
 
@@ -954,7 +954,7 @@ Občasno - dodajanje novih dogodkov pri tej funkcionalnosti je omejeno glede na 
 
 #### Prioriteta
 
-Won't have - pri vnosu dogodkov ima zunanji odjemalec dodobra izdelan uporabniški vmesnik, s katerim težko konkuriramo, če si ne vzamemo ogromne količine časa za implementacijo le-tega, zato vomo zaenkrat to implementacijo preskočili.
+Won't have - pri vnosu dogodkov ima zunanji odjemalec dodobra izdelan uporabniški vmesnik, s katerim težko konkuriramo, če si ne vzamemo ogromne količine časa za implementacijo le-tega, zato bomo zaenkrat to implementacijo preskočili.
 
 #### Sprejemni test
 
