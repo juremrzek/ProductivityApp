@@ -1,0 +1,101 @@
+@startuml Aplikacija produktivnosti in organizacije 
+skinparam class {
+  backgroundColor white
+  borderColor #5FB8EC
+  arrowColor black
+}
+skinparam class<<entity>> {
+  backgroundColor #e8f5fc
+  borderColor Blue
+}
+skinparam class<<control>> {
+  backgroundColor #fce8e8
+  borderColor Red
+}
+skinparam class<<boundary>> {
+  backgroundColor #f2fce8
+  borderColor Green
+}
+
+'skinparam shadowing false
+skinparam defaultTextAlignment center
+hide circle
+'hide members
+
+'---------Razredi---------------------------
+' Ali bo uporabnik imel atribut tip ali bomo imeli posebej
+' razred za prijavljene/neprijavljene/developer uporabnike? idk
+Class Uporabnik<<entity>> {
+  -id: int
+  -ime: string
+  -hash: string
+  -sol: string
+  -tip: string
+  -opravila: Opravilo [] 
+  +nastaviGeslo(geslo: string): void
+  +jeGesloPravilno(geslo: string): boolean
+}
+Class Opravilo<<entity>>{
+  -id: int
+  -ime: string
+  -opis: string
+  -datum: date
+}
+' boljše ime probably
+class DodajanjeOpravila<<control>>{
+  +vrniOpravila(uporabnik: Uporabnik): Opravilo []
+  +dodajOpravilo(uporabnik: Uporabnik, opravilo: Opravilo): string
+  +urediOpravilo(id_opravila: int): void
+}
+class OknoZaDodajanjeOpravila<<boundary>>{
+  +izpisiStatus(status: string): void
+}
+Class Napaka<<entity>>{
+  -ime: string
+  -opis: string
+  -datum: date
+  -uporabnik: Uporabnik
+}
+Class PrijavaNapake<<control>>{
+  +dodajNapako(uporabnik: Uporabnik, napaka: Napaka): void
+  +vrniNapake(): Napaka []
+}
+Class OknoZaPrijavoNapake<<boundary>>
+
+Class IskalnikUporabnikov<<control>>{
+  +najdiUporabnike(ime: string): Uporabnik []
+  +vrniVseUporabnike(): Uporabnik []
+}
+
+' obvestiUporabnika - ko čas poteče, naredi popup al whatever. (better name pls)
+' also a rabmo dodatne atribute/funkcije za pavzo?
+Class Časovnik<<control>>{
+  -trajanje: int
+  -trenutniCas: int
+  -pavza: int
+  -format: string
+  +zacniCasovnik(): void
+  +resetirajCasovnik(): void
+  +setTrajanje(trajanje: int): void
+  +setFormat(format: int): void
+  +obvestiUporabnika(): void
+}
+
+
+'------Povezave-----------------------
+Uporabnik --* Opravilo
+DodajanjeOpravila --> Opravilo
+OknoZaDodajanjeOpravila --> DodajanjeOpravila
+Uporabnik --* Napaka
+PrijavaNapake --> Napaka
+OknoZaPrijavoNapake --> PrijavaNapake
+IskalnikUporabnikov --> Uporabnik
+Uporabnik --> Časovnik
+@enduml
+
+' extra notes
+' - a se bolj fokusiramo da je čim boljši diagram al da
+'    bo vse na diagramu dejansko implementirano?
+' - a res mormo za vsak entity, ki se ga da dodati,
+'    naredit svoj controller?
+' - kako pokažeš google calendar lol
