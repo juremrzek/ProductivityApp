@@ -123,7 +123,7 @@ Zelo pogosto, saj je to glavna funkcionalnost naše spletne aplikacije, s katero
 
 #### Prioriteta
 
-Must have - opravila predstavljajo glavno funkcionalnost naše spletne aplikacije, zato je pomambno, da je implementirana.
+Must have - opravila predstavljajo glavno funkcionalnost naše spletne aplikacije, zato je pomembno, da je implementirana.
 
 #### Alternativni tok 1
 
@@ -191,7 +191,7 @@ Redko - mnogo uporabinkov bo uporabljajo to funkcionalnost s priveztimi nastavit
 
 1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
 2. Sistem prikaže polje za spremembo časa časovnika in pavze
-3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
+3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga s pritiskom na gumb potrdi
 4. Sistem uveljavi spremembe in spremeni čas časovnika
 
 #### Izjemni tok
@@ -241,7 +241,7 @@ Sistem prikaže polje za spremembo časa časovnika in pavze. Po potrditvi noveg
 
 1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
 2. Sistem prikaže polje za spremembo časa časovnika in pavze
-3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga z pritiskom na gumb potrdi
+3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas časovnika in ga s pritiskom na gumb potrdi
 4. Sistem uveljavi spremembe in spremeni čas časovnika
 5. Sistem prikaže gumb za aktivacijo novo nastavljenega časovnika
 6. Uporabnik aktivira časovnik
@@ -250,16 +250,16 @@ Sistem prikaže polje za spremembo časa časovnika in pavze. Po potrditvi noveg
 
 1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Konfiguriranje časovnika
 2. Sistem prikaže polje za spremembo časa časovnika in pavze
-3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas pavze in ga z pritiskom na gumb potrdi
+3. Prijavljeni uporabnik in neprijavljeni uporabnik določi nov čas pavze in ga s pritiskom na gumb potrdi
 4. Sistem uveljavi spremembe in spremeni čas časovnika
 
 ### 5.3 Uporaba časovnika
 
-Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovnik, tudi aktivira. Po končanem časovniku se uporabnika opozori z obvestilom in ga vpraša ali že nadaljevati s časovnikom za pavzo ali ponovi z istim časovnikom.
+Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovnik, tudi aktivira. Po končanem časovniku se uporabnika opozori z obvestilom in ga vpraša, če želi nadaljevati s časovnikom za pavzo ali ponoviti z istim časovnikom.
 
 #### Pogostost uporabe
 
-Zmerno pogosto - ta funkcionalnost je dodatni del aplikacije, ni pa glavna atrkcija za uporabnika.
+Zmerno pogosto - ta funkcionalnost je dodatni del aplikacije, ni pa glavna atrakcija za uporabnika.
 
 #### Osnovni tok
 
@@ -293,7 +293,7 @@ Zmerno pogosto - ta funkcionalnost je dodatni del aplikacije, ni pa glavna atrkc
 
 #### Prioriteta
 
-Should have - časovnik in njegova uporaba ne predstavlja glavnega dela aplikacije, prav tako ni glavna prodajna vrednost naše spletne aplikacije, ampak je lahko koristno za nekatere uporabnike.
+Should have - časovnik in njegova uporaba ne predstavlja glavnega dela aplikacije, prav tako ni glavna prodajna vrednost naše spletne aplikacije, ampak je lahko koristen za nekatere uporabnike.
 
 #### Sprejemni test
 
@@ -388,7 +388,7 @@ Dokaj pogosto - ogled dogodkov uporabniku razširi uporabniško izkušnjo, tako 
 
 #### Prioriteta
 
-Must have - dogodki iz koledarja pripomorejo k uporabniški izkušnji in bojši zadržitvi uoprabnika na naši platformi, zaradi česa bo še bolj uporabljal našo spletno aplikacijo.
+Must have - dogodki iz koledarja pripomorejo k uporabniški izkušnji in boljši zadržitvi uporabnika na naši platformi, zaradi česa bo še bolj uporabljal našo spletno aplikacijo.
 
 #### Sprejemni test
 
@@ -413,7 +413,7 @@ Uporabnik klikne na gumb "Ogled dogodkov na koledarju".
 
 Sistem se uspešno poveže na Google Calendar API in prikaže uporabnikove dogodke za današnji dan.
 
-### 5.5 Uporavljanje dogodkov na koledarju
+### 5.5 Upravljanje dogodkov na koledarju
 
 Prijavljeni uporabnik iz izpisa Googlovih dogodkov lahko uporabnik upravlja le-te. S klikom na dogodek lahko spremeni ime, opis, datum in čas ter trajanje samega dogodka. Lahko ga tudi izbriše. To se uveljavi preko zunanjega Google API-ja.
 
@@ -436,14 +436,14 @@ Redko - uporabnik sam po sebi vnaša in spreminja dogodke že v zunanji aplikaci
 #### Izjemni tok
 
 1. Uporabnik ne ogledati dogodkov, če ni povezan v Google Calendar
-2. Uporabnik ne more izbrisati z dogodkom, če je bil spremenjen v Google Calendar
+2. Uporabnik ne more izbrisati dogodka, če je bil spremenjen v Google Calendar
 3. Uporabnik ne more spremeniti dogodka, če je bil spremenjen v Google Calendar
 
 #### Pogoji
 
-- Pri funkcionalnosti Uporavljanje dogodkov na koledarju mora biti uporabnik prijavljen kot prijavljeni uporabnik
-- Pri funkcionalnosti Uporavljanje dogodkov na koledarju mora biti uporabnik prijavljen v storitvi Google Calendar
-- Pri funkcionalnosti Uporavljanje dogodkov na koledarju mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
+- Pri funkcionalnosti Upravljanje dogodkov na koledarju mora biti uporabnik prijavljen kot prijavljeni uporabnik
+- Pri funkcionalnosti Upravljanje dogodkov na koledarju mora biti uporabnik prijavljen v storitvi Google Calendar
+- Pri funkcionalnosti Upravljanje dogodkov na koledarju mora uporabnik omogočiti dostop spletni aplikaciji do zunanjega vmesnika Google Calendar
 
 #### Posledice
 
@@ -466,7 +466,7 @@ Uporabnik želi spremeniti ime in čas svojega dogodka na koledarju.
 
 - Funkcija, ki se testira
 
-Uporavljanje dogodkov na koledarju - spreminjanje imena in časa dogodka.
+Upravljanje dogodkov na koledarju - spreminjanje imena in časa dogodka.
 
 - Začetno stanje sistema
 
@@ -520,7 +520,7 @@ Prijavljeni uporabnik lahko išče po uporabnikih s pomočjo uporabniških imen.
 
 #### Pogostost uporabe
 
-Redko - do iskanja uporabnika pride, kadar želi neki uporabnik pogledati statistiko za nekega uporabnika, ki mu še ne sledi oz. išče uporabnika, k imu želi začeti sleditil
+Redko - do iskanja uporabnika pride, kadar želi neki uporabnik pogledati statistiko za nekega uporabnika, ki mu še ne sledi oz. išče uporabnika, k imu želi začeti slediti
 
 #### Osnovni tok
 
@@ -597,7 +597,7 @@ Dokaj pogosto - funkcionalnost omogoča pregled vseh uporanbikov, ki jim nekdo s
 
 #### Prioriteta
 
-Could have - sledenje uporabnikom ni najpomembnejši del naše spletne aplikacije, toda poomaga uporanbikom vstati v stiku z njhovimi najljubšimo so-uporabniki na naši platformi.
+Could have - sledenje uporabnikom ni najpomembnejši del naše spletne aplikacije, toda pomaga uporabnikom ostati v stiku z njihovimi najljubšimi souporabniki na naši platformi.
 
 #### Sprejemni test
 
@@ -688,7 +688,7 @@ Prijavljen, neprijavljen uporabnik in razvijalec lahko vidi aktivnosti drugih up
 
 #### Pogostost uporabe
 
-Zmerno pogosto - ogled statistk uporabnikov in primerjanje med seboj, kar pomeni tudi večkratno obiskovanje enega in istega profila.
+Zmerno pogosto - ogled statistik uporabnikov in primerjanje med seboj, kar pomeni tudi večkratno obiskovanje enega in istega profila.
 
 #### Osnovni tok
 
@@ -829,7 +829,7 @@ Pogosto - razvijalci bodo pogosto gledali za nova poročila o napakah za kar se 
 
 #### Prioriteta
 
-Should have - edini način, kako lahko dostopamo do pročil, ki so jih uporanbiki je tukaj in tako lahko odkrijemo, diagnosticiramo in odpravimo napake.
+Should have - edini način, kako lahko dostopamo do poročil, ki so jih uporanbiki je tukaj in tako lahko odkrijemo, diagnosticiramo in odpravimo napake.
 
 #### Sprejemni test
 
