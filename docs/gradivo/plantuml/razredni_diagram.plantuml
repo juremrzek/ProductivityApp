@@ -25,15 +25,34 @@ hide circle
 '---------Razredi---------------------------
 ' Ali bo uporabnik imel atribut tip ali bomo imeli posebej
 ' razred za prijavljene/neprijavljene/developer uporabnike? idk
+Class NeprijavljeniUporabnik<<entity>> {
+  -opravila Opravilo []
+}
 Class Uporabnik<<entity>> {
   -id: int
   -ime: string
   -hash: string
-  -sol: string
-  -tip: string
-  -opravila: Opravilo [] 
+  -sol: string 
   +nastaviGeslo(geslo: string): void
   +jeGesloPravilno(geslo: string): boolean
+}
+Class PrijavljeniUporabnik<<entity>>{
+
+}
+Class Administrator<<entity>>{
+
+}
+Class Analitik<<entity>>{
+
+}
+Class Developer<<entity>>{
+
+}
+Class StatistikaUporabnika<<control>>{
+  +vrniOpravilaNaDan(uporabnik: Uporabnik): Opravilo []
+}
+Class PrikazStatistike<<boundary>>{
+
 }
 Class Opravilo<<entity>>{
   -id: int
@@ -41,14 +60,14 @@ Class Opravilo<<entity>>{
   -opis: string
   -datum: date
 }
-' boljše ime probably
-class DodajanjeOpravila<<control>>{
+class UrejanjeOpravil<<control>>{
   +vrniOpravila(uporabnik: Uporabnik): Opravilo []
   +dodajOpravilo(uporabnik: Uporabnik, opravilo: Opravilo): string
   +urediOpravilo(id_opravila: int): void
 }
-class OknoZaDodajanjeOpravila<<boundary>>{
+class OknoZaOpravila<<boundary>>{
   +izpisiStatus(status: string): void
+  +izpisiOpravilaUporabnika(Uporabnik uporabnik): void
 }
 Class Napaka<<entity>>{
   -ime: string
@@ -60,7 +79,7 @@ Class PrijavaNapake<<control>>{
   +dodajNapako(uporabnik: Uporabnik, napaka: Napaka): void
   +vrniNapake(): Napaka []
 }
-Class OknoZaPrijavoNapake<<boundary>>
+Class PogledZaPrijavoNapake<<boundary>>
 
 Class IskalnikUporabnikov<<control>>{
   +najdiUporabnike(ime: string): Uporabnik []
@@ -70,32 +89,37 @@ Class IskalnikUporabnikov<<control>>{
 ' obvestiUporabnika - ko čas poteče, naredi popup al whatever. (better name pls)
 ' also a rabmo dodatne atribute/funkcije za pavzo?
 Class Časovnik<<control>>{
-  -trajanje: int
   -trenutniCas: int
-  -pavza: int
-  -format: string
+  -isRunning: boolean
   +zacniCasovnik(): void
   +resetirajCasovnik(): void
-  +setTrajanje(trajanje: int): void
-  +setFormat(format: int): void
   +obvestiUporabnika(): void
+}
+Class PrikazČasovnika<<boundary>>{
+  
 }
 
 
 '------Povezave-----------------------
-Uporabnik --* Opravilo
-DodajanjeOpravila --> Opravilo
-OknoZaDodajanjeOpravila --> DodajanjeOpravila
-Uporabnik --* Napaka
+NeprijavljeniUporabnik -left-* Opravilo
+UrejanjeOpravil --> Opravilo
+OknoZaOpravila --> UrejanjeOpravil
 PrijavaNapake --> Napaka
-OknoZaPrijavoNapake --> PrijavaNapake
+PogledZaPrijavoNapake --> PrijavaNapake
 IskalnikUporabnikov --> Uporabnik
-Uporabnik --> Časovnik
+Časovnik --> PrikazČasovnika
+PrijavljeniUporabnik -up-|> Uporabnik
+PrijavljeniUporabnik --|> NeprijavljeniUporabnik
+Analitik -up-|> NeprijavljeniUporabnik
+Administrator -up-|> Uporabnik
+Developer -up-|> Uporabnik
+StatistikaUporabnika --> PrijavljeniUporabnik
+PrikazStatistike --> StatistikaUporabnika
 @enduml
 
 ' extra notes
 ' - a se bolj fokusiramo da je čim boljši diagram al da
 '    bo vse na diagramu dejansko implementirano?
-' - a res mormo za vsak entity, ki se ga da dodati,
-'    naredit svoj controller?
 ' - kako pokažeš google calendar lol
+' loči uporabnika na frontend in backend z adapterjem
+' načrtovalske vzorce se na koncu označi na diagramu
