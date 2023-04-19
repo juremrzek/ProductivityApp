@@ -40,7 +40,7 @@ Class PrijavljeniUporabnik<<entity>>{
 
 }
 Class Administrator<<entity>>{
-
+  -mail: string
 }
 Class Analitik<<entity>>{
 
@@ -74,10 +74,13 @@ Class Napaka<<entity>>{
   -opis: string
   -datum: date
   -uporabnik: Uporabnik
+  -solved: boolean
+  +solveIssue(): void
 }
 Class PrijavaNapake<<control>>{
   +dodajNapako(uporabnik: Uporabnik, napaka: Napaka): void
-  +vrniNapake(): Napaka []
+  +getUnsolvedIssues(): Napaka []
+  +getUnsolvedIssues(user: Developer): Napaka[]
 }
 Class PogledZaPrijavoNapake<<boundary>>
 
@@ -110,7 +113,7 @@ IskalnikUporabnikov --> Uporabnik
 Časovnik --> PrikazČasovnika
 PrijavljeniUporabnik -up-|> Uporabnik
 PrijavljeniUporabnik --|> NeprijavljeniUporabnik
-Analitik -up-|> NeprijavljeniUporabnik
+Analitik -up-|> Uporabnik
 Administrator -up-|> Uporabnik
 Developer -up-|> Uporabnik
 StatistikaUporabnika --> PrijavljeniUporabnik
@@ -123,3 +126,5 @@ PrikazStatistike --> StatistikaUporabnika
 ' - kako pokažeš google calendar lol
 ' loči uporabnika na frontend in backend z adapterjem
 ' načrtovalske vzorce se na koncu označi na diagramu
+' POVEŽI ZASLONSKE MASKE SKUPAJ!
+' logina ni treba dat noter.
