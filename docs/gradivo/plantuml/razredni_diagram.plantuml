@@ -19,112 +19,135 @@ skinparam class<<boundary>> {
 
 'skinparam shadowing false
 skinparam defaultTextAlignment center
+skinparam packageStyle rectangle
+skinparam groupInheritance 2
 hide circle
 'hide members
 
 '---------Razredi---------------------------
-' Ali bo uporabnik imel atribut tip ali bomo imeli posebej
-' razred za prijavljene/neprijavljene/developer uporabnike? idk
-Class NeprijavljeniUporabnik<<entity>> {
-  -opravila Opravilo []
+package Factory{
+  Class User<<entity>> {
+    -id: int
+    -name: string
+    -hash: string
+    -salt: string 
+    +setPassword(password: string): void
+    +isPasswordCorrect(password: string): boolean
+  }
+  Class UserFactory<<control>>{
+    +createUser(userType: String): User
+  }
+  Class SignedUser<<entity>>{
+
+  }
+  Class Admin<<entity>>{
+    -mail: string
+  }
+  Class Analyst<<entity>>{
+
+  }
+  Class Developer<<entity>>{
+
+  }
+  Class UnsignedUser<<entity>> {
+    -task Task []
+  }
+  Class SignedUserCreator<<control>>{
+    +createUser(): void
+  }
+  Class AdminCreator<<control>>{
+    +createUser(): void
+  }
+  Class DeveloperCreator<<control>>{
+    +createUser(): void
+  }
+  Class AnalystCreator<<control>>{
+    +createUser(): void
+  }
 }
-Class Uporabnik<<entity>> {
+
+Class UserStatistics<<control>>{
+  +getDailyTasks(user: User): Task []
+}
+Class ShowStatistics<<boundary>>{
+
+}
+Class Task<<entity>>{
   -id: int
-  -ime: string
-  -hash: string
-  -sol: string 
-  +nastaviGeslo(geslo: string): void
-  +jeGesloPravilno(geslo: string): boolean
+  -name: string
+  -description: string
+  -date: date
 }
-Class PrijavljeniUporabnik<<entity>>{
-
+class EditTasks<<control>>{
+  +getTasks(user: User): Task []
+  +addTask(user: User, Task: task): string
+  +editTask(taskId: int): void
 }
-Class Administrator<<entity>>{
-  -mail: string
+class TaskWindow<<boundary>>{
+  +getStatus(status: string): void
+  +showTasks(User user): void
 }
-Class Analitik<<entity>>{
-
-}
-Class Developer<<entity>>{
-
-}
-Class StatistikaUporabnika<<control>>{
-  +vrniOpravilaNaDan(uporabnik: Uporabnik): Opravilo []
-}
-Class PrikazStatistike<<boundary>>{
-
-}
-Class Opravilo<<entity>>{
-  -id: int
-  -ime: string
-  -opis: string
-  -datum: date
-}
-class UrejanjeOpravil<<control>>{
-  +vrniOpravila(uporabnik: Uporabnik): Opravilo []
-  +dodajOpravilo(uporabnik: Uporabnik, opravilo: Opravilo): string
-  +urediOpravilo(id_opravila: int): void
-}
-class OknoZaOpravila<<boundary>>{
-  +izpisiStatus(status: string): void
-  +izpisiOpravilaUporabnika(Uporabnik uporabnik): void
-}
-Class Napaka<<entity>>{
-  -ime: string
-  -opis: string
-  -datum: date
-  -uporabnik: Uporabnik
+Class Issue<<entity>>{
+  -title: string
+  -description: string
+  -date: date
+  -user: User
   -solved: boolean
-  +solveIssue(): void
+  +solve(): void
 }
-Class PrijavaNapake<<control>>{
-  +dodajNapako(uporabnik: Uporabnik, napaka: Napaka): void
-  +getUnsolvedIssues(): Napaka []
-  +getUnsolvedIssues(user: Developer): Napaka[]
+Class IssueReport<<control>>{
+  +addIssue(user: User, issue: Issue): void
+  +getUnsolvedIssues(): Issue []
+  +getUnsolvedIssues(user: Developer): Issue []
 }
-Class PogledZaPrijavoNapake<<boundary>>
+Class IssueReportWindow<<boundary>>
 
-Class IskalnikUporabnikov<<control>>{
-  +najdiUporabnike(ime: string): Uporabnik []
-  +vrniVseUporabnike(): Uporabnik []
+Class SearchUsers<<control>>{
+  +findUser(name: string): User []
+  +getUsers(): User []
 }
 
-' obvestiUporabnika - ko čas poteče, naredi popup al whatever. (better name pls)
+' obvestiUsera - ko čas poteče, naredi popup al whatever. (better name pls)
 ' also a rabmo dodatne atribute/funkcije za pavzo?
-Class Časovnik<<control>>{
-  -trenutniCas: int
+Class Timer<<control>>{
+  -currentTime: int
   -isRunning: boolean
-  +zacniCasovnik(): void
-  +resetirajCasovnik(): void
-  +obvestiUporabnika(): void
+  +startTimer(): void
+  +resetTimer(): void
+  +alertUser(): void
 }
-Class PrikazČasovnika<<boundary>>{
+Class TimerWindow<<boundary>>{
   
 }
 
 
 '------Povezave-----------------------
-NeprijavljeniUporabnik -left-* Opravilo
-UrejanjeOpravil --> Opravilo
-OknoZaOpravila --> UrejanjeOpravil
-PrijavaNapake --> Napaka
-PogledZaPrijavoNapake --> PrijavaNapake
-IskalnikUporabnikov --> Uporabnik
-Časovnik --> PrikazČasovnika
-PrijavljeniUporabnik -up-|> Uporabnik
-PrijavljeniUporabnik --|> NeprijavljeniUporabnik
-Analitik -up-|> Uporabnik
-Administrator -up-|> Uporabnik
-Developer -up-|> Uporabnik
-StatistikaUporabnika --> PrijavljeniUporabnik
-PrikazStatistike --> StatistikaUporabnika
+UnsignedUser --* Task
+EditTasks --> Task
+TaskWindow --> EditTasks
+IssueReport --> Issue
+IssueReportWindow --> IssueReport
+SearchUsers --> User
+Timer --> TimerWindow
+SignedUser --|> User
+SignedUser --|> UnsignedUser
+Analyst --|> User
+Admin --|> User
+Developer --|> User
+UserStatistics --> SignedUser
+ShowStatistics --> UserStatistics
+UserFactory --> User
+SignedUserCreator --|> UserFactory
+DeveloperCreator --|> UserFactory
+AnalystCreator --|> UserFactory
+AdminCreator --|> UserFactory
 @enduml
 
 ' extra notes
 ' - a se bolj fokusiramo da je čim boljši diagram al da
 '    bo vse na diagramu dejansko implementirano?
 ' - kako pokažeš google calendar lol
-' loči uporabnika na frontend in backend z adapterjem
+' loči Usera na frontend in backend z adapterjem
 ' načrtovalske vzorce se na koncu označi na diagramu
 ' POVEŽI ZASLONSKE MASKE SKUPAJ!
 ' logina ni treba dat noter.
