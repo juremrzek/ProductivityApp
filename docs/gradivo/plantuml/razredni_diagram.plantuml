@@ -79,7 +79,6 @@ class EditTasks<<control>>{
   +getTasks(user: User): Task []
   +addTask(user: User, Task: task): string
   +editTask(taskId: int): void
-  +showTasks(user: User): void
 }
 class TaskWindow<<boundary>>{
   +showTasks(user: User): void
