@@ -83,6 +83,9 @@ class EditTasks<<control>>{
 class TaskWindow<<boundary>>{
   +showTasks(user: User): void
 }
+class WindowManager<<control>>{
+  +openWindow(window: string): void
+}
 Class Issue<<entity>>{
   -title: string
   -description: string
@@ -118,7 +121,7 @@ Class TimerWindow<<boundary>>{
 
 
 '------Povezave-----------------------
-UnsignedUser --* Task
+Task --* UnsignedUser
 EditTasks --> Task
 TaskWindow --> EditTasks
 IssueReport --> Issue
@@ -136,6 +139,10 @@ SignedUserCreator --|> UserFactory
 DeveloperCreator --|> UserFactory
 AnalystCreator --|> UserFactory
 AdminCreator --|> UserFactory
+WindowManager --> IssueReportWindow
+WindowManager --> TimerWindow
+WindowManager --> ShowStatistics
+WindowManager --> TaskWindow
 @enduml
 
 ' extra notes
