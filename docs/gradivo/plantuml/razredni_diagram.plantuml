@@ -31,11 +31,12 @@ package Factory{
     -name: string
     -hash: string
     -salt: string 
+    +getName(): string
     +setPassword(password: string): void
     +isPasswordCorrect(password: string): boolean
   }
   Class UserFactory<<control>>{
-    +createUser(userType: String): User
+    +createUser(userType: string): User
   }
   Class SignedUser<<entity>>{
 
@@ -53,16 +54,16 @@ package Factory{
     -task Task []
   }
   Class SignedUserCreator<<control>>{
-    +createUser(userType: String): void
+    +createUser(userType: string): void
   }
   Class AdminCreator<<control>>{
-    +createUser(userType: String): void
+    +createUser(userType: string): void
   }
   Class DeveloperCreator<<control>>{
-    +createUser(userType: String): void
+    +createUser(userType: string): void
   }
   Class AnalystCreator<<control>>{
-    +createUser(userType: String): void
+    +createUser(userType: string): void
   }
 }
 
@@ -74,6 +75,8 @@ Class Task<<entity>>{
   -name: string
   -description: string
   -date: date
+  +getName(): string
+  +getDescription(): string
 }
 class EditTasks<<control>>{
   +getTasks(user: User): Task []
@@ -86,18 +89,28 @@ class TaskWindow<<boundary>>{
 class WindowManager<<control>>{
   +openWindow(window: string): void
 }
+class Toolbar<<boundary>>{
+  +openWindow(): void
+}
 Class Issue<<entity>>{
   -title: string
   -description: string
   -date: date
   -user: User
   -solved: boolean
+  -solvedBy: Developer
   +solve(): void
+  +getTitle(): string
+  +getDescription(): string
 }
 Class IssueReport<<control>>{
   +addIssue(user: User, issue: Issue): void
   +getUnsolvedIssues(): Issue []
-  +getUnsolvedIssues(user: Developer): Issue []
+  +getSolvedIssues(user: Developer): Issue []
+  +solveIssue(issue: Issue): void
+}
+Class IssueSolveWindow<<boundary>>{
+  +showUnsolvedIssues(user: Developer): void
 }
 Class IssueReportWindow<<boundary>>
 
@@ -111,14 +124,19 @@ Class SearchUsers<<control>>{
 Class Timer<<control>>{
   -currentTime: int
   -isRunning: boolean
+  -format: string
+  -pause: int
+  -trajanje: int
   +startTimer(): void
   +resetTimer(): void
+  +getCurrentTime(): void
   +alertUser(): void
+  +setFormat(format: string)
+  +setPause(pause: int): int
 }
 Class TimerWindow<<boundary>>{
-  
+  +showCurrentTime(): void
 }
-
 
 '------Povezave-----------------------
 Task --* UnsignedUser
@@ -126,7 +144,8 @@ EditTasks --> Task
 TaskWindow --> EditTasks
 IssueReport --> Issue
 IssueReportWindow --> IssueReport
-SearchUsers --> User
+IssueSolveWindow --> IssueReport
+SearchUsers --> SignedUser
 Timer --> TimerWindow
 SignedUser --|> User
 SignedUser --|> UnsignedUser
@@ -143,6 +162,8 @@ WindowManager --> IssueReportWindow
 WindowManager --> TimerWindow
 WindowManager --> ShowStatistics
 WindowManager --> TaskWindow
+WindowManager --> IssueSolveWindow
+Toolbar --> WindowManager
 @enduml
 
 ' extra notes
@@ -153,3 +174,4 @@ WindowManager --> TaskWindow
 ' načrtovalske vzorce se na koncu označi na diagramu
 ' POVEŽI ZASLONSKE MASKE SKUPAJ!
 ' logina ni treba dat noter.
+' a je možno oz. je treba postaviti database connection v diagram?
