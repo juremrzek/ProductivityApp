@@ -51,7 +51,10 @@ package Factory{
 
   }
   Class UnsignedUser<<entity>> {
-    -task Task []
+    +getTasks(): Task []
+    +addTask(task: Task): void
+    +editTask(taskId: int, name: string, description: string): void
+    +removeTask(taskId): void
   }
   Class SignedUserCreator<<control>>{
     +createUser(userType: string): void
@@ -68,7 +71,7 @@ package Factory{
 }
 
 Class ShowStatistics<<boundary>>{
-  +showUserInfo(user: User)
+  +showUserInfo(user: User): void
 }
   'proxy class? observer?
   '(timer alerta timedtask)
@@ -89,9 +92,9 @@ Class Task<<entity>>{
 
 }
 class EditTasks<<control>>{
-  +getTasks(user: User): Task []
-  +addTask(user: UnsignedUser, Task: task): string
-  +editTask(taskId: int, name: string, description: string): void
+  +getTasks(user: UnsignedUser): Task []
+  +addTask(user: UnsignedUser, task: Task): string
+  +editTask(user: UnsignedUser, taskId: int, name: string, description: string): void
   +removeTask(taskId: int): void
 }
 class TaskWindow<<boundary>>{
