@@ -70,18 +70,29 @@ package Factory{
 Class ShowStatistics<<boundary>>{
   +showUserInfo(user: User)
 }
+  'proxy class? observer?
+  '(timer alerta timedtask)
+  'Class TimedTask<<entity>>{
+  '  -id: int
+  '  -name: string
+  '  +getName(): void
+  '}
 Class Task<<entity>>{
   -id: int
   -name: string
   -description: string
   -date: date
+  +setName(ime: string): string
+  +setDescription(desc: string): string
   +getName(): string
   +getDescription(): string
+
 }
 class EditTasks<<control>>{
   +getTasks(user: User): Task []
   +addTask(user: User, Task: task): string
-  +editTask(taskId: int): void
+  +editTask(taskId: int, name: string, description: string): void
+  +removeTask(taskId: int): void
 }
 class TaskWindow<<boundary>>{
   +showTasks(user: User): void
@@ -123,16 +134,15 @@ Class SearchUsers<<control>>{
 ' also a rabmo dodatne atribute/funkcije za pavzo?
 Class Timer<<control>>{
   -currentTime: int
+  -currentPause: int
   -isRunning: boolean
-  -format: string
-  -pause: int
   -trajanje: int
   +startTimer(): void
   +resetTimer(): void
+  +pauseTimer(): void
+  +resumeTimer(): void
   +getCurrentTime(): void
   +alertUser(): void
-  +setFormat(format: string)
-  +setPause(pause: int): int
 }
 Class TimerWindow<<boundary>>{
   +showCurrentTime(): void
@@ -140,13 +150,14 @@ Class TimerWindow<<boundary>>{
 
 '------Povezave-----------------------
 Task --* UnsignedUser
+'TimedTask --> Task
 EditTasks --> Task
 TaskWindow --> EditTasks
 IssueReport --> Issue
 IssueReportWindow --> IssueReport
 IssueSolveWindow --> IssueReport
 SearchUsers --> SignedUser
-Timer --> TimerWindow
+TimerWindow -up-> Timer
 SignedUser --|> User
 SignedUser --|> UnsignedUser
 Analyst --|> User
@@ -169,9 +180,13 @@ Toolbar --> WindowManager
 ' extra notes
 ' - a se bolj fokusiramo da je čim boljši diagram al da
 '    bo vse na diagramu dejansko implementirano?
-' - kako pokažeš google calendar lol
+' - Google calendar pokažeš kot boundary class
 ' loči Usera na frontend in backend z adapterjem
 ' načrtovalske vzorce se na koncu označi na diagramu
 ' POVEŽI ZASLONSKE MASKE SKUPAJ!
 ' logina ni treba dat noter.
 ' a je možno oz. je treba postaviti database connection v diagram?
+' A moramo interface posebej označiti
+' na diagramu ali je kar entity?
+' Observer (MVC), Command pattern
+' Singleton, strategy?
