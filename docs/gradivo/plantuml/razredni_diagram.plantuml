@@ -90,12 +90,12 @@ Class Task<<entity>>{
 }
 class EditTasks<<control>>{
   +getTasks(user: User): Task []
-  +addTask(user: User, Task: task): string
+  +addTask(user: UnsignedUser, Task: task): string
   +editTask(taskId: int, name: string, description: string): void
   +removeTask(taskId: int): void
 }
 class TaskWindow<<boundary>>{
-  +showTasks(user: User): void
+  +showTasks(user: UnsignedUser): void
 }
 class WindowManager<<control>>{
   +openWindow(window: string): void
@@ -151,13 +151,14 @@ Class TimerWindow<<boundary>>{
 '------Povezave-----------------------
 Task --* UnsignedUser
 'TimedTask --> Task
-EditTasks --> Task
+'EditTasks --> Task
+EditTasks --> UnsignedUser
 TaskWindow --> EditTasks
 IssueReport --> Issue
 IssueReportWindow --> IssueReport
 IssueSolveWindow --> IssueReport
 SearchUsers --> SignedUser
-TimerWindow -up-> Timer
+TimerWindow --> Timer
 SignedUser --|> User
 SignedUser --|> UnsignedUser
 Analyst --|> User
