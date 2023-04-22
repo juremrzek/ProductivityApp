@@ -46,7 +46,7 @@ package Factory{
       +isPasswordCorrect(password: string): boolean
     }
     Class UserAdapter<<control>>{
-      getUser(id: int): User
+      +getUser(id: int): User
     }
   }
   Class UserFactory<<control>>{
@@ -135,7 +135,7 @@ Class IssueReport<<control>>{
   +addIssue(user: User, issue: Issue): void
   +getUnsolvedIssues(): Issue []
   +getSolvedIssues(user: Developer): Issue []
-  +solveIssue(issue: Issue): void
+  +solveIssue(issue: Issue, solvedBy: Developer): void
 }
 Class IssueSolveWindow<<boundary>>{
   +showUnsolvedIssues(user: Developer): void
@@ -165,7 +165,6 @@ package Singleton{
   } 
 }
 Class TimerManager<<control>>{
-    +getInstance(): Timer
     +startTimer(): void
     +resetTimer(): void
     +pauseTimer(): void
