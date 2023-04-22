@@ -18,22 +18,36 @@ skinparam class<<boundary>> {
 }
 
 'skinparam shadowing false
+skinparam style strictuml
 skinparam defaultTextAlignment center
 skinparam packageStyle rectangle
-skinparam groupInheritance 2
+skinparam groupInheritance 5
 hide circle
 'hide members
 
 '---------Razredi---------------------------
 package Factory{
-  Class User<<entity>> {
-    -id: int
-    -name: string
-    -hash: string
-    -salt: string 
-    +getName(): string
-    +setPassword(password: string): void
-    +isPasswordCorrect(password: string): boolean
+  package Adapter{
+    Class User<<entity>> {
+      -id: int
+      -name: string
+      -password: string
+      +getName(): string
+      +setPassword(password: string): void
+      +isPasswordCorrect(password: string): boolean
+    }
+    Class DatabaseUser<<entity>>{
+      -id: int
+      -name: string
+      -hash: string
+      -salt: string
+      +getName(): string
+      +setPassword(password: string): void
+      +isPasswordCorrect(password: string): boolean
+    }
+    Class UserAdapter<<control>>{
+      getUser(id: int): User
+    }
   }
   Class UserFactory<<control>>{
     +createUser(userType: string): User
@@ -70,7 +84,7 @@ package Factory{
   }
 }
 
-Class ShowStatistics<<boundary>>{
+Class StatisticsWindow<<boundary>>{
   +showUserInfo(user: User): void
 }
   'proxy class? observer?
@@ -135,17 +149,29 @@ Class SearchUsers<<control>>{
 
 ' obvestiUsera - ko čas poteče, naredi popup al whatever. (better name pls)
 ' also a rabmo dodatne atribute/funkcije za pavzo?
-Class Timer<<control>>{
-  -currentTime: int
-  -currentPause: int
-  -isRunning: boolean
-  -trajanje: int
-  +startTimer(): void
-  +resetTimer(): void
-  +pauseTimer(): void
-  +resumeTimer(): void
-  +getCurrentTime(): void
-  +alertUser(): void
+package Singleton{
+  Class Timer<<entity>>{
+    -instance: Timer
+    -currentTime: int
+    -currentPause: int
+    -isRunning: boolean
+    -trajanje: int
+    +getInstance(): Timer
+    +startTimer(): void
+    +resetTimer(): void
+    +pauseTimer(): void
+    +resumeTimer(): void
+    +getCurrentTime(): void
+  } 
+}
+Class TimerManager<<control>>{
+    +getInstance(): Timer
+    +startTimer(): void
+    +resetTimer(): void
+    +pauseTimer(): void
+    +resumeTimer(): void
+    +getCurrentTime(): void
+    +alertUser(): void
 }
 Class TimerWindow<<boundary>>{
   +showCurrentTime(): void
@@ -161,21 +187,24 @@ IssueReport --> Issue
 IssueReportWindow --> IssueReport
 IssueSolveWindow --> IssueReport
 SearchUsers --> SignedUser
-TimerWindow --> Timer
+TimerWindow --> TimerManager
+TimerManager --> Timer
 SignedUser --|> User
 SignedUser --|> UnsignedUser
 Analyst --|> User
 Admin --|> User
 Developer --|> User
-ShowStatistics --> EditTasks
+StatisticsWindow --> EditTasks
 UserFactory --> User
+DatabaseUser --> UserAdapter
+UserAdapter --> User
 SignedUserCreator --|> UserFactory
 DeveloperCreator --|> UserFactory
 AnalystCreator --|> UserFactory
 AdminCreator --|> UserFactory
 WindowManager --> IssueReportWindow
 WindowManager --> TimerWindow
-WindowManager --> ShowStatistics
+WindowManager --> StatisticsWindow
 WindowManager --> TaskWindow
 WindowManager --> IssueSolveWindow
 Toolbar --> WindowManager
@@ -185,7 +214,7 @@ Toolbar --> WindowManager
 ' - a se bolj fokusiramo da je čim boljši diagram al da
 '    bo vse na diagramu dejansko implementirano?
 ' - Google calendar pokažeš kot boundary class
-' loči Usera na frontend in backend z adapterjem
+' loči Userja na frontend in backend z adapterjem
 ' načrtovalske vzorce se na koncu označi na diagramu
 ' POVEŽI ZASLONSKE MASKE SKUPAJ!
 ' logina ni treba dat noter.
