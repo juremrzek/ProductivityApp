@@ -103,12 +103,6 @@ Zelo pogosto, saj je to glavna funkcionalnost naše spletne aplikacije, s katero
 3. Prijavljeni uporabnik in neprijavljeni uporabnik vnese ime opravila in ga potrdi
 4. Sistem prikaže vnešeno opravilo poleg vseh ostalih
 
-#### Izjemni tok
-
-1. Uporabnik ne more dostopati do opravila, ker ga je že na drugem sistemu opravil
-2. Uporabnik ne more spreminjati opravila, ker ga je že na drugem sistemu opravil
-3. Uporabnik ne more brisati opravila, ker ga je že na drugem sistemu opravil
-
 #### Pogoji
 
 - Pri funkcionalnosti Vnos in urejanje seznama opravil mora biti uporabnik bodisi neprijavljeni uporabnik ali prijavljeni uporabnik
