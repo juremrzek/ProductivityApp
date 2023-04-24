@@ -153,9 +153,10 @@ package Singleton{
   Class Timer<<entity>>{
     -instance: Timer
     -currentTime: int
-    -currentPause: int
+    -currentBreak: int
     -isRunning: boolean
-    -trajanje: int
+    -duration: int
+    -break: int
     +getInstance(): Timer
     +startTimer(): void
     +resetTimer(): void
@@ -169,6 +170,7 @@ Class TimerManager<<control>>{
     +resetTimer(): void
     +pauseTimer(): void
     +resumeTimer(): void
+    +startBreak(): void
     +getCurrentTime(): void
     +alertUser(): void
 }
