@@ -82,7 +82,7 @@ Navadno pomembnejša stvar za uporabnika, ki se zgodi ob točno definiranemu dat
 
 ## 4. Diagram primerov uporabe
 
-![DPU](https://teaching.lavbic.net/plantuml/png/VLLBSXen4DtFALHa4nPGXlYRXQl6dxYe99Wo8GkNDyr836A4UahpSOeaH_0XV1VxNcb9CtZ6njbGgDzxtK-jfiaIgLCmi6PpY9BOOA5vX0eDomteZ22Xyo3RihXOGA7o7-9N7YePwpN1BA8FOHgi8XCHP8Bz3bWZxxdBUx-KkR1nD5mO7_jmyENi-FASec0CtllWN94o-Dj82r6EvgoXyvJNX9q50oKMESkH6HalSyQb4L4kKGU14x7ERQ51hoIxqqMA1kPQ9XqMJjdjh6PCZ5n1gLP2lsLDRcPfpHkBz3_CyMIRCEHhgML6dQQZ0yEBxwFn5jQWP5x9md7uhGPkO5DI0IKY1rrS_dnrYJkTKLgnTl1q46ZCHNLnN520VMPJHs29DSWnop45nf4E6fuVHGmid8nMqAyJNo76IX1yJcKr1s_twlhwAWXi9q5Rk1EcIYOGaJcM6kH5aijIKtR9f6PeOj1oOs7HSRDHpqbdvbe4bF_f0J8igLdW-peRD7bVKIzaN1X9mxaIk-Z39js_6DZYTngv_LxHFZLfr-ITCtWnI_sZY5IHA2l-VjkjiQ_hB1XuUYWqbgJPG8gaqt9PYGvQ8YEy8XCR3MjxLxHvfAhOXqtsbEeBVyNj-61jvgZ976K9l4SyVdlB3MGAjQtUVg1AST9g7nga1jlioBJmRZLD3OsCK5WIKjIljFUs54SU8oStTgXOWXG3yw8OlDTIZbx6Tkk6x-dIogvSMcLjbqwrsJf3w_6dIpTBPPM2G-vBOsCWbgpHM_VI3AeV9zP9MnCosinHhPuVgvVPsUh10Istm2uErklr_fpQJKFBWVNifghE0Vss2Jrb7wtjRc2tmFQyJsUxB-h0GRTEvuu4LyazVT1jeaUjqqdhH8M2MpBYDaQbfkGsL2VR8mhjaLwH-i1XD_0rFCKl1bU6zVkESTobhIDrf0ekQcw_I3qu65gK_bHejsGM7MvrWoOI-42FuxssBQgSEGFi9V0F)
+![DPU](https://teaching.lavbic.net/plantuml/png/VLNDKjim4BxxAJJffJaaGrB2Jm_Cc9yoJDkG8KqF39UDfJYA5Qr7_g6Jje_0G_0ky5vTINQm8VJ2iFlzx7grKh94wXGChDaSeYGsM6WUeKB3SWCw8qZeFCYsB2uMKAZyX_YLXqh6UaqmY-YFC0rMaOa8Ci5-1wpXU-PyxvSo5pQFXWlZSnz6NqwFBiue2yRWlK_E5Ic3lmrRY78qfmsTfxmcx2mOAB78MOxCo7YPCowDY7A9EWYSY7Lk2mrw9TcTBb8qCDSowR1mocvdDMDYv0fAjHBwBMjoCqjhtbYa_s6E9rl3aA-bbXbDca87XkVVhyPRM8EIUIKBn-6t6hY1JKa5b8WST7xnyzL7tEcCRCNQmTD1e34NrOVZWXBiCviw0ajiWnop75DW72dGyFmeOc3Xv6e5_Thu4Z5MWk0pAgiv-7OlhwylWy1E4hI5Es6gP08HDSTIWxn8SbbgSfTCQeOc1Yqt5XOTjnlrddHcRaH0_ayFa659mm8_rzcWoVkAUY7ZmaXQpfNOHHyswVx4m1Q_qyZj_nNjKxkwiQVbB0qyFHGQIn9i8CMClbOkAz6e9JB2ApAnqR2slQFraQfY7pJPKoMuy2rlrm7BYddOP5vb2Rn7F6eIhsdYd6qWKwXjzVR0AyLnQnnea0PctP5fuRlLj0Mq0a9XIKXHJttlRIcEF4PEtTWbOGbI3ioBOl3UI3bw6Tkj6xwdIwjsvT8gwtOfgfkj7Lg7ELswtIWh2mwvBuqCjiDPiiPitKapg2uRrgRxhKFPp56jdX-hazavwi687gl0FWIir-lzER4l1rrsrhClJnK7T5S9FM4VRTlTmDxgRRnFiRt_TMBKtTfvmg1RnIuyR4N7hOYiWrigxUvyfIOxcwhDzeX2Bq6lI7tYe1lu6fxYhxOhm_fznpZgqhiXTQGABcfklqWzE1XQb7uMw7N8B3hSwWPD9F297iTxROTITUOQO2-9Vm00)
 
 **Diagram primerov uporabe** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/DPU.puml))
 
@@ -102,12 +102,6 @@ Zelo pogosto, saj je to glavna funkcionalnost naše spletne aplikacije, s katero
 2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
 3. Prijavljeni uporabnik in neprijavljeni uporabnik vnese ime opravila in ga potrdi
 4. Sistem prikaže vnešeno opravilo poleg vseh ostalih
-
-#### Izjemni tok
-
-1. Uporabnik ne more dostopati do opravila, ker ga je že na drugem sistemu opravil
-2. Uporabnik ne more spreminjati opravila, ker ga je že na drugem sistemu opravil
-3. Uporabnik ne more brisati opravila, ker ga je že na drugem sistemu opravil
 
 #### Pogoji
 
@@ -255,7 +249,7 @@ Sistem prikaže polje za spremembo časa časovnika in pavze. Po potrditvi noveg
 
 ### 5.3 Uporaba časovnika
 
-Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovnik, tudi aktivira. Po končanem časovniku se uporabnika opozori z obvestilom in ga vpraša, če želi nadaljevati s časovnikom za pavzo ali ponoviti z istim časovnikom.
+Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovnik, tudi aktivira. Po končanem časovniku se uporabnika opozori z obvestilom in ga vpraša, če želi nadaljevati s časovnikom za pavzo ali ponoviti z istim časovnikom. Med izvajanjem časovnika je možno časovnik pavzirati in ga spet začeti izvajati, ali pa ga resetirati, da spet začne odštevati od začetnega časa.
 
 #### Pogostost uporabe
 
