@@ -249,7 +249,7 @@ Sistem prikaže polje za spremembo časa časovnika in pavze. Po potrditvi noveg
 
 ### 5.3 Uporaba časovnika
 
-Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovnik, tudi aktivira. Po končanem časovniku se uporabnika opozori z obvestilom in ga vpraša, če želi nadaljevati s časovnikom za pavzo ali ponoviti z istim časovnikom.
+Prijavljeni uporabnik in neprijavljeni uporabnik lahko potem, ko nastavi časovnik, tudi aktivira. Po končanem časovniku se uporabnika opozori z obvestilom in ga vpraša, če želi nadaljevati s časovnikom za pavzo ali ponoviti z istim časovnikom. Med izvajanjem časovnika je možno časovnik pavzirati in ga spet začeti izvajati, ali pa ga resetirati, da spet začne odštevati od začetnega časa.
 
 #### Pogostost uporabe
 
