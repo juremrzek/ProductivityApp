@@ -1,0 +1,103 @@
+@startuml urejanjeSeznamaOpravil
+hide footbox
+
+skinparam backgroundcolor transparent
+skinparam defaultTextAlignment center
+skinparam actorBorderColor black
+skinparam actorBackgroundColor white
+skinparam arrowColor black  
+skinparam sequenceLifeLineBorderColor #5FB8EC
+skinparam sequenceParticipantBorderColor #5FB8EC
+skinparam sequenceParticipantBackgroundColor white
+
+actor "Zunanji uporabnik" as zup<<actor>>
+participant ":Task window" as Vmesnik <<boundary>>
+participant ":Edit Tasks" as editTasks <<control>>
+participant ":UnsignedUser" as UnsignedUser <<entity>>
+participant ":Task" as task <<entity>>
+
+group show tasks
+zup -> Vmesnik: // Klikni na opravila\nshowTasks(user)
+
+activate Vmesnik
+
+Vmesnik -> editTasks: getTasks(user)
+activate editTasks
+
+editTasks -> UnsignedUser: getTasks()
+activate UnsignedUser
+editTasks <-- UnsignedUser: //tasks[]
+deactivate UnsignedUser
+
+Vmesnik <-- editTasks: //returns tasks
+deactivate editTasks
+
+loop for each task
+Vmesnik -> task: getName(),\ngetDescription()
+activate task
+Vmesnik <-- task: //name, desc
+deactivate task
+end
+
+
+zup <-- Vmesnik: //show tasks
+deactivate Vmesnik
+end
+zup -> Vmesnik: // vpis informacij o tasku
+activate Vmesnik
+
+zup -> Vmesnik: // vpis informacij o tasku
+Vmesnik -> editTasks: addTask(user, task)
+activate editTasks
+editTasks -> UnsignedUser: addtask(task)
+activate UnsignedUser
+editTasks <-- UnsignedUser: //status(ok)
+deactivate UnsignedUser
+Vmesnik <-- editTasks: //status(ok)
+deactivate editTasks
+Vmesnik -> Vmesnik: showTasks(user) \n(po istem postopku kot v show tasks)
+zup <-- Vmesnik: //show tasks 
+deactivate Vmesnik
+
+opt urejanje opravila - pri alternativnem toku 1
+zup -> Vmesnik: // izbere edit task
+''todo
+activate Vmesnik
+
+Vmesnik -> editTasks: editTask(user, taskID, ime, desc)
+activate editTasks
+editTasks -> UnsignedUser: editTask(taskID, ime, desc)
+UnsignedUser -> task: setName(ime),\nsetDescription(desc)
+activate task
+UnsignedUser <-- task: //status(ok)
+deactivate task
+activate UnsignedUser
+editTasks <-- UnsignedUser: //status(ok)
+deactivate UnsignedUser
+Vmesnik <-- editTasks: //status(ok)
+deactivate editTasks
+Vmesnik -> Vmesnik: showTasks(user) \n(po istem postopku kot v show tasks)
+zup <-- Vmesnik: //show tasks
+deactivate Vmesnik
+end
+
+
+opt odstranjevanje opravila - pri alternativnem toku 2
+zup -> Vmesnik: // izbere remove task
+activate Vmesnik
+
+Vmesnik -> editTasks: removeTask(user, task)
+activate editTasks
+editTasks -> UnsignedUser: removeTask(task)
+activate UnsignedUser
+editTasks <-- UnsignedUser: //status(ok)
+deactivate UnsignedUser
+Vmesnik <-- editTasks: //status(ok)
+deactivate editTasks
+Vmesnik -> Vmesnik: showTasks(user) \n(po istem postopku kot v show tasks)
+zup <-- Vmesnik: //show tasks
+deactivate Vmesnik
+end
+
+
+'pred editTask more bit še logika prikaza možnosti editanja, vnašanja in preverjanje vnosa
