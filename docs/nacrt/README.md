@@ -19,6 +19,16 @@
 - Za prikaz uporabite enostavne prikaze, kot je **postavitveni** ([deployment](https://plantuml.com/deployment-diagram)), **paketni** ([class](https://plantuml.com/class-diagram)) diagram oz. **komponentni** ([component](https://plantuml.com/component-diagram)) diagram.
 - Pri predlogu upoštevajte tudi arhitekturne vzorce.
 
+####**Razvojni pogled** (komponentni diagram)
+
+![komponentnidiagram](https://teaching.lavbic.net/plantuml/png/dPJDRjf04CVlVefLUcYA5AbyjLIA8a7Kqef3BK6SIow3lS3YzOwr_cX5bKVW8VekzBqwQo-EWGGtlI0pEx__VEpi9A5GCMY8s1pySAanKu6F4ZLBDQY4ZhXAdQJo2lW2CfdE-CzqACLIHNJCVFhXkkOrr1f_t1OoSqcwjICVenYLeNuvx2Je6pvOz1U1EK4TS6sj_I-ZmUTRvx6c8qp81VZyltIS9_p2YtYYHCWsG38RP346a8QONp18cDUkktwTpTpIt7b1OOoub9o5A7a0klJjlk2x3wIG9Q64GFpvlTloakavpbEdBbgjOIn52BvO4wOnoC9K49UaWXh1K2z1YOqvvkpodi_PC8xVjLg5r92nw-jAw-R6j8knjpNrEytNe0XD-4P110nZ3RcG1Jvf7-8dz0JLGYmpBNIXiTj2GYLHiYNUQS3lOjGmXnEksy1zfpO7BC0b1jH2fc3VytLM2lGQ0rEHiYpyZ4o_GUPR4XOIML47vMy7P_AX0PnI67v8HYNviO5qKIErox3852ylIt7pE2NcPBUf3_wfXHj89AhZiIeLFZNLi2ekFIzosOyp9GMLpeEgDSOCFIYG8gL_ThhUl-AQObkuM3segcwngkgsakrNI6hORJDLf1PZ8Zd9MPMcmVMelkS6n-9Dy-jgUiiv5CytC5-MEnxRnwD5O5xtbEkSQ_k-xwT7nA7_26gRnYAZiuJxx5gog7i-sk7wiynuSimCsTNLfLcYNeU-g0I7gYXCRSTh6zEeidGThsiiuqbbwZbUpvZSwLy0)
+**komponentni diagram** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/komponentni_diagram.puml))
+
+####**Fizični pogled** (postavitveni diagram)
+
+![postavitvenidiagram](https://teaching.lavbic.net/plantuml/png/ZPHVQjj04CRVTOh1VMXhiC4kWL22G1AjMoX4L2b-NajZUoDfH-okx93Y8_GGlKjxhuuiIrRZDSIFCzzl_kmtiicbgeGM9QHKLgHGMVZf0Qn4ccyqrIfBgI0DR_1sVRFEcWpf3FKfUlCvlFqKUGVFCtqXeQrSYzHTPx-L5bzJHL66nmfNjKV5Q3nEKEzGZySZkBlBS2TJz7qG1f8Jtkb-h6fbQ_WcLVtKgl49qzfAKe1g9pMfajVt_HPhVkStONw9Ap23NdsoRRTCPcuk5Cy2Aig4pMddHCChP7o258792v79lx___49dYPYxzqLw1qOySplozD4qL9VfHfux6EufLi8W8wGkeT35x8N6BTLNePWxER2WghvJRQ-Ezu7LH-mmD3oEBisEenTkBwNAQ6_WFcd5zmaBpyvsicYhgSHNdiE5GK5Lo5oayf4DrfJLkPLibh4If0BI6w7aSvD6UDTS3w_xtkbUCBlMuznXkhLbSVb8mTcEm-LJBOWs1K8g2bIPS7maY-xT_jlh1GP1_DKvzoAQDTtuz64wzVcEuIEB-0oCx_THFirXcEFpOtnvYfVyIciqjac6ys6XOIO-KR63wbir5zCaTQsEyQ1b0WV21pEPJFXFeibyUNY8EPXmY7VolBTTGLvmCFi_)
+**postavitveni diagram** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/postavitveni_diagram.puml))
+
 ## 2. Načrt strukture
 
 ### 2.1 Razredni diagram
