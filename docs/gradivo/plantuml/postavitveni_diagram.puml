@@ -1,0 +1,61 @@
+@startuml postavitveni_diagram
+
+skinparam component {
+  backgroundcolor #e8f5fd
+  bordercolor #5FB8EC
+}
+
+skinparam artifact {
+  backgroundcolor white
+  bordercolor #5FB8EC
+}
+
+skinparam node {
+    bordercolor #5FB8EC
+}
+
+node "**Server**" <<device>> as S {
+    node "**Ubuntu Linux**" <<execution environment>>{
+        component "**Web server**" <<component>> as WS1
+        component "**Baza podatkov**" <<component>> as B1
+        component "**Podatkovno skladišče**" <<component>> as PS1
+
+        artifact "Webserver.js" <<artifact>> as WS2
+        artifact "database.json" <<artifact>> as B2
+        artifact "warehouse.json" <<artifact>> as PS2
+
+        artifact "AppRouter.js" <<artifact>> as WS3   
+    }
+}
+
+node "**PC**" <<device>> as PC {
+    node "**Windows OS**" <<OS>> {
+        node "**Chrome**" <<execution environment>>{
+            component "**Aplikacija produktivnosti in organizacije (Web App)**" <<component>> as A1
+            component "Aplikacija.html" <<artifact>> as A2
+        }
+    }
+}
+
+node "**Google calendar**" <<device>> as GC {
+    component "**Google calendar API**" <<component>> as GC1
+}
+
+WS1 ..> B1 : <<uses>>
+WS1 ..> PS1 : <<uses>>
+
+WS2 ..> WS1 : <<manifests>>
+B2 ..> B1 : <<manifests>>
+PS2 ..> PS1 : <<manifests>>
+
+WS1 ..> WS3 : <<runs>>
+
+A2 ..> A1 : <<manifests>>
+
+PC --- S : <<HTTP>>
+S -- GC
+
+'WS1 ..> GC1 : <<uses>>
+
+
+@enduml

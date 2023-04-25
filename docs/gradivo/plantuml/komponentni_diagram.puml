@@ -1,0 +1,54 @@
+@startuml komponentni_diagram
+
+skinparam backgroundcolor transparent
+skinparam defaultTextAlignment center
+skinparam ArrowColor black
+skinparam component {
+  backgroundcolor #e8f5fd
+  bordercolor #5FB8EC
+}
+skinparam interface {
+  backgroundcolor #e8f5fd
+  bordercolor #5FB8EC
+}
+
+interface "Vmesnik za bazo podatkov" as V1
+interface "HTTP" as V2
+interface "Vmesnik za Google koledar" as V3
+interface "Vmesnik za podatkovno skladišče" as V4
+
+component "**Aplikacija produktivnosti in organizacije (Web App)**" as A  <<component>>{
+    'component "Urejanje seznama opravil" as K1 <<component>>
+    'component "Konfiguriranje časovnika" as K2 <<component>>
+    'component "Uporaba časovnika" as K3 <<component>>
+    'component "Ogled dogodkov na koledarju" as K4 <<component>>
+    'component "Upravljanje dogodkov na koledarju" as K5 <<component>>
+    'component "Iskanje uporabnikov" as K6 <<component>>
+    'component "Sledenje uporabnikom" as K7 <<component>>
+    'component "Poročanje o nepravilnem delovanju" as K8 <<component>>
+    'component "Ogled zaslona produktivnosti" as K9 <<component>>
+    'component "Shranjevanje podatkov o aktivnosti\nuporabnikov za analitiko" as K10 <<component>>
+    'component "Upravljanje poročanih\nnepravilnih delovanj" as K11 <<component>>
+    'component "Upravljanje računov zaposlenih" as K12 <<component>>
+    'component "Vnos dogodkov na koledar" as K13 <<component>>
+    'component "Prijava in odjava" as K14 <<component>>
+}
+
+component "**Web Server**" as WS <<component>>
+
+component "**Baza podatkov**" as B <<component>>
+
+component "**Podatkovno skladišče**" as PS <<component>>
+
+component "**Google koledar**" as GK <<component>>
+
+A --( V2
+V2 -- WS
+WS --( V1
+V1 -- B
+WS --( V3
+V3 -- GK
+WS --( V4
+V4 -- PS
+
+@enduml
