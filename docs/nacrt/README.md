@@ -75,18 +75,28 @@
   - Uporabite zgolj tiste, ki se vam zdijo najbolj primerne za izbrano funkcionalnost.
   - Pri opredelitvi načrta ni treba uporabiti vseh predlaganih diagramskih tehnik.
   - Najbolj se **priporoča** uporabo **diagramov zaporedja**.
+  
+### Diagrami zaporedja
 
-**Diagram zaporedja** ([Sequence Diagram](https://plantuml.com/sequence-diagram), izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/DZ.puml))
+1. **Prijava nepravilnega delovanja** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Prijava_nepravilnega_delovanja.puml))
 
-![DZ](https://teaching.lavbic.net/plantuml/svg/bPDFRvj04CNlyob6xiKvL14OgYfAhVnhJvLQkN4EKIu3Z9EjOOSk2qvTzRjt5YU69kwX1v1sv_VUl9s5iyQJysrLujKjm8Cf65SYFfD7W6PjR4sEAimeNzyxQMsHIoaElIFRQ8cj7r45hwWj_JK_-lFItDjAovZhYzs8ejoBkn1NiBlipR9ItLy1-uuxQFDWF8yXvsGpqYEEYWt_QDdc_DcizB4yxlOc_NJn_kFb0Vgh3iBafYRh_rzmC2xqHy79iXP7cJLhZ2Pu_WsN4PwUzhNv7A0UR72oeAtZ0jC9KeEBLBaik9BxgUWXCjwHiPAvME-a_0UOxC14GRqIuuDX26WwygoHG5EzdMlF4wmZFFc05NifwDtqQA0MAMYcGCLAnGCLJQFPc8i1If4QjuHTGsl1JYDOQJnWo1eS4dMO3Gw9za4S79909dio6SXqQcKpFJgCFsSBwuB_hhzSFmLH_FWOhzJvE_wgPq7y-yxgLgStlRLK0Ti28D1Fyz7QJSFxCvcUbgpWaYp3k4tSpqjbowYNVSawLW6spry40PoflVw0Vm00)
+![DZ](https://teaching.lavbic.net/plantuml/png/bL5VYzD047_FfnZgonrOxacG8nIyG-50i8WeI5ycsMblJJgppcxICz_1h-IJVYydMsFZMGG3IMQPtx-PlVUEO2kIAdaeYjXu3gYuXmhhPgVIiQkb5OMaoD5Qn6c6ShJ5hatlw26zQFsEzzQ6sZwaCnJMIVH6r97UPh6gDVM_0ByTZw33lKyq1wdAOSO7c3KZVUw8Qthjj_OopTsUF7jry_pbxHdq6ZNvsWVazF-4it6BF0eiFdQC_Cb35qInOjyi02CCNIZBZ5YjYd3IWiNrNOmTlIM3fm-UdHmouVsUef6XBAlH2VNBluYPehaqHYsSL5eZs6FEi5nDUjTmTGLtGqNgOIqgtxzQMDgm05DGx7tBD5vkAxqrkZoLxp7H993rokNo3y6Wli41f58SQjpmWD2pH60Cs11SC4OJd8wUGOAFb-UZ1Maj4H_5g2wAQHE6F4uu0j-udVIYD7bQ1CgbtmlqO8MIWxoX3QDpkRhe8kbJy6DzUPhig5gSdCRnJbPhIMg119muj5_8Q_Ej58uUQvnPJjxDZs_UU4dT8zelt4y0)
 
-**Diagram aktivnosti** ([Activity Diagram](https://plantuml.com/activity-diagram-beta), izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/DA.puml))
+2. **Upravljanje poročanih nepravilnih delovanj** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Upravljanje_porocanih_nepravilnih_delovanj.puml))
 
-![DA](https://teaching.lavbic.net/plantuml/svg/VL5DJyCm3BtxLqJY0gTfV4Y8JcDbWpCI_06lyRhGrAaIbpAX_NVSRaWH1mwnvFTU_9wJLHACqhVUR4g0r3ZkC69hBEsmz_9ENr9wLtDBBARIGZ5JRR5gwXXwjbNm8Hg9o4afrMMgj4SR1iUrsQ5Fb35LOEl41NwJWoTZ7RQA02pIs2y1At6VJWuRX_Me_mQJUQudps7lX1JtZkc4NDozFDq_hnN36CCmtShvhTSHYXtrd2t_qHnXCJl7WUcn029rX68UoaRZSKXYveLgi_xwJtzJm9Xxm6WpzBRu7QLBwFwNhw4E7sR-U3LQXGvWHMprStu0)
+![DZ]()
 
-**Diagram stanj** ([State Diagram](https://plantuml.com/state-diagram), izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/DS.puml))
+**Diagram stanj za Uporabo časovnika** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Uporaba_casovnika.puml))
 
-![DS](https://teaching.lavbic.net/plantuml/svg/NP91Ri8m44NtFiK8TfMG6Zkqm09HABs0kwkw66ANXYHsvJYYKjMxTuABIRoneZVFyx-bR5gFpdTD3S-IiROgpHSwRE20HNLqjZEgiBLru1sQbaRQ-86bz0TsjN_Lt_wfBe-ceJ4KT6WtiD0vUzvTrXngsZiOKRhNyCC0jZ4mcEVFqkkUMwUq2smwVzakzZkYic-TmltrxXNzqeik0HFopKb3DW5iGMPCPYjGTWLO5UK98Kj57aJE91-98XL540MJOYJEKp4FOivaFewcxBUxTvYj-rvK36Rz9uy2Zqn4Hbj4wZrGrzHxZDwDBIBB8rjIgz3WrkkU_KDgnzX66qL_oHy0)
+![Uporaba_casovnika](https://teaching.lavbic.net/plantuml/png/ZP31Ji9048Rl-nGJlQYnYK1CJ2CcGl1cD2cUnCFGZb1fTydiL8p6H-0XV1TyBxTRA5M9iOUc-y_t_xD_xIpLSsJCOOpnRCAcq4biCiCWZDgw4MbHjgOIUiGYao6zo6MMJdJknX2x5t63GcQpwFkOSUPo6oChA0Hl2g1NBwp8nJGLAdN32N6bxPzUzSu6VQT6WYm_nS76kv7UbLBLXhthbCqpwYVQ0xGGjRQJc-JpGyZFOBL4YnNHLb4xXCI4C27f5rms7wOv7HpMpbiZj5gIzhRArL5Hft9XHYntbhWqkEV-w0622xyvQa7WFqEOOs6fZ7NOyKWpMPBriSRSDMnPznjMvDJWpeF0SyquT__TVXXfV-unuMnNtjhdYiJRtj3jmebhzw_CcklyMV7NQhKnkhyLGlewDSaN)
+
+- ob resetTimer() se nastavi čas časovnika na 0
+- ob getCurrentTime() se vrne trenutni čas časovnika
+- ob alertUser() se izpiše obvestilo o potečenem času
+- ob startTimer() se začne odštevanje časa časovnika
+- ob pauseTimer() se začne pavza
+- ob resumeTimer() se nadaljuje odštevanje časa časovnika
+- ob startBreak() se začne odštevanje časa odmora
 
 **Psevdokoda**
 
