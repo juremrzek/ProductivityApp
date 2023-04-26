@@ -105,14 +105,19 @@ Class Task<<entity>>{
   +getDescription(): string
 
 }
-class EditTasks<<control>>{
-  +getTasks(user: UnsignedUser): Task []
-  +addTask(user: UnsignedUser, task: Task): string
-  +editTask(user: UnsignedUser, taskId: int, name: string, description: string): void
-  +removeTask(taskId: int): void
-}
-class TaskWindow<<boundary>>{
-  +showTasks(user: UnsignedUser): void
+package Observer{
+  class EditTasks<<control>>{
+    +getTasks(user: UnsignedUser): Task []
+    +addTask(user: UnsignedUser, task: Task): string
+    +editTask(user: UnsignedUser, taskId: int, name: string, description: string): void
+    +removeTask(taskId: int): void
+    +notify(): void
+  }
+  class TaskWindow<<boundary>>{
+    +showTasks(user: UnsignedUser): void
+    +showEditTaskForm(id: int): void
+    +update(): void
+  }
 }
 class WindowManager<<control>>{
   +openWindow(window: string): void
@@ -127,18 +132,19 @@ Class Issue<<entity>>{
   -user: User
   -solved: boolean
   -solvedBy: Developer
-  +solve(): void
+  +solve(developer: Developer): void
   +getTitle(): string
   +getDescription(): string
 }
 Class IssueReport<<control>>{
   +addIssue(user: User, issue: Issue): void
   +getUnsolvedIssues(): Issue []
-  +getSolvedIssues(user: Developer): Issue []
+  +getSolvedIssues(developer: Developer): Issue []
   +solveIssue(issue: Issue, solvedBy: Developer): void
+  +rejectIssue(issue: Issue)
 }
 Class IssueSolveWindow<<boundary>>{
-  +showUnsolvedIssues(user: Developer): void
+  +showUnsolvedIssues(developer: Developer): void
 }
 Class IssueReportWindow<<boundary>>
 
@@ -146,9 +152,11 @@ Class SearchUsers<<control>>{
   +findUser(name: string): User []
   +getUsers(): User []
 }
+Class SearchUsersWindow<<boundary>>{
+  showUsers(name: string)
+}
 
 ' obvestiUsera - ko čas poteče, naredi popup al whatever. (better name pls)
-' also a rabmo dodatne atribute/funkcije za pavzo?
 package Singleton{
   Class Timer<<entity>>{
     -instance: Timer
