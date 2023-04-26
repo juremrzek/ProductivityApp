@@ -1,5 +1,4 @@
-@startuml postavitveni_diagram
-
+@startuml
 skinparam component {
   backgroundcolor #e8f5fd
   bordercolor #5FB8EC
@@ -14,18 +13,23 @@ skinparam node {
     bordercolor #5FB8EC
 }
 
-node "**Server**" <<device>> as S {
+node "**PC**" <<device>> as S {
     node "**Ubuntu Linux**" <<execution environment>>{
         component "**Web server**" <<component>> as WS1
-        component "**Baza podatkov**" <<component>> as B1
-        component "**Podatkovno skladišče**" <<component>> as PS1
+        
 
         artifact "Webserver.js" <<artifact>> as WS2
-        artifact "database.json" <<artifact>> as B2
-        artifact "warehouse.json" <<artifact>> as PS2
 
         artifact "AppRouter.js" <<artifact>> as WS3   
     }
+}
+
+node "**Atlas server**" <<device>> as AS{
+	component "**Baza podatkov**" <<component>> as B1
+    component "**Podatkovno skladišče**" <<component>> as PS1
+    
+    artifact "database.json" <<artifact>> as B2
+    artifact "warehouse.json" <<artifact>> as PS2
 }
 
 node "**PC**" <<device>> as PC {
@@ -37,12 +41,12 @@ node "**PC**" <<device>> as PC {
     }
 }
 
-node "**Google calendar**" <<device>> as GC {
-    component "**Google calendar API**" <<component>> as GC1
-}
+'node "**Google calendar**" <<device>> as GC {
+'    component "**Google calendar API**" <<component>> as GC1
+'}
 
-WS1 ..> B1 : <<uses>>
-WS1 ..> PS1 : <<uses>>
+'WS1 ..> B1 : <<uses>>
+'WS1 ..> PS1 : <<uses>>
 
 WS2 ..> WS1 : <<manifests>>
 B2 ..> B1 : <<manifests>>
@@ -52,10 +56,11 @@ WS1 ..> WS3 : <<runs>>
 
 A2 ..> A1 : <<manifests>>
 
-PC --- S : <<HTTP>>
-S -- GC
+PC -- S : <<HTTP>>
+'S -- GC
 
-'WS1 ..> GC1 : <<uses>>
+''WS1 ..> GC1 : <<uses>>
 
 
+AS --- S
 @enduml
