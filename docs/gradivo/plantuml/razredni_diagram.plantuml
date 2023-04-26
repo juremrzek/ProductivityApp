@@ -149,11 +149,12 @@ Class IssueSolveWindow<<boundary>>{
 Class IssueReportWindow<<boundary>>
 
 Class SearchUsers<<control>>{
-  +findUser(name: string): User []
-  +getUsers(): User []
+  +findUsers(name: string): User []
+  +getAllUsers(): User []
+  +followUser(id: int): void
 }
 Class SearchUsersWindow<<boundary>>{
-  showUsers(name: string)
+  showUsers(name: string): void
 }
 
 ' obvestiUsera - ko čas poteče, naredi popup al whatever. (better name pls)
@@ -216,6 +217,8 @@ WindowManager --> TimerWindow
 WindowManager --> StatisticsWindow
 WindowManager --> TaskWindow
 WindowManager --> IssueSolveWindow
+WindowManager --> SearchUsersWindow
+SearchUsersWindow --> SearchUsers
 Toolbar --> WindowManager
 @enduml
 
