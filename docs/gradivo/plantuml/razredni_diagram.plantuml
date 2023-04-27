@@ -53,7 +53,8 @@ package Factory{
     +createUser(userType: string): User
   }
   Class SignedUser<<entity>>{
-
+    -following: SignedUser []
+    +getFollowing(): SignedUser []
   }
   Class Admin<<entity>>{
     -mail: string
@@ -188,7 +189,7 @@ Class TimerWindow<<boundary>>{
 }
 
 '------Povezave-----------------------
-Task --* UnsignedUser
+Task "<font size=15> 0..1 </font>" --* "<font size=15>  1..*</font>" UnsignedUser
 'TimedTask --> Task
 'EditTasks --> Task
 EditTasks --> UnsignedUser
