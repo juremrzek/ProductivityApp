@@ -1,3 +1,4 @@
+'čakam na kaj se bo časovnik naštimu
 @startuml Uporaba_casovnika
 
 skinparam backgroundcolor transparent
@@ -38,3 +39,11 @@ S3 --> [*]: izhod
 
 
 @enduml
+
+'ob resetTimer() se nastavi čas časovnika na 0
+'ob getCurrentTime() se vrne trenutni čas časovnika
+'ob alertUser() se izpiše obvestilo o potečenem času
+'ob startTimer() se začne odštevanje časa časovnika
+'ob pauseTimer() se začne pavza
+'ob resumeTimer() se nadaljuje odštevanje časa časovnika
+'ob startBreak() se začne odštevanje časa pavze

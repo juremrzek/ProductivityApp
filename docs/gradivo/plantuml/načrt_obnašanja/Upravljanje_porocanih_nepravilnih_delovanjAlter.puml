@@ -29,17 +29,17 @@ deactivate Vmesnik
 deactivate dev
 
 
-Vmesnik -> report: solveIssue(issue, solvedBy)
+Vmesnik -> report: rejectIssue(issue)
 activate Vmesnik
 activate report
-report -> issue: solve(developer)
+report -> issue:// delete Issue
 activate issue
-report <-- issue: //issue solved and removed
-Vmesnik <-- report: //issue solved
+report <-- issue: //issue removed
+Vmesnik <-- report: //issue removed
 deactivate report
 deactivate issue
 
 Vmesnik -> Vmesnik: showUnsolvedIssues()
 dev <-- Vmesnik: // changes made,\nprikaz seznama nerešenih poročil
 activate dev
-''tale je primarni tok
+''tale je alternativni tok

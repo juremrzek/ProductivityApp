@@ -43,10 +43,9 @@ end
 zup <-- Vmesnik: //show tasks
 deactivate Vmesnik
 end
-zup -> Vmesnik: // vpis informacij o tasku
+zup -> Vmesnik: // vpis informacij o tasku,\nklik na dodaj
 activate Vmesnik
 
-zup -> Vmesnik: // vpis informacij o tasku
 Vmesnik -> editTasks: addTask(user, task)
 activate editTasks
 editTasks -> UnsignedUser: addtask(task)
@@ -61,8 +60,11 @@ deactivate Vmesnik
 
 opt urejanje opravila - pri alternativnem toku 1
 zup -> Vmesnik: // izbere edit task
-''todo
 activate Vmesnik
+
+Vmesnik -> Vmesnik: showEditTaskForm(id)
+Vmesnik <-- zup: //prikaz obrazca za urejanje opravila
+zup -> Vmesnik: // izpoljnjen obrazec za urejanje opravila,\nklik na shrani
 
 Vmesnik -> editTasks: editTask(user, taskID, ime, desc)
 activate editTasks

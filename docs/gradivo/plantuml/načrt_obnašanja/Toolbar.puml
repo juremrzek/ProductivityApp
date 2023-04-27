@@ -1,0 +1,32 @@
+@startuml urejanjeSeznamaOpravil
+hide footbox
+
+skinparam backgroundcolor transparent
+skinparam defaultTextAlignment center
+skinparam actorBorderColor black
+skinparam actorBackgroundColor white
+skinparam arrowColor black  
+skinparam sequenceLifeLineBorderColor #5FB8EC
+skinparam sequenceParticipantBorderColor #5FB8EC
+skinparam sequenceParticipantBackgroundColor white
+
+actor "Zunanji uporabnik" as zup<<actor>>
+participant ":Toolbar" as Vmesnik <<boundary>>
+participant ":WindowManager" as wm <<control>>
+participant ":TaskWindow" as task <<boundary>>
+
+
+
+zup -> Vmesnik: // Izbere urejanje opravil\nopenWindow()\n window := "TaskWindow"
+
+activate Vmesnik
+Vmesnik -> wm: // openWindow(window)
+deactivate Vmesnik
+activate wm
+wm -> task: showTasks(user)
+deactivate wm
+activate task
+task -> zup: // Prikaz seznama opravil
+deactivate task
+
+' na začetku vsakega rimera uporabe se najprej iz menijske vrstice (toolbar) izbere, katero okno oz zaslonksa maska se bo prikazala. Potek tega je prikazan na tem ločenem diagramu zaporedja, ki pa je na začetku prisoten tudi pri vseh ostalih. Primej je podan za okno za urejanje seznama opravil.
