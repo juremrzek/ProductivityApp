@@ -33,6 +33,8 @@ package Factory{
       -name: string
       -password: string
       +getName(): string
+      +setName(): string
+      +getId(): int
       +setPassword(password: string): void
       +isPasswordCorrect(password: string): boolean
     }
@@ -42,6 +44,7 @@ package Factory{
       -hash: string
       -salt: string
       +getName(): string
+      +setName(): string
       +setPassword(password: string): void
       +isPasswordCorrect(password: string): boolean
     }
@@ -84,9 +87,12 @@ package Factory{
     +createUser(userType: string): void
   }
 }
-
 Class StatisticsWindow<<boundary>>{
+  +showPrenesiPodatkeForm(): void
   +showUserInfo(user: User): void
+}
+Class Statistics<<control>>{
+  +prenesiPodatkeVSkladisce(start: date, end: date): void
 }
   'proxy class? observer?
   '(timer alerta timedtask)
@@ -117,6 +123,7 @@ package Observer{
   class TaskWindow<<boundary>>{
     +showTasks(user: UnsignedUser): void
     +showEditTaskForm(id: int): void
+    +isFormValid(): boolean
     +update(): void
   }
 }
@@ -126,6 +133,7 @@ class WindowManager<<control>>{
 class Toolbar<<boundary>>{
   +openWindow(): void
 }
+
 Class Issue<<entity>>{
   -title: string
   -description: string
@@ -155,10 +163,10 @@ Class SearchUsers<<control>>{
   +followUser(id: int): void
 }
 Class SearchUsersWindow<<boundary>>{
-  showUsers(name: string): void
+  +showUsers(name: string): void
+  +showUserInfo(id: int): void
 }
 
-' obvestiUsera - ko čas poteče, naredi popup al whatever. (better name pls)
 package Singleton{
   Class Timer<<entity>>{
     -instance: Timer
@@ -189,7 +197,7 @@ Class TimerWindow<<boundary>>{
 }
 
 '------Povezave-----------------------
-Task "<font size=15> 0..1 </font>" --* "<font size=15>  1..*</font>" UnsignedUser
+Task "<font size=15> 1..1 </font>" --* "<font size=15>  0..*</font>" UnsignedUser
 'TimedTask --> Task
 'EditTasks --> Task
 EditTasks --> UnsignedUser
@@ -206,6 +214,7 @@ Analyst --|> User
 Admin --|> User
 Developer --|> User
 StatisticsWindow --> EditTasks
+StatisticsWindow --> Statistics
 UserFactory --> User
 DatabaseUser --> UserAdapter
 UserAdapter --> User
@@ -219,6 +228,7 @@ WindowManager --> StatisticsWindow
 WindowManager --> TaskWindow
 WindowManager --> IssueSolveWindow
 WindowManager --> SearchUsersWindow
+'WindowManager --> ProductivityWindow
 SearchUsersWindow --> SearchUsers
 Toolbar --> WindowManager
 @enduml
