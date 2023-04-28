@@ -572,10 +572,13 @@ Dokaj pogosto - funkcionalnost omogoča pregled vseh uporanbikov, ki jim nekdo s
 
 #### Osnovni tok
 
-1. Prijavljeni uporabnik izbere funkcionalnost Sledenje uporabnikom
-2. Sistem prikaže seznam uporabnikom, ki jim uporabnik še ne sledi
-3. Prijavljeni uporabnik klikne na gumb za sledenje ob nekem uporabniku
-4. Sistem potrdi uspešno sleditev
+1. Prijavljeni uporabnik izbere funkcionalnost Iskanje uporabnikov po uporabniškem računu
+2. Sistem prikaže vmesnik z iskalnim poljem
+3. Prijavljeni uporabnik vnese iskano uporabniško ime v vnosno polje
+4. Prijavljeni uporabnik pritisne na gumb za iskanje
+5. Sistem izpiše uporabnike, ki se ujemajo na to iskano uporabniško ime
+6. Prijavljeni uporabnik klikne na gumb za sledenje ob nekem uporabniku
+7. Sistem potrdi uspešno sleditev
 
 #### Izjemni tok
 
@@ -614,13 +617,6 @@ Peter izbere funkcionalnost Sledenje uporabnikom in v seznamu uporabnikom, ki ji
 - Pričakovan rezultat
 
 Sistem naj bi uspešno dodal izbranega uporabnika na seznam uporabnikov, ki jim Peter sledi. Peter bi moral imeti sedaj dostop do vseh posodobljenih statistik in informacij, ki jih ima ta uporabnik na svojem profilu.
-
-#### Alternativni tok
-
-1. Prijavljeni uporabnik izbere funkcionalnost Iskanje uporabnikov
-2. Sistem prikaže seznamo uporabnikov in poleg imen gumb za sledenje
-3. Uporabnik pritisne na gumb za sledenje
-4. Sistem potrdi sledenje izbranega uporabnika
 
 ### 5.8 Poročanje o nepravilnem delovanju
 
