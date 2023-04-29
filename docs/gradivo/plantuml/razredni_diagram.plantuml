@@ -31,13 +31,10 @@ package Factory{
     Class User<<entity>> {
       -id: int
       -name: string
-      -role: string
       -password: string
       +getName(): string
       +setName(): string
       +getId(): int
-      +getRole(): string
-      +setRole(role: string): void
       +setPassword(password: string): void
       +isPasswordCorrect(password: string): boolean
     }
@@ -46,10 +43,13 @@ package Factory{
       -name: string
       -hash: string
       -salt: string
+      -role: string
       +getName(): string
       +setName(): string
       +setPassword(password: string): void
       +isPasswordCorrect(password: string): boolean
+      +getRole(): string
+      +setRole(role: string): void
     }
     Class UserAdapter<<control>>{
       +getUser(id: int): User
