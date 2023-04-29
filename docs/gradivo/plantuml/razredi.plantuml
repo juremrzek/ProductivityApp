@@ -204,46 +204,6 @@ Class TimerManager<<control>>{
 Class TimerWindow<<boundary>>{
   +showCurrentTime(): void
 }
-
-'------Povezave-----------------------
-Task "<font size=15> 1..1 </font>" --* "<font size=15>  0..*</font>" UnsignedUser
-'TimedTask --> Task
-'EditTasks --> Task
-EditTasks --> UnsignedUser
-TaskWindow --> EditTasks
-IssueReport --> Issue
-IssueReportWindow --> IssueReport
-IssueSolveWindow --> IssueReport
-SearchUsers --> SignedUser
-TimerWindow --> TimerManager
-TimerManager --> Timer
-SignedUser --|> User
-SignedUser --|> UnsignedUser
-Analyst --|> User
-Admin --|> User
-Developer --|> User
-StatisticsWindow --> EditTasks
-StatisticsWindow --> Statistics
-UserFactory --> User
-DatabaseUser --> UserAdapter
-UserAdapter --> User
-SignedUserCreator --|> UserFactory
-DeveloperCreator --|> UserFactory
-AnalystCreator --|> UserFactory
-AdminCreator --|> UserFactory
-WindowManager --> IssueReportWindow
-WindowManager --> TimerWindow
-WindowManager --> StatisticsWindow
-WindowManager --> TaskWindow
-WindowManager --> IssueSolveWindow
-WindowManager --> SearchUsersWindow
-WindowManager --> ActivityWindow
-WindowManager --> ManageEmployeesWindow
-ManageEmployeesWindow --> ManageEmployees
-ActivityWindow --> Activity
-Activity --> EditTasks
-SearchUsersWindow --> SearchUsers
-Toolbar --> WindowManager
 @enduml
 
 ' extra notes
