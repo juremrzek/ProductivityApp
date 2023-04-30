@@ -48,7 +48,7 @@
 - V poročilo vključite **izvorno kodo diagrama v jeziku PlantUML**, ki naj bo prisotna v repozitoriju, sliko diagrama pa vključite s povezavo (in ne preko neposredne vključitve binarne datoteke) preko storitve [`https://teaching.lavbic.net/plantuml`](https://teaching.lavbic.net/plantuml), kot prikazuje spodnji primer.
 - Diagram naj bo **jasno berljiv**, sicer ga razdelite v več delov.
 
-![RD](E:\User stuff\Namizje\FRI\Letnik3_Semester2\TPO\LP-27\docs\gradivo\img\razredni_diagram.png)
+![DZ](https://teaching.lavbic.net/plantuml/png/lLXBRnit4BxpLooIGxQHvIP53HY2Ay1Md427DeRbfeUY1sgNabZlaW99sL5I__VoiGy-PYq7ZIl0wzsPRuR38Jap77bBsHOBN6T5XQNClg8iM-BYTYtuZfKpNd6HtM-e8eREHKc4exqyUNznUZdJL2m4ltV4PQKbqGEIeTApCy8KLVlf55J_afokJbP5DC15jIEGge8p9NWrf6jLa5Do6kcw9YMaQcdai1YqQ_MJqHRf-Y08OP2soy-A28QhxFngFft22azNRygV8uKV1MPhCrNqgjSfDxZazvIjinMk9F56asfV4VqKj52xkl8u9LdXNQLko6TrNj4rgxNNiq8_YF1GMsqKNfE5LID8eVJebJ-0iNWxPniYgEOL93j16rgIhA2Yq43xNfDwIOJK9e_RtpN-8aX9nyC_r0oTlSU5uc9lNDII5WehOWXPDhFxy7T9HBHlp6zCoqb6cMe_6Qx9n7g3hLlQ1ijDJ9EuKX5jj2RgDosU_n0pv113IynBG-ujCE0hRV2zNj5ysxoqSXfvnsdPGgbiaJCkZEiXWINd5S7CoZmWzzUxf76TTmoSPqQ58Dg31fBlzEDcloMUKaCFT2tq_Y1bw6IdQRpYLMMttiH3PN_-XLeNl6y1nXCnf1_YlAmfIxJNc5QUMpsuFZfxgNo1WF-Et96ARqE3G_ym2SogsJh6y1iiRwKnshnqCy9bQRvpfH-EvI_RIEzfrV7dRlSTPVw-Ez8dJnQ2RXNb35hwaI0rloEUbfuBBSdCh2KNtxh8YKQx0jzBMUV_xsQTM_3_gku1DUxJ4OHAHGlv1sKwTlhXtMWSoGs_lnA44KclU8dLBNdFHPttkYp2Z3TdAsx7T0UdHQGZHKQFje7wJulR2fTK5YIN2WiTVpIP76M4bUwrLzo6mHclQypAh_scY6RL019lZMK4d2IYpNR-J8gT8dcmFtSC95DvhHTTIBgiBASFJVqg_egPDlootbPyJyWXAsi8FO6LF8-zvX0UC59ra8a7VnvpFd2ki-yCLyHirGE6hG7m15JnFCQU5uhUwQ1wm4mSm2QHsFEODfToHwx9bWjrm3eQ8oUfy3FQkE3L7NcAYHvmaeW-qzcWDJcq1rMFcVW2psFHWc1HR4mGFXHP4kGa5Gxo1HXp_AG1u-AGhwk7bfTJloRO2gg_Rti2yKiVpH-e5LlxJEG9goUlzethtZ5GWLYopZ8kro2lhlNiz4jSmt_NwycDJX075Sw6w0ltF2-zVLpgnT1hRcRZhfkNJNKbq_pV5MnD9lQgkw4IBaKUPK5PvvNpVM4t9FMzYZsh9O0mhkXgduTLKH7bfxY0QGgKHtpI3s20hMjjbKC1AwWqh4-uecKUNJn6kwtPD7bOQ3aBdNNkMCHbsqWNYCm1yllc6CRRkvcd7cs9HLAbUGfYaJ2FWFLT2u7ya-Y9RTSRxWdLdmt5qS7KhzKt7yTnFuRvaYQwb_uoDAIB_QGllkr43LcVpeRaSRrQrfmUOzKJ3samEvSAWKXdkPvlZZARgfhy58wkVM_Djonxwx9lximQmC9d3yp65x7gd0N-g4SPu2RF547-rZVjLEw7SCvUSWLtLZITnxmF-1B8BYZ9SB73Lrh8Cd8_03Mt-TwFvrNbK277NUFjzIaw_0ze8Bd24uSi06zCoJ1js3ylyLQvg0zLlGrxC0Fasi5CtvukpRycz1yieWUYPmlgMW79jJIoxMeETVQqjahVhVAYWStzD6xjR9eX3wZpmeAQHflYx6jOS2Kj4igaRRmrzPKZ5ZkXBvVgnkRkjltKKY_qLVdM8-lIQiUORU7uKNrSxWHsCQc3BaDHs-9gnhUTaiw2aRt3skyyodUIGFGjre42nkzgYA67dlMpz1SdwwiY8mRddl_3H3k0zVOJJJTnioB29fOyAV7wyXayUf3AXwxdUgMhZ2_uZWnrMss5zE9ifNsKIVg5_FBsP9gzEJv-dPtzQ8ZJ5zbu_3f1P6-FZzzs23-3ebV64bjfQScfEuUlkWgkfuMaG4LVtbXUXqHUiBGS-usI4Dhp71N5mJi1U57EyXQUCRt_dV7UvaB-Hyz5NhzpFFvdwj9tGlIdtFIvFBZjotdVNGRnLKRTcyXT8BidUlnq3Rm-icE6KsWQShqj3HR57S0K4RRq0BxNa4ovGM4PhsDm_KD335WAq9nUTL5AYf60de7-71gWWpAGUN6N2YMK23ValRJVW0Ree0mqvO4xEHfYm5A0Ph2_X40gW0SKFjQSH8ynXwM1KHxfuQ57U8Eoe120Rkec158X_DKSdZGqsyZjWRyxNXoKuZMELpuUtlBZi0A2miY2cjkZPGKByYy0)
 
 **Razredni diagram** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/razredni_diagram_hidemembers.plantuml))
 
@@ -81,6 +81,30 @@
   - imena in tipe parametrov,
   - tip rezultata,
   - pomen (če ta ni dovolj očiten iz naziva metode in njenih parametrov).
+
+#### UnsignedUser
+
+Neprijavljeni uporabniki lahko uporabljajo našo glavno funkionalnost - lahko dodajajo, urejajo in brišejo opravila.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/TP9FQy904CNl-HG37cgfXr8g1151nHPFBQsUIW_hxYHPtEo6sOb_A7xtRWojCSJBi7blzlTcalYjjeKWaOCqmdluYG0sGcvJSgLLSsSSmJxJZ9NkI27LMc_uCeiNyw0A8hUlnOq9DwDJvA-Xup5QrdoSJ3hnFOoJOI9R0JDJOXTAEilap2rM8Z76kCNwGDM5sbJt1DsSAtcgQ2tMAo7QBjhYm4XM69Y-BoUJRc2SFAhd5l2DX4shLQEx2zDdGhczjYaamdXif7a-6WoLjEGoDmr7OI9AmoiyyDJerERXhOCC1QdHLOIXH8gVPmoXv91kcW7LnCNIPaWwU19X66LQ8KXDCZH6y_D_ihO-HA1QUwJMzmLuI95Nmczz_tu4rG6-lcj3A5KzzpcKsWeTEwTLRQFI_EylrGYqvG5OaUFelB9D1s5DBqaNh9tz4wyOXBdROODoSK-_)
+
+#### User
+
+Vsi tipi uporabnikov, ki imajo možnost prijave v sistem, podedujejo atribute in metode iz tega razreda.
+
+![DZ](Class User<<entity>> {
+  -id: int
+  -name: string
+  -hash: string
+  -salt: string
+  +getName(): string
+  +setName(): string
+  +getId(): int
+  +setPassword(password: string): void
+  +isPasswordCorrect(password: string): boolean
+})
+
+Hash je zgoščena vrednost gesla, salt pa je unikaten niz, ki se doda geslu za zagotavljanje unikatnosti zgoščene vrednosti.
 
 ## 3. Načrt obnašanja
 
