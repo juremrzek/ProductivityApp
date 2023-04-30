@@ -16,6 +16,10 @@ skinparam class<<boundary>> {
   backgroundColor #f2fce8
   borderColor Green
 }
+skinparam class<<External API>>{
+  backgroundColor #f8f0d4
+  borderColor Orange
+}
 
 'skinparam shadowing false
 skinparam style strictuml
@@ -25,31 +29,18 @@ skinparam groupInheritance 5
 hide circle
 'hide members
 
-'---------Razredi---------------------------
 package Factory{
-  package Adapter{
+  package State{
     Class User<<entity>> {
-      -id: int
-      -name: string
-      -password: string
-      +getName(): string
-      +setName(): string
-      +getId(): int
-      +setPassword(password: string): void
-      +isPasswordCorrect(password: string): boolean
-    }
-    Class DatabaseUser<<entity>>{
       -id: int
       -name: string
       -hash: string
       -salt: string
       +getName(): string
       +setName(): string
+      +getId(): int
       +setPassword(password: string): void
       +isPasswordCorrect(password: string): boolean
-    }
-    Class UserAdapter<<control>>{
-      +getUser(id: int): User
     }
   }
   Class UserFactory<<control>>{
@@ -94,17 +85,63 @@ Class StatisticsWindow<<boundary>>{
 Class Statistics<<control>>{
   +prenesiPodatkeVSkladisce(start: date, end: date): void
 }
+package Command{
+  Class StatisticsWindowCommand<<control>>{
+    -statisticsWindow: StatisticsWindow
+    +execute(): void
+    +unexecute(): void
+    +isReversible(): boolean
+  }
+  Class ManageEmployeesWindowCommand<<control>>{
+    -manageEmployeesWindow: ManageEmployeesWindow
+    +execute(): void
+    +unexecute(): void
+    +isReversible(): boolean
+  }
+  Class TaskWindowCommand<<control>>{
+    -taskWindow: TaskWindow
+    +execute(): void
+    +unexecute(): void
+    +isReversible(): boolean
+  }
+  Class GoogleCalendarWindowCommand<<control>>{
+    -googleCalendarWindow: GoogleCalendarWindow
+    +execute(): void
+    +unexecute(): void
+    +isReversible(): boolean
+  }
+  Class ActivityWindowCommand<<control>>{
+    -activityWindow: ActivityWindow
+    +execute(): void
+    +unexecute(): void
+    +isReversible(): boolean
+  }
+  Class IssueReportWindowCommand<<control>>{
+    -issueReportWindow: IssueReportWindow
+    +execute(): void
+    +unexecute(): void
+    +isReversible(): boolean
+  }
+  Class IssueSolveWindowCommand<<control>>{
+    -issueSolveWindow: IssueSolveWindow
+    +execute(): void
+    +unexecute(): void
+    +isReversible(): boolean
+  }
+  Class TimerWindowCommand<<control>>{
+    -timerWindow: TimerWindow
+    +execute(): void
+    +unexecute(): void
+    +isReversible(): boolean
+  }
+  Class SearchUsersWindowCommand<<control>>{
+    -SearchUsersWindow: SearchUsersWindow
+  }
+}
 Class ManageEmployeesWindow<<boundary>>
 Class ManageEmployees<<control>>{
   +addEmployee(ime: string, priimek: string, email: string, password: string): void
 }
-  'proxy class?
-  '(timer alerta timedtask)
-  'Class TimedTask<<entity>>{
-  '  -id: int
-  '  -name: string
-  '  +getName(): void
-  '}
 Class Task<<entity>>{
   -id: int
   -name: string
@@ -175,6 +212,17 @@ Class SearchUsersWindow<<boundary>>{
   +showUsers(name: string): void
   +showUserInfo(id: int): void
 }
+package Adapter{
+  Class GoogleCalendarAdapter<<control>>{
+    +getTask(event: Event): Task
+  }
+  Class GoogleCalendarWindow<<boundary>>{
+    +showCalendarTasks(): void
+  }
+  Class GoogleCalendarAPI<<External API>>{
+    +list(calendarId: string): Event[]
+  }
+}
 
 package Singleton{
   Class Timer<<entity>>{
@@ -204,18 +252,3 @@ Class TimerManager<<control>>{
 Class TimerWindow<<boundary>>{
   +showCurrentTime(): void
 }
-@enduml
-
-' extra notes
-' - a se bolj fokusiramo da je čim boljši diagram al da
-'    bo vse na diagramu dejansko implementirano?
-' - Google calendar pokažeš kot boundary class
-' loči Userja na frontend in backend z adapterjem
-' načrtovalske vzorce se na koncu označi na diagramu
-' POVEŽI ZASLONSKE MASKE SKUPAJ!
-' logina ni treba dat noter.
-' a je možno oz. je treba postaviti database connection v diagram?
-' A moramo interface posebej označiti
-' na diagramu ali je kar entity?
-' Observer (MVC), Command pattern
-' Singleton, strategy?
