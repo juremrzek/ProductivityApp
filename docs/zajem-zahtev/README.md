@@ -135,6 +135,13 @@ Must have - opravila predstavljajo glavno funkcionalnost naše spletne aplikacij
 3. Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi izbrisati ter pritisne na gumb za izbris
 4. Sistem izbriše opravilo iz seznama
 
+#### Alternativni tok 3
+
+1. Prijavljeni uporabnik in neprijavljeni uporabnik izbere funkcionalnost Vnos in urejanje seznama opravil
+2. Sistem prikaže vnosno polje za vnos imena opravila in še neopravljena opravila
+3. Prijavljeni uporabnik in neprijavljeni uporabnik izbere na opravilo, ki ga želi opraviti ter pritisne na gumb za opravljenje
+4. Sistem izbriše opravilo iz seznama in shrani podatke o opravljenemu upravilu za statistiko.
+
 #### Sprejemni test
 
 - Primer uporabe
