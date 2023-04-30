@@ -102,3 +102,22 @@ Vmesnik -> Vmesnik: showTasks(user) \n(po istem postopku kot v show tasks)
 zup <-- Vmesnik: //show tasks
 deactivate Vmesnik
 end
+
+
+opt opravljanje opravila - pri alternativnem toku 3
+zup -> Vmesnik: // izbere solve task
+activate Vmesnik
+
+Vmesnik -> editTasks: solveTask(user, task)
+activate editTasks
+editTasks -> UnsignedUser: solveTask(task)
+activate UnsignedUser
+editTasks <-- UnsignedUser: //status(ok)
+deactivate UnsignedUser
+editTasks -> editTasks: notify()
+Vmesnik <- editTasks: //update()\n(po istem postopku kot v show tasks)
+deactivate editTasks
+Vmesnik -> Vmesnik: showTasks(user) \n(po istem postopku kot v show tasks)
+zup <-- Vmesnik: //show tasks
+deactivate Vmesnik
+end

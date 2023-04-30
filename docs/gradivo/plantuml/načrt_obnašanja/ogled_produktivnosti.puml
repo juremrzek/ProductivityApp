@@ -20,5 +20,16 @@ pup -> Vmesnik : //izbor ogleda\nzaslona produktivnosti\nshowActivity(userid)
 activate Vmesnik
 Vmesnik -> activity : getUserInfo(userid)
 activate activity
-''upi da jure to zrihta drgac pa blacboxi
+activity -> task : getcompletedTasksCount(user)
+activate task
+task -> uu :// get completedTasksCount
+activate uu
+uu --> task : //completedTasksCount
+deactivate uu
+task --> activity : //completedTasksCount
+deactivate task
+activity --> Vmesnik: //productivity data
+deactivate activity
+Vmesnik --> pup : //show productivity screen
+
 

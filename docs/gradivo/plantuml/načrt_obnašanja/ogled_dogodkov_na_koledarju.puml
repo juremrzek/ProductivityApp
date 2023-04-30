@@ -13,12 +13,17 @@ skinparam sequenceParticipantBackgroundColor white
 actor "Prijavljeni uporabnik" as pup<<actor>>
 participant ":GoogleCalendarWindow" as Vmesnik <<boundary>>
 participant ":GoogleCalendarAdapter" as adapter <<control>>
-participant ":EditTasks" as task <<control>>
-participant ":UnsignedUser" as uu <<entity>>
+participant ":GoogleCalendarAPI" as calendar <<External API>>
 
 pup -> Vmesnik : //izbor ogleda\ndogodkov na koledarju\nshowCalendarTasks()
 activate Vmesnik
 Vmesnik -> adapter : getTasks(userid)
-activate adapter    
-''upi da jure to zrihta drgac pa blacboxi
+activate adapter
+adapter -> calendar : list(calendarId)
+activate calendar
+calendar --> adapter : events[]
+deactivate calendar
+adapter --> Vmesnik : tasks[]
+deactivate adapter
+Vmesnik --> pup : //prikaz dogodkov\nna koledarju
 
