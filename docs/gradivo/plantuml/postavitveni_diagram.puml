@@ -1,4 +1,4 @@
-@startuml
+@startuml postavitveni_diagram
 skinparam component {
   backgroundcolor #e8f5fd
   bordercolor #5FB8EC
@@ -12,31 +12,33 @@ skinparam artifact {
 skinparam node {
     bordercolor #5FB8EC
 }
+rectangle "**Arhitektura odjemalec/strežnik**" as CS2{
+    rectangle "**Arhitektura odjemalec/strežnik**" as CS1{
+        node "**PC**" <<device>> as S {
+            node "**Ubuntu Linux**" <<execution environment>>{
+                component "**Web server**" <<component>> as WS1
+                
 
-node "**PC**" <<device>> as S {
-    node "**Ubuntu Linux**" <<execution environment>>{
-        component "**Web server**" <<component>> as WS1
-        
+                artifact "Webserver.js" <<artifact>> as WS2
 
-        artifact "Webserver.js" <<artifact>> as WS2
+                artifact "AppRouter.js" <<artifact>> as WS3   
+            }
+        }
 
-        artifact "AppRouter.js" <<artifact>> as WS3   
+        node "**Atlas server**" <<device>> as AS{
+            component "**Baza podatkov**" <<component>> as B1
+            component "**Podatkovno skladišče**" <<component>> as PS1
+            
+            artifact "database.json" <<artifact>> as B2
+            artifact "warehouse.json" <<artifact>> as PS2
+        }
     }
-}
-
-node "**Atlas server**" <<device>> as AS{
-	component "**Baza podatkov**" <<component>> as B1
-    component "**Podatkovno skladišče**" <<component>> as PS1
-    
-    artifact "database.json" <<artifact>> as B2
-    artifact "warehouse.json" <<artifact>> as PS2
-}
-
-node "**PC**" <<device>> as PC {
-    node "**Windows OS**" <<OS>> {
-        node "**Chrome**" <<execution environment>>{
-            component "**Aplikacija produktivnosti in organizacije (Web App)**" <<component>> as A1
-            component "Aplikacija.html" <<artifact>> as A2
+    node "**PC**" <<device>> as PC {
+        node "**Windows OS**" <<OS>> {
+            node "**Chrome**" <<execution environment>>{
+                component "**Aplikacija produktivnosti in organizacije (Web App)**" <<component>> as A1
+                component "Aplikacija.html" <<artifact>> as A2
+            }
         }
     }
 }

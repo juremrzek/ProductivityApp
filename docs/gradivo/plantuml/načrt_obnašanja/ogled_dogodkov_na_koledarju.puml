@@ -1,0 +1,24 @@
+@startuml urejanjeSeznamaOpravil
+hide footbox
+
+skinparam backgroundcolor transparent
+skinparam defaultTextAlignment center
+skinparam actorBorderColor black
+skinparam actorBackgroundColor white
+skinparam arrowColor black  
+skinparam sequenceLifeLineBorderColor #5FB8EC
+skinparam sequenceParticipantBorderColor #5FB8EC
+skinparam sequenceParticipantBackgroundColor white
+
+actor "Prijavljeni uporabnik" as pup<<actor>>
+participant ":GoogleCalendarWindow" as Vmesnik <<boundary>>
+participant ":GoogleCalendarAdapter" as adapter <<control>>
+participant ":EditTasks" as task <<control>>
+participant ":UnsignedUser" as uu <<entity>>
+
+pup -> Vmesnik : //izbor ogleda\ndogodkov na koledarju\nshowCalendarTasks()
+activate Vmesnik
+Vmesnik -> adapter : getTasks(userid)
+activate adapter    
+''upi da jure to zrihta drgac pa blacboxi
+
