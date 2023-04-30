@@ -27,8 +27,9 @@ skinparam defaultTextAlignment center
 skinparam packageStyle rectangle
 skinparam groupInheritance 5
 hide circle
-'hide members
+hide members
 
+'---------Razredi---------------------------
 package Factory{
   package State{
     Class User<<entity>> {
@@ -60,10 +61,13 @@ package Factory{
 
   }
   Class UnsignedUser<<entity>> {
+    -completedTasksCount: int
     +getTasks(): Task []
     +addTask(task: Task): void
     +editTask(taskId: int, name: string, description: string): void
     +removeTask(taskId): void
+    +getCompletedTaskCount(): int
+    +incrementCompletedTasksCount(): void
   }
   Class SignedUserCreator<<control>>{
     +createUser(userType: string): void
@@ -159,6 +163,7 @@ package Observer{
     +addTask(user: UnsignedUser, task: Task): string
     +editTask(user: UnsignedUser, taskId: int, name: string, description: string): void
     +removeTask(taskId: int): void
+    +completeTask(taskId: int): void
     +notify(): void
   }
   class TaskWindow<<boundary>>{
@@ -178,7 +183,7 @@ class ActivityWindow<<boundary>>{
   +showActivity(user: UnsignedUser)
 }
 class Activity<<control>>{
-  +getUserInfo(user: User): void
+  +getUserInfo(id: int): void
 }
 Class Issue<<entity>>{
   -title: string
@@ -252,3 +257,4 @@ Class TimerManager<<control>>{
 Class TimerWindow<<boundary>>{
   +showCurrentTime(): void
 }
+@enduml

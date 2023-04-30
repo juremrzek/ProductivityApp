@@ -61,10 +61,13 @@ package Factory{
 
   }
   Class UnsignedUser<<entity>> {
+    -completedTasksCount: int
     +getTasks(): Task []
     +addTask(task: Task): void
     +editTask(taskId: int, name: string, description: string): void
     +removeTask(taskId): void
+    +getCompletedTaskCount(): int
+    +incrementCompletedTasksCount(): void
   }
   Class SignedUserCreator<<control>>{
     +createUser(userType: string): void
@@ -160,6 +163,7 @@ package Observer{
     +addTask(user: UnsignedUser, task: Task): string
     +editTask(user: UnsignedUser, taskId: int, name: string, description: string): void
     +removeTask(taskId: int): void
+    +completeTask(taskId: int): void
     +notify(): void
   }
   class TaskWindow<<boundary>>{
@@ -179,7 +183,7 @@ class ActivityWindow<<boundary>>{
   +showActivity(user: UnsignedUser)
 }
 class Activity<<control>>{
-  +getUserInfo(user: User): void
+  +getUserInfo(id: int): void
 }
 Class Issue<<entity>>{
   -title: string
@@ -307,17 +311,3 @@ ManageEmployees --> DeveloperCreator
 ManageEmployees --> AnalystCreator
 Toolbar --> WindowManager
 @enduml
-
-' extra notes
-' - a se bolj fokusiramo da je čim boljši diagram al da
-'    bo vse na diagramu dejansko implementirano?
-' - Google calendar pokažeš kot boundary class
-' loči Userja na frontend in backend z adapterjem
-' načrtovalske vzorce se na koncu označi na diagramu
-' POVEŽI ZASLONSKE MASKE SKUPAJ!
-' logina ni treba dat noter.
-' a je možno oz. je treba postaviti database connection v diagram?
-' A moramo interface posebej označiti
-' na diagramu ali je kar entity?
-' Observer (MVC), Command pattern
-' Singleton, strategy?
