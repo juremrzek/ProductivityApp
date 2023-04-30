@@ -16,7 +16,7 @@ participant ":IssueReport" as report <<control>>
 participant ":Issue" as issue <<entity>>
 
 dev -> Vmesnik: // Izberi pregled poročanih\n nepravilnih delovanj\nshowUnsolvedIssues()
-activate dev
+
 activate Vmesnik
 
 Vmesnik -> report: getUnsolvedIssues()
@@ -26,7 +26,7 @@ Vmesnik <-- report: //UnsolvedIssues[]
 deactivate report
 dev <-- Vmesnik: // prikaz seznama nerešenih poročil
 deactivate Vmesnik
-deactivate dev
+
 
 
 Vmesnik -> report: rejectIssue(issue)
@@ -41,5 +41,5 @@ deactivate issue
 
 Vmesnik -> Vmesnik: showUnsolvedIssues()
 dev <-- Vmesnik: // changes made,\nprikaz seznama nerešenih poročil
-activate dev
+
 ''tale je alternativni tok

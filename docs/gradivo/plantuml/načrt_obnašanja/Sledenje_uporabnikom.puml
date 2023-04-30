@@ -1,4 +1,3 @@
-''todo
 @startuml urejanjeSeznamaOpravil
 hide footbox
 
@@ -34,4 +33,17 @@ end
 search -> Vmesnik: // matchingUsers[]
 deactivate search
 Vmesnik -> pup: // prikaz ujemajočih uporabnikov
+deactivate Vmesnik
+
+pup --> Vmesnik: // izbere sledenje uporabniku\nuserId := id (id izbranega uporabnika)
+activate Vmesnik
+Vmesnik -> search: followUser(userID)
+activate search
+search -> signedUser: signedUser.following.append(userID)
+activate signedUser
+signedUser --> search: //potrditev sledenja
+deactivate signedUser
+search -> Vmesnik: // potrditev sledenja
+deactivate search
+Vmesnik -> pup: // potrditev sledenja
 deactivate Vmesnik

@@ -1,0 +1,24 @@
+@startuml urejanjeSeznamaOpravil
+hide footbox
+
+skinparam backgroundcolor transparent
+skinparam defaultTextAlignment center
+skinparam actorBorderColor black
+skinparam actorBackgroundColor white
+skinparam arrowColor black  
+skinparam sequenceLifeLineBorderColor #5FB8EC
+skinparam sequenceParticipantBorderColor #5FB8EC
+skinparam sequenceParticipantBackgroundColor white
+
+actor "Prijavljeni uporabnik" as pup<<actor>>
+participant ":ActivityWindow" as Vmesnik <<boundary>>
+participant ":Activity" as activity <<control>>
+participant ":EditTasks" as task <<control>>
+participant ":UnsignedUser" as uu <<entity>>
+
+pup -> Vmesnik : //izbor ogleda\nzaslona produktivnosti\nshowActivity(userid)
+activate Vmesnik
+Vmesnik -> activity : getUserInfo(userid)
+activate activity
+''upi da jure to zrihta drgac pa blacboxi
+

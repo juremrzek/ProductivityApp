@@ -1,0 +1,45 @@
+@startuml urejanjeSeznamaOpravil
+hide footbox
+
+skinparam backgroundcolor transparent
+skinparam defaultTextAlignment center
+skinparam actorBorderColor black
+skinparam actorBackgroundColor white
+skinparam arrowColor black  
+skinparam sequenceLifeLineBorderColor #5FB8EC
+skinparam sequenceParticipantBorderColor #5FB8EC
+skinparam sequenceParticipantBackgroundColor white
+
+actor "Analitik" as anal<<actor>>
+participant ":StatisticsWindow" as Vmesnik <<boundary>>
+participant ":Statistics" as stat <<control>>
+participant ":UnsignedUser" as uu <<entity>>
+
+
+
+anal -> Vmesnik: // Izberi Shranjevanje podatkov\nshowPrenesiPodatkeForm()
+
+activate Vmesnik
+anal <-- Vmesnik: // prikaz obrazca\nza shranjevanje podatkov
+anal -> Vmesnik: // Izpolnjen obrazec\nklilk na gumb "Prenesi"
+Vmesnik -> Vmesnik: // preveri pravilnost\nvnosa podatkov
+Vmesnik -> stat: // če je vnos ok:\nprenesiPodatkeVSkladisce(startdate, enddate)
+activate stat
+loop for each :UnsignedUser
+stat -> uu: //pridobi podatke\n o uporabniku za dano obdobje
+activate uu
+uu --> stat:// podatki o uporabniku
+deactivate uu
+end
+stat ->stat: //naredi povezavo z podatkovnim skladiščem,\nshrani pridobljene podatke o uporabnikih
+
+alt brez napake pri prenosu
+
+Vmesnik <-- stat: //Potrdilo o upešnem shranjevanju
+anal <-- Vmesnik: //prikaži potrdilo o shranejvanju
+else izjemni tok: napaka pri prenosu
+Vmesnik <-- stat: //Napaka pri shranjevanju
+deactivate stat
+anal <-- Vmesnik: //prikaži napako
+deactivate Vmesnik
+end

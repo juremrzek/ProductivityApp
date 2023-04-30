@@ -52,9 +52,9 @@ editTasks -> UnsignedUser: addtask(task)
 activate UnsignedUser
 editTasks <-- UnsignedUser: //status(ok)
 deactivate UnsignedUser
-Vmesnik <-- editTasks: //status(ok)
+editTasks -> editTasks: notify()
+Vmesnik <- editTasks: //update()\n(po istem postopku kot v show tasks)
 deactivate editTasks
-Vmesnik -> Vmesnik: showTasks(user) \n(po istem postopku kot v show tasks)
 zup <-- Vmesnik: //show tasks 
 deactivate Vmesnik
 
@@ -63,7 +63,7 @@ zup -> Vmesnik: // izbere edit task
 activate Vmesnik
 
 Vmesnik -> Vmesnik: showEditTaskForm(id)
-Vmesnik <-- zup: //prikaz obrazca za urejanje opravila
+Vmesnik --> zup: //prikaz obrazca za urejanje opravila
 zup -> Vmesnik: // izpoljnjen obrazec za urejanje opravila,\nklik na shrani
 
 Vmesnik -> editTasks: editTask(user, taskID, ime, desc)
@@ -76,7 +76,8 @@ deactivate task
 activate UnsignedUser
 editTasks <-- UnsignedUser: //status(ok)
 deactivate UnsignedUser
-Vmesnik <-- editTasks: //status(ok)
+editTasks -> editTasks: notify()
+Vmesnik <- editTasks: //update()\n(po istem postopku kot v show tasks)
 deactivate editTasks
 Vmesnik -> Vmesnik: showTasks(user) \n(po istem postopku kot v show tasks)
 zup <-- Vmesnik: //show tasks
@@ -94,12 +95,10 @@ editTasks -> UnsignedUser: removeTask(task)
 activate UnsignedUser
 editTasks <-- UnsignedUser: //status(ok)
 deactivate UnsignedUser
-Vmesnik <-- editTasks: //status(ok)
+editTasks -> editTasks: notify()
+Vmesnik <- editTasks: //update()\n(po istem postopku kot v show tasks)
 deactivate editTasks
 Vmesnik -> Vmesnik: showTasks(user) \n(po istem postopku kot v show tasks)
 zup <-- Vmesnik: //show tasks
 deactivate Vmesnik
 end
-
-
-'pred editTask more bit še logika prikaza možnosti editanja, vnašanja in preverjanje vnosa

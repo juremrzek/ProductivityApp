@@ -21,13 +21,13 @@ zup -> Vmesnik: // Izberi Poročanje\no nepravilnem delovanju
 
 activate Vmesnik
 zup <-- Vmesnik: // prikaz obrazca\nza vnos napake (naslov napake in opis)
-zup -> Vmesnik: // Izpolnjen obrazec
+zup -> Vmesnik: // Izpolnjen obrazec\nklik na gumb "Pošlji"
 
 Vmesnik -> report: //Odgovore obrazca preobrazimo v razred Issue\naddIssue(user, issue)
 activate report
 report -> issue: //Ustvarimo nov objekt razreda Issue
 activate issue
-issue -> report:// portdilo
+issue --> report:// portdilo
 deactivate issue
 
 
