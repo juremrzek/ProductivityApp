@@ -2,25 +2,18 @@
 
 |                             |                                                                |
 | :-------------------------- | :------------------------------------------------------------- |
-| **Naziv projekta**          | :dart: **TO-DO** naziv projekta                                |
-| **Člani projektne skupine** | :dart: **TO-DO** 1. član, 2. član, 3. član, 4. član in 5. član |
-| **Kraj in datum**           | :dart: **TO-DO** kraj, datum                                   |
+| **Naziv projekta**          |     Aplikacija produktivnosti in organizacije                  |
+| **Člani projektne skupine** | Arne Gašperšič, Anže Rifelj Tričkovič, Jure Mržek,             |
+|                             | Klemen Kolar, Jan Merhar                                       |                                          
+| **Kraj in datum**           | 30.4.2023, Ljubljana                                           |
 
 ## Povzetek
 
-:dart: **TO-DO**
-
-- Povzetek je, kot že vemo, celoten dokument, strnjen v največ 150 besed.
+V tem dokumentu se nahaja načrt Aplikacije produktivnosti in organizacije. Na začetku se nahaja načrt arhitekture v treh različnih pogledih, in sicer v logičnem, razvojnem in fizičnem pogledu. Pri arhitekturi so prisotni in označeni tudi arhitekturni vzorci. V nadaljevanju načrta je prikazana struktura apliakcije kot razredni diagram v celoti in razbit na razrede in njihove opise. Tretji del načrta vsebuje diagrame zaporedja in diagrame stanj, ki predstavljajo načrt obnašanja sistema.
 
 ## 1. Načrt arhitekture
 
-:dart: **TO-DO**
-
-- Za prikaz uporabite enostavne prikaze, kot je **postavitveni** ([deployment](https://plantuml.com/deployment-diagram)), **paketni** ([class](https://plantuml.com/class-diagram)) diagram oz. **komponentni** ([component](https://plantuml.com/component-diagram)) diagram.
-- Pri predlogu upoštevajte tudi arhitekturne vzorce.
-
 **Razvojni pogled** (komponentni diagram)
-
 ![komponentnidiagram](https://teaching.lavbic.net/plantuml/png/dPB1RXen48RlVeeHlIH8KKKWKWueqe8I8d51MhGvc_L07Nizgrb3Mg8yGXwYBz9JyrwrOI7BDkcXbzNgd__xnvvnPRGh9Si25Z8tAwQrKpbPOl0iNHLAwBoeZYw5IxcsVexVVMBroXMX37du83TS2JCzZNSn2njo6wMSYf9Sf9u5_DNq2rulhvOgLeWLSgrUtOskRyVYfP6ZOykbpF6_SiGxtiaAh9msi9KXPajGafBUqAO3ieAirxJUp-UplNpvISA4Q6KH35bKalVU_YVUGoD7K1ahbNxx-ViLzyn0YFT9TRhTaMm0tUxED8BXy6YwkMaHim_JQtIM_fCzlKNDJAPjveEjflv701bpBrs8QEKc_4rxD7xD4YhF-FOhZE8hgKSiBEPrdtGSDthAbLORcUl7C0CcjJPUXtjLNeTd0CGhwVGsbX7E7d01ILcUrs49d1uwHeVrj_8Zb29ly73NXzPy8BwP12ukpkBgiylm5pmYs7PIJsIzA8sEIbza_QXCfaTf8B91b6Rf7m00)
 
 **komponentni diagram** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/komponentni_diagram.puml))
