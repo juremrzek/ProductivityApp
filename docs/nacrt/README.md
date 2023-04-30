@@ -92,19 +92,27 @@ Neprijavljeni uporabniki lahko uporabljajo našo glavno funkionalnost - lahko do
 
 Vsi tipi uporabnikov, ki imajo možnost prijave v sistem, podedujejo atribute in metode iz tega razreda.
 
-![DZ](Class User<<entity>> {
-  -id: int
-  -name: string
-  -hash: string
-  -salt: string
-  +getName(): string
-  +setName(): string
-  +getId(): int
-  +setPassword(password: string): void
-  +isPasswordCorrect(password: string): boolean
-})
+![DZ](https://teaching.lavbic.net/plantuml/png/TPBTQeD048NlVOg5N3Ib54ffG48G4abBRjhGdmSOTqTTikxAx5eJIjwzkqabLemNYvuvvvjnrEwahe6WObo1jUmdOYm3lYl8D5gaHXbYRIaT1jsGG3fhazdpAbwdNWKYqvx5JFbaT8piV-XYWTf9TqYIKVm4utoMyq63bMfm3CMDTcJKDLRECSPum7f7CORAGWxewbpvOw0DM2-4gCTewxr3qg3OShj9ad5Wd3-8fm7mZK0NuLMZcmlJbY1CAtN1Sb0MUzsiEoZq9qdkcahrAW9pQ9JxnBrRAbdeoc-TSNyWzLor7meA_3XX2BdptLM_GPYutkWIIVeQHpQBIYcGSKdS6wFqz9zyMQJ1TmtNlHHp9hNh7ZLKE3zDgujEAy6MGys2SWFjha3twkFJss71NYlun4O4-J91C6_zmAtV-BJ-k-botlbjfEYiqdREr51OpLWWCqOXw5Fc-0i0)
 
-Hash je zgoščena vrednost gesla, salt pa je unikaten niz, ki se doda geslu za zagotavljanje unikatnosti zgoščene vrednosti.
+`Hash` je zgoščena vrednost gesla, `salt` pa je unikaten niz, ki se doda geslu za zagotavljanje unikatnosti zgoščene vrednosti.
+
+#### SignedUser
+
+Prijavljeni uporabniki lahko urejajo pravila, imajo pa tudi možnost prijave, zato podedujejo tako razred `User` kot razred `UnsignedUser`.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/TPB1IyCm5CRl_Ii2koWYY5WeCWfRsMGdnUb9F6J9InhscfINb6x8_dVJ3h7MxfB3zxxt-zvBulV6rfnunGHoxzbNmjYEYxqcrrXPE7J4sj84w7H74kYipTBrCbiLKUL4hZsBEuoToIdnVw7pETXWmZ7F9_4po5Ign2XWYGrCeOIpWHnUOYa16MGZrYl8ATIkw-DqSIvrtz56h2S2i5EqrI40MOviyRB9ysbWfkxammZuJDpgRjK1qeSZGZp9YD1KEAX8KBp1y0Q7i42ZRHMlbebu00rSTKpc6hOzXa24684mC7HZrHjR0fbO4y3If3GIc30aeZ4f-i-mZG4WtptGxnDsYp5sgnoYQutLZmCN-_ZigpSQmlh7S7NzttBw1W00)
+
+Vsak prijavljeni uporabnik lahko sledi ostalim prijavljenim uporabnikom, zato ima razred atribut `following`. 
+
+#### Issue
+
+Uporabniki lahko poročajo o napakah v aplikaciji. Napako lahko razvijalci sprejmejo ali zavržejo.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/TPBDQiCm48JlVWf1BmcbK4e3nWH3_bfoQcdJ1r2aiIEYI6ObvuUITw_aKE8Ovx98iwDlHxBTLfcA4zyneRbpx3TXRCt5jYHR6pcpsX8xR9H7r2r9q4Lx6BrDqyKig9p87YxYMeUJoJbnjz3n6COhVyhpNlm3qc9KYCw0gQxHXnBMUBBw7giGI95sM5-GVQXrFCVfRgxY9T8wh7S2J1zjSVGWmpMRV2xpl1-O5i_ojGFy86xAUDKMqlcJHgYaXAztkjMHA7Yj_Gf7Fz6gDBlmj4o40cgvgZ2Pb_XkC0JXmmYDbY76gfPc0rAX9y16oKP9CA5816CoQtw6fNCrhbyltkafB3Mo9fifeo3X1AdAAsjkPEw3BTQugnqeOp-XnfspUW-PXMUm6jnSfUafOtFieMtLE1yRUI3_fLPtcB6zLJAQIlXLJ3KOjW94TNwDrkgT_m00)
+
+Atribut `user` pove, kateri uporabnik je napako opazil. Atribut `solved` pove, če je napaka že razrešena. Če je, nam atribut `solvedBy: Developer` pove, kdo je napako razrešil.
+Metoda `solve()` nastavi vrednost `solved` na `true`.
+
 
 ## 3. Načrt obnašanja
 
