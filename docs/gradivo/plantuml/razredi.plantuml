@@ -27,22 +27,20 @@ skinparam defaultTextAlignment center
 skinparam packageStyle rectangle
 skinparam groupInheritance 5
 hide circle
-hide members
+'hide members
 
 '---------Razredi---------------------------
 package Factory{
-  package State{
-    Class User<<entity>> {
-      -id: int
-      -name: string
-      -hash: string
-      -salt: string
-      +getName(): string
-      +setName(): string
-      +getId(): int
-      +setPassword(password: string): void
-      +isPasswordCorrect(password: string): boolean
-    }
+  Class User<<entity>> {
+    -id: int
+    -name: string
+    -hash: string
+    -salt: string
+    +getName(): string
+    +setName(): string
+    +getId(): int
+    +setPassword(password: string): void
+    +isPasswordCorrect(password: string): boolean
   }
   Class UserFactory<<control>>{
     +createUser(userType: string): User
@@ -155,7 +153,6 @@ Class Task<<entity>>{
   +setDescription(desc: string): string
   +getName(): string
   +getDescription(): string
-
 }
 package Observer{
   class EditTasks<<control>>{
@@ -164,6 +161,7 @@ package Observer{
     +editTask(user: UnsignedUser, taskId: int, name: string, description: string): void
     +removeTask(taskId: int): void
     +completeTask(taskId: int): void
+    +getCompletedTaskCount(userid: id): int
     +notify(): void
   }
   class TaskWindow<<boundary>>{
@@ -219,7 +217,7 @@ Class SearchUsersWindow<<boundary>>{
 }
 package Adapter{
   Class GoogleCalendarAdapter<<control>>{
-    +getTask(event: Event): Task
+    +getTasks(): Task []
   }
   Class GoogleCalendarWindow<<boundary>>{
     +showCalendarTasks(): void
@@ -228,31 +226,52 @@ package Adapter{
     +list(calendarId: string): Event[]
   }
 }
-
-package Singleton{
-  Class Timer<<entity>>{
-    -instance: Timer
-    -currentTime: int
-    -currentBreak: int
-    -isRunning: boolean
-    -duration: int
-    -break: int
-    +getInstance(): Timer
-    +startTimer(): void
-    +resetTimer(): void
-    +pauseTimer(): void
-    +resumeTimer(): void
-    +getCurrentTime(): void
-  } 
+package State{
+  package Singleton{
+    Class Timer<<entity>>{
+      -instance: Timer
+      -currentTime: int
+      -currentBreak: int
+      -isRunning: boolean
+      -duration: int
+      -break: int
+      +getInstance(): Timer
+      +resetTimer(): void
+      +pauseTimer(): void
+      +resumeTimer(): void
+      +startBreak(): void
+      +stopBreak(): void
+      +getCurrentTime(): void
+    }
+  }
+  Class TimerState<<control>>{
+    +reset(): void
+    +pause(): void
+    +resume(): void
+    +startBreak(): void
+    +stopBreak(): void
+  }
+  Class IdleState<<control>>{
+    +resume(): void
+  }
+  Class RunningState<<control>>{
+    +reset(): void
+    +pause(): void
+    +startBreak(): void
+  }
+  Class BreakState<<control>>{
+    +reset(): void
+    +resume(): void
+    +stopBreak(): void
+  }
 }
 Class TimerManager<<control>>{
-    +startTimer(): void
     +resetTimer(): void
     +pauseTimer(): void
     +resumeTimer(): void
     +startBreak(): void
+    +stopBreak(): void
     +getCurrentTime(): void
-    +alertUser(): void
 }
 Class TimerWindow<<boundary>>{
   +showCurrentTime(): void
