@@ -115,16 +115,6 @@ Metoda `solve()` nastavi vrednost `solved` na `true`.
 
 
 ## 3. Načrt obnašanja
-
-:dart: **TO-DO**
-
-- Za izdelavo uporabite ogrodje PlantUML.
-- V poročilo vključite **izvorno kodo diagrama v jeziku PlantUML**, ki naj bo prisotna v repozitoriju, sliko diagrama pa vključite s povezavo (in ne preko neposredne vključitve binarne datoteke) preko storitve [`https://teaching.lavbic.net/plantuml`](https://teaching.lavbic.net/plantuml), kot prikazuje spodnji primer.
-- Diagram naj bo **jasno berljiv**.
-- Za izdelavo načrta obnašanja lahko uporabite **diagramske tehnike**, navedene v nadaljevanju.
-  - Uporabite zgolj tiste, ki se vam zdijo najbolj primerne za izbrano funkcionalnost.
-  - Pri opredelitvi načrta ni treba uporabiti vseh predlaganih diagramskih tehnik.
-  - Najbolj se **priporoča** uporabo **diagramov zaporedja**.
   
 ### Diagrami zaporedja
 **Toolbar za izbiro okna** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Toolbar.puml))
@@ -149,6 +139,24 @@ Na začetku vsakega primera uporabe se najprej iz menijske vrstice (toolbar) izb
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/tPPDQnin48Rl-ok6z6A3pT92eGHZQBwWj9GUaXxQz22lv5ZUjKQLj7RYNz-HDbwFuurnsaCX1vlTQ9xHAxqpuyoqL31531Eypp9VQcE54mkOYAAySrWRMM253e8JnjEICe55IJKLTHMkrNtuMEaxiw1bAEXBEHObYe3k39rKxZmbcrIKVI-WtR49MirqK3p8ELmn7e0jUlMxLgPGN_IKFaRntTwylphxS7dU4VrDkA0BROK9BmSwvMRfA73oepR2p3NK5fsO65sUWF2mhkreb2B6uynkSy79wRNm9QoqaRXAeTyNoXC6ez4axY7SmnvoANM0oFb4A7fDRyGKQ8B3QW-vCPvSKlB6AvSW_WVYo3aT7Zh5fV0GLRAmBDw01J_3LLhp6HqHXkED_5F8S_XSwT9eC0BGEh7KbRWraKXYUpNjt4_tffSYg0sPPPiRe6pjqKxXJWNEjLWRacNRYo2K7v3HZEGHZ1qDXq_WF4z7_FahawgRRZL7c8dESwT2xOn_l2J6CzqLegLMT42hinJ9xo2-fmDy5GlLwmzk3JrVA5yuROD6mu-qmqOj3PpdXjW1TQqlk8OKhepCicHV19X_p5p6R6oAM8VdIwizQ4EdMOX2pm5JXffKbrGDiHOaIZ4_sdOXPNnAhWzIhaxl3rXF6IBMUyA-m7qVHAXz3mb_hW1szcVo3GOzVI2BjgRiraTj9INhzMzDpo9e7zG2BFg0jgoXn01BrcJzxW8ww1rqcPUX3L0xDQTPfThkX25Ofq5KDCMD8CIGc80av6sNrNezKQxHqLJIGKzRCagxVDH-HMNIqt9xFKEAfArYVf9IYZNWn8br8M0jzWLtgx9OpIdADAWgEb5Ma7v6Ft7wkGBSFB8A_7Gn0BtffvUMOvkl8zFEK6vRtp-sFWN6xlUxtVz4Gp9YTxYpCT1ToRlclQB6UAxys0y979d_h-PZqsSeVVmdQgwMHtRRkmFTvjG2b-g8VcENsJ3_E4PPajSxIVzpmVm1)
 
+5. **Shranjevanje podatkov o aktivnostih uorabnikov za analitiko** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/shranjevanje_podatkov.puml))
+
+![DZ](https://teaching.lavbic.net/plantuml/png/bLFRQjj047tNLmpkIm8nUIgKO099QA1GYY5D-kANaNOIhxNQKVSYf_g7VaH-f4_DVtLs7TboumPgi6pjdZDpzfpPfLO4zyoXvCUYyBMsBJfieCIgVd0ShQhOi8FWq7hP8Xj6A4Nt64tuIe_XmkW7syWsLF8WDq9X5TXTibFahdAnqaZrLu1jnmrelTI1nY3dU3tY0umsFNsFP2lwhE_bQsdSxTtxwyiF7wyEeEVeWgvqYpRyF-6Wt28V1ION5eqEkfu0Ua1vcStoplbvqUvgmEJi9c3GNXRyDsqLhpFXhY5lTGspMPaQeFln1YyplBmAl68R79jNw5lh9HrIjvvSniSeQCb9XrHQFaaZJC-7rcTmUWgV-fASXfkbPB-YBZsWPOMXvcvX_PBNSva7ydgU5-cQNNDqd3tG7GOQYcsApwRJlUgjqpNsmAN3liA5xH7yeKx_aDQo4PJTyAbQsDfeKuD5U8XD2PCNQPDYCFEl2gsZBfskTTXfOzc7XUta1tUDHypaRwRz_aaWuX8Ik3vRs7RFWhkRsg3Ilg8ZeRWWYtG2P5NwSxnp9jKh37ChTyy1ORM4lP2A7AWqZZ6r5QyKb_f56Ytas11RTbYAlWXYdKBBueMWLhHh4sCXIK-70wHZvmfwZrye6ZD4xT1-EBQLYwzI-uvwx1ZwhKbMo-t8Ptv-4c-QapGOac8oDcasaj6G9OsxwgKCYWbGEkebjHPbkyrva7WRYwtxQMu67NCEJcd3kH0zFrbgnaCJ3qvQ7hJdNqd-bfr9jDgGo7W2tQ-e4Tb1KjtemJqzX-HysS7sL8pyp46_gIhtuZ5dk3OIn1y0)
+
+6. **Upravljanje računov zaposlenih** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Upravljanje_racunov_zaposlenih.puml))
+
+Na diagramu je prikazan primer za tip zaposlenega razvijalca, enako pa velja tudi za tip zapolsnega analitika.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/bLF1Jjj04BtxAqRfWLOYubIfGX4IK2fLQYiEBRtaClOEOUBrZBjU6_0_y4kSw7zrrY69AMbf3xOZxtjltfldNB4Zk5IDkTvaMLEor1YmWXoBSX6q5LUerm0ne3HsH197A4UNsFhubMxYiUU5L7OCXTqeZ51OH0qd6Xo5qq4izwR-3B2Pk09TNt6aCIW4lHxn0KQ73VreIGhwn9Ts2OsdlNhxuUJTsUaEz3c6o0NNAF7_2JljPaCKc1oxYcK2s02cNxFPyFxeAAkt2Z0v_8o22pghQg-tHCrt5gVN0-sYeaQuXDaiJpCmtBv47cZLyCvOXKeCwf-HtbD7NciA0znHPrZhYsFID_l9BKoFrlCFuU00FlOv1OQs3jZv9SgIvXBmuQuLxQ37MXjFmbT3UEumqfhzA3URJf_erO5Bx47pW7s1S-aHsYPs60PjC5LQ8Amcu9yirUeDB2iLAkPIUlOb2CAYhNAON0WrFCdMU_oDNmVRWsLAaTYBDd4kdJqGQdKOI-t6pDLM1-B37O5vJ5ZGyd0kwDowWjTSqNvAPyzo7wX2zlkmeCRhc-rkLcBPOrEcRYKawM_32hZIj02BjQGosXBwG0vXKzjMnsWP-WXveDvYrrXIblgSRWsde1g3Ow-Wu2nPsd2xYPQAsMOxtmNTsU1GuCzxtgXdv1i2xfTK2KEqnQmS8Kpjiz60UHhtyvuiLnDDUeVJ5mbFak-EyEMVDHvR-7kymPAEQUiFcyHbUtiaTWpMp18Xjexjpm2cwzd6_G80)
+
+7. **Iskanje uporabnikov** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Iskanje_uporabnikov.puml))
+
+![DZ](https://teaching.lavbic.net/plantuml/png/bPFRQjj048RlzHI3UvD2dLmLYZ669gHGA2NGqqMRYv4qjaQ77NLs9QTvXpv4twLzhuxNfpKnXGeajDh_-sVcNrHnIR0K2RayP9blsFMes46EHRDI6LnPI2iAGT5vso8N4bL9InpQy94UmkkMLwwpRIZiGPgei0YYrw8bwKqqorjpVo8uLDoArXK7IaMgiavuW6JJq_U1N47lU6ctexJQivTlhb_TtfnHtw46BhX75_uVEDjk5aU1oProZMDRasCOUb7C7JSJG0_zqC_dKRLOPFtH3oQp3uHQL9yygV_2hfHr13vtv0s6-JpVL4FzyIym8ZwkZIZ41PNsAM1dHUK6sEeFIsFiz3XiQjXbpS9qiMzX1bTNyFOn9sLWtw2hwJYSZ75u7Z7G7eZyV3ezCUYL6toC1gqZ6DLROtIkrEZ4mxXJoaufBxuvu4qJ1Fpdr--VR1zy9Uiu_eN3Zfvd-ypCS9l539QMQ2evzBeLPAr8Rp-20g55TqmasuMviJfyd2NlboiAxyto8lLCy6EsqwGTxYWhwHn0hangfdbq68gAtIgEyVN-XDyEaSnjUQPn3pLrM8l5LPsSMUAnW_y2)
+
+8. **Sledenje uporabnikom** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Sledenje_uporabnikom.puml))
+
+![DZ](https://teaching.lavbic.net/plantuml/png/bLJRQjj047tNLmpEYmDr_5GenZKqQGk1KWAzFJHz66d7rjhIZhgxajFyGp-Y_zByLyShorx7Iam54fBsd3CpvsYLQqKmP_OftoM9MsbJeSKIKinM2ykrKHaNRC5RD4wMoFW8fMYETU4_qvr_K-Y5AMKPChcGZL2OURQNR1NPgo2M5g9-1DXLR47hN7kAGTRoEk83H8kEVjPaClgWvt8QYgkTlNn_-UhTLG_w1gtNcQxG-FydzBQRX55WS6Fr4fjYIKP3nHPJerS3G0TLNKsd0JIR9TLU3WQJJuGsoxyuikwRDehNWV2r92Tac4xJJJ6qlvuZ1eeBpyB8s7ZBnJ51eYAr8RJutQDm93pjDpNaa6PXDEjQcC1u3DVtALaDsgtGB0dgRZXkmkowGKyT8V2dez61G6Nr2k-3G6486kkaCUehrHXsq6oHl4NoYri3UjC4WNxuy_UtbXSkvtKOVsYmfFEayqm4MoycC1T7OyYkrnQG5CoLx0CBX6BTtf5aQ-P6QlTo4jrVBCX_5CbXh1dHzzwEedPqIOcYFW8P5TMC_IZHPxasYp36zny7_7Q8Q6xnCxQxNbA9InQxyeFC8eqkj3QAHxMtZhk251taNj-QMlgvLZ1v3Lh1K4u1oz-25hY7uVdnrz6N4XT56-KmgBuz3kfa7gs6-7I1LILkzYYTZ6SyhjXR9JkwwMR69_Bgp-e4_UcudkLj2Vy0)
+
 ### Diagrami stanj
 
 **Diagram stanj za Uporabo časovnika** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Uporaba_casovnika.puml))
@@ -162,11 +170,3 @@ Na začetku vsakega primera uporabe se najprej iz menijske vrstice (toolbar) izb
 - ob pauseTimer() se začne pavza
 - ob resumeTimer() se nadaljuje odštevanje časa časovnika
 - ob startBreak() se začne odštevanje časa odmora
-
-**Psevdokoda**
-
-> **assume** vrednost1 &subseteq; C, vrednost2 &subseteq; C  
-> **let** maxVrednost1 = max {r | (s,r) &in; vrednost1}  
-> **for** (s, r) **in** vrednost2:  
-> &nbsp;&nbsp;&nbsp;&nbsp;**if** r &le; maxVrednost1 **return false**  
-> **return true**
