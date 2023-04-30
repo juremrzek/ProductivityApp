@@ -236,15 +236,15 @@ package State{
       -duration: int
       -break: int
       +getInstance(): Timer
-      +resetTimer(): void
-      +pauseTimer(): void
-      +resumeTimer(): void
+      +reset(): void
+      +pause(): void
       +startBreak(): void
       +stopBreak(): void
       +getCurrentTime(): void
     }
   }
   Class TimerState<<control>>{
+    +start(): void
     +reset(): void
     +startBreak(): void
     +stopBreak(): void
@@ -262,6 +262,7 @@ package State{
   }
 }
 Class TimerManager<<control>>{
+    +start(): void
     +reset(): void
     +startBreak(): void
     +stopBreak(): void
@@ -272,7 +273,7 @@ Class TimerWindow<<boundary>>{
 }
 
 '------Povezave-----------------------
-Task "<font size=15> 0..* </font>" --* "<font size=15>  1..1</font>" UnsignedUser
+Task "<font size=15> 0..* </font>" -up-* "<font size=15>  1..1</font>" UnsignedUser
 EditTasks --> UnsignedUser
 TaskWindow --> EditTasks
 IssueReport --> Issue
