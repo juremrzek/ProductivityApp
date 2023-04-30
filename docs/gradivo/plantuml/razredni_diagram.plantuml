@@ -246,8 +246,6 @@ package State{
   }
   Class TimerState<<control>>{
     +reset(): void
-    +pause(): void
-    +resume(): void
     +startBreak(): void
     +stopBreak(): void
   }
@@ -256,19 +254,15 @@ package State{
   }
   Class RunningState<<control>>{
     +reset(): void
-    +pause(): void
     +startBreak(): void
   }
   Class BreakState<<control>>{
     +reset(): void
-    +resume(): void
     +stopBreak(): void
   }
 }
 Class TimerManager<<control>>{
-    +resetTimer(): void
-    +pauseTimer(): void
-    +resumeTimer(): void
+    +reset(): void
     +startBreak(): void
     +stopBreak(): void
     +getCurrentTime(): void
@@ -279,8 +273,6 @@ Class TimerWindow<<boundary>>{
 
 '------Povezave-----------------------
 Task "<font size=15> 0..* </font>" --* "<font size=15>  1..1</font>" UnsignedUser
-'TimedTask --> Task
-'EditTasks --> Task
 EditTasks --> UnsignedUser
 TaskWindow --> EditTasks
 IssueReport --> Issue

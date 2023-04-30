@@ -1,4 +1,3 @@
-'čakam na kaj se bo časovnik naštimu
 @startuml Uporaba_casovnika
 
 skinparam backgroundcolor transparent
@@ -11,39 +10,20 @@ skinparam state {
   EndColor #5FB8EC
 }
 
+state Idle
 
-state "Mirovanje" as S1
+state Running
 
+state Break
 
-state "Odštevanje časa" as S2
-S2: do: getCurrentTime()
+[*] -> Idle
+Idle --> Running: start()
+Running --> Break: startBreak()
+Break --> Running: stopBreak()
+Running --> Idle: reset()
+Break --> Idle: reset()
 
-state "Potečen čas" as S3
-S3: do: alertUser()
-
-
-
-
-[*] -> S1
-
-S1 --> S1: pauseTimer(),\nresetTimer()
-S1 --> S2: startTimer(),\nresumeTimer()
-S1 <-- S2: pauseTimer()
-S2 --> S2: startTimer(), \nstartBreak(),\nresumeTimer()
-S2 --> S3: currentTime == 0
-S3 --> S2: startTimer(), \nstartBreak()
-S3 --> S3: pauseTimer(),\nresetTimer(),\nresumeTimer()
-
-
-S3 --> [*]: izhod
+Idle -right-> [*]: izhod
 
 
 @enduml
-
-'ob resetTimer() se nastavi čas časovnika na 0
-'ob getCurrentTime() se vrne trenutni čas časovnika
-'ob alertUser() se izpiše obvestilo o potečenem času
-'ob startTimer() se začne odštevanje časa časovnika
-'ob pauseTimer() se začne pavza
-'ob resumeTimer() se nadaljuje odštevanje časa časovnika
-'ob startBreak() se začne odštevanje časa pavze
