@@ -162,7 +162,7 @@ Na diagramu je prikazan primer za tip zaposlenega razvijalca, enako pa velja tud
 
 **Diagram stanj za Uporabo časovnika** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/načrt_obnašanja/Uporaba_casovnika.puml))
 
-![Uporaba_casovnika](https://teaching.lavbic.net/plantuml/png/NOvFJyCm3CNl-HIMk0oa7P6c7f3ej4bSWHlYu3McZPebbUDg2CHt9t-QgN1nulTxVdOOZPkGyGmdxCQU_Unqvwrd44ON8Y8dAbnTcZvmjl9Ad_9eJU_E4KCN2_7AXSp-iiyn9njpLoW82i6t0cYl2ulpCXYXf7lMn4MxkJ-skyC-gY-2BF_5GvsjqezIPS6JjbJ_pxDpnlMrRPbmLEhjxXss3yMO2cnZjrYRT2RBvbOjGePvS47v7tb-CqqP3Kmu1_gZhoBzLCVMiMMGAL1QkDp2fXyamdXb0-PhyFeN)
+![Uporaba_casovnika](https://teaching.lavbic.net/plantuml/png/NOv1QyCm38Nl_XM2NRf1ZuEIms0fBUowxJPsK6CjCN7j8YjqREo_Jt7YalOYM-zxJrBgNJWXun4EsFGjno7O9lh888mXAQ8W9brSbhvmyF9Et_BiNHkEYg7HGhnm8NCyR_EOWzUv2vG4XU3N0DINXPFpt3cXKOziYIVjxd5VRtPRLTy4MMx5NSaMwS-OQS6BzLJ-hqC8BhIbhPcmD-RZuHFMJvDnBB3MRhPMuvaigtip2ndcu8poNtb-RwFnLF0oFYwfW2cHN0MlzVaMTcqd2lNA2jnF5-q_)
 
 - ob reset() se nastavi čas časovnika na 0 in se časovnik zamrzne
 - ob start() se začne odštevanje časa časovnika
