@@ -82,7 +82,7 @@ package Factory{
 }
 Class StatisticsWindow<<boundary>>{
   +showPrenesiPodatkeForm(): void
-  +showUserInfo(user: User): void
+  +showUserInfo(user: SignedUser): void
 }
 Class Statistics<<control>>{
   +prenesiPodatkeVSkladisce(start: date, end: date): void

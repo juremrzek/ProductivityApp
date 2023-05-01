@@ -38,26 +38,24 @@ V tem dokumentu se nahaja načrt Aplikacije produktivnosti in organizacije. Na z
 
 **Razredni diagram** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/razredni_diagram_hidemembers.plantuml))
 
-
-
-#### UnsignedUser
-
-![DZ](https://teaching.lavbic.net/plantuml/png/TP9FQy904CNl-HG37cgfXr8g1151nHPFBQsUIW_hxYHPtEo6sOb_A7xtRWojCSJBi7blzlTcalYjjeKWaOCqmdluYG0sGcvJSgLLSsSSmJxJZ9NkI27LMc_uCeiNyw0A8hUlnOq9DwDJvA-Xup5QrdoSJ3hnFOoJOI9R0JDJOXTAEilap2rM8Z76kCNwGDM5sbJt1DsSAtcgQ2tMAo7QBjhYm4XM69Y-BoUJRc2SFAhd5l2DX4shLQEx2zDdGhczjYaamdXif7a-6WoLjEGoDmr7OI9AmoiyyDJerERXhOCC1QdHLOIXH8gVPmoXv91kcW7LnCNIPaWwU19X66LQ8KXDCZH6y_D_ihO-HA1QUwJMzmLuI95Nmczz_tu4rG6-lcj3A5KzzpcKsWeTEwTLRQFI_EylrGYqvG5OaUFelB9D1s5DBqaNh9tz4wyOXBdROODoSK-_)
-
-Neprijavljeni uporabniki lahko uporabljajo našo glavno funkionalnost - lahko dodajajo, urejajo in brišejo opravila.
-
 #### User
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/TPBTQeD048NlVOg5N3Ib54ffG48G4abBRjhGdmSOTqTTikxAx5eJIjwzkqabLemNYvuvvvjnrEwahe6WObo1jUmdOYm3lYl8D5gaHXbYRIaT1jsGG3fhazdpAbwdNWKYqvx5JFbaT8piV-XYWTf9TqYIKVm4utoMyq63bMfm3CMDTcJKDLRECSPum7f7CORAGWxewbpvOw0DM2-4gCTewxr3qg3OShj9ad5Wd3-8fm7mZK0NuLMZcmlJbY1CAtN1Sb0MUzsiEoZq9qdkcahrAW9pQ9JxnBrRAbdeoc-TSNyWzLor7meA_3XX2BdptLM_GPYutkWIIVeQHpQBIYcGSKdS6wFqz9zyMQJ1TmtNlHHp9hNh7ZLKE3zDgujEAy6MGys2SWFjha3twkFJss71NYlun4O4-J91C6_zmAtV-BJ-k-botlbjfEYiqdREr51OpLWWCqOXw5Fc-0i0)
 
 Vsi tipi uporabnikov, ki imajo možnost prijave v sistem, podedujejo atribute in metode iz tega razreda.
-`Hash` je zgoščena vrednost gesla, `salt` pa je unikaten niz, ki se doda geslu za zagotavljanje unikatnosti zgoščene vrednosti.
+`hash` je zgoščena vrednost gesla, `salt` pa je unikaten niz, ki se doda geslu za zagotavljanje unikatnosti zgoščene vrednosti. Funkcija `isPasswordCorrect(password: string): boolean` najprej nizu `password` doda niz `salt`, nato jo kriptira z uporabo zgoščene vrednosti, nazadnje pa primerja z atributom `hash`. Če sta niza enaka, vrne vrednost `true`, drugače pa vrednost `false`.
+
+#### UnsignedUser
+
+![DZ](https://teaching.lavbic.net/plantuml/png/TP9FQy904CNl-HG37cgfXr8g1151nHPFBQsUIW_hxYHPtEo6sOb_A7xtRWojCSJBi7blzlTcalYjjeKWaOCqmdluYG0sGcvJSgLLSsSSmJxJZ9NkI27LMc_uCeiNyw0A8hUlnOq9DwDJvA-Xup5QrdoSJ3hnFOoJOI9R0JDJOXTAEilap2rM8Z76kCNwGDM5sbJt1DsSAtcgQ2tMAo7QBjhYm4XM69Y-BoUJRc2SFAhd5l2DX4shLQEx2zDdGhczjYaamdXif7a-6WoLjEGoDmr7OI9AmoiyyDJerERXhOCC1QdHLOIXH8gVPmoXv91kcW7LnCNIPaWwU19X66LQ8KXDCZH6y_D_ihO-HA1QUwJMzmLuI95Nmczz_tu4rG6-lcj3A5KzzpcKsWeTEwTLRQFI_EylrGYqvG5OaUFelB9D1s5DBqaNh9tz4wyOXBdROODoSK-_)
+
+Za neprijavljene uporabnike hranimo opravila. Ta opravila lahko uporabnik dodaja, ureja in briše.
 
 #### SignedUser
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/TPB1IyCm5CRl_Ii2koWYY5WeCWfRsMGdnUb9F6J9InhscfINb6x8_dVJ3h7MxfB3zxxt-zvBulV6rfnunGHoxzbNmjYEYxqcrrXPE7J4sj84w7H74kYipTBrCbiLKUL4hZsBEuoToIdnVw7pETXWmZ7F9_4po5Ign2XWYGrCeOIpWHnUOYa16MGZrYl8ATIkw-DqSIvrtz56h2S2i5EqrI40MOviyRB9ysbWfkxammZuJDpgRjK1qeSZGZp9YD1KEAX8KBp1y0Q7i42ZRHMlbebu00rSTKpc6hOzXa24684mC7HZrHjR0fbO4y3If3GIc30aeZ4f-i-mZG4WtptGxnDsYp5sgnoYQutLZmCN-_ZigpSQmlh7S7NzttBw1W00)
 
-Prijavljeni uporabniki lahko urejajo pravila, imajo pa tudi možnost prijave, zato podedujejo tako razred `User` kot razred `UnsignedUser`.
+Prijavljeni uporabniki lahko urejajo opravila, imajo pa tudi možnost prijave, zato podedujejo tako razred `User` kot razred `UnsignedUser`.
 Vsak prijavljeni uporabnik lahko sledi ostalim prijavljenim uporabnikom, zato ima razred atribut `following`. 
 
 #### Developer
@@ -141,7 +139,7 @@ Ta razred se uporablja za prenos statističnih podatkov v podatkovno skladišče
 
 #### StatisticsWindow
 
-![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22v9BCaiBibCBWxFp4l9BxUnISelpKj9BAgqiwlcKb3GBix8BmyeIirBBSuCo4z9BCbETSilojNGj58eoyzCWQa8BKujyinBozSe1JAi541Sc8fQ0000)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22v9BCaiBibCBWxFp4l9BxUnISelpKj9BAgqiwlcKb3GBix8BmyeIirBBSuCo4z9BCbETSilojNGj58eoyzCWQa8BKujyinBozSe1JAi588pq_DIKq22C7Mr0000)
 
 S tem oknom lahko analitiki dodajajo in berejo statistične podatke iz podatkovnega skladišča. `showUserInfo(user: User)` prikaže podatke o uporabniku, ki jih pobere neposredno iz podatkovnega skladišča.
 
@@ -179,7 +177,7 @@ Ta razred upravlja s Timer razredom. Ker je časovnik le en, v argumente funkcij
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM2CdCJIqApynBoI-tiKdAByrBIIogjBEhvb9Gq2xEo2ztBYqgIiqh0IdJqBHIAClFJE6g1G00)
 
-Okno za časovnik prikaže trenuten čas s funkcijo `showCurrentTime()`
+Okno za časovnik prikaže trenuten čas s funkcijo `showCurrentTime()`.
 
 #### ManageEmployees
 
