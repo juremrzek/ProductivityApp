@@ -97,6 +97,59 @@ Prijavljeni uporabniki lahko urejajo pravila, imajo pa tudi možnost prijave, za
 
 Vsak prijavljeni uporabnik lahko sledi ostalim prijavljenim uporabnikom, zato ima razred atribut `following`. 
 
+#### Developer
+
+Za razvijalce ne rabimo hraniti nobenega atributa, ampak rabimo za njih razred, ki lahko dostopa do okna `IssueSolveWindow`.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4ajIyt9BqWjih59pIl9BAcqiwlcub9Gg0K0)
+
+#### Admin
+
+Za administratorje hranimo le atribut `mail` za potencialno dvojno avtentikacijo. Samo administratorji lahko dostopajo do okna `MakeEmployeesWindow`.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4p9pSopiKdDAyaigRIpg-PI00BTtCJC72k5ufAYpBnqe4Wj0000)
+
+#### Analyst
+
+Za analitike ne hranimo nobenih atributov, ampak rabimo za njih razred, ki lahko dostopa do okna `StatisticsWindow`.
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMSCnBpAaiBh6nISqhoIofjBEhvk9IKAW50000)
+
+#### UserFactory
+
+S tem razredom in s Creator razredi ustvarimo nove instance User objektov.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22rEBN9BJ2x9BwgqiKdEpoifoi-niwlcKW02xUIYrCIIL90IZL8W4L9Pa6gbK5nIb9cNhca5rWfKLmi0)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM2CvCpqjD2IrEBN8kIaqioI-oiKdEpoifoi-niwlcKW02xMIGH2f8YKOfa0YfB4YrKYWkAShCIzUqKYZBpqm1ggi50000)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4p9pSnpBafDBCalih59piyhAShFiREhvb800kraa4HgQ75gaKOfa0YfB4YrKYWkAShCIzUqKYZBpqm1ggi50000)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4ajIyt9BqWjSYvAJIp9BxAnISxFAodApx6pg-PI00BjP914QcXnQf56AP08gIn8jL8eBYdAp4lNj58eoyzC0Qgh1G00)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMSCnBpAaiBd4kIaqioI-oiKdEpoifoi-niwlcKW02xMIGH6feSMgHHYcG2AaiIBLIA2ufoinBrxHIAClFJ06ggmK0)
+
+#### Task
+
+Ta razred hrani podatke o opravilih.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM24aiphQnISqhoIofjBEhvb9GqCrCiLB8p2i1CVCISrEj58fBYZBpqa7ybDJYvABCWfBC_3mKuSGIe38G2UHf5wUM-07rQMGYz6eYgGR9ko3CqG2PYLLTEjGST45apGYvMW00)
+
+Opravilo ima ime `name` in opis `description`, ter datum `date`, ki nam pove, kdaj je bilo opravilo ustvarjeno.
+
+#### EditTasks
+
+S tem razredom lahko dodajamo, spreminjamo in brišemo opravila.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/VO-n3e8m48Ptd-96YJm18Ip4mLqcuz2q9xa8Lz8U9CRuxfOMeYPgj-l_VNzxkbFUmzwG79M_-hBKbiNPhghk6mXdrs9AjgD7Lq33dbf6quGfAs2Eu7HEg39cdh-GEKW84XuiBuwuJH8kJ_-q3gO0Oic1LO-hcuD1hnqDGfRNoz0yMJAfrs5l9upDRoqVYBRzqA7yXyB-zSB5xMexiiJFqaoRB2g9PIjqkMrV_kC9)
+
+`getTasks(user: UnsignedUser)` vrne vsa opravila nekega uporabnika. `removeTask(taskId: int)` odstrani opravilo iz tabele njegovih opravil. `completeTask` naredi enako, le da uporabniku poveča število opravljenih opravil za 1 (atribut `completedTasks`). `notify` je del Observer načrtovalskega vzorca - oknu `TaskWindow` sporoči, da je prišlo do spremembe v opravilih.
+
+#### TaskWindow
+
+Okno za dodajanje, spreminjanje in brisanje opravil.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/LSen3i8m38NXdLDu3E86KTKDJa1XTki8B8ADugHLXRWxYHWgtlRqVrD4CpYZFQuif4lNZLg4CArz_zv1tS7kkZHWhbX87WOnlacWeRwzXrcPDdWapWsVD3qTamUM_8VOMhfWP78rZAeneFnQUH7cu3R_-G80)
+
+`showEditTaskForm` prikaže zaslonsko masko za urejanje specifičnega opravila. `isFormValid()` preveri, če so vsa polja v zaslonski maski pravilno izpolnjena. `update()` posodobi prikazana opravila na najnovejšo verzijo.
+
+
+
 #### Issue
 
 Uporabniki lahko poročajo o napakah v aplikaciji. Napako lahko razvijalci sprejmejo ali zavržejo.
@@ -120,9 +173,7 @@ Metoda `solve()` nastavi vrednost `solved` na `true`.
 
 #### IssueReportWindow
 
-![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy2mkBaqDIYt8Boe9pynBoI-tiKdAByrBIIogjBC30000)
-
- 
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy2mkBaqDIYt8Boe9pynBoI-tiKdAByrBIIogjBC30000) 
 
 ## 3. Načrt obnašanja
   
