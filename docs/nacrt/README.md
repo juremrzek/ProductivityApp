@@ -77,46 +77,37 @@ V tem dokumentu se nahaja načrt Aplikacije produktivnosti in organizacije. Na z
 
 #### UnsignedUser
 
-Neprijavljeni uporabniki lahko uporabljajo našo glavno funkionalnost - lahko dodajajo, urejajo in brišejo opravila.
-
 ![DZ](https://teaching.lavbic.net/plantuml/png/TP9FQy904CNl-HG37cgfXr8g1151nHPFBQsUIW_hxYHPtEo6sOb_A7xtRWojCSJBi7blzlTcalYjjeKWaOCqmdluYG0sGcvJSgLLSsSSmJxJZ9NkI27LMc_uCeiNyw0A8hUlnOq9DwDJvA-Xup5QrdoSJ3hnFOoJOI9R0JDJOXTAEilap2rM8Z76kCNwGDM5sbJt1DsSAtcgQ2tMAo7QBjhYm4XM69Y-BoUJRc2SFAhd5l2DX4shLQEx2zDdGhczjYaamdXif7a-6WoLjEGoDmr7OI9AmoiyyDJerERXhOCC1QdHLOIXH8gVPmoXv91kcW7LnCNIPaWwU19X66LQ8KXDCZH6y_D_ihO-HA1QUwJMzmLuI95Nmczz_tu4rG6-lcj3A5KzzpcKsWeTEwTLRQFI_EylrGYqvG5OaUFelB9D1s5DBqaNh9tz4wyOXBdROODoSK-_)
+Neprijavljeni uporabniki lahko uporabljajo našo glavno funkionalnost - lahko dodajajo, urejajo in brišejo opravila.
 
 #### User
 
-Vsi tipi uporabnikov, ki imajo možnost prijave v sistem, podedujejo atribute in metode iz tega razreda.
-
 ![DZ](https://teaching.lavbic.net/plantuml/png/TPBTQeD048NlVOg5N3Ib54ffG48G4abBRjhGdmSOTqTTikxAx5eJIjwzkqabLemNYvuvvvjnrEwahe6WObo1jUmdOYm3lYl8D5gaHXbYRIaT1jsGG3fhazdpAbwdNWKYqvx5JFbaT8piV-XYWTf9TqYIKVm4utoMyq63bMfm3CMDTcJKDLRECSPum7f7CORAGWxewbpvOw0DM2-4gCTewxr3qg3OShj9ad5Wd3-8fm7mZK0NuLMZcmlJbY1CAtN1Sb0MUzsiEoZq9qdkcahrAW9pQ9JxnBrRAbdeoc-TSNyWzLor7meA_3XX2BdptLM_GPYutkWIIVeQHpQBIYcGSKdS6wFqz9zyMQJ1TmtNlHHp9hNh7ZLKE3zDgujEAy6MGys2SWFjha3twkFJss71NYlun4O4-J91C6_zmAtV-BJ-k-botlbjfEYiqdREr51OpLWWCqOXw5Fc-0i0)
-
+Vsi tipi uporabnikov, ki imajo možnost prijave v sistem, podedujejo atribute in metode iz tega razreda.
 `Hash` je zgoščena vrednost gesla, `salt` pa je unikaten niz, ki se doda geslu za zagotavljanje unikatnosti zgoščene vrednosti.
 
 #### SignedUser
 
-Prijavljeni uporabniki lahko urejajo pravila, imajo pa tudi možnost prijave, zato podedujejo tako razred `User` kot razred `UnsignedUser`.
-
 ![DZ](https://teaching.lavbic.net/plantuml/png/TPB1IyCm5CRl_Ii2koWYY5WeCWfRsMGdnUb9F6J9InhscfINb6x8_dVJ3h7MxfB3zxxt-zvBulV6rfnunGHoxzbNmjYEYxqcrrXPE7J4sj84w7H74kYipTBrCbiLKUL4hZsBEuoToIdnVw7pETXWmZ7F9_4po5Ign2XWYGrCeOIpWHnUOYa16MGZrYl8ATIkw-DqSIvrtz56h2S2i5EqrI40MOviyRB9ysbWfkxammZuJDpgRjK1qeSZGZp9YD1KEAX8KBp1y0Q7i42ZRHMlbebu00rSTKpc6hOzXa24684mC7HZrHjR0fbO4y3If3GIc30aeZ4f-i-mZG4WtptGxnDsYp5sgnoYQutLZmCN-_ZigpSQmlh7S7NzttBw1W00)
-
+Prijavljeni uporabniki lahko urejajo pravila, imajo pa tudi možnost prijave, zato podedujejo tako razred `User` kot razred `UnsignedUser`.
 Vsak prijavljeni uporabnik lahko sledi ostalim prijavljenim uporabnikom, zato ima razred atribut `following`. 
 
 #### Developer
 
-Za razvijalce ne rabimo hraniti nobenega atributa, ampak rabimo za njih razred, ki lahko dostopa do okna `IssueSolveWindow`.
-
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4ajIyt9BqWjih59pIl9BAcqiwlcub9Gg0K0)
+Za razvijalce ne rabimo hraniti nobenega atributa, ampak rabimo za njih razred, ki lahko dostopa do okna `IssueSolveWindow`.
 
 #### Admin
 
-Za administratorje hranimo le atribut `mail` za potencialno dvojno avtentikacijo. Samo administratorji lahko dostopajo do okna `MakeEmployeesWindow`.
-
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4p9pSopiKdDAyaigRIpg-PI00BTtCJC72k5ufAYpBnqe4Wj0000)
+Za administratorje hranimo le atribut `mail` za potencialno dvojno avtentikacijo. Samo administratorji lahko dostopajo do okna `MakeEmployeesWindow`.
 
 #### Analyst
 
-Za analitike ne hranimo nobenih atributov, ampak rabimo za njih razred, ki lahko dostopa do okna `StatisticsWindow`.
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMSCnBpAaiBh6nISqhoIofjBEhvk9IKAW50000)
+Za analitike ne hranimo nobenih atributov, ampak rabimo za njih razred, ki lahko dostopa do okna `StatisticsWindow`.
 
 #### UserFactory
-
-S tem razredom in s Creator razredi ustvarimo nove instance User objektov.
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22rEBN9BJ2x9BwgqiKdEpoifoi-niwlcKW02xUIYrCIIL90IZL8W4L9Pa6gbK5nIb9cNhca5rWfKLmi0)
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM2CvCpqjD2IrEBN8kIaqioI-oiKdEpoifoi-niwlcKW02xMIGH2f8YKOfa0YfB4YrKYWkAShCIzUqKYZBpqm1ggi50000)
@@ -124,38 +115,32 @@ S tem razredom in s Creator razredi ustvarimo nove instance User objektov.
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4ajIyt9BqWjSYvAJIp9BxAnISxFAodApx6pg-PI00BjP914QcXnQf56AP08gIn8jL8eBYdAp4lNj58eoyzC0Qgh1G00)
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMSCnBpAaiBd4kIaqioI-oiKdEpoifoi-niwlcKW02xMIGH6feSMgHHYcG2AaiIBLIA2ufoinBrxHIAClFJ06ggmK0)
 
-#### Task
+S tem razredom in s Creator razredi ustvarimo nove instance User objektov.
 
-Ta razred hrani podatke o opravilih.
+#### Task
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM24aiphQnISqhoIofjBEhvb9GqCrCiLB8p2i1CVCISrEj58fBYZBpqa7ybDJYvABCWfBC_3mKuSGIe38G2UHf5wUM-07rQMGYz6eYgGR9ko3CqG2PYLLTEjGST45apGYvMW00)
 
-Opravilo ima ime `name` in opis `description`, ter datum `date`, ki nam pove, kdaj je bilo opravilo ustvarjeno.
+Ta razred hrani podatke o opravilih. Opravilo ima ime `name` in opis `description`, ter datum `date`, ki nam pove, kdaj je bilo opravilo ustvarjeno.
 
 #### EditTasks
 
-S tem razredom lahko dodajamo, spreminjamo in brišemo opravila.
-
 ![DZ](https://teaching.lavbic.net/plantuml/png/VO-n3e8m48Ptd-96YJm18Ip4mLqcuz2q9xa8Lz8U9CRuxfOMeYPgj-l_VNzxkbFUmzwG79M_-hBKbiNPhghk6mXdrs9AjgD7Lq33dbf6quGfAs2Eu7HEg39cdh-GEKW84XuiBuwuJH8kJ_-q3gO0Oic1LO-hcuD1hnqDGfRNoz0yMJAfrs5l9upDRoqVYBRzqA7yXyB-zSB5xMexiiJFqaoRB2g9PIjqkMrV_kC9)
 
-`getTasks(user: UnsignedUser)` vrne vsa opravila nekega uporabnika. `removeTask(taskId: int)` odstrani opravilo iz tabele njegovih opravil. `completeTask` naredi enako, le da uporabniku poveča število opravljenih opravil za 1 (atribut `completedTasks`). `notify` je del Observer načrtovalskega vzorca - oknu `TaskWindow` sporoči, da je prišlo do spremembe v opravilih.
+
+S tem razredom lahko dodajamo, spreminjamo in brišemo opravila. `getTasks(user: UnsignedUser)` vrne vsa opravila nekega uporabnika. `removeTask(taskId: int)` odstrani opravilo iz tabele njegovih opravil. `completeTask` naredi enako, le da uporabniku poveča število opravljenih opravil za 1 (atribut `completedTasks`). `notify` je del Observer načrtovalskega vzorca - oknu `TaskWindow` sporoči, da je prišlo do spremembe v opravilih.
 
 #### TaskWindow
 
-Okno za dodajanje, spreminjanje in brisanje opravil.
-
 ![DZ](https://teaching.lavbic.net/plantuml/png/LSen3i8m38NXdLDu3E86KTKDJa1XTki8B8ADugHLXRWxYHWgtlRqVrD4CpYZFQuif4lNZLg4CArz_zv1tS7kkZHWhbX87WOnlacWeRwzXrcPDdWapWsVD3qTamUM_8VOMhfWP78rZAeneFnQUH7cu3R_-G80)
 
-`showEditTaskForm` prikaže zaslonsko masko za urejanje specifičnega opravila. `isFormValid()` preveri, če so vsa polja v zaslonski maski pravilno izpolnjena. `update()` posodobi prikazana opravila na najnovejšo verzijo.
-
-
+Okno za dodajanje, spreminjanje in brisanje opravil. `showEditTaskForm` prikaže zaslonsko masko za urejanje specifičnega opravila. `isFormValid()` preveri, če so vsa polja v zaslonski maski pravilno izpolnjena. `update()` posodobi prikazana opravila na najnovejšo verzijo.
 
 #### Issue
 
-Uporabniki lahko poročajo o napakah v aplikaciji. Napako lahko razvijalci sprejmejo ali zavržejo.
-
 ![DZ](https://teaching.lavbic.net/plantuml/png/TPBDQiCm48JlVWf1BmcbK4e3nWH3_bfoQcdJ1r2aiIEYI6ObvuUITw_aKE8Ovx98iwDlHxBTLfcA4zyneRbpx3TXRCt5jYHR6pcpsX8xR9H7r2r9q4Lx6BrDqyKig9p87YxYMeUJoJbnjz3n6COhVyhpNlm3qc9KYCw0gQxHXnBMUBBw7giGI95sM5-GVQXrFCVfRgxY9T8wh7S2J1zjSVGWmpMRV2xpl1-O5i_ojGFy86xAUDKMqlcJHgYaXAztkjMHA7Yj_Gf7Fz6gDBlmj4o40cgvgZ2Pb_XkC0JXmmYDbY76gfPc0rAX9y16oKP9CA5816CoQtw6fNCrhbyltkafB3Mo9fifeo3X1AdAAsjkPEw3BTQugnqeOp-XnfspUW-PXMUm6jnSfUafOtFieMtLE1yRUI3_fLPtcB6zLJAQIlXLJ3KOjW94TNwDrkgT_m00)
 
+Uporabniki lahko poročajo o napakah v aplikaciji. Napako lahko razvijalci sprejmejo ali zavržejo.
 Atribut `user` pove, kateri uporabnik je napako opazil. Atribut `solved` pove, če je napaka že razrešena. Če je, nam atribut `solvedBy: Developer` pove, kdo je napako razrešil.
 Metoda `solve()` nastavi vrednost `solved` na `true`.
 
@@ -174,6 +159,16 @@ Metoda `solve()` nastavi vrednost `solved` na `true`.
 #### IssueReportWindow
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy2mkBaqDIYt8Boe9pynBoI-tiKdAByrBIIogjBC30000) 
+
+V tem oknu lahko uporabniki dodajajo napake. Okno je statično in se ne spreminja, zato ne potrebuje nobene metode.
+
+#### Statistics
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22v9BCaiBibCBWxFp4l9BxUnISelpKj9BAgqiwlcKb3GBix8BmyeIirBBSuCo4z9BCbETSilojNGj58eoyzCWQa8BKujyinBozSe1JAi541Sc8fQ0000)
+
+Ta razred se uporablja za prenos statističnih podatkov v podatkovno skladišče. `prenesiPodatkeVSkladisce(start: date, end: date)`potrebuje začetni in končni datum, ter prenese vse podatke med tema datuma v skladišče.
+
+#### 
 
 ## 3. Načrt obnašanja
   
