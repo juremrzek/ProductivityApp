@@ -53,7 +53,7 @@ package Factory{
     -mail: string
   }
   Class Analyst<<entity>>{
-
+    
   }
   Class Developer<<entity>>{
 
@@ -174,9 +174,7 @@ package Observer{
 class WindowManager<<control>>{
   +openWindow(window: string): void
 }
-class Toolbar<<boundary>>{
-  +openWindow(): void
-}
+class Toolbar<<boundary>>
 class ActivityWindow<<boundary>>{
   +showActivity(user: UnsignedUser)
 }
@@ -207,13 +205,11 @@ Class IssueSolveWindow<<boundary>>{
 Class IssueReportWindow<<boundary>>
 
 Class SearchUsers<<control>>{
-  +findUsers(name: string): User []
-  +getAllUsers(): User []
+  +findUsers(name: string): SignedUser []
   +followUser(id: int): void
 }
 Class SearchUsersWindow<<boundary>>{
   +showUsers(name: string): void
-  +showUserInfo(id: int): void
 }
 package Adapter{
   Class GoogleCalendarAdapter<<control>>{
@@ -236,8 +232,8 @@ package State{
       -duration: int
       -break: int
       +getInstance(): Timer
+      +start(): void
       +reset(): void
-      +pause(): void
       +startBreak(): void
       +stopBreak(): void
       +getCurrentTime(): void

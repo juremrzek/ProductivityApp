@@ -34,77 +34,48 @@ V tem dokumentu se nahaja načrt Aplikacije produktivnosti in organizacije. Na z
 
 ### 2.1 Razredni diagram
 
-:dart: **TO-DO**
-
-- Izdelajte razredni diagram.
-- Za izdelavo uporabite ogrodje PlantUML, in sicer [Class Diagram](https://plantuml.com/class-diagram).
-- V poročilo vključite **izvorno kodo diagrama v jeziku PlantUML**, ki naj bo prisotna v repozitoriju, sliko diagrama pa vključite s povezavo (in ne preko neposredne vključitve binarne datoteke) preko storitve [`https://teaching.lavbic.net/plantuml`](https://teaching.lavbic.net/plantuml), kot prikazuje spodnji primer.
-- Diagram naj bo **jasno berljiv**, sicer ga razdelite v več delov.
-
-![DZ](https://teaching.lavbic.net/plantuml/png/jLbBRnit4BxlhrWaXognvIP53HY2Ay1Md427DeRjfeUY1sft9B7UNGeaPKTf_TyxvBxuc9KJDF91aER5cI4vyt6ixdcrOPALQLOmfT9_aZHTiEn-9SMsocUY439zN7CDXYva3hAclJnzVtbsDKCgar8yriH5WPh9Kw9ye-VdK6ckTzCfQVubd2rFbrcmm6Mn1SfK9YejHJ5aQvd16Pm5jcuWfqmjZ1wJWtujVpBM0biV9415MRlwh45Mh4WlhkVJAMtmRFac_pam-56oQcL2JNxeRQeroyKZhrRfaXKAdDMKtXM0dv9dUbiM3YU79TiM-Wu-wuk2hweIivvc-07IaTgWKsm5jzQCX4pZweMxWF5uCw_M83doCaXFapNF8Ssup53GVY-XN81KwFAu_RjXNoJaV3pybpHBf-zPfeNScHJDxA7xNO4C3acQZda-INcbwnyLAs5YmwvMDMNDrDgdA5PeZtAq0lqRAevU-MH5ar5wdXjYkweHl4O77t6xHflcIwk3SW-2vxKWLwtSJ4YJLKfy8KG1h4AD9o_q9X_EsQupS9H9O1gCo6YB7tUx3JZc3DspTOkR3hcVp2QNIr4KzZnD7Adqpx-wmD-t0YR-KAHVuY8lUHLPBnald5GwudWVTagx2Xx_7Jn08JQ-mtv-AaL4rHwHJ9IR0ZJaTqpTgnbUDUti7ePbwIOaywMBb-LMOQJnesPvcud7M7VyUNqAZrFt11xZPLEPv1lDHKKU20cbU037YiT5psQkwzPpx-Jn2ZVVtE1P7EAejqLj_ioS6Y6_zJX55krUVozZtKv_D-_ge_L_pJqbJVeqqrnfdga_U8Mbr-qEnkAHMel7QmaLA7ujSgRluRsGfRCLLiAiDw-MmgvPNz5M8bufSFfeuvd_T7jVi9oh34PACua76ybmd4ALrrzxmsrXnRDIiYhl2siOLICGPMki0i59fDfSZS-GRJMClDEyhKWoLpUuwLBnHM4vLFdxbLNe-1KUSR43UCxBafAUq4OEuw-vXCyugJkHYID-67S-287DUyOAC4Vr6STMXF24D74OPoyopH-mV3_Z9lF49e7QOLoRAxM56zW8gP_nZeUIarZvW3xUYk81liP5Ht0IgHxeRl0IdZk3kfUPk0g7yUWMcCpMfWW_LraYoKcixFKBikQuJOEM2qi-8f6MD-8kljX8Zh_lUmAu80lv0sYqzSzK7X-dENWwHDDZ0irOCdQPkjSa3cfs_7G1jE6_w-sCZ4rIZWBbXkWgzxo-ktrSu5xWbfjWwiVgLGFKLDp-E-pND687HWwXmLZoEFKGeljMw33YaDRtmetMYYVIWjwzGZJ2DCxQOv2xMBCIcYzt0QhCWduN0g86yEn9Sk-C4Mptog8cJdZCbM5zOWNF_VjiQi367CAH3zng3sllwciMmi0Z19nLBJ1wRAvrU5sQE76r1PCHwdCCX2f-NoBnOYj2vIUo4_gEEzYXoI1VxIMtTJsuvVYr-EQxFUxXglcbJAl8tJreI9UxIO_aRPI6Z5Uz8JbS1nYRksYy-keR7pLbecnQhWEpZrFRzvfcvw-EYRVkMvPz3jflTGKm0hSkUo0QLyMQgprmLprEYJGvhaZu6p8TwxtoOtOwDNciWd3sPP_89T6gagXTXWbVef9bZDnorWmX-ZnU54KjvNFgwODzYmsSvAZPqe5J7f3FhsYPjebSv6oZwnv2GUY6lQUVUDrZFn8VA9cjK6SlUji6FbtFgUaYMYlmWJRA6h6vYmMk7h0eD2xsmPit7HZTZi3Dy4-BgZReuBXmncFmGwNiGB01RYqvsqfyj-ex2mlQdjBJB_4TVkyn4BbjgyhEejmYRshILhAwJZdYYz20dTCrljZjSBp1AuOmn4EAvc7Di4w4HFkejjx57B4X6QQfzj5wtASO2jjinoV9hZiAcdxez91tf6_E6o4lO61PN6DR0gdLRCUmubSvrzkpd6-nHeNK0LcJIhgz7oIPmzliURIdIj6wxQZy6k7T5_O0GqDoMrnUd2ynq5JnB_3BszDf-kRav7Lw_gCXJbzWjzwCNqSowTkJaxUTZ8iraWudf-Fnr6Vr0C_oEid4wHYMOtydKH_fUJKr2JjO9E2KUikxTPpfCsjPxjudxe-UcpYpwl7utscDOIAY6t8pENJ4xQJJ-TsrKTTaC0yBqaMoUwB3Z_V0-Hz0pVH3Q4QSlI-DR1BEL6C9VqXAy9qHRypre7MuZzw3EXbYq5g4vNXuaCIaK9AmCp3nJ0Ref0xbNZZtIo9A83UKlNY2ampGIHqgv84fHpB4eBK8o-J4BY6fX3nXSD-uDzd77DOcLjap5Ktsy0PrIIL2kW6F2KcbvA_dTD1Kj47QlNntlB0eXNiSxdoulEM7POKKyYjBqhoVBSlRaAI7GiWKJT7kS4fTT7gPnCKY4RC75Y7hFm00)
+![DZ](https://teaching.lavbic.net/plantuml/png/jLXBRnit4BxlhrWaXognvIP53HY2Ay1Mx427DeRjfeUY1sft9B7U9HSa9Ljf_TzBSbzypCe96kaWI3FV38T3SkOZvGDb5H6aJBE2I9d-awJfWcGFAy4tB9_nWelqSKqL63aNEOXQzlhq-lBiQgQbH0Z-M0iNXRPCdXFfEpq_1wQesasdgFlNSBOyNMR109V51Z1N6MTAy6B8rpA3CpWBVDr2ZhbQ63iY1kDQ_cIy1Ru-2W26URjwKY0OATABc_bqYZiyMxxBVmuSVXA4hSnKanzwdt9DSlv8sIfTaaA2CvfKkmBqjw2PsfI5eybXIJQ5keSdTL7G5IjrrjDCVu5mK9KEYgpWpheHa2azUk4EO2AkvcmDWcfT1kbfigOvf1aLcGRQtoMK2n1IXpnkFxVaYu2SZeS_IJDqUaqonSNEf6XcDztl4aImIT9qJFD9Ifcg_p1ImiHEcwrgoPh8jI-Hf52Uv6W5wZTjE7hZYoKkrkXvReJjg0PuemDyrCirgfeVhOt6RJdDQo2LBMx6XSag1bzmNW1XskBPctgJ3sTlrnauoWGG1GOoskYl-rq5ZZiZztpTwKM7t4zcayibBmgxdoOEAltphsxYrot0p3-4z4DSv2LbaVUIqC99fGFNvs4dLMZWOJx05WfU-K7xEM8IcLcxJJ9ULWKeoE-9V90pVToKiu9wQbPkfcL-T7CckJKOAVrLgxm5rLjPTVfvlHEFKtSN7ki39pD1AqKvGpU5W99lmV7YQNLaCpTq6xct-oZJ6y2SubaynL7l2zi0CxDpkFZMBHLvjElzlPnrA_tTegktr_zrzvmqwLD4KQbe9l-WJ9TVjqCOZqTopHzl132Gz8RdH3t0DHUbinGMOSQRioMtOzR7j4N48mL17rMU-yzt3mN9gSnW91KHUcDhCHodmFBwP--uBQvwhvI4vNrn3MVL0A9iZMK0d4IcpT5uWcoZOEJjvWr3nLJUwaKNaYuAgy5AuA-4wS2lz1RdEu2NeYmnz0HtSfXupI5y8KZLGIOE_33XVEHSD_0PAS1irHS2Mo7W2UhYCC5UP8fkTVb-8KpYmIQ1sM52cqkvWLkek50lH4T3v2GsFc2CTxpOmjU4w00daUc1pWOjuQKzg7hCn3KuJ4HtG4IsDaNufSeI8IUniTSlq9hZDWqS5vPypKHQtOYw_A8ILFz_w0NW4Ysj7s2aRNocylZKo-7K8QCU8sp6YdMNgNjDuZ1d9qwNH1lzXzxFoFX4SHWnDqBNkDVrtUtJGg-5Nd8pcVh2UjKGDHct_uxxDOtOeP53R3167gSUGtJl2nr77BBwNhpHUl4WBUdT2y8PfWdMReFSvPgCAxhS1Qmo2_fTI8WQmhCdoNqm1jYkbMLD58cOIgFwJ0gQ--VPr83ARCAHJzpg2ElewcCMqi0ZJJXP3HWzDiSwF2xDFFLe2oAy0vmXNGkbXIq4IqCtGWiAGzGBrP7682tjMRRbEpZC-cVnpKTutBDIyq-QZf2xgMv4bxj9JzZjB8rOd-X6v6WT_ckEd8dggmzsr7kHwcYr3fi-JcrxQtgQFxfEl0tVgkojp_wg3xe1tBdgWTcu9jPT7O4xwd6AfCa9HS3VaAdOxeq_PwSXezigcCw-x2EvH3fI4dN5CE5BRMGL8xTg8Qy2H_MZWhrU3UpQg7_YayH62wur5pcfL5ttCThRgFVq0A_YxsVF0sMk1NN-elje4DFD77iLrDuAVQaQPGrixlRlgwq-uKs8_UJDFGoCRIUWvj5ESLOxTBXN-DHYUZwJzY6l8LkjEDi8VTTKzxQLjtsWbr_gk_E3fz1iQyEOVKDo2xCfC1j1wgBZm1UX0_k-riHYbyE9viXURprsPm-HvXEXq29jTB66LwZ2DC9-jfxsEQQlDjlnJeeZHE8RYWwDpU7rUG43m-enDYMWLiro31j-LN2zFwlv5c_Ob3hoQLA9j-I397DucRs8zfGXtBPzuhxHbEmBsSBGuxOjBg_EbtgYgQHVu9VtfzFqtSd9s_JyHoESljAjjng_ZJ3f-vEJznt69Gv9nstJyNZggtfIPdKTCd7AlzNO_qdK57fTBKt2TXG1d5fkTNTEC7rchSfT-yJzqsiJfvkCn_zEQq8I2TqfDwzz3jo-JZh_kvxekWpUi89qeUfUwEZZDN3UxckbFuNcMRAFfS4cuJjeZF0VDX6zyomRQpqw7AwZTmbEXXIu5U8vll0diIX48du6NYcJ0JbgWuKNljKbaIJ03MKlVdL91kIe3JRbWPU9P4Y1Mo6UqLUs19KYUCJXlYVQP9zos1ePPSzBPh97DsYB6Y7eXZmcg1J3typnIMEp3TBkvRlJXKKfNEDmvSFXhJuiAoZ8hon9S-UrAcz1afuAQILlYdR7K-gYqsCIbuj4ofvOXAh_0000)
 
 **Razredni diagram** (izvorna koda :bar_chart: [PlantUML](../gradivo/plantuml/razredni_diagram_hidemembers.plantuml))
 
-### 2.2 Opis razredov
 
-:dart: **TO-DO**
-
-- Vsak razred podrobno opišite. Opis posameznega razreda naj ima sledečo strukturo:
-
-#### Ime razreda :dart: **TO-DO**
-
-- Koncept iz problemske domene, ki ga razred predstavlja.
-
-#### Atributi
-
-:dart: **TO-DO**
-
-- Za vsak atribut navedite:
-  - ime atributa,
-  - podatkovni tip, če ta ni očiten,
-  - pomen, če ta ni samoumeven,
-  - zalogo vrednosti, če ta ni neomejena ali očitna.
-
-#### Nesamoumevne metode
-
-:dart: **TO-DO**
-
-- Za vsako metodo navedite:
-  - ime metode,
-  - imena in tipe parametrov,
-  - tip rezultata,
-  - pomen (če ta ni dovolj očiten iz naziva metode in njenih parametrov).
 
 #### UnsignedUser
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/TP9FQy904CNl-HG37cgfXr8g1151nHPFBQsUIW_hxYHPtEo6sOb_A7xtRWojCSJBi7blzlTcalYjjeKWaOCqmdluYG0sGcvJSgLLSsSSmJxJZ9NkI27LMc_uCeiNyw0A8hUlnOq9DwDJvA-Xup5QrdoSJ3hnFOoJOI9R0JDJOXTAEilap2rM8Z76kCNwGDM5sbJt1DsSAtcgQ2tMAo7QBjhYm4XM69Y-BoUJRc2SFAhd5l2DX4shLQEx2zDdGhczjYaamdXif7a-6WoLjEGoDmr7OI9AmoiyyDJerERXhOCC1QdHLOIXH8gVPmoXv91kcW7LnCNIPaWwU19X66LQ8KXDCZH6y_D_ihO-HA1QUwJMzmLuI95Nmczz_tu4rG6-lcj3A5KzzpcKsWeTEwTLRQFI_EylrGYqvG5OaUFelB9D1s5DBqaNh9tz4wyOXBdROODoSK-_)
+
 Neprijavljeni uporabniki lahko uporabljajo našo glavno funkionalnost - lahko dodajajo, urejajo in brišejo opravila.
 
 #### User
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/TPBTQeD048NlVOg5N3Ib54ffG48G4abBRjhGdmSOTqTTikxAx5eJIjwzkqabLemNYvuvvvjnrEwahe6WObo1jUmdOYm3lYl8D5gaHXbYRIaT1jsGG3fhazdpAbwdNWKYqvx5JFbaT8piV-XYWTf9TqYIKVm4utoMyq63bMfm3CMDTcJKDLRECSPum7f7CORAGWxewbpvOw0DM2-4gCTewxr3qg3OShj9ad5Wd3-8fm7mZK0NuLMZcmlJbY1CAtN1Sb0MUzsiEoZq9qdkcahrAW9pQ9JxnBrRAbdeoc-TSNyWzLor7meA_3XX2BdptLM_GPYutkWIIVeQHpQBIYcGSKdS6wFqz9zyMQJ1TmtNlHHp9hNh7ZLKE3zDgujEAy6MGys2SWFjha3twkFJss71NYlun4O4-J91C6_zmAtV-BJ-k-botlbjfEYiqdREr51OpLWWCqOXw5Fc-0i0)
+
 Vsi tipi uporabnikov, ki imajo možnost prijave v sistem, podedujejo atribute in metode iz tega razreda.
 `Hash` je zgoščena vrednost gesla, `salt` pa je unikaten niz, ki se doda geslu za zagotavljanje unikatnosti zgoščene vrednosti.
 
 #### SignedUser
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/TPB1IyCm5CRl_Ii2koWYY5WeCWfRsMGdnUb9F6J9InhscfINb6x8_dVJ3h7MxfB3zxxt-zvBulV6rfnunGHoxzbNmjYEYxqcrrXPE7J4sj84w7H74kYipTBrCbiLKUL4hZsBEuoToIdnVw7pETXWmZ7F9_4po5Ign2XWYGrCeOIpWHnUOYa16MGZrYl8ATIkw-DqSIvrtz56h2S2i5EqrI40MOviyRB9ysbWfkxammZuJDpgRjK1qeSZGZp9YD1KEAX8KBp1y0Q7i42ZRHMlbebu00rSTKpc6hOzXa24684mC7HZrHjR0fbO4y3If3GIc30aeZ4f-i-mZG4WtptGxnDsYp5sgnoYQutLZmCN-_ZigpSQmlh7S7NzttBw1W00)
+
 Prijavljeni uporabniki lahko urejajo pravila, imajo pa tudi možnost prijave, zato podedujejo tako razred `User` kot razred `UnsignedUser`.
 Vsak prijavljeni uporabnik lahko sledi ostalim prijavljenim uporabnikom, zato ima razred atribut `following`. 
 
 #### Developer
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4ajIyt9BqWjih59pIl9BAcqiwlcub9Gg0K0)
+
 Za razvijalce ne rabimo hraniti nobenega atributa, ampak rabimo za njih razred, ki lahko dostopa do okna `IssueSolveWindow`.
 
 #### Admin
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4p9pSopiKdDAyaigRIpg-PI00BTtCJC72k5ufAYpBnqe4Wj0000)
+
 Za administratorje hranimo le atribut `mail` za potencialno dvojno avtentikacijo. Samo administratorji lahko dostopajo do okna `MakeEmployeesWindow`.
 
 #### Analyst
 
 ![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMSCnBpAaiBh6nISqhoIofjBEhvk9IKAW50000)
+
 Za analitike ne hranimo nobenih atributov, ampak rabimo za njih razred, ki lahko dostopa do okna `StatisticsWindow`.
 
 #### UserFactory
@@ -164,11 +135,119 @@ V tem oknu lahko uporabniki dodajajo napake. Okno je statično in se ne spreminj
 
 #### Statistics
 
-![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22v9BCaiBibCBWxFp4l9BxUnISelpKj9BAgqiwlcKb3GBix8BmyeIirBBSuCo4z9BCbETSilojNGj58eoyzCWQa8BKujyinBozSe1JAi541Sc8fQ0000)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22v9BCaiBibCBhQnISxFAodApx6pg-PIKD0kA4hDIotE3CXFIIp9JWqBpiv9JCaiJaxLA2v9B2gnKW0Af-eefEQbG9YQLWfb-PafNBK0)
 
 Ta razred se uporablja za prenos statističnih podatkov v podatkovno skladišče. `prenesiPodatkeVSkladisce(start: date, end: date)`potrebuje začetni in končni datum, ter prenese vse podatke med tema datuma v skladišče.
 
-#### 
+#### StatisticsWindow
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22v9BCaiBibCBWxFp4l9BxUnISelpKj9BAgqiwlcKb3GBix8BmyeIirBBSuCo4z9BCbETSilojNGj58eoyzCWQa8BKujyinBozSe1JAi541Sc8fQ0000)
+
+S tem oknom lahko analitiki dodajajo in berejo statistične podatke iz podatkovnega skladišča. `showUserInfo(user: User)` prikaže podatke o uporabniku, ki jih pobere neposredno iz podatkovnega skladišča.
+
+#### Activity
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Iyv9B2vMS4mkoIpBBAcqiKdEpoifoi-niwlcKb3GJayj2IrEBVBCIylNo4onKiZCAz6qKYZBpqpXgWK0)
+
+`getUserInfo(id: int)` dobi podatke o tem, kako pogosto uporabnik opravlja opravila.
+
+#### ActivityWindow
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Iyv9B2vMS4mkoIpBBAaCpynBoI-tiKdAByrBIIogjBEhvb9Gq2xEo2-7AT4eBKujib88pIlEJCzBJGa5yZIvQW40)
+
+S tem oknom si uporabniki lahko ogledajo, kako produktivni so. `showActivity()` prikaže pogostost opravljanja opravil uporabnika.
+
+#### Timer
+
+![DZ](https://teaching.lavbic.net/plantuml/png/RO_12i8m38RlFaMFol05ojZ1dRoABz1jOGHdEf9K4F7TxPn5Mitn-twIF-taHCmPhy1r3QIezwPvRCnxzaYYZdgmQoBXFZ37xCAiGTA27nZS9HCefq24D5hJUJ-1esI6m4xHKnRloWNL27hyTDdkyZOLWu0kzEPnI71sGQ24SG6lxNwDd_-AUBZzVflPvmi0)
+
+Razred shranjuje vse podatke o časovniku. Uporabljamo atribut `instance` in funkcijo `getInstance()` zaradi Singleton načrtovalskega vzorca, saj lahko obstaja le en Timer objekt. `currentTime` pove trenuten čas časovnika, `currentBreak` pa trenuten čas odmora. `duration` je začetni čas časovnika, `break` pa trajanje odmora. `start()`, `reset()`, `startBreak()` in `stopBreak()` so metode za prehajanje med stanji časovnika.
+Stanja implementiramo s State načrtovalskim vzorcem, z razredi `TimerState` ter `IdleState`, `RunningState` in `BreakState` razredi.
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM2CdCJIqABaaiIRMnISxFAodApx6pg-PI00BjufB4eX8DJIk5ilpC58XGKMfnAfeGM9LJKMfYDhfuVW6wS2q0)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy4p9IGqkIIn9jR59piyhAShFiREhvb800ksYrEBIt5GDJIk5ilpC5A1OBG00)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22hDoylCImykIIn9jR59piyhAShFiREhvb800ksYrEBK4WrDAuMo_CmKY51nIM9HYLDHQc8sadWj0000)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS2fAJSmEBaaiIRMnISxFAodApx6pg-PI00BjejJYr18DJIk5ilpC58XGSKb-0LWBad0j0000)
+
+#### TimerManager
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM2CdCJItoJSnBJ4yjih59piyhAShFiREhvb800ktYaiIY4WrDAuMo_CmKY51HQd4gcX1ObLDHQc8skdX-0HRXzDGIvzAYejIy4f3bSBbQ0000)
+
+Ta razred upravlja s Timer razredom. Ker je časovnik le en, v argumente funkcij ni treba podajati, na kateri časovnik se sklicujemo.
+
+#### TimerWindow
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM2CdCJIqApynBoI-tiKdAByrBIIogjBEhvb9Gq2xEo2ztBYqgIiqh0IdJqBHIAClFJE6g1G00)
+
+Okno za časovnik prikaže trenuten čas s funkcijo `showCurrentTime()`
+
+#### ManageEmployees
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy4tCIqnFTSqjoCclJ4qjjh59piyhAShFiREhvb9Gq4vCIO79QMJcfbef59SKPUQbwoWK56K2-Ta8WTJSnCmS97cWuUNvHIam4KqhXRByp1IkMW00)
+
+S tem razredom lahko administratorji dodajajo nove analitike in razvijalce.
+
+#### ManageEmployeesWindow
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy4tCIqnFTSqjoCclJ4qj3i_CIyaljx59oY_DIqaighIp0m00)
+
+Okno je statično, zato ne rabimo nobene metode za ga posodobiti.
+
+#### GoogleCalendarAPI
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMSC_FJyz9TKxCISrBIIno3F2qiN6jA4ajoalCKG3oxEogkHI0G3idixX48ncgp3F5Ig6uf2WpBrtJIi6rB3Ml93eMgAmM0000)
+
+Zunanji API (Google Calendar). Funkcija `list(calendarId: string): Event[]` vrne tabelo dogodkov uporabnika, le-ti so tipa Event.
+
+#### GoogleCalendarAdapter
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMSC_FJyz9TKxCISrBIInoJ4aiA4ajih59piyhAShFiREhvb800ktqr9AGnEBiOWrDAmKGGo4w5YXH2m00)
+
+Ker zunanji API vrača dogodke tipa Event, potrebujemo funkcijo za pretvarjanje med objekti tipa Event in objekti tipa Task. Funkcija `getTasks(): Task[]` pokliče funkcijo `list` iz APIja ter pretvori odgovor iz tabelo Event-ov v tabelo Task-ov.
+
+##### GoogleCalendarWindow
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMSC_FJyz9TKxCISrBIImApynBoI-tiKdABmLnA-tighaKW42xE2E_7AOe9B4ukrX3qqgXB3yp1IXT2m00)
+
+Funkcija `showCalendarTasks()` prikaže vse dogodke iz uporabnikovega Google calendar-ja.
+
+#### SearchUsers
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM24vDB4hE22rEBIgsiKdEpoifoi-niwlcKb3GJilCIm5BQEGbvgPQAHIN56NcfMjQAO045Q9ZGMhIKqiSSt8Wgb1bql9pSlBBGG8QcIbM2fbv9K3vilpC5AvQ0000)
+
+Ta razred je namenjem iskanju in sledenju uporabnikov. `findUsers(name: string): SignedUser[]` nam vrne seznam uporabnikov, ki imajo niz `name` v imenu.
+`followUser(id: int)` doda uporabnika v seznam `following` (atribut razreda SignedUser).
+
+#### SearchUsersWindow
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM24vDB4hE22rEBIeEpynBoI-tiKdAByrBIIogjBEhvb9Gq2xEo2y7osla9UQcMYaKbnHbvgLhMYcKvMUcSDK20000)
+
+`showUsers(name: string)` prikaže vse uporabnike, ki imajo niz `name` v imenu.
+
+#### WindowManager
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Iyv9B2vM2C_CIyalzqtCIqnFBRAnISxFAodApx6pg-PIKD3EBqZDWoZGA0TJLWh59KMPUUcQLWfb-PafNBK0)
+
+To je glavni razred za upravljanje z okni. Metoda `openWindow(window: string)` sproži ukaz, ki odpre ustrezno okno (glede na niz `window`).
+Ukaze implementiramo s `Command` razredi:
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM22v9BCaiBibCBWxFp4l9BtVEpyrDp4kniKdEpoifoi-niwlcKW02tM8qXLOOMi7gj5ChKfDBIr8rDAqKol8pKo22fNbOXJEBWrBBKekACvDom399-VavgObvGCbQ0000)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy4tCIqnFTSqjoCclJ4qj3i_CIyalTyxFpKtCIx6nISxFAodApx6pg-PI00BTN6oghR0R0jQXdLgHcbnQaggXQQLGbf-P0X4ipSCgd5aSb5gMMbIScPG3badApyz9JSm3IjO20000)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM24aipWxFp4l9BtVEpyrDp4kniKdEpoifoi-niwlcKW02tHAu4YiavM0vxTIArEJIabGDJIk5ilpC58XWQHvMuSpYeDIorABYpAGSi4nIVdvEQc8UKB8M0000)
+![DZ](https://teaching.lavbic.net/plantuml/png/ROmx2e0m40LxJv5I4IyWOfF2tiPwDOi4rdsG-0FnxegsUUNCyAnGZAO3Pc5Bmkee35uT3ejb8NLDCq7N06dRApFlgZaHrycBho_vv6bREIzgiyEx7swQn3xsl7E8VfJFZ80mwIll1m00)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMS4mkoIpBBAaCpynBoIztpi_DJSnBiR59piyhAShFiREhvb800jr456LMQDh0QhHJArAJIqjIDJIj5ChoCrCWWgLvM8KpYuDIorABYZEJSi0oIVdvEQc9UK39MW00)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy2mkBaqDIYt8Boe9pynBoIztpi_DJSnBiR59piyhAShFiREhvb800jrCT9LMc9h1AhLJArAJIqjIDJIj5ChoCrCWWgLvM8KpYuDIorABYZEJSi0oIVdvEQc9UK39MW00)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vMy2mkBaqDpiyfImtFp4l9BtVEpyrDp4kniKdEpoifoi-niwlcKW02tKmqXLOOMi7gj5ChKfDBIr8rDAqKol8pKo22fNbOXJEBWrBBKekACvDom399-VavgObvGCbQ0000)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM2CdCJIqApynBoIztpi_DJSnBiR59piyhAShFiREhvb800jqIX1ehP0rWMUtKYjJaqf9K3KqhXRByp1I8O6aULk7Cug3KijIYuioa7B1CKdv-JcfY7b2o5W00)
+![DZ](https://teaching.lavbic.net/plantuml/png/Syv9B2vM24vDB4hE22rEBIeEpynBoIztpi_DJSnBiR59piyhAShFiREhvb800bqCbLQOce4gQm40)
+
+#### Toolbar
+
+![DZ](https://teaching.lavbic.net/plantuml/png/Iyv9B2vM2CdFpqbABBAnISelpKj9BAgqimC0)
+
+Na vrhu vsakega okna imamo opravilno vrstico, s katero se lahko sprehajamo med okni. Ta vrstica je vedno vidna. Ker je statična in se ne spreminja, nima nobene metode.
+
+
 
 ## 3. Načrt obnašanja
   
@@ -227,7 +306,7 @@ Na diagramu je prikazan primer za tip zaposlenega razvijalca, enako pa velja tud
 
 ![Uporaba_casovnika](https://teaching.lavbic.net/plantuml/png/NOv1QyCm38Nl_XM2NRf1ZuEIms0fBUowxJPsK6CjCN7j8YjqREo_Jt7YalOYM-zxJrBgNJWXun4EsFGjno7O9lh888mXAQ8W9brSbhvmyF9Et_BiNHkEYg7HGhnm8NCyR_EOWzUv2vG4XU3N0DINXPFpt3cXKOziYIVjxd5VRtPRLTy4MMx5NSaMwS-OQS6BzLJ-hqC8BhIbhPcmD-RZuHFMJvDnBB3MRhPMuvaigtip2ndcu8poNtb-RwFnLF0oFYwfW2cHN0MlzVaMTcqd2lNA2jnF5-q_)
 
-- ob reset() se nastavi čas časovnika na 0 in se časovnik zamrzne
+- ob reset() se nastavi čas časovnika na začetno vrednost in se časovnik zamrzne
 - ob start() se začne odštevanje časa časovnika
 - ob startBreak() se časovnik zamrzne in se začne odštevati čas odmora
 - ob stopBreak() se počitek konča in se začne spet odštevati čas časovnika 
