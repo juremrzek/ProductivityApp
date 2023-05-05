@@ -16,7 +16,7 @@
     </div>
 
     <div class="row m-1">
-      <div class="col">Opis: {{ opis }}</div>
+      <div class="col">Opis: {{ opravilo.opis }}</div>
       <div class="col-2">
         <button
           type="button"
