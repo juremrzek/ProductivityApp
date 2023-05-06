@@ -18,10 +18,10 @@
         <button type="button" class="btn btn-secondary">Začni</button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-secondary">Začni</button>
+        <button type="button" class="btn btn-secondary">Pavza</button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-secondary">Začni</button>
+        <button type="button" class="btn btn-secondary">Izhod</button>
       </div>
     </div>
   </div>
