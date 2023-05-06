@@ -7,6 +7,7 @@ import ZaposleniVnosView from "../views/ZaposleniVnosView.vue"
 import SkladisceView from "../views/SkladisceView.vue"
 import NedelovanjeView from "../views/NedelovanjeView.vue"
 import UporabnikView from "../views/UporabnikView.vue"
+import KoledarView from "../views/KoledarView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -51,6 +52,11 @@ const router = createRouter({
       path: "/uporabnik/:id",
       name: "uporabnik",
       component: UporabnikView,
+    },
+    {
+      path: "/koledar",
+      name: "koledar",
+      component: KoledarView,
     },
     {
       path: "/about",
