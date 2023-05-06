@@ -8,6 +8,7 @@ import SkladisceView from "../views/SkladisceView.vue"
 import NedelovanjeView from "../views/NedelovanjeView.vue"
 import UporabnikView from "../views/UporabnikView.vue"
 import KoledarView from "../views/KoledarView.vue"
+import IskanjeView from "../views/IskanjeView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -57,6 +58,11 @@ const router = createRouter({
       path: "/koledar",
       name: "koledar",
       component: KoledarView,
+    },
+    {
+      path: "/iskanje",
+      name: "iskanje",
+      component: IskanjeView,
     },
     {
       path: "/about",
