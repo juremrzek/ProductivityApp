@@ -15,33 +15,79 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <!-- Neprijavljen uporabnik -->
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active">Opravila</a>
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'home' })"
+            >Opravila</a
+          >
         </div>
         <!-- Neprijavljen uporabnik -->
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active">Časovnik</a>
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'casovnik' })"
+            >Časovnik</a
+          >
         </div>
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active">Koledar</a>
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'koledar' })"
+            >Koledar</a
+          >
         </div>
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active">Iskanje uporabnikov</a>
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'iskanje' })"
+            >Iskanje uporabnikov</a
+          >
+        </div>
+        <div class="navbar-nav">
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'sledilci' })"
+            >Sledilci</a
+          >
         </div>
         <!-- Neprijavljen uporabnik -->
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active">Prijavi napako</a>
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'napaka' })"
+            >Prijavi napako</a
+          >
         </div>
         <!-- Admin -->
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active">Vnesi zaposlenega</a>
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'zaposleniVnos' })"
+            >Vnesi zaposlenega</a
+          >
         </div>
         <!-- Analitik -->
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active">Prenos podatkov</a>
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'skladisce' })"
+            >Prenos podatkov</a
+          >
         </div>
         <!-- Razvijalec  -->
         <div class="navbar-nav">
-          <a href="#" class="nav-item nav-link active"
+          <a
+            href="#"
+            class="nav-item nav-link active"
+            @click="this.$router.push({ name: 'nedelovanje' })"
             >Poročila o nedelovanju</a
           >
         </div>
