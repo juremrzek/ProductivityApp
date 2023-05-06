@@ -9,9 +9,9 @@
     <div class="col-3">
       <button
         class="btn btn-secondary"
-        @click="this.$event.emit('odstrani', sledilec.id)"
+        @click="this.$event.emit(label.toLowerCase(), sledilec.id)"
       >
-        Odstrani
+        {{ label }}
       </button>
     </div>
   </div>
@@ -24,6 +24,10 @@ export default {
     sledilec: {
       type: Object,
       required: true,
+    },
+    label: {
+      type: String,
+      default: "Odstrani",
     },
   },
   emits: ["odstrani", "odpri"],

@@ -4,7 +4,7 @@ import SledilecCard from "./SledilecCard.vue"
 
 <template>
   <template v-for="sledilec in sledilci" :key="sledilec.id">
-    <sledilec-card :sledilec="sledilec"></sledilec-card>
+    <sledilec-card :sledilec="sledilec" :label="label"></sledilec-card>
   </template>
 </template>
 
@@ -14,6 +14,10 @@ export default {
     sledilci: {
       type: Array,
       required: true,
+    },
+    label: {
+      type: String,
+      default: "Odstrani",
     },
   },
 }
