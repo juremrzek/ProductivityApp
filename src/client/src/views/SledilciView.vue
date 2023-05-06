@@ -5,7 +5,14 @@ import SledilciGrid from "../components/sledilci/SledilciGrid.vue"
 
 <template>
   <app-layout>
+    <h3 class="text-center">Uporabniki, ki jim sledim</h3>
     <sledilci-grid :sledilci="sledilci"></sledilci-grid>
+    <br />
+    <br />
+    <h3 class="text-center">Sledilci</h3>
+    <sledilci-grid
+      :sledilci="sledilci.filter((el) => el.id < 3)"
+    ></sledilci-grid>
   </app-layout>
 </template>
 

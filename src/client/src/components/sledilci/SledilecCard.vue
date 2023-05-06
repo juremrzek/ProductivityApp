@@ -1,17 +1,17 @@
 <template>
   <div class="row sledilec-card">
-    <div class="col-10">
+    <div class="col-9">
       Uporabniško ime:
       <a href="#" @click="this.$event.emit('odpri', sledilec.id)">{{
         sledilec.ime
       }}</a>
     </div>
-    <div class="col-2">
+    <div class="col-3">
       <button
         class="btn btn-secondary"
         @click="this.$event.emit('odstrani', sledilec.id)"
       >
-        Izbriši
+        Odstrani
       </button>
     </div>
   </div>
