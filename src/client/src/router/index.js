@@ -4,6 +4,7 @@ import CasovnikView from "../views/CasovnikView.vue"
 import PrijaviNapako from "../views/PrijaviNapako.vue"
 import SledilciView from "../views/SledilciView.vue"
 import ZaposleniVnosView from "../views/ZaposleniVnosView.vue"
+import SkladisceView from "../views/SkladisceView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,11 @@ const router = createRouter({
       path: "/zaposleni/vnos",
       name: "zaposleniVnos",
       component: ZaposleniVnosView,
+    },
+    {
+      path: "/skladisce",
+      name: "skladisce",
+      component: SkladisceView,
     },
     {
       path: "/about",
