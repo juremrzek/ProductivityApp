@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <div class="container-fluid">
@@ -93,7 +91,12 @@
         </div>
         <!--  -->
         <div class="navbar-nav ms-auto">
-          <a href="#" class="nav-item nav-link">Prijava / odjava</a>
+          <a
+            href="#"
+            class="nav-item nav-link"
+            @click.prevent="this.$router.push({ name: 'prijava' })"
+            >Prijava / odjava</a
+          >
         </div>
         <!--  -->
       </div>
