@@ -9,6 +9,7 @@ import IssueResolveWindow from "../views/IssueResolveWindow.vue"
 import ActivityWindow from "../views/ActivityWindow.vue"
 import GoogleCalendarWindow from "../views/GoogleCalendarWindow.vue"
 import SearchUsersWindow from "../views/SearchUsersWindow.vue"
+import AuthorizationWindow from "../views/AuthorizationWindow.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -62,6 +63,11 @@ const router = createRouter({
       path: "/iskanje",
       name: "iskanje",
       component: SearchUsersWindow,
+    },
+    {
+      path: "/prijava",
+      name: "prijava",
+      component: AuthorizationWindow,
     },
   ],
 })
