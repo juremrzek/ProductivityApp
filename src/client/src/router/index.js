@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router"
-import OpravilaView from "../views/OpravilaView.vue"
-import CasovnikView from "../views/CasovnikView.vue"
-import PrijaviNapako from "../views/PrijaviNapako.vue"
-import SledilciView from "../views/SledilciView.vue"
-import ZaposleniVnosView from "../views/ZaposleniVnosView.vue"
-import SkladisceView from "../views/SkladisceView.vue"
-import NedelovanjeView from "../views/NedelovanjeView.vue"
-import UporabnikView from "../views/UporabnikView.vue"
-import KoledarView from "../views/KoledarView.vue"
-import IskanjeView from "../views/IskanjeView.vue"
+import TaskWindow from "../views/TaskWindow.vue"
+import TimerWindow from "../views/TimerWindow.vue"
+import IssueReportWindow from "../views/IssueReportWindow.vue"
+import FollowersWindow from "../views/SledilciView.vue"
+import ManageEmployeesWindow from "../views/ManageEmployeesWindow.vue"
+import StatisticsWindow from "../views/StatisticsWindow.vue"
+import IssueResolveWindow from "../views/IssueResolveWindow.vue"
+import ActivityWindow from "../views/ActivityWindow.vue"
+import GoogleCalendarWindow from "../views/GoogleCalendarWindow.vue"
+import SearchUsersWindow from "../views/SearchUsersWindow.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,53 +16,52 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      // component: () => import("../views/AboutView.vue"),
-      component: OpravilaView,
+      component: TaskWindow,
     },
     {
       path: "/casovnik",
       name: "casovnik",
-      component: CasovnikView,
+      component: TimerWindow,
     },
     {
       path: "/napaka",
       name: "napaka",
-      component: PrijaviNapako,
+      component: IssueReportWindow,
     },
     {
       path: "/sledilci",
       name: "sledilci",
-      component: SledilciView,
+      component: FollowersWindow,
     },
     {
       path: "/zaposleni/vnos",
       name: "zaposleniVnos",
-      component: ZaposleniVnosView,
+      component: ManageEmployeesWindow,
     },
     {
       path: "/skladisce",
       name: "skladisce",
-      component: SkladisceView,
+      component: StatisticsWindow,
     },
     {
       path: "/nedelovanje",
       name: "nedelovanje",
-      component: NedelovanjeView,
+      component: IssueResolveWindow,
     },
     {
       path: "/uporabnik/:id",
       name: "uporabnik",
-      component: UporabnikView,
+      component: ActivityWindow,
     },
     {
       path: "/koledar",
       name: "koledar",
-      component: KoledarView,
+      component: GoogleCalendarWindow,
     },
     {
       path: "/iskanje",
       name: "iskanje",
-      component: IskanjeView,
+      component: SearchUsersWindow,
     },
   ],
 })

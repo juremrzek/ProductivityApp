@@ -3,6 +3,8 @@ import AppLayout from "../components/AppLayout.vue"
 import SledilciGrid from "../components/sledilci/SledilciGrid.vue"
 </script>
 
+<!-- TODO -->
+<!-- Tega windowa ni na nobenem diagramu -->
 <template>
   <app-layout>
     <h3 class="text-center">Uporabniki, ki jim sledim</h3>
