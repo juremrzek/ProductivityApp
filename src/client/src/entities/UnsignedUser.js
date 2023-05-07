@@ -1,9 +1,5 @@
-import User from "./User.js"
-
-export class UnsignedUser extends User {
-  constructor(id, name) {
-    super(id, name)
-
+export class UnsignedUser {
+  constructor() {
     this.tasks = []
   }
 
