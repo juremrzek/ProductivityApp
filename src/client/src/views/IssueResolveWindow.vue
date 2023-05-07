@@ -1,17 +1,17 @@
 <script setup>
-import AppLayout from "../components/AppLayout.vue"
+import WindowManager from "../components/WindowManager.vue"
 import NedelovanjeCard from "../components/nedelovanje/NedelovanjeCard.vue"
 </script>
 
 <template>
-  <AppLayout>
+  <WindowManager>
     <h3 class="text-center">Poročila o nedelovanju</h3>
     <!--  -->
     <template v-for="napaka in napake" :key="napaka.id">
       <nedelovanje-card :napaka="napaka"></nedelovanje-card>
     </template>
     <!--  -->
-  </AppLayout>
+  </WindowManager>
 </template>
 
 <script>

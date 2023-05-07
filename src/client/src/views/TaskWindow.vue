@@ -1,14 +1,14 @@
 <script setup>
-import AppLayout from "../components/AppLayout.vue"
+import WindowManager from "../components/WindowManager.vue"
 import OpravilaList from "../components/opravila/OpravilaList.vue"
 import OpraviloAdd from "../components/opravila/OpraviloAdd.vue"
 </script>
 
 <template>
-  <AppLayout>
+  <WindowManager>
     <opravila-list :opravila="opravila"></opravila-list>
     <template v-slot:secondary><opravilo-add> </opravilo-add> </template>
-  </AppLayout>
+  </WindowManager>
 </template>
 
 <script>

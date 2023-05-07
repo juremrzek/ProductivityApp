@@ -1,9 +1,9 @@
 <script setup>
-import AppLayout from "../components/AppLayout.vue"
+import WindowManager from "../components/WindowManager.vue"
 </script>
 
 <template>
-  <app-layout>
+  <window-manager>
     <div class="container form">
       <h4 class="text-center">Prenos podatkov v podatkovno skladišče</h4>
       <br />
@@ -29,7 +29,7 @@ import AppLayout from "../components/AppLayout.vue"
       <button type="submit" class="btn btn-secondary float-end">Prenesi</button>
       <br />
     </div>
-  </app-layout>
+  </window-manager>
 </template>
 
 <style scoped>

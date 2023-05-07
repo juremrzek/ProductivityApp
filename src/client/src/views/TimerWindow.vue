@@ -1,10 +1,10 @@
 <script setup>
-import AppLayout from "../components/AppLayout.vue"
+import WindowManager from "../components/WindowManager.vue"
 import CasovnikPlayer from "../components/casovnik/CasovnikPlayer.vue"
 </script>
 
 <template>
-  <AppLayout> <casovnik-player></casovnik-player> </AppLayout>
+  <WindowManager> <casovnik-player></casovnik-player> </WindowManager>
 </template>
 
 <script>

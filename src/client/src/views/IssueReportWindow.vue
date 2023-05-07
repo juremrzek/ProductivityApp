@@ -1,9 +1,9 @@
 <script setup>
-import AppLayout from "../components/AppLayout.vue"
+import WindowManager from "../components/WindowManager.vue"
 </script>
 
 <template>
-  <AppLayout>
+  <WindowManager>
     <div class="container form">
       <h4 class="text-center">Prijavi napako</h4>
       <div class="form-group">
@@ -20,7 +20,7 @@ import AppLayout from "../components/AppLayout.vue"
       <br />
       <br />
     </div>
-  </AppLayout>
+  </WindowManager>
 </template>
 
 <script>

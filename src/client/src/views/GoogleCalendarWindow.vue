@@ -1,11 +1,11 @@
 <script setup>
-import AppLayout from "../components/AppLayout.vue"
+import WindowManager from "../components/WindowManager.vue"
 import KoledarUredi from "../components/koledar/KoledarUredi.vue"
 import KoledarCard from "../components/koledar/KoledarCard.vue"
 </script>
 
 <template>
-  <AppLayout>
+  <WindowManager>
     <template v-slot:default>
       <h3 class="text-center">Koledar</h3>
       <template v-for="dogodek in dogodki" :key="dogodek.id">
@@ -13,7 +13,7 @@ import KoledarCard from "../components/koledar/KoledarCard.vue"
       </template>
     </template>
     <template v-slot:secondary> <koledar-uredi></koledar-uredi> </template>
-  </AppLayout>
+  </WindowManager>
 </template>
 
 <script>
