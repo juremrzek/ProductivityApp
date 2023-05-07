@@ -3,8 +3,8 @@ export class UnsignedUser {
     this.tasks = []
   }
 
-  async getTasks() {}
-  async addTask(task) {}
-  async editTask(taskId, name, description) {}
-  async removeTask(taskId) {}
+  // async getTasks() {}
+  // async addTask(task) {}
+  // async editTask(taskId, name, description) {}
+  // async removeTask(taskId) {}
 }

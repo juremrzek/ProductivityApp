@@ -1,4 +1,4 @@
-import User from "./User.js"
+import { User } from "./User.js"
 import { UnsignedUser } from "./UnsignedUser.js"
 
 export class SignedUser extends User {

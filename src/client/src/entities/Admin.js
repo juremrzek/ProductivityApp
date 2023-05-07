@@ -1,4 +1,4 @@
-import User from "./User.js"
+import { User } from "./User.js"
 
 export class Admin extends User {
   constructor(id, name, mail) {
