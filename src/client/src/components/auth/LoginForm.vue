@@ -15,7 +15,7 @@
     <button
       type="submit"
       class="btn btn-secondary float-end"
-      @click.prevent="$emit('prijava', { name: name, password: password })"
+      @click.prevent="$emit('prijava', name, password)"
     >
       Prijavi se
     </button>
