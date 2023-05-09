@@ -8,7 +8,7 @@
         <button
           type="button"
           class="btn btn-primary"
-          @click="this.$event.emit('opravi', opravilo.id)"
+          @click="$emit('opravi', opravilo.id)"
         >
           Opravi
         </button>
@@ -21,7 +21,7 @@
         <button
           type="button"
           class="btn btn-secondary"
-          @click="this.$event.emit('izbrisi', opravilo.id)"
+          @click="$emit('izbrisi', opravilo.id)"
         >
           Izbriši
         </button>
