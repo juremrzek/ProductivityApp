@@ -50,6 +50,7 @@ export default {
       },
     }
   },
+  emits: ["edit"],
 }
 </script>
 
