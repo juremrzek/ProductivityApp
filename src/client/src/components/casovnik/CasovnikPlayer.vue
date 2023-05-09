@@ -7,7 +7,13 @@
       <div class="col-3"></div>
       <div class="col">Čas: (se odsteva)</div>
       <div class="col-1">
-        <button type="button" class="btn btn-secondary">Začni</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          @click.prevent="$emit('zacni')"
+        >
+          Začni
+        </button>
       </div>
       <div class="col-2"></div>
     </div>
@@ -15,17 +21,45 @@
     <div class="row box">
       <div class="col">Konec časovnika</div>
       <div class="col">
-        <button type="button" class="btn btn-secondary">Začni</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          @click.prevent="$emit('zacni')"
+        >
+          Začni
+        </button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-secondary">Pavza</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          @click.prevent="$emit('pavza')"
+        >
+          Pavza
+        </button>
       </div>
       <div class="col">
-        <button type="button" class="btn btn-secondary">Izhod</button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          @click.prevent="$emit('izhod')"
+        >
+          Izhod
+        </button>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "CasovnikPlayer",
+  data() {
+    return {}
+  },
+  emits: ["zacni", "pavza", "izhod"],
+}
+</script>
 
 <style scoped>
 .box {
