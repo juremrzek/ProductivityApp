@@ -2,14 +2,18 @@
   <div class="row sledilec-card">
     <div class="col-9">
       Uporabniško ime:
-      <a href="#" @click="this.$event.emit('odpri', sledilec.id)">{{
-        sledilec.ime
-      }}</a>
+      <a
+        href="#"
+        @click="
+          this.$router.push({ name: 'uporabnik', params: { id: sledilec.id } })
+        "
+        >{{ sledilec.ime }}</a
+      >
     </div>
     <div class="col-3">
       <button
         class="btn btn-secondary"
-        @click="this.$event.emit(label.toLowerCase(), sledilec.id)"
+        @click="$emit(label.toLowerCase(), sledilec.id)"
       >
         {{ label }}
       </button>
