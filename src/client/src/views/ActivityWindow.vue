@@ -47,6 +47,9 @@ export default {
       },
     }
   },
+  methods: {
+    showActivityUser(user) {},
+  },
 }
 </script>
 
