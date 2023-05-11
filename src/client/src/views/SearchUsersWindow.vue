@@ -40,5 +40,11 @@ export default {
       ],
     }
   },
+  methods: {
+    showUsers(name) {
+      // 1. naredi API call
+      // 2. nastavi rezultat
+    },
+  },
 }
 </script>
