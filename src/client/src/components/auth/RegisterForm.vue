@@ -2,11 +2,6 @@
   <div class="container form">
     <h4 class="text-center">Registracija</h4>
     <div class="form-group">
-      <label for="exampleInputEmail1">Opravilo</label>
-      <input class="form-control" />
-    </div>
-    <br />
-    <div class="form-group">
       <label for="exampleInputEmail1">Ime </label>
       <input class="form-control" />
     </div>

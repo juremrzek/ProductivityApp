@@ -1,11 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router"
 import TaskWindow from "../views/TaskWindow.vue"
-import TimerWindow from "../views/TimerWindow.vue"
 import IssueReportWindow from "../views/IssueReportWindow.vue"
 import FollowersWindow from "../views/FollowersWindow.vue"
 import ManageEmployeesWindow from "../views/ManageEmployeesWindow.vue"
-import StatisticsWindow from "../views/StatisticsWindow.vue"
-import IssueResolveWindow from "../views/IssueResolveWindow.vue"
 import ActivityWindow from "../views/ActivityWindow.vue"
 import GoogleCalendarWindow from "../views/GoogleCalendarWindow.vue"
 import SearchUsersWindow from "../views/SearchUsersWindow.vue"
@@ -18,11 +15,6 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: TaskWindow,
-    },
-    {
-      path: "/casovnik",
-      name: "casovnik",
-      component: TimerWindow,
     },
     {
       path: "/napaka",
@@ -38,16 +30,6 @@ const router = createRouter({
       path: "/zaposleni/vnos",
       name: "zaposleniVnos",
       component: ManageEmployeesWindow,
-    },
-    {
-      path: "/skladisce",
-      name: "skladisce",
-      component: StatisticsWindow,
-    },
-    {
-      path: "/nedelovanje",
-      name: "nedelovanje",
-      component: IssueResolveWindow,
     },
     {
       path: "/uporabnik/:id",
