@@ -25,22 +25,6 @@
           <a
             href="#"
             class="nav-item nav-link active"
-            @click="this.$router.push({ name: 'casovnik' })"
-            >Časovnik</a
-          >
-        </div>
-        <div class="navbar-nav">
-          <a
-            href="#"
-            class="nav-item nav-link active"
-            @click="this.$router.push({ name: 'koledar' })"
-            >Koledar</a
-          >
-        </div>
-        <div class="navbar-nav">
-          <a
-            href="#"
-            class="nav-item nav-link active"
             @click="this.$router.push({ name: 'iskanje' })"
             >Iskanje uporabnikov</a
           >
@@ -63,32 +47,8 @@
           >
         </div>
         <!-- Admin -->
-        <div class="navbar-nav">
-          <a
-            href="#"
-            class="nav-item nav-link active"
-            @click="this.$router.push({ name: 'zaposleniVnos' })"
-            >Vnesi zaposlenega</a
-          >
-        </div>
         <!-- Analitik -->
-        <div class="navbar-nav">
-          <a
-            href="#"
-            class="nav-item nav-link active"
-            @click="this.$router.push({ name: 'skladisce' })"
-            >Prenos podatkov</a
-          >
-        </div>
         <!-- Razvijalec  -->
-        <div class="navbar-nav">
-          <a
-            href="#"
-            class="nav-item nav-link active"
-            @click="this.$router.push({ name: 'nedelovanje' })"
-            >Poročila o nedelovanju</a
-          >
-        </div>
         <!--  -->
         <div class="navbar-nav ms-auto">
           <a
