@@ -31,5 +31,15 @@ export default {
       ],
     }
   },
+  methods: {
+    // TODO
+    showTasks(user) {},
+    // TODO te ne rabim
+    // ne bom te implementiral
+    showEditTaskForm(task) {},
+    isFormValid() {},
+    // TODO WTF is this
+    update() {},
+  },
 }
 </script>
