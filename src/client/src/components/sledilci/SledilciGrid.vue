@@ -4,7 +4,11 @@ import SledilecCard from "./SledilecCard.vue"
 
 <template>
   <template v-for="sledilec in sledilci" :key="sledilec.id">
-    <sledilec-card :sledilec="sledilec" :label="label"></sledilec-card>
+    <sledilec-card
+      :sledilec="sledilec"
+      :label="label"
+      @sledi="(el) => $emit('sledi', el)"
+    ></sledilec-card>
   </template>
 </template>
 
@@ -20,5 +24,6 @@ export default {
       default: "Odstrani",
     },
   },
+  emits: ["sledi"],
 }
 </script>

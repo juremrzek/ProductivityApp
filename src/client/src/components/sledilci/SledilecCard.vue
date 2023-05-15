@@ -7,13 +7,13 @@
         @click="
           this.$router.push({ name: 'uporabnik', params: { id: sledilec.id } })
         "
-        >{{ sledilec.ime }}</a
+        >{{ sledilec.getName() }}</a
       >
     </div>
     <div class="col-3">
       <button
         class="btn btn-secondary"
-        @click="$emit(label.toLowerCase(), sledilec.id)"
+        @click="$emit(label.toLowerCase(), sledilec.getId())"
       >
         {{ label }}
       </button>

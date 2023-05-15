@@ -17,16 +17,28 @@ import SledilciGrid from "../components/sledilci/SledilciGrid.vue"
             aria-describedby="basic-addon2"
             v-model="iskanje"
           />
-          <button class="btn btn-outline-secondary" type="button">Išči</button>
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            @click="showUsers(iskanje)"
+          >
+            Išči
+          </button>
         </div>
       </div>
     </div>
   </div>
   <!-- write html input for search quear -->
-  <SledilciGrid :sledilci="rezultat" :label="'sledi'"></SledilciGrid>
+  <SledilciGrid
+    :sledilci="rezultat"
+    :label="'sledi'"
+    @sledi="(userId) => followUser(userId)"
+  ></SledilciGrid>
 </template>
 
 <script>
+import { SearchUsers } from "../control/SearchUsers"
+
 export default {
   components: {
     SledilciGrid,
@@ -34,16 +46,18 @@ export default {
   data() {
     return {
       iskanje: "",
-      rezultat: [
-        { id: 1, ime: "Janez" },
-        { id: 2, ime: "Micka" },
-      ],
+      rezultat: [],
     }
   },
   methods: {
-    showUsers(name) {
-      // 1. naredi API call
-      // 2. nastavi rezultat
+    async showUsers(name) {
+      const res = await SearchUsers.findUsers(name)
+
+      this.rezultat = res
+    },
+    async followUser(id) {
+      console.log(id)
+      await SearchUsers.followUser(id)
     },
   },
 }
