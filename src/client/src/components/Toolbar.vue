@@ -1,3 +1,9 @@
+<script setup>
+import { useUserStore } from "../stores/user"
+const user = useUserStore()
+console.log(user.isLoggedIn)
+</script>
+
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
     <div class="container-fluid">
@@ -54,9 +60,20 @@
           <a
             href="#"
             class="nav-item nav-link"
-            @click.prevent="this.$router.push({ name: 'prijava' })"
-            >Prijava / odjava</a
+            @click.prevent="logout()"
+            v-if="user.isLoggedIn() == true"
           >
+            Odjava
+          </a>
+          <a
+            href="#"
+            class="nav-item nav-link"
+            @click.prevent="this.$router.push({ name: 'prijava' })"
+            v-if="user.isLoggedIn() != true"
+          >
+            Prijava
+          </a>
+          <!-- <template> v-else>Prijava</template> -->
         </div>
         <!--  -->
       </div>
@@ -64,5 +81,17 @@
   </nav>
   <!--  -->
 </template>
+
+<script>
+export default {
+  methods: {
+    logout() {
+      const user = useUserStore()
+      user.logout()
+      this.$router.push({ name: "prijava" })
+    },
+  },
+}
+</script>
 
 <style scoped></style>

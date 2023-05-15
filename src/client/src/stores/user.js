@@ -1,11 +1,15 @@
 import { ref } from "vue"
 import { defineStore } from "pinia"
 
-export const useCounterStore = defineStore("user", () => {
+export const useUserStore = defineStore("user", () => {
   const id = ref(null)
   function isLoggedIn() {
-    return id.value !== null
+    return id.value != null
   }
 
-  return { id, isLoggedIn }
+  function logout() {
+    id.value = null
+  }
+
+  return { id, isLoggedIn, logout }
 })
