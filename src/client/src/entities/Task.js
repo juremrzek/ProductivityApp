@@ -18,11 +18,15 @@ export class Task {
     return this.name
   }
 
+  getDate() {
+    return this.date
+  }
+
   getDescription() {
     return this.description
   }
 
-  //   TODO
-  // getDate()
-  // getId()
+  getId() {
+    return this.id
+  }
 }

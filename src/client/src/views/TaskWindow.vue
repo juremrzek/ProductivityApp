@@ -12,6 +12,8 @@ import OpraviloAdd from "../components/opravila/OpraviloAdd.vue"
 </template>
 
 <script>
+import { EditTasks } from "../control/EditTasks"
+
 export default {
   data() {
     return {
@@ -33,13 +35,18 @@ export default {
   },
   methods: {
     // TODO
-    showTasks(user) {},
+    async showTasks() {
+      this.opravila = await EditTasks.getTasks()
+    },
     // TODO te ne rabim
     // ne bom te implementiral
     showEditTaskForm(task) {},
     isFormValid() {},
     // TODO WTF is this
     update() {},
+  },
+  beforeMount() {
+    this.showTasks()
   },
 }
 </script>

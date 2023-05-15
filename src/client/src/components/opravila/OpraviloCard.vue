@@ -2,13 +2,13 @@
   <br />
   <div class="container-fluid card">
     <div class="row m-1">
-      <div class="col">Opravilo: {{ opravilo.ime }}</div>
-      <div class="col">Rok: {{ opravilo.rok }}</div>
+      <div class="col">Opravilo: {{ opravilo.getName() }}</div>
+      <div class="col">Rok: {{ opravilo.getDate() }}</div>
       <div class="col-2">
         <button
           type="button"
           class="btn btn-primary"
-          @click="$emit('opravi', opravilo.id)"
+          @click="$emit('opravi', opravilo.getId())"
         >
           Opravi
         </button>
@@ -16,12 +16,12 @@
     </div>
 
     <div class="row m-1">
-      <div class="col">Opis: {{ opravilo.opis }}</div>
+      <div class="col">Opis: {{ opravilo.getDescription() }}</div>
       <div class="col-2">
         <button
           type="button"
           class="btn btn-secondary"
-          @click="$emit('izbrisi', opravilo.id)"
+          @click="$emit('izbrisi', opravilo.getId())"
         >
           Izbriši
         </button>
