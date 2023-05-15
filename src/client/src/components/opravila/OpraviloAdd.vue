@@ -1,3 +1,7 @@
+<script setup>
+import { Task } from "../../entities/Task.js"
+</script>
+
 <template>
   <div class="container form">
     <h4 class="text-center">Novo opravilo</h4>
@@ -30,7 +34,9 @@
     <button
       type="submit"
       class="btn btn-secondary float-end"
-      @click.prevent="$emit('dodaj', task)"
+      @click.prevent="
+        $emit('dodaj', new Task(null, task.name, task.description, task.date))
+      "
     >
       Dodaj
     </button>

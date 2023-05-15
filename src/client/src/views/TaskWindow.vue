@@ -11,7 +11,9 @@ import OpraviloAdd from "../components/opravila/OpraviloAdd.vue"
       @opravi="(id) => manageTask(id, 1)"
       @izbrisi="(id) => manageTask(id, 2)"
     ></opravila-list>
-    <template v-slot:secondary><opravilo-add> </opravilo-add> </template>
+    <template v-slot:secondary
+      ><opravilo-add @dodaj="(newTask) => submitForm(newTask)"> </opravilo-add>
+    </template>
   </WindowManager>
 </template>
 
@@ -30,12 +32,19 @@ export default {
     },
     isFormValid(formData) {
       return (
-        formData.ime.length > 0 &&
-        formData.rok.length > 0 &&
-        formData.opis.length > 0
+        formData.getName().length &&
+        formData.getDate() &&
+        formData.getDescription()
       )
     },
-    async submitForm() {},
+    async submitForm(newTask) {
+      if (this.isFormValid(newTask)) {
+        await EditTasks.addTask(newTask)
+        await this.update()
+      }
+
+      await this.update()
+    },
     async manageTask(id, state) {
       console.log(id, state)
       // Complete task
