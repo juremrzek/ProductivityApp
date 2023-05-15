@@ -5,7 +5,11 @@ import OpraviloCard from "./OpraviloCard.vue"
 <template>
   <h3 class="text-center">Opravila</h3>
   <template v-for="opravilo in opravila" :key="opravilo.id">
-    <opravilo-card :opravilo="opravilo"></opravilo-card>
+    <opravilo-card
+      :opravilo="opravilo"
+      @opravi="$emit('opravi', opravilo.getId())"
+      @izbrisi="$emit('izbrisi', opravilo.getId())"
+    ></opravilo-card>
   </template>
 </template>
 
@@ -20,5 +24,6 @@ export default {
       required: true,
     },
   },
+  emits: ["opravi", "izbrisi"],
 }
 </script>
