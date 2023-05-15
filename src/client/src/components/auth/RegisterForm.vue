@@ -3,36 +3,61 @@
     <h4 class="text-center">Registracija</h4>
     <div class="form-group">
       <label for="exampleInputEmail1">Ime </label>
-      <input class="form-control" />
+      <input class="form-control" v-model="uporabnik.ime" />
     </div>
     <br />
     <div class="form-group">
       <label for="exampleInputEmail1">Priimek</label>
-      <input class="form-control" />
+      <input class="form-control" v-model="uporabnik.priimek" />
     </div>
     <br />
     <div class="form-group">
       <label for="exampleInputEmail1">Uporabniško ime</label>
-      <input class="form-control" />
+      <input class="form-control" v-model="uporabnik.uporabniskoIme" />
     </div>
     <br />
     <div class="form-group">
       <label for="exampleInputEmail1">Geslo</label>
-      <input type="password" class="form-control" />
+      <input type="password" class="form-control" v-model="uporabnik.geslo" />
     </div>
     <br />
     <div class="form-group">
       <label for="exampleInputEmail1">Ponovi geslo</label>
-      <input type="password" class="form-control" />
+      <input
+        type="password"
+        class="form-control"
+        v-model="uporabnik.ponoviGeslo"
+      />
     </div>
     <br />
-    <button type="submit" class="btn btn-secondary float-end">
+    <button
+      type="submit"
+      class="btn btn-secondary float-end"
+      @click="$emit('registracija', uporabnik)"
+    >
       Registriraj se
     </button>
     <br />
     <br />
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      uporabnik: {
+        ime: "",
+        priimek: "",
+        uporabniskoIme: "",
+        geslo: "",
+        ponoviGeslo: "",
+      },
+    }
+  },
+  emits: ["registracija"],
+}
+</script>
 
 <style scoped>
 .form {

@@ -6,7 +6,11 @@ import RegisterForm from "../components/auth/RegisterForm.vue"
 
 <template>
   <WindowManager>
-    <template v-slot:default> <register-form></register-form></template>
+    <template v-slot:default>
+      <register-form
+        @registracija="(uporabnik) => register(uporabnik)"
+      ></register-form
+    ></template>
     <template v-slot:secondary>
       <login-form
         @prijava="(name, password) => login(name, password)"
@@ -17,11 +21,9 @@ import RegisterForm from "../components/auth/RegisterForm.vue"
 
 <script>
 import { UserFactory } from "../utils/UserFactory"
+import { useUserStore } from "../stores/user"
 
 export default {
-  data() {
-    return {}
-  },
   methods: {
     login(name, password) {
       console.log(name, password)
@@ -33,6 +35,12 @@ export default {
 
       const user = UserFactory.createUser(1, userData.id, userData.name)
       console.log(user)
+
+      const userStore = useUserStore()
+      userStore.$patch({ id: user })
+    },
+    register(uporabnik) {
+      this.$router.push({ name: "home" })
     },
   },
 }
