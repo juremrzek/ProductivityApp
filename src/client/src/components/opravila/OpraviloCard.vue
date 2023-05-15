@@ -27,6 +27,18 @@
         </button>
       </div>
     </div>
+    <div class="row m-1">
+      <div class="col"></div>
+      <div class="col-2">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          @click="$emit('uredi', opravilo.getId())"
+        >
+          Uredi
+        </button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -36,7 +48,7 @@ export default {
   props: {
     opravilo: Object,
   },
-  emits: ["opravi", "izbrisi"],
+  emits: ["opravi", "izbrisi", "uredi"],
 }
 </script>
 

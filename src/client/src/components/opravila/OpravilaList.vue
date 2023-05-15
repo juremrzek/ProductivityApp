@@ -9,6 +9,7 @@ import OpraviloCard from "./OpraviloCard.vue"
       :opravilo="opravilo"
       @opravi="$emit('opravi', opravilo.getId())"
       @izbrisi="$emit('izbrisi', opravilo.getId())"
+      @uredi="$emit('uredi', opravilo.getId())"
     ></opravilo-card>
   </template>
 </template>
@@ -24,6 +25,6 @@ export default {
       required: true,
     },
   },
-  emits: ["opravi", "izbrisi"],
+  emits: ["opravi", "izbrisi", "uredi"],
 }
 </script>

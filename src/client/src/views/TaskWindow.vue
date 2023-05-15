@@ -2,6 +2,9 @@
 import WindowManager from "../components/WindowManager.vue"
 import OpravilaList from "../components/opravila/OpravilaList.vue"
 import OpraviloAdd from "../components/opravila/OpraviloAdd.vue"
+import OpraviloUredi from "../components/opravila/OpraviloUredi.vue"
+
+import { Task } from "../entities/Task"
 </script>
 
 <template>
@@ -13,6 +16,9 @@ import OpraviloAdd from "../components/opravila/OpraviloAdd.vue"
     ></opravila-list>
     <template v-slot:secondary
       ><opravilo-add @dodaj="(newTask) => submitForm(newTask)"> </opravilo-add>
+      <opravilo-uredi
+        :task-prop="new Task(1, 'jane', 'asdfsadf', Date.now())"
+      ></opravilo-uredi>
     </template>
   </WindowManager>
 </template>
@@ -24,6 +30,7 @@ export default {
   data() {
     return {
       opravila: [],
+      helperWindow: 0,
     }
   },
   methods: {
