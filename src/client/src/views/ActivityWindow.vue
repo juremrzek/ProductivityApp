@@ -37,18 +37,29 @@ import WindowManager from "../components/WindowManager.vue"
 </template>
 
 <script>
+import { Activity } from "../control/Activity"
+
 export default {
   data() {
     return {
       statistike: {
-        dan: 12,
-        mesec: 33,
-        leto: 1337,
+        dan: null,
+        mesec: null,
+        leto: null,
       },
     }
   },
   methods: {
-    showActivityUser(user) {},
+    async showActivityUser(user) {
+      const response = await Activity.getUserInfo(user)
+
+      this.statistike.dan = response.day
+      this.statistike.mesec = response.month
+      this.statistike.leto = response.year
+    },
+  },
+  async beforeMount() {
+    await this.showActivityUser(this.$route.params.id)
   },
 }
 </script>
