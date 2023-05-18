@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
     id: { type: Number, required: false },
     name: { type: String, required: true },
     tasks: { type: [taskSchema], required: false},
+    completedTasksCount: { type: Number, default: 0 },
     hash: { type: String, required: [true, "Hash is required!"] },
     salt: { type: String, required: [true, "Salt is required!"] },
 });
