@@ -4,7 +4,7 @@ const taskSchema = new mongoose.Schema({
     id: { type: Number, required: false },
     name: { type: String, required: true },
     description: { type: String, required: false },
-    date: { type: Date, default: Date.now },
+    date: { type: String, required: false },
 });
 
 //UnsignedUser in User združmo kr itak se unsigned userjem taski ne shranjo v bazo

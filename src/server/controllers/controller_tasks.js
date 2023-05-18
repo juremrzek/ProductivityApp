@@ -35,7 +35,8 @@ const addTask = async (req, res) => {
             else{
                 user.tasks.push({
                     name: req.body.name,
-                    description: req.body.description
+                    description: req.body.description,
+                    date: req.body.date
                 });
                 await user.save();
                 res.status(200).json(user);
@@ -69,6 +70,8 @@ const editTask = async (req, res) => {
                 task.name = req.body.name;
             if(req.body.description)
                 task.description = req.body.description;
+            if(req.body.date)
+                task.date = req.body.date;
             
             await user.save();
             res.status(200).json(user);
