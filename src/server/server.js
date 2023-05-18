@@ -19,6 +19,9 @@ app.set('view engine', 'html');
 // Static folder
 app.use(express.static(__dirname + '/views/'));
 
+// Database connection
+require("./models/database_connection");
+
 // Defining route middleware
 app.use('/api', require('./routes/api'));
 

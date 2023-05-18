@@ -3,8 +3,10 @@ const path = require('path');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'views', 'index.html'));
-});
+controller_users = require('../controllers/controller_users');
+
+console.log(controller_users)
+
+router.get('/getAllUsers', controller_users.getAllUsers);
 
 module.exports = router;
