@@ -16,10 +16,18 @@ export class EditTasks {
         )
     )
   }
-  static async completeTask(taskId) {}
-  static async removeTask(taskId) {}
+  static async completeTask(taskId) {
+    await request.patch("/completeTask", { task_id: taskId })
+  }
+  static async removeTask(taskId) {
+    await request.patch("/removeTask", { task_id: taskId })
+  }
 
   static async addTask(task) {
     const res = await request.post("/addTask", { ...task })
+  }
+
+  static async editTask(task) {
+    const res = await request.put("/editTask", { ...task, task_id: task.id })
   }
 }

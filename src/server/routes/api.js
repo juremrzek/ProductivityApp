@@ -1,28 +1,27 @@
-const express = require('express');
-const path = require('path');
+const express = require("express")
+const path = require("path")
 
-const router = express.Router();
+const router = express.Router()
 
-controller_users = require('../controllers/controller_users');
-controller_tasks = require('../controllers/controller_tasks');
-controller_issues = require('../controllers/controller_issues');
+controller_users = require("../controllers/controller_users")
+controller_tasks = require("../controllers/controller_tasks")
+controller_issues = require("../controllers/controller_issues")
 
 //task related endpoints
-router.get('/getTasks', controller_tasks.getTasks);
-router.post('/addTask', controller_tasks.addTask);
-router.put('/editTask', controller_tasks.editTask);
-router.delete('/removeTask', controller_tasks.removeTask);
-router.delete('/completeTask', controller_tasks.completeTask);
+router.get("/getTasks", controller_tasks.getTasks)
+router.post("/addTask", controller_tasks.addTask)
+router.put("/editTask", controller_tasks.editTask)
+router.patch("/removeTask", controller_tasks.removeTask)
+router.patch("/completeTask", controller_tasks.completeTask)
 
 //user related endpoints
-router.get('/searchUsers', controller_users.searchUsers);
-router.get('/getFollowing', controller_users.getFollowing);
-router.post('/createUser', controller_users.createUser);
-router.put('/followUser', controller_users.followUser);
+router.get("/searchUsers", controller_users.searchUsers)
+router.get("/getFollowing", controller_users.getFollowing)
+router.post("/createUser", controller_users.createUser)
+router.put("/followUser", controller_users.followUser)
 
 //issue related endpoints
-router.get('/getUnsolvedIssues', controller_issues.getUnsolvedIssues);
-router.post('/addIssue', controller_issues.addIssue);
+router.get("/getUnsolvedIssues", controller_issues.getUnsolvedIssues)
+router.post("/addIssue", controller_issues.addIssue)
 
-
-module.exports = router;
+module.exports = router
