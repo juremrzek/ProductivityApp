@@ -17,7 +17,11 @@ import { Task } from "../entities/Task"
     ></opravila-list>
     <template v-slot:secondary
       ><opravilo-add @dodaj="(newTask) => submitForm(newTask)"> </opravilo-add>
-      <opravilo-uredi :task-prop="editTask" :key="editTask"></opravilo-uredi>
+      <opravilo-uredi
+        :task-prop="editTask"
+        :key="editTask"
+        @uredi="(task) => urediAPI(task)"
+      ></opravilo-uredi>
     </template>
   </WindowManager>
 </template>
@@ -38,6 +42,10 @@ export default {
       const task = this.opravila.filter((opravilo) => opravilo.getId() == id)[0]
       // console.log(this.opravila[0].id)
       this.editTask = task
+    },
+    async urediAPI(task) {
+      await EditTasks.editTask(task)
+      await this.update()
     },
     async showTasks() {
       this.opravila = await EditTasks.getTasks()

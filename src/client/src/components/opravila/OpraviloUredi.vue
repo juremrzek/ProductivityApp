@@ -41,7 +41,7 @@ import { Task } from "../../entities/Task.js"
         )
       "
     >
-      Dodaj
+      Uredi
     </button>
     <br />
     <br />

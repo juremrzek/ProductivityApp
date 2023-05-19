@@ -21,7 +21,6 @@ const addTask = async (req, res) => {
   try {
     let user_id = auth.getCurrentUserId()
     const user = await User.findById(user_id)
-    console.log(req.body)
     if (!user) {
       res
         .status(400)
@@ -51,36 +50,40 @@ const addTask = async (req, res) => {
 }
 
 const editTask = async (req, res) => {
-    try{
-        let user_id = auth.getCurrentUserId();
-        let task_id = req.query.task_id
-        if(task_id){
-            res.status(400).json({ message: "request has to contain task_id." });
+  try {
+    let user_id = auth.getCurrentUserId()
+    let task_id = req.body.task_id
+    console.log(req.body)
+    if (!task_id) {
+      res.status(400).json({ message: "request has to contain task_id." })
+      return
         }
-        const user = await User.findById(user_id);
-        if(!user){
-            res.status(400).json({message: "user with the id "+user_id+" does not exist."});
+    const user = await User.findById(user_id)
+    if (!user) {
+      res
+        .status(400)
+        .json({ message: "user with the id " + user_id + " does not exist." })
+      return
         }
-        if(!req.body.name && !req.body.description){
-            res.status(400).json({message: "name or description required."})
+    if (!req.body.name && !req.body.description) {
+      res.status(400).json({ message: "name or description required." })
+      return
         }
-        const task = await user.tasks.id(task_id);
-        console.log(task);
+    const task = await user.tasks.id(task_id)
+    console.log(task)
 
-        if(req.body.name)
-            task.name = req.body.name;
-        if(req.body.description)
-            task.description = req.body.description;
-        if(req.body.date)
-            task.date = req.body.date;
+    if (req.body.name) task.name = req.body.name
+    if (req.body.description) task.description = req.body.description
+    if (req.body.date) task.date = req.body.date
         
-        await user.save();
-        res.status(200).json(user);
-    }
-    catch(err){
+    await user.save()
+    res.status(200).json(user)
+    return
+  } catch (err) {
         res.status(400).json({
-            message: err
-        });
+      message: err,
+    })
+    return
     }
 }
 
