@@ -14,6 +14,7 @@ export class SearchUsers {
       return []
     }
   }
+
   static async followUser(id) {
     try {
       const res = await request.put("/followUser", { followed_id: id })
@@ -22,4 +23,14 @@ export class SearchUsers {
       return null
     }
   }
+
+  static async getFollowing() {
+    try {
+      const res = await request.get("/getFollowing")
+      return res.data.map((user) => new User(user._id, user.name))
+    } catch (err) {
+      return []
+    }
+  }
+  static async getFollowers() {}
 }
