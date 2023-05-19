@@ -32,15 +32,13 @@ const addTask = async (req, res) => {
                     message: "Body parameter 'name' is required.",
                 });
             }
-            else{
-                user.tasks.push({
-                    name: req.body.name,
-                    description: req.body.description,
-                    date: req.body.date
-                });
-                await user.save();
-                res.status(200).json(user);
-            }
+            user.tasks.push({
+                name: req.body.name,
+                description: req.body.description,
+                date: req.body.date
+            });
+            await user.save();
+            res.status(200).json(user);
         }
         catch(err){
             res.status(400).json({

@@ -11,8 +11,9 @@ const taskSchema = new mongoose.Schema({
 const userSchema = new mongoose.Schema({
     id: { type: Number, required: false },
     name: { type: String, required: true },
-    tasks: { type: [taskSchema], required: false},
+    tasks: { type: [taskSchema], required: false },
     completedTasksCount: { type: Number, default: 0 },
+    following: { type: [mongoose.Schema.Types.ObjectId], required: false }, //store ids of followed users
     hash: { type: String, required: [true, "Hash is required!"] },
     salt: { type: String, required: [true, "Salt is required!"] },
 });
