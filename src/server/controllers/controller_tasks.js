@@ -1,49 +1,54 @@
-const mongoose = require("mongoose");
-const User = mongoose.model("User");
-const Task = mongoose.model("Task");
+const mongoose = require("mongoose")
+const User = mongoose.model("User")
+const Task = mongoose.model("Task")
 
-const auth = require("./controller_auth");
+const auth = require("./controller_auth")
 
 const getTasks = async (req, res) => {
-    try{
-        let user_id = auth.getCurrentUserId();
-        const user = await User.findById(user_id);
-        const tasks = user.tasks;
-        res.status(200).json(tasks);
-    }
-    catch(err){
+  try {
+    let user_id = auth.getCurrentUserId()
+    const user = await User.findById(user_id)
+    const tasks = user.tasks
+    res.status(200).json(tasks)
+  } catch (err) {
         res.status(400).json({
-            message: err
-        });
+      message: err,
+    })
     }
 }
 
 const addTask = async (req, res) => {
-    try{
-        let user_id = auth.getCurrentUserId();
-        const user = await User.findById(user_id);
-        if(!user){
-            res.status(400).json({message: "user with the id "+user_id+" does not exist."});
+  try {
+    let user_id = auth.getCurrentUserId()
+    const user = await User.findById(user_id)
+    console.log(req.body)
+    if (!user) {
+      res
+        .status(400)
+        .json({ message: "user with the id " + user_id + " does not exist." })
+      return
         }
         if (!req.body.name) {
             res.status(400).json({
                 message: "Body parameter 'name' is required.",
-            });
+      })
+      return
         }
         user.tasks.push({
             name: req.body.name,
             description: req.body.description,
-            date: req.body.date
-        });
-        await user.save();
-        res.status(200).json(user);
-    }
-    catch(err){
+      date: req.body.date,
+    })
+    await user.save()
+    res.status(200).json(user)
+    return
+  } catch (err) {
         res.status(400).json({
-            message: err
-        });
+      message: err,
+    })
+    return
     }
-};
+}
 
 const editTask = async (req, res) => {
     try{
