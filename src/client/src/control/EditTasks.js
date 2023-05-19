@@ -18,5 +18,8 @@ export class EditTasks {
   }
   static async completeTask(taskId) {}
   static async removeTask(taskId) {}
-  static async addTask(task) {}
+
+  static async addTask(task) {
+    const res = await request.post("/addTask", { ...task })
+  }
 }
