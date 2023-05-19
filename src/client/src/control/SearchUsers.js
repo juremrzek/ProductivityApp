@@ -1,8 +1,18 @@
 import { User } from "../entities/User.js"
+import { request } from "../utils/request.js"
 
 export class SearchUsers {
   static async findUsers(name) {
-    return [new User(1, "Janez"), new User(2, "Micka"), new User(3, "Franci")]
+    try {
+      const res = await request.get("/search", {
+        params: { search_term: name },
+      })
+
+      const uporabniki = res.data.map((user) => new User(user._id, user.name))
+      return uporabniki
+    } catch (err) {
+      return []
+    }
   }
   static async followUser(id) {}
 }
