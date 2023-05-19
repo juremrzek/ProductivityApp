@@ -4,7 +4,7 @@ import { Task } from "../../entities/Task.js"
 
 <template>
   <div class="container form">
-    <h4 class="text-center">Opravilo uredi</h4>
+    <h4 class="text-center">Uredi opravilo</h4>
     <div class="form-group">
       <label for="exampleInputEmail1">Opravilo</label>
       <input class="form-control" v-model="task.name" />
