@@ -13,12 +13,11 @@ import { Task } from "../entities/Task"
       :opravila="opravila"
       @opravi="(id) => manageTask(id, 1)"
       @izbrisi="(id) => manageTask(id, 2)"
+      @uredi="(id) => uredi(id)"
     ></opravila-list>
     <template v-slot:secondary
       ><opravilo-add @dodaj="(newTask) => submitForm(newTask)"> </opravilo-add>
-      <opravilo-uredi
-        :task-prop="new Task(1, 'jane', 'asdfsadf', Date.now())"
-      ></opravilo-uredi>
+      <opravilo-uredi :task-prop="editTask" :key="editTask"></opravilo-uredi>
     </template>
   </WindowManager>
 </template>
@@ -31,9 +30,15 @@ export default {
     return {
       opravila: [],
       helperWindow: 0,
+      editTask: new Task(null, "", "", null),
     }
   },
   methods: {
+    uredi(id) {
+      const task = this.opravila.filter((opravilo) => opravilo.getId() == id)[0]
+      // console.log(this.opravila[0].id)
+      this.editTask = task
+    },
     async showTasks() {
       this.opravila = await EditTasks.getTasks()
     },
@@ -53,7 +58,6 @@ export default {
       await this.update()
     },
     async manageTask(id, state) {
-      console.log(id, state)
       // Complete task
       if (state == 1) {
         await EditTasks.completeTask(id)
