@@ -45,17 +45,23 @@ const searchUsers = async (req, res) => {
 
 const followUser = async (req, res) => {
   try {
-    const user_id = auth.getCurrentUserId()
-    const followed_id = req.query.followed_id //whoever logged person is trying to follow
+    const user_id = "6467acb5865606744d282484"
+    const followed_id = req.body.followed_id //whoever logged person is trying to follow
+
     if (!followed_id) {
       res.status(400).json({ message: "request has to contain followed_id." })
+      return
     }
+
     const user = await User.findById(user_id)
     user.following.push(followed_id)
+
     await user.save()
     res.status(200).json(user)
+    return
   } catch (err) {
     res.status(400).json({ message: err })
+    return
   }
 }
 

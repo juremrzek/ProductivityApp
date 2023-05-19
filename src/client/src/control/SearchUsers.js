@@ -14,5 +14,12 @@ export class SearchUsers {
       return []
     }
   }
-  static async followUser(id) {}
+  static async followUser(id) {
+    try {
+      const res = await request.put("/followUser", { followed_id: id })
+      return res.data
+    } catch (err) {
+      return null
+    }
+  }
 }
