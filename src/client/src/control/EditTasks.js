@@ -1,12 +1,20 @@
 import { Task } from "../entities/Task.js"
+import { request } from "../utils/request.js"
 
 export class EditTasks {
   static async getTasks() {
-    return [
-      new Task(1, "Task 1", "Description 1", new Date()),
-      new Task(2, "Task 2", "Description 2", new Date()),
-      new Task(3, "Task 3", "Description 3", new Date()),
-    ]
+    const res = await request.get("/getTasks")
+    console.log(res.data[0])
+
+    return res.data.map(
+      (task) =>
+        new Task(
+          task._id,
+          task.name,
+          task.description,
+          new Date(task.date).toLocaleDateString("sl-SI")
+        )
+    )
   }
   static async completeTask(taskId) {}
   static async removeTask(taskId) {}
