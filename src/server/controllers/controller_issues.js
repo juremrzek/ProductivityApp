@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const User = mongoose.model("User");
 const Issue = mongoose.model("Issue");
 
 const auth = require("./controller_auth");
