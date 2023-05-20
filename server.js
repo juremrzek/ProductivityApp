@@ -26,10 +26,10 @@ app.set("view engine", "html")
 app.use(express.static(__dirname + "/views/"))
 
 // Database connection
-require("./models/database_connection")
+require("./src/server/models/database_connection")
 
 // Defining route middleware
-app.use("/api", require("./routes/api"))
+app.use("/api", require("./src/server/routes/api"))
 
 // Listening to port
 app.listen(port)
