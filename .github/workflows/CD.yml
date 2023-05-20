@@ -24,7 +24,6 @@ jobs:
           node-version: ${{ matrix.node-verzija }}
       - run: npm install pm2 -g # Namesti knjižnice.
       - run: >-
-          cd ./src/server &&
           npm install &&
           pm2 start server.js
       - run: >-
