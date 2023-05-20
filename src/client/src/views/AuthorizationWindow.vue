@@ -53,7 +53,7 @@ export default {
     },
     async register(uporabnik) {
       const res = await request.post("/auth/register", {
-        name: uporabnik.ime,
+        name: uporabnik.uporabniskoIme,
         password: uporabnik.geslo,
       })
       this.$forceUpdate()
