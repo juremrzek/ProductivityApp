@@ -3,9 +3,10 @@ const path = require("path")
 
 const router = express.Router()
 
-controller_users = require("../controllers/controller_users")
-controller_tasks = require("../controllers/controller_tasks")
-controller_issues = require("../controllers/controller_issues")
+const controller_users = require("../controllers/controller_users")
+const controller_tasks = require("../controllers/controller_tasks")
+const controller_issues = require("../controllers/controller_issues")
+const controller_auth = require("../controllers/controller_auth");
 
 //task related endpoints
 router.get("/getTasks", controller_tasks.getTasks)
@@ -25,5 +26,8 @@ router.patch("/unfollowUser", controller_users.unfollowUser)
 //issue related endpoints
 router.get("/getUnsolvedIssues", controller_issues.getUnsolvedIssues)
 router.post("/addIssue", controller_issues.addIssue)
+
+//auth related endpoints
+router.post('/auth/login', controller_auth.login)
 
 module.exports = router

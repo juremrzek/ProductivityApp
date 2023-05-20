@@ -1,8 +1,6 @@
 const mongoose = require("mongoose")
 const User = mongoose.model("User")
 
-const auth = require("./controller_auth")
-
 const createUser = async (req, res) => {
   try {
     if (!req.body.name || !req.body.hash || !req.body.salt) {
@@ -24,14 +22,20 @@ const createUser = async (req, res) => {
       return
     })
   } catch (err) {
-    res.status(400).json({ message: err })
+    console.log(err)
+    res.status(500).json({ message: "Server error" })
     return
   }
 }
 
 const searchUsers = async (req, res) => {
   try {
-    const user_id = auth.getCurrentUserId()
+    const user_id = req.session.user_id;
+    if(!user_id){
+        res.status(500).json({
+          message: "User is not logged in."
+        })
+    }
     const query = req.query.search_term
     if (!query) {
       res.status(400).json({ message: "request does not contain search_term." })
@@ -50,7 +54,12 @@ const searchUsers = async (req, res) => {
 
 const unfollowUser = async (req, res) => {
   try {
-    const user_id = auth.getCurrentUserId()
+    const user_id = req.session.user_id;
+    if(!user_id){
+        res.status(500).json({
+          message: "User is not logged in."
+        })
+    }
     const unfollowed_id = req.body.unfollowed_id //whoever logged person is trying to unfollow
     if (!unfollowed_id) {
       res.status(400).json({ message: "request has to contain unfollowed_id." })
@@ -68,7 +77,12 @@ const unfollowUser = async (req, res) => {
 
 const followUser = async (req, res) => {
   try {
-    const user_id = "6467acb5865606744d282484"
+    const user_id = req.session.user_id;
+    if(!user_id){
+        res.status(500).json({
+          message: "User is not logged in."
+        })
+    }
     const followed_id = req.body.followed_id //whoever logged person is trying to follow
 
     if (user_id == followed_id) {
@@ -99,7 +113,12 @@ const followUser = async (req, res) => {
 
 const getFollowing = async (req, res) => {
   try {
-    const user_id = "6467acb5865606744d282484"
+    const user_id = req.session.user_id;
+    if(!user_id){
+        res.status(500).json({
+          message: "User is not logged in."
+        })
+    }
     const user = await User.findById(user_id)
     const following = user.following
     //for each id in following, find the corresponding user in database
@@ -107,7 +126,8 @@ const getFollowing = async (req, res) => {
     res.status(200).json(users)
     return
   } catch (err) {
-    res.status(400).json({ message: err })
+    console.log(err)
+    res.status(500).json({ message: "Server error" })
     return
   }
 }
