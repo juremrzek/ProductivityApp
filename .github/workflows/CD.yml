@@ -1,0 +1,38 @@
+name: Neprekinjena dostava
+
+on: # Kdaj se začne izvajanje delovnega toka?
+  push:
+    branches:
+      - production # Ob vsaki uveljavitvi na veji produkcijsko-okolje.
+    paths-ignore:
+      - "docs/**" # Ignoriramo, če uveljavitev spreminja zgolj vsebino mape docs.
+      - "README.md" # Ignoriramo spremembe v dokumentaciji.
+
+jobs:
+  build:
+    runs-on: # Okolje, v katerem se testi izvedejo.
+      - ubuntu-latest
+    strategy:
+      matrix:
+        node-verzija:
+          - 18.x
+    steps: # Posamezni koraki testiranja.
+      - uses: actions/checkout@v2 # Pridobimo izvorno kodo repozitorija.
+      - name: Uporabi Node.js ${{ matrix.node-verzija }} # Nastavi Node.js okolje.
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-verzija }}
+      - run: npm install pm2 -g # Namesti knjižnice.
+      - run: cd ./src/server
+      - run: npm install
+      - run: pm2 start server.js
+      - run: cd ../../client
+      - run: npm install
+      - run: npm run dev
+      - name: Posredovanje na Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: ${{ secrets.HEROKU_PRODUCTION }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+          branch: production
