@@ -9,7 +9,8 @@ const getTasks = async (req, res) => {
     let user_id = auth.getCurrentUserId()
     const user = await User.findById(user_id)
     const tasks = user.tasks
-    res.status(200).json(tasks)
+    tasks = tasks.filter((t) => t.solved == false);
+    res.status(200).json(tasks);
   } catch (err) {
     res.status(400).json({
       message: err,
@@ -69,12 +70,11 @@ const editTask = async (req, res) => {
       res.status(400).json({ message: "name or description required." })
       return
     }
-    const task = await user.tasks.id(task_id)
-    console.log(task)
+    const task = await user.tasks.id(task_id);
 
-    if (req.body.name) task.name = req.body.name
-    if (req.body.description) task.description = req.body.description
-    if (req.body.date) task.date = req.body.date
+    if (req.body.name) task.name = req.body.name;
+    if (req.body.description) task.description = req.body.description;
+    if (req.body.date) task.date = req.body.date;
 
     await user.save()
     res.status(200).json(user)
@@ -92,33 +92,33 @@ const removeTask = async (req, res) => {
     let user_id = auth.getCurrentUserId()
     let task_id = req.body.task_id
     if (!task_id) {
-      res.status(400).json({ message: "request has to contain task_id." })
-      return
+      res.status(400).json({ message: "request has to contain task_id." });
+      return;
     }
-    const user = await User.findById(user_id)
+    const user = await User.findById(user_id);
     if (!user) {
       res
         .status(400)
-        .json({ message: "user with the id " + user_id + " does not exist." })
-      return
+        .json({ message: "user with the id " + user_id + " does not exist." });
+      return;
     }
     const task = await user.tasks.id(task_id)
     if (!task) {
       res
         .status(400)
-        .json({ message: "task with the id " + task_id + " does not exist." })
-      return
+        .json({ message: "task with the id " + task_id + " does not exist." });
+      return;
     }
     user.tasks = user.tasks.filter((t) => t !== task) //remove task from task array
 
-    await user.save()
-    res.status(200).json(user)
-    return
+    await user.save();
+    res.status(200).json(user);
+    return;
   } catch (err) {
     res.status(400).json({
       message: err,
-    })
-    return
+    });
+    return;
   }
 }
 
@@ -128,35 +128,35 @@ const completeTask = async (req, res) => {
     let task_id = req.body.task_id
     if (!task_id) {
       res.status(400).json({ message: "request has to contain task_id." })
-      return
+      return;
     }
     const user = await User.findById(user_id)
     if (!user) {
       res
         .status(400)
         .json({ message: "user with the id " + user_id + " does not exist." })
-      return
+      return;
     }
     const task = await user.tasks.id(task_id)
     if (!task) {
       res
         .status(400)
         .json({ message: "task with the id " + task_id + " does not exist." })
-      return
+      return;
     }
-    user.tasks = user.tasks.filter((t) => t !== task) //remove task from task array
-    user.completedTasksCount += 1 //!
+    task.completed = true;
+    user.completedTasksCount += 1;
 
-    await user.save()
-    res.status(200).json(user)
+    await user.save();
+    res.status(200).json(user);
 
-    return
+    return;
   } catch (err) {
     res.status(400).json({
       message: err,
-    })
+    });
 
-    return
+    return;
   }
 }
 
