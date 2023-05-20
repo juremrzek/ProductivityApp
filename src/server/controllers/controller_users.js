@@ -41,6 +41,10 @@ const followUser = async (req, res) => {
     try{
         const user_id = auth.getCurrentUserId();
         const followed_id = req.query.followed_id; //whoever logged person is trying to follow
+        if(user_id == followed_id){
+            res.status(400).json({message: "followed_id can not be the same as id of the current user."});
+            return
+        }
         if(!followed_id){
             res.status(400).json({message: "request has to contain followed_id."});
             return
