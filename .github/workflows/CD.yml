@@ -26,12 +26,13 @@ jobs:
       - run: >-
           cd ./src/server &&
           npm install &&
-          node server.js
+          pm2 start server.js
 
       - run: >-
           cd ./src/client &&
           npm install &&
           npm run dev
+          pm2 start npm --name "social-productivity" -- run "dev"
 
       - name: Posredovanje na Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
