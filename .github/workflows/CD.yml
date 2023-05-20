@@ -27,7 +27,6 @@ jobs:
           cd ./src/server &&
           npm install &&
           pm2 start server.js
-
       - run: >-
           cd ./src/client &&
           npm install &&
