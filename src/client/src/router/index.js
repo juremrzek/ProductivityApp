@@ -6,6 +6,13 @@ import ActivityWindow from "../views/ActivityWindow.vue"
 import SearchUsersWindow from "../views/SearchUsersWindow.vue"
 import AuthorizationWindow from "../views/AuthorizationWindow.vue"
 
+import { useUserStore } from "../stores/user"
+
+const loginOnly = () => {
+  const user = useUserStore()
+  return user.isLoggedIn()
+}
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -23,6 +30,7 @@ const router = createRouter({
       path: "/sledilci",
       name: "sledilci",
       component: FollowersWindow,
+
     },
     {
       path: "/uporabnik/:id",

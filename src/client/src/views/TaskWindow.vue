@@ -29,7 +29,6 @@ import { Task } from "../entities/Task"
 <script>
 import { EditTasks } from "../control/EditTasks"
 import { useUserStore } from "../stores/user"
-// const user = useUserStore()
 
 export default {
   data() {
@@ -109,7 +108,15 @@ export default {
       await this.showTasks()
     },
   },
-  onLoad() {
+  watch: {
+    user: {
+      handler: function (val, oldVal) {
+        this.showTasks()
+      },
+      deep: true,
+    },
+  },
+  beforeMount() {
     this.showTasks()
   },
 }

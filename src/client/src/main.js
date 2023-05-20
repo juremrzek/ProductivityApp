@@ -9,7 +9,12 @@ import "bootstrap"
 
 const app = createApp(App)
 
-app.use(createPinia())
+import piniaPluginPersistedState from "pinia-plugin-persistedstate"
+
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedState)
+
+app.use(pinia)
 app.use(router)
 
 app.mount("#app")
