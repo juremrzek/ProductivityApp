@@ -18,8 +18,8 @@ const register = async (req, res) => {
           .json({ message: "fields 'name' and 'password' required." })
         return
       }
-      const user = await User.find( { name: req.body.name } );
-      if(user.length == 0){
+      const users = await User.find( { name: req.body.name } );
+      if(users.length != 0){
         res.status(409).json({message: "User already exists."});
         return
       }
@@ -53,6 +53,7 @@ const login = async (req, res) => {
             res.json({message: "request body must contain name and password"});
             return;
         }
+        console.log(name);
         const users = await User.find( { name: name } );
         if(users.length == 0){
             res.status(400).json({message: "This user does not exist."});

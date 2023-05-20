@@ -5,6 +5,7 @@ const Task = mongoose.model("Task")
 const getTasks = async (req, res) => {
   try {
     let user_id = req.session.user_id;
+    console.log(user_id);
     if(!user_id){
       res.status(401).json({
         message: "User is not logged in."
