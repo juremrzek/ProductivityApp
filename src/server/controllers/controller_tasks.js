@@ -2,26 +2,34 @@ const mongoose = require("mongoose")
 const User = mongoose.model("User")
 const Task = mongoose.model("Task")
 
-const auth = require("./controller_auth")
-
 const getTasks = async (req, res) => {
   try {
-    let user_id = auth.getCurrentUserId();
+    let user_id = req.session.user_id;
+    if(!user_id){
+      res.status(500).json({
+        message: "User is not logged in."
+      })
+    }
     const user = await User.findById(user_id);
     const tasks = user.tasks;
-    console.log(tasks);
     const completed_tasks = tasks.filter((t) => t.completed == false);
     res.status(200).json(completed_tasks);
   } catch (err) {
-    res.status(400).json({
-      message: err,
+    console.log(err)
+    res.status(500).json({
+      message: "Server error"
     })
   }
 }
 
 const addTask = async (req, res) => {
   try {
-    let user_id = auth.getCurrentUserId()
+    let user_id = req.session.user_id;
+    if(!user_id){
+      res.status(500).json({
+        message: "User is not logged in."
+      })
+    }
     const user = await User.findById(user_id)
     if (!user) {
       res
@@ -53,9 +61,13 @@ const addTask = async (req, res) => {
 
 const editTask = async (req, res) => {
   try {
-    let user_id = auth.getCurrentUserId()
+    let user_id = req.session.user_id;
+    if(!user_id){
+      res.status(500).json({
+        message: "User is not logged in."
+      })
+    }
     let task_id = req.body.task_id
-    console.log(req.body)
     if (!task_id) {
       res.status(400).json({ message: "request has to contain task_id." })
       return
@@ -81,8 +93,9 @@ const editTask = async (req, res) => {
     res.status(200).json(user)
     return
   } catch (err) {
-    res.status(400).json({
-      message: err,
+    console.log(err)
+    res.status(500).json({
+      message: "Server error"
     })
     return
   }
@@ -90,7 +103,12 @@ const editTask = async (req, res) => {
 
 const removeTask = async (req, res) => {
   try {
-    let user_id = auth.getCurrentUserId()
+    let user_id = req.session.user_id;
+    if(!user_id){
+      res.status(500).json({
+        message: "User is not logged in."
+      })
+    }
     let task_id = req.body.task_id
     if (!task_id) {
       res.status(400).json({ message: "request has to contain task_id." });
@@ -116,16 +134,22 @@ const removeTask = async (req, res) => {
     res.status(200).json(user);
     return;
   } catch (err) {
-    res.status(400).json({
-      message: err,
-    });
+    console.log(err)
+    res.status(500).json({
+      message: "Server error"
+    })
     return;
   }
 }
 
 const completeTask = async (req, res) => {
   try {
-    let user_id = auth.getCurrentUserId();
+    let user_id = req.session.user_id;
+    if(!user_id){
+      res.status(500).json({
+        message: "User is not logged in."
+      })
+    }
     let task_id = req.body.task_id;
     if (!task_id) {
       res.status(400).json({ message: "request has to contain task_id." });
@@ -153,16 +177,22 @@ const completeTask = async (req, res) => {
 
     return;
   } catch (err) {
-    res.status(400).json({
-      message: err,
-    });
+    console.log(err)
+    res.status(500).json({
+      message: "Server error"
+    })
     return;
   }
 }
 
 const getStatistics = async (req, res) => {
   try {
-    let user_id = auth.getCurrentUserId();
+    let user_id = req.session.user_id;
+    if(!user_id){
+      res.status(500).json({
+        message: "User is not logged in."
+      })
+    }
     const user = await User.findById(user_id)
       if (!user) {
         res
@@ -174,8 +204,6 @@ const getStatistics = async (req, res) => {
       const thisYear = new Date().getFullYear();
       const thisMonth = new Date().getMonth();
       const thisDay = new Date().getDay();
-
-      console.log(thisYear, thisMonth, thisDay);
       
       tasks_year = completed_tasks.filter((t => new Date(t.date).getFullYear() == thisYear ));
       tasks_month = tasks_year.filter((t => new Date(t.date).getMonth() == thisMonth ));
@@ -186,9 +214,10 @@ const getStatistics = async (req, res) => {
         day: tasks_day.length
       });
     } catch (err) {
-      res.status(400).json({
-        message: err,
-      });
+      console.log(err)
+      res.status(500).json({
+        message: "Server error"
+      })
     }
 
 }
