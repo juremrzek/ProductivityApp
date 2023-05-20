@@ -19,6 +19,20 @@ const userSchema = new mongoose.Schema({
     salt: { type: String, required: [true, "Salt is required!"] },
 });
 
+userSchema.methods.generateJwt = function () {
+    const expiration = new Date();
+    expiration.setDate(expiration.getDate() + 7);
+    return jwt.sign(
+        {
+            _id: this._id,
+            username: this.username,
+            password: this.hash,
+            exp: parseInt(expiration.getTime() / 1000),
+        },
+        process.env.JWT_SECRET
+    );
+};
+
 const issueSchema = new mongoose.Schema({
     id: { type: Number, required: false },
     title: { type: String, required: true },

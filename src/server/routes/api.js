@@ -30,6 +30,4 @@ router.post("/addIssue", controller_issues.addIssue)
 router.post('/auth/login', controller_auth.login)
 router.post('/auth/register', controller_auth.register)
 
-router.get('/', express.static('public'));
-
 module.exports = router
