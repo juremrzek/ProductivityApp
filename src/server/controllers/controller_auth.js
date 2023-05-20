@@ -53,14 +53,12 @@ const login = async (req, res) => {
             res.json({message: "request body must contain name and password"});
             return;
         }
-        console.log(name);
         const users = await User.find( { name: name } );
         if(users.length == 0){
             res.status(400).json({message: "This user does not exist."});
             return;
         }
         const user = users[0];
-        console.log(user.salt);
         const hash = crypto.pbkdf2Sync(password, user.salt, 1000, 64, "sha512").toString("hex");
         if(user.hash != hash){
             res.status(401).json({message: "Wrong password."});
