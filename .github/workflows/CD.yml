@@ -26,10 +26,10 @@ jobs:
       - run: >-
           cd ./src/server &&
           npm install &&
-          pm2 start server.js
+          node server.js
 
       - run: >-
-          cd ./client &&
+          cd ./src/client &&
           npm install &&
           npm run dev
 
