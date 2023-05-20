@@ -1,9 +1,10 @@
 const mongoose = require("mongoose")
 const User = mongoose.model("User")
+const auth = require("./controller_auth");
 
 const searchUsers = async (req, res) => {
   try {
-    const user_id = req.session.user_id;
+    const user_id = auth.getCurrentUserId();
     if(!user_id){
         res.status(401).json({
           message: "User is not logged in."
@@ -28,7 +29,7 @@ const searchUsers = async (req, res) => {
 
 const unfollowUser = async (req, res) => {
   try {
-    const user_id = req.session.user_id;
+    const user_id = auth.getCurrentUserId();
     if(!user_id){
         res.status(401).json({
           message: "User is not logged in."
@@ -56,7 +57,7 @@ const unfollowUser = async (req, res) => {
 
 const followUser = async (req, res) => {
   try {
-    const user_id = req.session.user_id;
+    const user_id = auth.getCurrentUserId();
     if(!user_id){
         res.status(401).json({
           message: "User is not logged in."
@@ -97,7 +98,7 @@ const followUser = async (req, res) => {
 
 const getFollowing = async (req, res) => {
   try {
-    const user_id = req.session.user_id;
+    const user_id = auth.getCurrentUserId();
     if(!user_id){
         res.status(401).json({
           message: "User is not logged in."

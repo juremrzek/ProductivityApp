@@ -1,10 +1,11 @@
 const mongoose = require("mongoose")
 const User = mongoose.model("User")
 const Task = mongoose.model("Task")
+const auth = require("./controller_auth");
 
 const getTasks = async (req, res) => {
   try {
-    let user_id = req.session.user_id;
+    let user_id = auth.getCurrentUserId();
     console.log(user_id);
     if(!user_id){
       res.status(401).json({
@@ -26,7 +27,7 @@ const getTasks = async (req, res) => {
 
 const addTask = async (req, res) => {
   try {
-    let user_id = req.session.user_id;
+    let user_id = auth.getCurrentUserId();
     if(!user_id){
       res.status(401).json({
         message: "User is not logged in."
@@ -64,7 +65,7 @@ const addTask = async (req, res) => {
 
 const editTask = async (req, res) => {
   try {
-    let user_id = req.session.user_id;
+    let user_id = auth.getCurrentUserId();
     if(!user_id){
       res.status(401).json({
         message: "User is not logged in."
@@ -107,7 +108,7 @@ const editTask = async (req, res) => {
 
 const removeTask = async (req, res) => {
   try {
-    let user_id = req.session.user_id;
+    let user_id = auth.getCurrentUserId();
     if(!user_id){
       res.status(401).json({
         message: "User is not logged in."
@@ -149,7 +150,7 @@ const removeTask = async (req, res) => {
 
 const completeTask = async (req, res) => {
   try {
-    let user_id = req.session.user_id;
+    let user_id = auth.getCurrentUserId();
     if(!user_id){
       res.status(401).json({
         message: "User is not logged in."

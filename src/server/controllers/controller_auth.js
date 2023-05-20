@@ -1,6 +1,7 @@
 const crypto = require("crypto");
 const mongoose = require("mongoose");
 const User = mongoose.model("User")
+let currentUserId = null;
 
 const getCurrentUserId = () => {
     return currentUserId;
@@ -64,7 +65,7 @@ const login = async (req, res) => {
             res.status(401).json({message: "Wrong password."});
             return;
         }
-        req.session.user_id = user._id;
+        setCurrentUserId(user._id);
         console.log("session is now set to", user._id);
         res.json({message: "Successfully logged in."});
     } catch(err) {
