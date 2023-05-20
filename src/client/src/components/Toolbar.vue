@@ -26,7 +26,7 @@ const user = useUserStore()
           >
         </div>
         <!-- Neprijavljen uporabnik -->
-        <div class="navbar-nav">
+        <div class="navbar-nav" v-if="user.isLoggedIn()">
           <a
             href="#"
             class="nav-item nav-link active"
@@ -34,7 +34,7 @@ const user = useUserStore()
             >Iskanje uporabnikov</a
           >
         </div>
-        <div class="navbar-nav">
+        <div class="navbar-nav" v-if="user.isLoggedIn()">
           <a
             href="#"
             class="nav-item nav-link active"
@@ -51,9 +51,6 @@ const user = useUserStore()
             >Prijavi napako</a
           >
         </div>
-        <!-- Admin -->
-        <!-- Analitik -->
-        <!-- Razvijalec  -->
         <!--  -->
         <div class="navbar-nav ms-auto">
           <a
