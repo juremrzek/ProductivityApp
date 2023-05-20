@@ -23,12 +23,16 @@ const createUser = async (req, res) => {
 
 const searchUsers = async (req, res) => {
     try{
+        const user_id = auth.getCurrentUserId();
         const query = req.query.search_term;
         if(!query){
             res.status(400).json({message: "request does not contain search_term."});
             return
         }
-        const users = await User.find({ name: { $regex: query, $options: 'i' } });
+        const users = await User.find(
+            { _id: { $ne: user_id },
+              name: { $regex: query, $options: 'i' } }
+        );
         res.status(200).json(users);
     }
     catch(err){
@@ -50,6 +54,10 @@ const followUser = async (req, res) => {
             return
         }
         const user = await User.findById(user_id);
+        if(user.following.includes(followed_id)){
+            res.status(400).json({message: "current user is already following this user."});
+            return
+        }
         user.following.push(followed_id);
         await user.save();
         res.status(200).json(user);
