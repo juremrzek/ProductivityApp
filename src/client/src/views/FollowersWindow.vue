@@ -9,11 +9,17 @@ import { User } from "../entities/User"
 <template>
   <window-manager>
     <h3 class="text-center">Uporabniki, ki jim sledim</h3>
-    <sledilci-grid :sledilci="sledim"></sledilci-grid>
+    <sledilci-grid
+      :sledilci="sledim"
+      @odstrani="
+        (id) => {
+          SearchUsers.unfollowUser(id)
+          getFollowing()
+        }
+      "
+    ></sledilci-grid>
     <br />
     <br />
-    <h3 class="text-center">Sledilci</h3>
-    <sledilci-grid :sledilci="sledilci"></sledilci-grid>
   </window-manager>
 </template>
 
@@ -24,8 +30,7 @@ import { SearchUsers } from "../control/SearchUsers"
 export default {
   data() {
     return {
-      sledim: [new User(2, "Joze", "Sluga")],
-      sledilci: [new User(1, "Janez", "Novak")],
+      sledim: [],
     }
   },
   methods: {

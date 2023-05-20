@@ -51,7 +51,7 @@ const searchUsers = async (req, res) => {
 const unfollowUser = async (req, res) => {
   try {
     const user_id = auth.getCurrentUserId()
-    const unfollowed_id = req.query.unfollowed_id //whoever logged person is trying to unfollow
+    const unfollowed_id = req.body.unfollowed_id //whoever logged person is trying to unfollow
     if (!unfollowed_id) {
       res.status(400).json({ message: "request has to contain unfollowed_id." })
       return
@@ -117,4 +117,5 @@ module.exports = {
   searchUsers,
   followUser,
   getFollowing,
+  unfollowUser,
 }
