@@ -1,9 +1,10 @@
+import { request } from "../utils/request"
+
 export class Activity {
   static async getUserInfo(id) {
-    return {
-      day: 12,
-      year: 68,
-      month: 147,
-    }
+    const res = await request.get("/getStatistics", { params: { user_id: id } })
+
+    console.log(res)
+    return res.data
   }
 }
