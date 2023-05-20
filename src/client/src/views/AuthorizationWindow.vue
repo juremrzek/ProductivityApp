@@ -27,7 +27,7 @@ import { request } from "../utils/request"
 
 export default {
   methods: {
-    login(name, password) {
+    async login(name, password) {
       console.log(name, password)
 
       const userData = {
@@ -35,19 +35,28 @@ export default {
         name: "Janez",
       }
 
-      const user = UserFactory.createUser(1, userData.id, userData.name)
-      console.log(user)
+      const res = await request.post("/auth/login", {
+        name: name,
+        password: password,
+      })
+      console.log(res.data)
 
-      const userStore = useUserStore()
-      userStore.$patch({ id: user })
+      if (res.data.message == "Successfully logged in.") {
+        const user = UserFactory.createUser(1, userData.id, userData.name)
+        console.log(user)
 
-      this.$router.push({ name: "home" })
+        const userStore = useUserStore()
+        userStore.$patch({ id: user })
+
+        this.$router.push({ name: "home" })
+      }
     },
     async register(uporabnik) {
       const res = await request.post("/auth/register", {
         name: uporabnik.ime,
         password: uporabnik.geslo,
       })
+      this.$forceUpdate()
     },
   },
 }

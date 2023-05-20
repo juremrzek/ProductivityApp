@@ -1,16 +1,7 @@
 <template>
   <div class="container form">
     <h4 class="text-center">Registracija</h4>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Ime </label>
-      <input class="form-control" v-model="uporabnik.ime" />
-    </div>
-    <br />
-    <div class="form-group">
-      <label for="exampleInputEmail1">Priimek</label>
-      <input class="form-control" v-model="uporabnik.priimek" />
-    </div>
-    <br />
+
     <div class="form-group">
       <label for="exampleInputEmail1">Uporabniško ime</label>
       <input class="form-control" v-model="uporabnik.uporabniskoIme" />
@@ -19,15 +10,6 @@
     <div class="form-group">
       <label for="exampleInputEmail1">Geslo</label>
       <input type="password" class="form-control" v-model="uporabnik.geslo" />
-    </div>
-    <br />
-    <div class="form-group">
-      <label for="exampleInputEmail1">Ponovi geslo</label>
-      <input
-        type="password"
-        class="form-control"
-        v-model="uporabnik.ponoviGeslo"
-      />
     </div>
     <br />
     <button
