@@ -28,6 +28,8 @@ import { Task } from "../entities/Task"
 
 <script>
 import { EditTasks } from "../control/EditTasks"
+import { useUserStore } from "../stores/user"
+// const user = useUserStore()
 
 export default {
   data() {
@@ -35,6 +37,7 @@ export default {
       opravila: [],
       helperWindow: 0,
       editTask: new Task(null, "", "", null),
+      user: useUserStore(),
     }
   },
   methods: {
@@ -44,10 +47,21 @@ export default {
       this.editTask = task
     },
     async urediAPI(task) {
+      if (!this.user.isLoggedIn()) {
+        const index = this.opravila.findIndex(
+          (opravilo) => opravilo.getId() == task.getId()
+        )
+        this.opravila[index] = task
+        return
+      }
+
       await EditTasks.editTask(task)
       await this.update()
     },
     async showTasks() {
+      if (!this.user.isLoggedIn()) {
+        return
+      }
       this.opravila = await EditTasks.getTasks()
     },
     isFormValid(formData) {
@@ -59,6 +73,11 @@ export default {
     },
     async submitForm(newTask) {
       if (this.isFormValid(newTask)) {
+        if (!this.user.isLoggedIn()) {
+          this.opravila.push(newTask)
+          return
+        }
+
         await EditTasks.addTask(newTask)
         await this.update()
       }
@@ -66,6 +85,14 @@ export default {
       await this.update()
     },
     async manageTask(id, state) {
+      if (!this.user.isLoggedIn()) {
+        const index = this.opravila.findIndex(
+          (opravilo) => opravilo.getId() == id
+        )
+        this.opravila.splice(index, 1)
+        return
+      }
+
       // Complete task
       if (state == 1) {
         await EditTasks.completeTask(id)
@@ -82,7 +109,7 @@ export default {
       await this.showTasks()
     },
   },
-  beforeMount() {
+  onLoad() {
     this.showTasks()
   },
 }

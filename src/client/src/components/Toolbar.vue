@@ -1,7 +1,6 @@
 <script setup>
 import { useUserStore } from "../stores/user"
 const user = useUserStore()
-console.log(user.isLoggedIn)
 </script>
 
 <template>
