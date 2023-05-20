@@ -12,7 +12,7 @@ const port = process.env.PORT || 9000
 const app = express()
 
 // Configure middlewares
-app.use(cors((origin = "*")))
+app.use(cors());
 app.use(express.json())
 app.use(session({
     secret: process.env.SESSION_SECRET_KEY,
