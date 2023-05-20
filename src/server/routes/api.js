@@ -19,7 +19,6 @@ router.patch("/completeTask", controller_tasks.completeTask)
 //user related endpoints
 router.get("/search", controller_users.searchUsers)
 router.get("/getFollowing", controller_users.getFollowing)
-router.post("/createUser", controller_users.createUser)
 router.put("/followUser", controller_users.followUser)
 router.patch("/unfollowUser", controller_users.unfollowUser)
 
@@ -29,5 +28,8 @@ router.post("/addIssue", controller_issues.addIssue)
 
 //auth related endpoints
 router.post('/auth/login', controller_auth.login)
+router.post('/auth/register', controller_auth.register)
+
+router.get('/', express.static('public'));
 
 module.exports = router

@@ -1,33 +1,6 @@
 const mongoose = require("mongoose")
 const User = mongoose.model("User")
 
-const createUser = async (req, res) => {
-  try {
-    if (!req.body.name || !req.body.hash || !req.body.salt) {
-      res
-        .status(400)
-        .json({ message: "fields 'name', 'hash' and 'salt' required." })
-      return
-    }
-    const newUser = new User({
-      name: req.body.name,
-      tasks: [],
-      following: [],
-      hash: req.body.hash,
-      salt: req.body.salt,
-    })
-    newUser.save().then((result) => {
-      console.log("New user created:", result)
-      res.status(200).json(result)
-      return
-    })
-  } catch (err) {
-    console.log(err)
-    res.status(500).json({ message: "Server error" })
-    return
-  }
-}
-
 const searchUsers = async (req, res) => {
   try {
     const user_id = req.session.user_id;
@@ -133,7 +106,6 @@ const getFollowing = async (req, res) => {
 }
 
 module.exports = {
-  createUser,
   searchUsers,
   followUser,
   getFollowing,

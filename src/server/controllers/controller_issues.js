@@ -17,6 +17,7 @@ const addIssue = async (req, res) => {
     }
     catch(err){
         res.status(400).json({message: err});
+        return
     }
 };
 
@@ -27,6 +28,7 @@ const getUnsolvedIssues = async (req, res) => {
     }
     catch(err){
         res.status(400).json({message: err});
+        return
     }
 };
 
