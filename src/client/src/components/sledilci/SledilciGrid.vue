@@ -8,6 +8,7 @@ import SledilecCard from "./SledilecCard.vue"
       :sledilec="sledilec"
       :label="label"
       @sledi="(el) => $emit('sledi', el)"
+      @odstrani="(el) => $emit('odstrani', el)"
     ></sledilec-card>
   </template>
 </template>
@@ -24,6 +25,6 @@ export default {
       default: "Odstrani",
     },
   },
-  emits: ["sledi"],
+  emits: ["sledi", "odstrani"],
 }
 </script>

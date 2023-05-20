@@ -57,6 +57,8 @@ export default {
       )
 
       await IssueReport.addIssue(issue)
+      this.name = ""
+      this.description = ""
     },
   },
 }

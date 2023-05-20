@@ -15,11 +15,11 @@ router.patch("/removeTask", controller_tasks.removeTask)
 router.patch("/completeTask", controller_tasks.completeTask)
 
 //user related endpoints
-router.get("/searchUsers", controller_users.searchUsers)
+router.get("/search", controller_users.searchUsers)
 router.get("/getFollowing", controller_users.getFollowing)
 router.post("/createUser", controller_users.createUser)
 router.put("/followUser", controller_users.followUser)
-router.patch("/unfollowUser", controller_users.unfollowUser);
+router.patch("/unfollowUser", controller_users.unfollowUser)
 
 //issue related endpoints
 router.get("/getUnsolvedIssues", controller_issues.getUnsolvedIssues)
