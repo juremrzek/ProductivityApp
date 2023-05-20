@@ -40,11 +40,14 @@ export default {
 
       const userStore = useUserStore()
       userStore.$patch({ id: user })
-    },
-    async register(uporabnik) {
-      const res = await request.post("/createUser", { name: uporabnik.ime, })
 
       this.$router.push({ name: "home" })
+    },
+    async register(uporabnik) {
+      const res = await request.post("/auth/register", {
+        name: uporabnik.ime,
+        password: uporabnik.geslo,
+      })
     },
   },
 }
