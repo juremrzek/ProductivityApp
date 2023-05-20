@@ -23,6 +23,8 @@ import RegisterForm from "../components/auth/RegisterForm.vue"
 import { UserFactory } from "../utils/UserFactory"
 import { useUserStore } from "../stores/user"
 
+import { request } from "../utils/request"
+
 export default {
   methods: {
     login(name, password) {
@@ -39,7 +41,9 @@ export default {
       const userStore = useUserStore()
       userStore.$patch({ id: user })
     },
-    register(uporabnik) {
+    async register(uporabnik) {
+      const res = await request.post("/createUser", { name: uporabnik.ime, })
+
       this.$router.push({ name: "home" })
     },
   },

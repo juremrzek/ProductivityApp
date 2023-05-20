@@ -4,7 +4,7 @@ import WindowManager from "../components/WindowManager.vue"
 
 <template>
   <window-manager>
-    <h3 class="text-center">Uporabnik {{ $route.params.id }}</h3>
+    <h3 class="text-center">Uporabnik</h3>
     <div class="container form">
       <h4 class="text-center">Statistike</h4>
 

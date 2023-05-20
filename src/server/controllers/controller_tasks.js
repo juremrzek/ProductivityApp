@@ -187,7 +187,7 @@ const completeTask = async (req, res) => {
 
 const getStatistics = async (req, res) => {
   try {
-    let user_id = req.session.user_id;
+    let user_id = req.query.user_id;
     if(!user_id){
       res.status(500).json({
         message: "User is not logged in."

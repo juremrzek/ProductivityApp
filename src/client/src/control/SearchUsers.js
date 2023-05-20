@@ -33,4 +33,13 @@ export class SearchUsers {
     }
   }
   static async getFollowers() {}
+
+  static async unfollowUser(id) {
+    try {
+      const res = await request.patch("/unfollowUser", { unfollowed_id: id })
+      console.log(res.data)
+    } catch (err) {
+      return null
+    }
+  }
 }
