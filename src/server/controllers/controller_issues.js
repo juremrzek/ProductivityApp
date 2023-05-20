@@ -8,7 +8,11 @@ const addIssue = async (req, res) => {
         if (!req.body.title) {
             res.status(400).json({message: "field 'title' required."});
         }
-        const user_id = auth.getCurrentUserId();
+        const user_id = req.session.user_id;
+        if(!user_id){
+            res.status(401).json({message: "User is not logged in."});
+            return
+        }
         const newIssue = new Issue({ title: req.body.title, description: req.body.description, user: user_id});
         newIssue.save().then((result) => {
             console.log('New issue added:', result);

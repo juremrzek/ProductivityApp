@@ -5,9 +5,10 @@ const searchUsers = async (req, res) => {
   try {
     const user_id = req.session.user_id;
     if(!user_id){
-        res.status(500).json({
+        res.status(401).json({
           message: "User is not logged in."
         })
+        return
     }
     const query = req.query.search_term
     if (!query) {
@@ -29,16 +30,21 @@ const unfollowUser = async (req, res) => {
   try {
     const user_id = req.session.user_id;
     if(!user_id){
-        res.status(500).json({
+        res.status(401).json({
           message: "User is not logged in."
         })
+        return
     }
     const unfollowed_id = req.body.unfollowed_id //whoever logged person is trying to unfollow
-    if (!unfollowed_id) {
+    if(!unfollowed_id) {
       res.status(400).json({ message: "request has to contain unfollowed_id." })
       return
     }
     const user = await User.findById(user_id)
+    if(!user){
+        res.status(400).json({message: "This user does not exist."});
+        return;
+    }
     user.following = user.following.filter((id) => id != user_id)
     await user.save()
     res.status(200).json(user.following)
@@ -52,9 +58,10 @@ const followUser = async (req, res) => {
   try {
     const user_id = req.session.user_id;
     if(!user_id){
-        res.status(500).json({
+        res.status(401).json({
           message: "User is not logged in."
         })
+        return
     }
     const followed_id = req.body.followed_id //whoever logged person is trying to follow
 
@@ -69,15 +76,19 @@ const followUser = async (req, res) => {
       return
     }
     const user = await User.findById(user_id)
+    if(!user){
+        res.status(400).json({message: "This user does not exist."});
+        return;
+    }
     if (user.following.includes(followed_id)) {
       res
         .status(400)
         .json({ message: "current user is already following this user." })
       return
     }
-    user.following.push(followed_id)
-    await user.save()
-    res.status(200).json(user)
+    user.following.push(followed_id);
+    await user.save();
+    res.status(200).json({message: "ok"});
   } catch (err) {
     console.log("error", err)
     res.status(500).json({ message: "Server error" })
@@ -88,11 +99,16 @@ const getFollowing = async (req, res) => {
   try {
     const user_id = req.session.user_id;
     if(!user_id){
-        res.status(500).json({
+        res.status(401).json({
           message: "User is not logged in."
         })
+        return
     }
     const user = await User.findById(user_id)
+    if(!user){
+        res.status(400).json({message: "This user does not exist."});
+        return;
+    }
     const following = user.following
     //for each id in following, find the corresponding user in database
     const users = await User.find({ _id: { $in: following } })

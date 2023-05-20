@@ -6,9 +6,10 @@ const getTasks = async (req, res) => {
   try {
     let user_id = req.session.user_id;
     if(!user_id){
-      res.status(500).json({
+      res.status(401).json({
         message: "User is not logged in."
       })
+      return
     }
     const user = await User.findById(user_id);
     const tasks = user.tasks;
@@ -26,9 +27,10 @@ const addTask = async (req, res) => {
   try {
     let user_id = req.session.user_id;
     if(!user_id){
-      res.status(500).json({
+      res.status(401).json({
         message: "User is not logged in."
       })
+      return
     }
     const user = await User.findById(user_id)
     if (!user) {
@@ -63,9 +65,10 @@ const editTask = async (req, res) => {
   try {
     let user_id = req.session.user_id;
     if(!user_id){
-      res.status(500).json({
+      res.status(401).json({
         message: "User is not logged in."
       })
+      return
     }
     let task_id = req.body.task_id
     if (!task_id) {
@@ -105,9 +108,10 @@ const removeTask = async (req, res) => {
   try {
     let user_id = req.session.user_id;
     if(!user_id){
-      res.status(500).json({
+      res.status(401).json({
         message: "User is not logged in."
       })
+      return
     }
     let task_id = req.body.task_id
     if (!task_id) {
@@ -146,9 +150,10 @@ const completeTask = async (req, res) => {
   try {
     let user_id = req.session.user_id;
     if(!user_id){
-      res.status(500).json({
+      res.status(401).json({
         message: "User is not logged in."
       })
+      return
     }
     let task_id = req.body.task_id;
     if (!task_id) {
@@ -189,9 +194,10 @@ const getStatistics = async (req, res) => {
   try {
     let user_id = req.query.user_id;
     if(!user_id){
-      res.status(500).json({
+      res.status(401).json({
         message: "User is not logged in."
       })
+      return
     }
     const user = await User.findById(user_id)
       if (!user) {
