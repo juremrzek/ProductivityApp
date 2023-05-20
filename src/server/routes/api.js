@@ -9,6 +9,7 @@ controller_issues = require("../controllers/controller_issues")
 
 //task related endpoints
 router.get("/getTasks", controller_tasks.getTasks)
+router.get("/getStatistics", controller_tasks.getStatistics)
 router.post("/addTask", controller_tasks.addTask)
 router.put("/editTask", controller_tasks.editTask)
 router.patch("/removeTask", controller_tasks.removeTask)
