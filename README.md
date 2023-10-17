@@ -1,8 +1,8 @@
-# Lastni projekt pri predmetu TPO
+# Task editor
 
-Vsaka skupina, ki je sestavljena iz 5 članov, mora razviti lastni projekt (LP) na izbrani problemski domeni, in sicer od **predloga projekta** do **implementacije**, kjer je podrobna razdelitev naslednja:
+This app was mainly build to learn MEVN stack (MongoDB, Express, Vue, Node).
+It allows you to create and edit tasks. You can also create an account - If you are logged in, your tasks will be saved to a database.
 
-* :yellow_square: **LP (1. del)** - [Predlog projekta](docs/predlog-projekta),
-* :orange_square: **LP (2. del)** - [Zajem zahtev](docs/zajem-zahtev),
-* :green_square: **LP (3. del)** - [Načrt rešitve](docs/nacrt) in
-* :blue_square: **LP (4. del)** - [Implementacija](src).
+To use:
+Go to src/client and run command `npm run dev` to run Vue frontend
+Then go to src/server and run command `node server.js` to run Node backend.
